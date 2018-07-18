@@ -3,11 +3,28 @@
 \usepackage{commath}
 
 \begin{document}
+  current-current two-point functions
+  \begin{equation}
+    \begin{split}
+      \Pi_{\mu\nu}(q) &= i \int \dif^4 x e^{iqx} \langle  0 | T \left\{ \mathcal{J}_{ij}^{\mu}(x) \mathcal{J}_{ij}^{\nu\dagger}(0) \right\} \rangle \\
+      &= \left(q_\mu q_\nu = q^2 g_{\mu\nu}\right) \Pi_{ij,\mathcal{J}}^{(1)}(q^2) + q^\mu q^\nu \Pi_{ij,\mathcal{J}}^{(0)} (q^2) \\
+      &= \left( q_\mu q_\nu - q^2 g_{\mu\nu} \right) \Pi^{(1+0)}(q^2) + q^2 g_{\mu\nu} \Pi^{(0)}(q^2)
+    \end{split}
+  \end{equation}
+  
   Inclusive ratio:
+  \begin{equation}
+    R_\tau = \frac{\Gamma [ \tau^- \to \nu_\tau \text{hadrons}]}{\Gamma [ \tau^- \to \nu_\tau e^- \bar\nu_e]}
+  \end{equation}
+
   \begin{equation}
     R_{\tau} = 12 \pi S_{EW} \int_0^{m_\tau} \frac{\dif s}{m_\tau^2} \left( 1 - \frac{s}{m_\tau^2}\right) \left[ \left( 1+2\frac{s}{m_\tau^2} \right) \operatorname{Im} \Pi^{(1)}(s) + \operatorname{Im} \Pi^{(0)}(s)\right]
   \end{equation}
 
+  \begin{equation}
+    \Pi^{(J)}(s) \equiv \envert{V_{uq}}^2 \left( \Pi_{ud,V}^{(J)} + \Pi_{ud,A}^{(J)}(s) \right)
+  \end{equation}
+  
   OPE:
   \begin{equation}
     \Pi_{OPE}^{(1+0)}(s) = \sum_{k=0}^{\infty}\frac{C_{2k}(s)}{(-s)^k}
