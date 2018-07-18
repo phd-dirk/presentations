@@ -1,0 +1,63 @@
+\documentclass{article}
+
+\usepackage{commath}
+
+\begin{document}
+  Inclusive ratio:
+  \begin{equation}
+    R_{\tau} = 12 \pi S_{EW} \int_0^{m_\tau} \frac{\dif s}{m_\tau^2} \left( 1 - \frac{s}{m_\tau^2}\right) \left[ \left( 1+2\frac{s}{m_\tau^2} \right) \operatorname{Im} \Pi^{(1)}(s) + \operatorname{Im} \Pi^{(0)}(s)\right]
+  \end{equation}
+
+  OPE:
+  \begin{equation}
+    \Pi_{OPE}^{(1+0)}(s) = \sum_{k=0}^{\infty}\frac{C_{2k}(s)}{(-s)^k}
+  \end{equation}
+  
+
+  Countour integral:
+  \begin{equation}
+    \int_{s_{th}}^{s_0} \frac{\dif s}{s_0} \omega(s) \operatorname{Im} \Pi_{V/A}(s) = \frac{i}{2} \oint_{\envert{s}=s_0} \frac{\dif s}{s_0} \omega(s) \Pi_{V/A}(s)
+  \end{equation}
+
+  chisquared:
+  \begin{equation}
+    \chi^2(\alpha) = (I_i^{exp}-I_i^{th}(\alpha)) C_{ij}^{-1} (I_j^{exp}-I_j^{th}(\alpha))
+  \end{equation}
+
+  used weights
+  \begin{equation}
+    \omega_{wk}(s) = \left( 1 - \frac{s}{m_\tau^2} \right)^{2+k} \left( \frac{s}{m_\tau^2} \right)^l \left( 1 + \frac{2s}{m_\tau^2} \right)
+  \end{equation}
+  $(k,l) = {(0,0), (1,0), (1,1), (1,2), (1,3)}$
+
+  weight to OPE:
+  \begin{equation}
+    \frac{1}{2 \pi i s_0} \oint_{\envert{s}=s_0} \dif s \left( \frac{s}{s_0} \right)^n \frac{C_{2k}}{(-s)^k} = (-1)^{n+1} \frac{C_{2(n+1)}}{s_0^{n+1}} \delta_{k,n+1}
+  \end{equation}
+  implying that an $n$-th degree monomial in the weight $\omega(s/s_0)$ selects
+  the $D=2k=2(n+1)$ term in the OPE.
+
+  \begin{equation}
+    \begin{split}
+      A_{00,V/A}^{ALEPH} &= A_{00,V/A}^{ALEPH}(a_s, \mathcal{O}_{6,V/A}) \\
+      A_{10,V/A}^{ALEPH} &= A_{10,V/A}^{ALEPH}(a_s,\langle a_s GG \rangle, \mathcal{O}_{6,V/A}, \mathcal{O}_{10,V/A}) \\
+      A_{11,V/A}^{ALEPH} &= A_{11,V/A}^{ALEPH}(a_s,\langle a_s GG \rangle, \mathcal{O}_{6,V/A}, \mathcal{O}_{10,V/A} \mathcal{O}_{12,V/A}) \\
+      A_{12,V/A}^{ALEPH} &= A_{12,V/A}^{ALEPH}(a_s, \mathcal{O}_{6,V/A}, \mathcal{O}_{10,V/A}, \mathcal{O}_{12,V/A}, \mathcal{O}_{14,V/A}) \\
+      A_{13,V/A}^{ALEPH} &= A_{13,V/A}^{ALEPH}(a_s, \mathcal{O}_{10,V/A}, \mathcal{O}_{12,V/A}, \mathcal{O}_{14,V/A}, \mathcal{O}_{16,V/A})
+    \end{split} 
+  \end{equation}
+
+  $\alpha_s$
+  \begin{center}
+    \begin{tabular}{| c | c | c |}
+      \hline
+      Channel & $\alpha_s(m_\tau^2)$ & $\langle a_sGG \rangle$ \\ 
+      \hline
+      V+A (FOPT) & $0.319^{+0.010}_{-0.009}$ & -3 \\  
+      \hline
+      V+A (CIPT) & 0.339 & -16 \\    
+      \hline
+    \end{tabular}
+  \end{center}
+  
+\end{document}
