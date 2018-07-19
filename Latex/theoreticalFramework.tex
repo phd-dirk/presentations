@@ -76,7 +76,13 @@
   \begin{equation}
     \chi^2(\alpha) = (I_i^{exp}-I_i^{th}(\alpha)) C_{ij}^{-1} (I_j^{exp}-I_j^{th}(\alpha))
   \end{equation}
-
+  \begin{equation}
+    \begin{split}
+      I_{i=kl}^{exp}(s_k,\omega_l) &= \int_{s_{th}}^{s_k} \frac{\dif s}{s_k} \omega_l (s) \operatorname{Im} \Pi_{V/A}(s) \\
+      I_{i=kl}^{th}(s_k,\omega_l) &= \frac{i}{2 s_k} \oint_{\envert{s}=s_k} \frac{\dif s}{s} \left[ W_l(s) - W_l(s_k) \right] D(s)
+    \end{split}
+  \end{equation} 
+  
   used weights
   \begin{equation}
     \omega_{wk}(s) = \left( 1 - \frac{s}{m_\tau^2} \right)^{2+k} \left( \frac{s}{m_\tau^2} \right)^l \left( 1 + \frac{2s}{m_\tau^2} \right)
