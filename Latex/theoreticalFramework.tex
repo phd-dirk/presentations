@@ -29,6 +29,10 @@
   \begin{equation}
     \Pi_{OPE}^{(1+0)}(s) = \sum_{k=0}^{\infty}\frac{C_{2k}(s)}{(-s)^k}
   \end{equation}
+
+  \begin{equation}
+    \mathcal{O}_{4,V/A} = \frac{1}{12}\left[ 1 - \frac{11}{18} a_s \right] \langle a_s GG \rangle + \left[ 1 + \frac{\pm 36 - 23}{27} a_s \right] \langle (m_u + m_d) \bar q q \rangle
+  \end{equation}
   
 
   Countour integral:
@@ -36,6 +40,16 @@
     \int_{s_{th}}^{s_0} \frac{\dif s}{s_0} \omega(s) \operatorname{Im} \Pi_{V/A}(s) = \frac{i}{2} \oint_{\envert{s}=s_0} \frac{\dif s}{s_0} \omega(s) \Pi_{V/A}(s)
   \end{equation}
 
+  adler function
+  \begin{equation}
+    D(s) \equiv -s \frac{\dif \Pi^{PT}}{\dif s} = \frac{1}{12\pi^2}\sum_{n=0}^\infty a_\mu^n \sum_{k=1}^{n+1} k c_{nk} \ln\left( \frac{-s}{\mu^2} \right)
+  \end{equation}
+
+  contour integral in terms of adler
+  \begin{equation}
+    A^{\omega,PT} = \frac{i}{2 s_0} \oint_{\envert{s}=s_o} \frac{\dif s}{s} \left[ W(s) - W(s_0) \right] D(s)
+  \end{equation}
+  
   chisquared:
   \begin{equation}
     \chi^2(\alpha) = (I_i^{exp}-I_i^{th}(\alpha)) C_{ij}^{-1} (I_j^{exp}-I_j^{th}(\alpha))
