@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.25)  19 JUL 2018 09:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.25)  19 JUL 2018 09:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -106,11 +106,11 @@ theoreticalFramework.aux) )
 Here is how much of TeX's memory you used:
  926 strings out of 492995
  10337 string characters out of 6132704
- 73911 words of memory out of 5000000
+ 77911 words of memory out of 5000000
  4540 multiletter control sequences out of 15000+600000
  4094 words of font info for 16 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,16n,22p,326b,161s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,18n,22p,326b,186s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public
@@ -121,7 +121,7 @@ nts/cm/cmr5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmsy7.pfb>
-Output written on theoreticalFramework.pdf (2 pages, 102800 bytes).
+Output written on theoreticalFramework.pdf (2 pages, 104570 bytes).
 PDF statistics:
  47 PDF objects out of 1000 (max. 8388607)
  33 compressed objects within 1 object stream
