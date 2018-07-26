@@ -32,7 +32,56 @@
   \begin{equation}
     \mathcal{O}_{4,V/A} = \frac{1}{12}\left[ 1 - \frac{11}{18} a_s \right] \langle a_s GG \rangle + \left[ 1 + \frac{\pm 36 - 23}{27} a_s \right] \langle (m_u + m_d) \bar q q \rangle
   \end{equation}
-  
+
+  D=6:
+  Anomalous Dimension Matrix (V-A):
+  \begin{equation}
+    \hat \gamma^{(1)}_{Q_-} = 
+    \begin{pmatrix}
+      -\frac{3N_C}{2}+\frac{3}{N_C} & -\frac{3C_F}{2N_C} \\
+      -3 & 0
+    \end{pmatrix}
+  \end{equation}
+
+  Anomalous Dimension Matrix (V+A):
+  \begin{equation}
+    \begin{split}
+      \label{eq:anomalousDimensionMatrixVpA}
+      \gamma^{(1)}_{Q_+} &= 
+      \left(\begin{matrix}
+          -\frac{3}{N_C} & \frac{3C_F}{2N_C} &-\frac{1}{3N_C} & 0   
+          \\
+          3 & 0 & \frac{2}{3} & 0    \\
+          0 & 0 & \frac{N_f}{3}-\frac{3N_c}{4}-\frac{1}{3N_c} & \frac{3N_c}{4}-\frac{3}{N_c}   \\
+          \frac{3}{2}+\frac{3}{2N_c} & -\frac{3C_F}{2N_c} & \frac{3N_c}{4}+\frac{3}{2}-\frac{11}{6N_c} & -\frac{3N_c}{4}+\frac{3}{2}+\frac{3}{2N_c} \\
+          0 & 0 & \frac{11}{3} & 0 \\
+          0 & 0 & 0 & 0 \\
+          0 & 0 & 0 & 0 \\
+          0 & 0 & 0 & 0 \\
+          0 & 0 & 0 & 0 
+        \end{matrix} \right. \\
+      &\qquad\qquad\qquad\qquad\qquad\qquad \left.\begin{matrix}
+          0 & 0 & 0 & 0 & 0 \\
+          0 & 0 & 0 & 0 & 0 \\
+          \frac{3C_F}{2N_C} & \frac{2}{3} & 0 & 0 & 0 \\
+          -\frac{3C_F}{2N_c} & -\frac{3}{4}-\frac{3}{4N_c} & -\frac{3}{4}-\frac{3}{4N_c} & \frac{3C_F}{4N_c} & \frac{3C_F}{4N_c} \\
+          0 & 0 & 0 & 0 & 0 \\
+          0 & \frac{N_f}{3}+1-\frac{3N_c}{4}-\frac{1}{3N_c} & \frac{3N_c}{4}-\frac{3}{N_c} & 0  & \frac{3C_F}{2N_c} \\
+          0 & \frac{3N_c}{4}-\frac{10}{3N_c} & -\frac{3N_c}{4} & \frac{3C_F}{2N_c} & 0 \\
+          0 & \frac{2}{3} & 3 & 0 & 0 \\
+          0 & \frac{11}{3} & 0 & 0 & 0 
+        \end{matrix}\right)
+    \end{split}
+  \end{equation}
+
+  non-diagonal V/A current
+  \begin{equation}
+    j_\mu^V(x) = (\bar u \gamma_\mu d)(x)
+  \end{equation}
+  \begin{equation}
+    j_\mu^A(x) = (\bar u \gamma_\mu \gamma_5 d)(x)
+  \end{equation}
+
   Countour integral:
   \begin{equation}
     \int_{s_{th}}^{s_0} \frac{\dif s}{s_0} \omega(s) \operatorname{Im} \Pi_{V/A}(s) = \frac{i}{2} \oint_{\envert{s}=s_0} \frac{\dif s}{s_0} \omega(s) \Pi_{V/A}(s)
