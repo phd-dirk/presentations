@@ -5,7 +5,8 @@
     "latex2e"
     "article"
     "art10"
-    "commath")
+    "commath"
+    "graphics")
    (LaTeX-add-labels
     "eq:anomalousDimensionMatrixVpA"))
  :latex)
