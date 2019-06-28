@@ -1,0 +1,16 @@
+\documentclass[12pt,a4paper]{scrreprt}
+\usepackage[compat=1.0.0]{tikz-feynman}
+
+
+\begin{document}
+
+\begin{equation}
+  \mathcal{L}_{QCD} = \dots + \sqrt{\pi \alpha_s} \bar{q}(x) \lambda \gamma_\mu q (x) + \dots 
+  \Rightarrow \feynmandiagram [baseline=(d.base), horizontal=d to b] {
+    a -- [particle=\(\bar{q}\)] b -- [fermion] c,
+    b -- [boson] d [particle=\(q\)], };
+\end{equation}
+
+
+
+\end{document}
