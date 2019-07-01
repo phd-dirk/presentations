@@ -1,0 +1,62 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\usepackage[utf8]{inputenc}
+\usepackage[style=authortitle-comp, backend=biber]{biblatex}
+\addbibresource{./references.bib}
+\usepackage[compat=1.0.0]{tikz-feynman}
+
+\title[\(The Strong Coupling\)]{The QCD Strong Coupling from Hadronic \(\tau\) decays}
+\subtitle{A PhD Defense}
+\author{Dirk Hornung}
+\institute{
+  Universitat Autònoma de Barcelona \\
+  \tiny
+  Departamiento de Física
+}
+\titlegraphic{
+  \includegraphics[height=1.5cm]{./images/logo_UAB.eps}
+  \hspace{1cm}
+  \includegraphics[height=1.5cm]{./images/logo_IFAE.eps}
+}
+\date{17th July 2019}
+
+\begin{document}
+\frame{\titlepage}
+
+\section{Introduction}
+\begin{frame}
+  \frametitle{The Strong Coupling \(\alpha_s\)}
+  
+  \feynmandiagram [inline=(d.base), horizontal=d to b] {
+    a [particle=\(\overline{q}\)] -- [fermion] b -- [fermion] c [particle=\(q\)],
+    b -- [boson, edge label=\(g\)] d,
+  };
+  \begin{equation}
+    \mathcal{L}_{QCD} = \dots + \sqrt{\pi \bm{\alpha_s}} \overline{q}(x) \lambda \gamma_\mu q (x) G(x) + \dots  
+  \end{equation}
+  \footcite{Beneke2008}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Table of Contents}
+  \tableofcontents
+\end{frame} 
+
+\section{Theoretical Framework}
+\begin{frame}
+  \frametitle{Theoretical Framework}
+\end{frame}
+\subsection{Perturbative Contributions}
+\begin{frame}
+  \frametitle{PT Contributions}
+\end{frame}
+\subsection{Non-Perturbative Contributions}
+\begin{frame}
+  \frametitle{NPT Contributions}
+\end{frame}
+
+\begin{frame}
+  \printbibliography
+\end{frame}
+
+\end{document}

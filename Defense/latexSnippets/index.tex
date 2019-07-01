@@ -1,16 +1,123 @@
 \documentclass[12pt,a4paper]{scrreprt}
 \usepackage[compat=1.0.0]{tikz-feynman}
+\usepackage{bm}
+\usepackage{commath}
+\usepackage[sc,osf]{mathpazo}   % With old-style figures and real smallcaps.
+\usepackage[euler-digits,small]{eulervm}
+
+\DeclareMathOperator{\Ima}{Im}
 
 
 \begin{document}
 
-\begin{equation}
-  \mathcal{L}_{QCD} = \dots + \sqrt{\pi \alpha_s} \bar{q}(x) \lambda \gamma_\mu q (x) + \dots 
-  \Rightarrow \feynmandiagram [baseline=(d.base), horizontal=d to b] {
-    a -- [particle=\(\bar{q}\)] b -- [fermion] c,
-    b -- [boson] d [particle=\(q\)], };
-\end{equation}
+\section{Slide 1}
+\begin{equation*}
+  \alpha_s(m_\tau^2) \approx 0.33
+\end{equation*}
+\begin{equation*}
+  \mathcal{L}_{QCD} = \dots + \sqrt{\pi \bm{\alpha_s}} \overline{q}(x) \lambda \gamma_\mu q (x) G(x) + \dots  
+\end{equation*}
+\begin{equation*}
+  \feynmandiagram [inline=(d.base), horizontal=d to b] {
+    a [particle=\(\overline{q}\)] -- [fermion] b -- [fermion] c [particle=\(q\)],
+    b -- [boson, edge label=\(g\)] d,
+  };
+\end{equation*}
+\begin{equation*}
+  \mu \frac{\dif}{\dif \mu} R(q, a_s, m) = \left[ \mu \frac{\partial}{\partial \mu} + \mu \frac{\dif a_s}{\dif \mu}\frac{\partial}{\partial a_s} + \mu\frac{\dif m}{\dif\mu}\frac{\partial}{\partial m} \right] R(q, a_s, m)
+\end{equation*}
+\begin{equation*}
+  \beta(a_s) \equiv -\mu \frac{\dif a_s}{\dif \mu} = \beta_1 a_s^2 + \beta_2 a_s^3 + \dots
+\end{equation*}
+\begin{equation*}
+  \beta_1 = \frac{1}{6}(11N_c - 2N_f)
+\end{equation*} 
+\begin{equation*}  
+  a_s(\mu_2) = \frac{a_s(\mu_1)}{\left( 1 - a_s(\mu_1) \beta_1 \log \frac{\mu_1}{\mu_2} \right)}
+\end{equation*}
 
+\chapter{Theoretical Background}
+\section{Framework 1}
+\begin{equation*}
+  R_\tau = 12 \pi \,\abs{V_{ud}}^2 S_{EW} \int_0^{m_\tau} \frac{\dif s}{m_\tau^2} \left( 1 - \frac{s}{m_\tau^2} \right) \left[ \left( 1 + 2 \frac{s}{m_\tau^2} \right)
+    \Ima \Pi_{V/A}^{(1)}(s) + \Ima \Pi_{V/A}^{(0)}(s) \right]
+\end{equation*}
+\begin{equation*}
+  \begin{split}
+    \Pi_{V/A}^{\mu\nu}(q^2) &\equiv i \int \dif^4 x e^{iqx} \langle 0\vert T \left\{ J_{V/A}^\mu(x) J_{V/A}^\nu(0)\right\} \vert 0 \rangle \\
+    &= (q^\mu q^\nu - q^2 g^{\mu\nu})\Pi_{V/A}^{(1)}(q^2) + q^\mu q^\nu \Pi_{V/A}^{(0)}(q^2)
+  \end{split}
+\end{equation*}
+\begin{equation*}
+  J_V^\mu = \overline{u} \gamma^\mu d
+\end{equation*}
+\begin{equation*}
+  J_A^\mu = \overline{u} \gamma^\mu \gamma_5 d
+\end{equation*}
+\begin{equation*}
+  \text{with} \quad s \equiv -q^2
+\end{equation*}
+\begin{equation*}
+  \int_0^{s_0} \frac{\dif s}{s_0} \omega(s) \Ima \Pi_{V/A}(s)
+  = \frac{i}{2} \oint_{\abs{s}=s_0} \frac{\dif}{s_0} \omega(s) \Pi_{V/A}(s)
+\end{equation*}
 
+\section{Framework 2}
+\begin{equation*}
+  R_{\tau,V/A} = \frac{N_c}{2} (1 + \delta_{pt} + \delta_{npt})
+\end{equation*}
+\begin{equation*}
+  R_{\tau,V/A} = \frac{N_c}{2} (1 + \delta_{pt} + \delta_{npt})
+\end{equation*}
+\begin{equation*}
+  D(s) \equiv -s \frac{\dif}{\dif s} \Pi(s)
+\end{equation*}
+\begin{equation*}
+  D^{(1+0)}(s) \equiv -s \frac{\dif}{\dif s} \Pi^{(1+0)}(s), \qquad D^{(0)}(s) \equiv \frac{s}{m_\tau^2} \frac{\dif}{\dif s} (s \Pi^{(0)}(s))
+\end{equation*}
+\begin{equation*}
+  x \equiv \frac{s}{m_\tau^2}
+\end{equation*}
+\begin{equation*}
+  R_\tau = -\pi i \oint_{\abs{s}=m_\tau^2} \frac{\dif x}{x}(1-x)^3 \left[ 3(1+x)D^{(1+0)}(m_\tau^2x) + 4 D^{0}(m_\tau^2 x) \right]
+\end{equation*}
+\begin{equation*}
+  D_V^{(1+0)} = \frac{N_c}{12 \pi^2}\sum_{n=0}^\infty a_\mu^n \sum_{k=1}^{n+1} k c_{n,k} L^{k-1}
+\end{equation*}
+\begin{equation*}
+  a_\mu \equiv \frac{\alpha_s(\mu^2)}{\pi}
+\end{equation*}
+\begin{align*}
+  c_{0,0} &= -\frac{5}{3}, \quad c_{0,1} = 1 \\
+  c_{2,1} &= \frac{365}{24} - 11 \zeta_3 - \left( \frac{11}{12} - \frac{2}{3}\zeta_3 \right) N_f, \\
+  c_{3,1} &= \frac{87029}{288} - \frac{1103}{4} \zeta_3 + \frac{275}{6}\zeta_5, \\
+          &- \left( \frac{7847}{216} - \frac{262}{9} \zeta_3 + \frac{25}{9} \zeta_5 \right) N_f + \left( \frac{151}{162} - \frac{19}{27}\zeta_3\right)N_f^2, \\
+  c_{4,1} &= \frac{78631453}{20736} - \frac{1704247}{432}\zeta_3 +
+            \frac{4185}{8}\zeta_3^2 + \frac{34165}{96}\zeta_5 - \frac{1995}{16}\zeta_7, \\
+  c_{5,1} &= 283
+\end{align*}
+
+\section{FOPT vs CIPT}
+\begin{equation*}
+  \delta_{pt} = \sum_{n=1}^\infty a_\mu^n \sum_{k=1}^n k\, c_{n,k} \frac{1}{2\pi i} \oint_{\abs{x}=1} \frac{\dif x}{x} (1-x)^3 (1+x) \log\left( \frac{- m_\tau^2 x}{\mu^2} \right)^{k-1}
+\end{equation*}
+\begin{equation*}
+  \mu^2 = m_\tau^2
+\end{equation*}
+\begin{equation*}
+  \delta_{FOPT}^{(0)} = \sum_{n=1}^\infty a(m_\tau^2)^n \sum_{k=1}^n k\, c_{n,k} J_{k-1}
+\end{equation*}
+\begin{equation*}
+  J_l \equiv \frac{1}{2 \pi i} \oint_{\abs{x}=1} \frac{\dif x}{x} (1-x)^3(1+x) \log^l(-x)
+\end{equation*}
+\begin{equation*}
+  \mu^2 = -m_\tau^2 x
+\end{equation*}
+\begin{equation*}
+  \delta_{CIPT}^{(0)} = \sum_{n=1}^\infty c_{n,1} J_n^a(m_\tau^2)
+\end{equation*}
+\begin{equation*}
+  J_n^a(m_\tau^2) \equiv \frac{1}{2\pi i} \oint_{\abs{x}=1} \frac{\dif x}{x} (1-x)^3 (1+x) a^n (-m_\tau^2 x)
+\end{equation*}
 
 \end{document}
