@@ -59,6 +59,55 @@
       \verb 0806.3156
       \endverb
     \endentry
+    \entry{Deur2016}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=aa4564cb4e8ed1c36273eecc95af6c47}{%
+           family={Deur},
+           familyi={D\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e5f246fccd6f656edc3731c7e44ed1ed}{%
+           family={Brodsky},
+           familyi={B\bibinitperiod},
+           given={Stanley\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=58724e8488d8d022fc27e666a19d807c}{%
+           family={Teramond},
+           familyi={T\bibinitperiod},
+           given={Guy\bibnamedelima F.},
+           giveni={G\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{9c657f0c6a10235b0975aebbe77f4969}
+      \strng{fullhash}{9c657f0c6a10235b0975aebbe77f4969}
+      \strng{bibnamehash}{9c657f0c6a10235b0975aebbe77f4969}
+      \strng{authorbibnamehash}{9c657f0c6a10235b0975aebbe77f4969}
+      \strng{authornamehash}{9c657f0c6a10235b0975aebbe77f4969}
+      \strng{authorfullhash}{9c657f0c6a10235b0975aebbe77f4969}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Prog. Part. Nucl. Phys.}
+      \field{title}{{The QCD Running Coupling}}
+      \field{volume}{90}
+      \field{year}{2016}
+      \field{pages}{1\bibrangedash 74}
+      \range{pages}{74}
+      \verb{doi}
+      \verb 10.1016/j.ppnp.2016.04.003
+      \endverb
+      \verb{eprint}
+      \verb 1604.08082
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
