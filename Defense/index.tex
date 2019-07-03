@@ -22,16 +22,18 @@
 \usepackage{caption}
 \usepackage{siunitx}
 
+
 \DeclareMathOperator{\Ima}{Im}
 \DeclareMathOperator{\sfm2}{sfm2}
 \DeclareMathOperator{\cov}{cov}
 
 
 \definecolor{primary}{rgb}{0.78, 0.89, 1}
-\setbeamercolor{palette primary}{fg=white,bg=black!35}
-\setbeamercolor{palette secondary}{fg=black,bg=black!25}
-\setbeamercolor{palette tertiary}{fg=black,bg=black!10}
+\setbeamercolor{palette primary}{fg=white,bg=black!80}
+\setbeamercolor{palette secondary}{fg=white,bg=black!40}
+\setbeamercolor{palette tertiary}{fg=black,bg=black!20}
 \setbeamercolor{caption name}{fg=black}
+\setbeamercolor{block title}{bg=black!40}
 
 \setbeamertemplate{section in toc}{ {\color{black}\inserttocsectionnumber.~\inserttocsection} }
 \setbeamertemplate{subsection in toc}{ \hspace{1.2em}{\color{black}\rule[0.3ex]{3pt}{3pt}}~\inserttocsubsection\par }
@@ -129,7 +131,7 @@
     \end{column}
   \end{columns}
 
-  \vspace{1cm}
+  \vspace{cm}
   
   \pause
   \centering
@@ -156,14 +158,16 @@
 \section{Theoretical Framework}
 \begin{frame}
   \frametitle{Theoretical Framework}
-  Inclusive Tau Decay Ratio:
-
-  \resizebox{\textwidth}{!}{
+  \begin{block}{Inclusive \(\tau\) decay ratio}
+    \vspace*{-\baselineskip}\setlength\belowdisplayshortskip{0pt}
     \begin{equation}
-        R_\tau = 12 \pi \,\abs{V_{ud}}^2 S_{EW} \int_0^{m_\tau} \frac{\dif s}{m_\tau^2} \left( 1 - \frac{s}{m_\tau^2} \right) \left[ \left( 1 + 2 \frac{s}{m_\tau^2} \right)
-          \Ima \Pi_{V/A}^{(1)}(s) + \Ima \Pi_{V/A}^{(0)}(s) \right]
+      \begin{split}
+        R_\tau &= 12 \pi \,\abs{V_{ud}}^2 S_{EW} \int_0^{m_\tau} \frac{\dif s}{m_\tau^2} \left( 1 - \frac{s}{m_\tau^2} \right) \\
+        &\times \left[ \left( 1 + 2 \frac{s}{m_\tau^2} \right) \Ima \Pi_{V/A}^{(1)}(s) + \Ima \Pi_{V/A}^{(0)}(s) \right]
+      \end{split}
     \end{equation}
-  }
+  \end{block}
+  
   \pause
 
   \vspace{0.5cm}
@@ -176,10 +180,7 @@
     \end{split}
   \end{equation}
   \small
-  where
-  \begin{equation*}
-    J_V^\mu = \overline{u} \gamma^\mu d \qquad \text{and} \qquad J_A^\mu = \overline{u} \gamma^\mu \gamma_5 d
-  \end{equation*}
+  where \(J_V^\mu = \overline{u} \gamma^\mu d \qquad \text{and} \qquad J_A^\mu = \overline{u} \gamma^\mu \gamma_5 d\)
 \end{frame}
 \begin{frame}
   \frametitle{Adler Function}
