@@ -1,31 +1,14 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
-\defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {2}{Theoretical Framework}{6}{0}{2}
-\defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {2}{1}{Perturbative Contributions}{9}{0}{2}
-\defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {2}{2}{Non-Perturbative Contributions}{16}{0}{2}
-\defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {3}{Duality Violations}{19}{0}{3}
-\defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {4}{Weights}{20}{0}{4}
-\defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {4}{1}{Pinched Weights}{21}{0}{4}
-\defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {4}{2}{Weighting OPE Contributions}{22}{0}{4}
-\defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {5}{Experiment}{23}{0}{5}
-\defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {6}{Fits}{27}{0}{6}
-\defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {6}{1}{Pinched Weights without a Monomial term \(x\)}{28}{0}{6}
-\defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {6}{2}{Single Pinched Monomial Weights}{31}{0}{6}
-\defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {6}{3}{Pinched Weights with a Monomial Term \(x\)}{34}{0}{6}
-\defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {6}{4}{Comparison}{38}{0}{6}
-\defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {7}{Results}{39}{0}{7}
+\beamer@sectionintoc {2}{Theoretical Framework}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{Perturbative Contributions}{21}{0}{2}
+\beamer@subsectionintoc {2}{2}{Non-Perturbative Contributions}{26}{0}{2}
+\beamer@subsectionintoc {2}{3}{Duality Violations}{29}{0}{2}
+\beamer@subsectionintoc {2}{4}{Weights}{30}{0}{2}
+\beamer@sectionintoc {3}{Experiment}{33}{0}{3}
+\beamer@sectionintoc {4}{Fits}{37}{0}{4}
+\beamer@subsectionintoc {4}{1}{Pinched Weights without a Monomial term \(x\)}{38}{0}{4}
+\beamer@subsectionintoc {4}{2}{Single Pinched Monomial Weights}{41}{0}{4}
+\beamer@subsectionintoc {4}{3}{Pinched Weights with a Monomial Term \(x\)}{44}{0}{4}
+\beamer@subsectionintoc {4}{4}{Comparison}{48}{0}{4}
+\beamer@sectionintoc {5}{Results}{49}{0}{5}

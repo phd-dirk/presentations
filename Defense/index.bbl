@@ -108,6 +108,38 @@
       \verb 1604.08082
       \endverb
     \endentry
+    \entry{PDG2018}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=468dd31f33955bc12b7c31e820de613d}{%
+           family={Tanabashi},
+           familyi={T\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e75186424113a4ab28ae7972b480cbd6}
+      \strng{fullhash}{e75186424113a4ab28ae7972b480cbd6}
+      \strng{bibnamehash}{e75186424113a4ab28ae7972b480cbd6}
+      \strng{authorbibnamehash}{e75186424113a4ab28ae7972b480cbd6}
+      \strng{authornamehash}{e75186424113a4ab28ae7972b480cbd6}
+      \strng{authorfullhash}{e75186424113a4ab28ae7972b480cbd6}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev.}
+      \field{number}{3}
+      \field{title}{{Review of Particle Physics}}
+      \field{volume}{D98}
+      \field{year}{2018}
+      \field{pages}{030001}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.98.030001
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

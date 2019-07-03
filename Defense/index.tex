@@ -1,4 +1,5 @@
-\documentclass{beamer}
+\documentclass[fleqn]{beamer}
+
 \usetheme{Madrid}
 \beamertemplatenavigationsymbolsempty
 \usepackage[utf8]{inputenc}
@@ -6,6 +7,8 @@
 \usepackage[sc,osf]{mathpazo}   % With old-style figures and real smallcaps.
 \usepackage[euler-digits,small]{eulervm}
 \usepackage[style=authortitle-comp, backend=biber]{biblatex}
+\usepackage{xpatch}
+\xapptobibmacro{cite}{\setunit{\nametitledelim}\printfield{year}}{}{}
 \addbibresource{./references.bib}
 \usepackage[compat=1.0.0]{tikz-feynman}
 \usepackage{bm}
@@ -16,23 +19,29 @@
 \usepackage{colortbl} % \rowcolor in tables
 \usepackage{adjustbox} % \resizebox for table
 \usepackage{xcolor}
+\usepackage{caption}
+\usepackage{siunitx}
 
 \DeclareMathOperator{\Ima}{Im}
 \DeclareMathOperator{\sfm2}{sfm2}
 \DeclareMathOperator{\cov}{cov}
 
+
 \definecolor{primary}{rgb}{0.78, 0.89, 1}
 \setbeamercolor{palette primary}{fg=white,bg=black!35}
 \setbeamercolor{palette secondary}{fg=black,bg=black!25}
 \setbeamercolor{palette tertiary}{fg=black,bg=black!10}
+\setbeamercolor{caption name}{fg=black}
 
 \setbeamertemplate{section in toc}{ {\color{black}\inserttocsectionnumber.~\inserttocsection} }
 \setbeamertemplate{subsection in toc}{ \hspace{1.2em}{\color{black}\rule[0.3ex]{3pt}{3pt}}~\inserttocsubsection\par }
 \setbeamertemplate{itemize items}[square]
 
 \setbeamertemplate{blocks}[default]
+\setbeamerfont{caption}{size=\tiny}
 
-\title[\(The Strong Coupling\)]{The QCD Strong Coupling from Hadronic \(\tau\) decays}
+
+\title[The Strong Coupling]{The QCD Strong Coupling from Hadronic \(\tau\) decays}
 \subtitle{A PhD Defense}
 \author{Dirk Hornung}
 \institute[UAB]{
@@ -53,53 +62,85 @@
 \section{Introduction}
 \begin{frame}
   \frametitle{The Strong Coupling \(\alpha_s\)}
-  \begin{columns}
-    \begin{column}{0.5\textwidth}
-      \centering
-      \feynmandiagram [inline=(d.base), horizontal=d to b] {
-        a [particle=\(\overline{q}\)] -- [fermion] b -- [fermion] c [particle=\(q\)],
-        b -- [boson, edge label=\(g\)] d,
-      };
-      \\
-      \resizebox{\textwidth}{!}{
-        \begin{equation}
-          \mathcal{L}_{QCD} = \dots + \sqrt{\pi \bm{\alpha_s}} \, \overline{q}(x) \lambda \gamma_\mu q (x) G(x) + \dots
-        \end{equation}
-      }
-      \\
-      \makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
-      \small
+  \begin{equation} 
+    \begin{split}
+      \mathcal{L}_{QCD}(x) &= -\frac{1}{4} G_{\mu\nu}^a(x) G^{\mu\nu,a}(x) \\
+      &+ \left[ \sum_A \frac{i}{2} \overline{q}^A(x) \gamma^\mu \overleftrightarrow{D}_\mu q^A(x) - m \overline{q}^A(x)q^A(x) \right],
+    \end{split}
+  \end{equation}
+  \small
+  with \(D_\mu = \partial_\mu - i g \frac{\lambda^a}{2} B_\mu^a\)
+
+  \pause
+  \normalsize
+  \begin{equation}
+    \mathcal{L}_{QCD}^{QG-Int}(x) = \sqrt{\pi \bm{\alpha_s}} \, \overline{q}(x) \lambda \gamma_\mu q (x) G(x)
+    \quad \Rightarrow \quad
+    \feynmandiagram [inline=(d.base), horizontal=d to b] {
+      a [particle=\(\overline{q}\)] -- [fermion] b -- [fermion] c [particle=\(q\)],
+      b -- [boson, edge label=\(g\)] d,
+    };
+  \end{equation}
+\end{frame}
+\begin{frame}
+  \frametitle{The Running of the Strong Coupling}
+  \begin{columns}{\textwidth}
+    \begin{column}{0.4\textwidth}
       \begin{equation}
         \begin{split}
           \alpha_s(m_\tau^2) &\approx 0.33 \\
           \alpha_s(m_Z^2) &\approx  1.12
-      \end{split}
-    \end{equation}
+        \end{split}
+      \end{equation}
+        \begin{equation}
+          \footnotesize
+          \begin{split}
+            m_\tau &= \SI{1776.86 \pm 0.12}{\mega\eV}\footnotemark \\
+            m_Z &= \SI{91.1876 \pm 0.0021}{\giga\eV}^1
+          \end{split}
+        \end{equation}
     \end{column}
     \begin{column}{0.5\textwidth}
       \begin{figure}
         \includegraphics[width=\textwidth]{./images/runningOfAs.eps}\\[-1ex]
+        \captionsetup{format=hang}
         \caption{\tiny Taken from \cite{Deur2016}}
       \end{figure}
     \end{column}
   \end{columns}
+  \footnotetext{\cite{PDG2018}}
 \end{frame}
 \begin{frame}
-  \frametitle{Exculsive Hadronic \(\tau\) decays}
+  \frametitle{Hadronic \(\tau\) decays}
   \begin{columns}
-    \begin{column}{0.5\textwidth}
+    \begin{column}{0.4\textwidth}
       \feynmandiagram [layered layout, horizontal=a to b] {
         a [particle=\(\tau^{-}\)] -- [fermion] b -- [fermion] f1 [particle=\(\nu_{\tau}\)], b -- [boson, edge label'=\(W^{-}\)] c,
         c -- [anti fermion] f2 [particle=\(\overline{u}\)],
         c -- [fermion] f3 [particle=\(d\)],
       };
     \end{column}
-    \begin{column}{0.5\textwidth}
+
+    \pause
+    \begin{column}{0.6\textwidth}
       \begin{equation}
         R_\tau = \frac{\Gamma[\tau^- \to \nu_\tau + \text{hadrons}]}{\Gamma[\tau^- \to \nu_\tau e^- \overline{\nu}_{e}]}
       \end{equation}
     \end{column}
   \end{columns}
+
+  \vspace{1cm}
+  
+  \pause
+  \centering
+  \begin{tabular}{lccc}
+    \toprule
+    Name & Symbol & Quark content & Rest mass \\
+    \midrule
+    Pion & \(\pi^-\) & \(\bar u d\) & \SI{139.57061 \pm 0.00024}{\mega\eV}  \\
+    Pion & \(\pi^0\) & \((u \bar u - d \bar d)/\sqrt{2}\) & \SI{134.9770\pm0.0005}{\mega\eV}
+  \end{tabular}
+   
 \end{frame}
 \begin{frame}
   \frametitle{Duality}
@@ -115,76 +156,111 @@
 \section{Theoretical Framework}
 \begin{frame}
   \frametitle{Theoretical Framework}
-  Inclusive Ratio
+  Inclusive Tau Decay Ratio:
 
   \resizebox{\textwidth}{!}{
     \begin{equation}
-      R_\tau = 12 \pi \,\abs{V_{ud}}^2 S_{EW} \int_0^{m_\tau} \frac{\dif s}{m_\tau^2} \left( 1 - \frac{s}{m_\tau^2} \right) \left[ \left( 1 + 2 \frac{s}{m_\tau^2} \right)
-        \Ima \Pi_{V/A}^{(1)}(s) + \Ima \Pi_{V/A}^{(0)}(s) \right]
+        R_\tau = 12 \pi \,\abs{V_{ud}}^2 S_{EW} \int_0^{m_\tau} \frac{\dif s}{m_\tau^2} \left( 1 - \frac{s}{m_\tau^2} \right) \left[ \left( 1 + 2 \frac{s}{m_\tau^2} \right)
+          \Ima \Pi_{V/A}^{(1)}(s) + \Ima \Pi_{V/A}^{(0)}(s) \right]
     \end{equation}
   }
-  \\ \vspace{0.3cm}
-  Two-Point Function \vspace{-0.1cm}
+  \pause
+
+  \vspace{0.5cm}
+
+  Two-Point Function:
   \begin{equation}
     \begin{split}
     \Pi_{V/A}^{\mu\nu}(q^2) &\equiv i \int \dif^4 x e^{iqx} \langle 0\vert T \left\{ J_{V/A}^\mu(x) J_{V/A}^\nu(0)\right\} \vert 0 \rangle \\
     &= (q^\mu q^\nu - q^2 g^{\mu\nu})\Pi_{V/A}^{(1)}(q^2) + q^\mu q^\nu \Pi_{V/A}^{(0)}(q^2)
     \end{split}
   \end{equation}
+  \small
   where
   \begin{equation*}
     J_V^\mu = \overline{u} \gamma^\mu d \qquad \text{and} \qquad J_A^\mu = \overline{u} \gamma^\mu \gamma_5 d
   \end{equation*}
 \end{frame}
 \begin{frame}
-  \includegraphics[width=\textwidth]{./images/rTauCauchysTheorem.eps}
-  \begin{equation*}
-    \text{with} \quad s \equiv -q^2
-  \end{equation*}
-  \begin{equation}
-    \int_0^{s_0} \omega(s) \rho(s) = \frac{-1}{2 \pi i} \oint_{\abs{s}=s_0} \omega(s) \Pi_{OPE}(s) \dif s
-  \end{equation}
-\end{frame}
-\begin{frame}
-  \begin{equation}
-    R_\tau(s) = 12 \pi \int_0^{m_\tau} \frac{\dif s}{m_\tau^2} \left( 1-\frac{s}{m_\tau^2} \right)
-    \left[ \left( 1 + 2 \frac{s}{m_\tau^2} \Ima \Pi^{(1)}(s) \right) + \Ima \Pi^{(0)}(s) \right]
-  \end{equation}
-  \begin{equation}
-    R_{\tau,V/A} = \frac{N_c}{2} \left( 1 + \delta_{pt} + \delta_{npt} \right)
-  \end{equation}
-\end{frame}
-\subsection{Perturbative Contributions}
-\begin{frame}
-  \frametitle{PT Contributions}
+  \frametitle{Adler Function}
+  Adler Function:
   \begin{equation}
     D(s) \equiv =s \frac{\dif}{\dif s} \Pi(s)
   \end{equation}
   \begin{equation}
     D^{(1+0)}(s) \equiv -s \frac{\dif}{\dif s} \Pi^{(1+0)}(s), \qquad D^{(0)}(s) \equiv \frac{s}{m_\tau^2} \frac{\dif}{\dif s} \left( s \Pi^{(0)}(s) \right)
   \end{equation}
+
+  \pause
+  
+  Inclusive Tau Decay Ratio:
   \begin{equation}
     R_\tau = - \pi i \oint_{\abs{s}=m_\tau^2} \frac{\dif x}{x}(1-x)^3 \left[ 3(1+x)D^{(1+0)}(m_\tau^2x) + 4 D^{(0)}(m_\tau^2 x) \right]
   \end{equation}
+  \small
+  \begin{equation*}
+    \text{with} \quad x \equiv \frac{s}{m_\tau^2}
+  \end{equation*} 
+\end{frame}
+\begin{frame}
+  \frametitle{Adler Function}
   \begin{equation}
-    x \equiv \frac{s}{m_\tau^2}
-  \end{equation} 
+    \Pi_V^{(1+0)}(s) = - \frac{N_c}{12 \pi^2} \sum_{n=0}^\infty a_\mu^n \sum_{k=0}^{n+1} c_{n,k} L^k
+    \quad \text{with} \quad L \equiv \log \frac{-s}{\mu^2}
+  \end{equation}
+  \normalsize
+  \pause
+  \begin{equation}
+    D_V^{(1+0)} = \frac{N_c}{12 \pi^2} \sum_{n=0}^\infty a_\mu^n \sum_{k=1}^{n+1} k\, c_{n,k} L^{k-1}
+  \end{equation}
+  \pause
+\end{frame}
+\begin{frame}
+  \frametitle{Adler Function Coefficients}
+  RGE:
+  \begin{equation}
+    \mu \frac{\dif}{\dif \mu} R(q, a_s, m) = \left[ \mu \frac{\partial}{\partial \mu} + \mu \frac{\dif a_s}{\dif \mu} \frac{\partial}{\partial a_s} + \mu \frac{\dif m}{\dif \mu} \frac{\partial}{\partial m} \right] R(q, a_s, m) = 0
+  \end{equation}
+  \begin{equation}
+    \left(2 \frac{\partial}{\partial L} + \beta \frac{\partial}{\partial a_s} \right) D_V^{(1+0)} = 0
+  \end{equation}
+  \tiny
+  \begin{equation}
+    \begin{split}
+      c_{0,0} &= -\frac{5}{3}, \quad c_{0,1} = 1 \\
+      c_{2,1} &= \frac{365}{24} - 11 \zeta_3 - \left( \frac{11}{12} - \frac{2}{3}\zeta_3 \right) N_f, \\
+      c_{3,1} &= \frac{87029}{288} - \frac{1103}{4} \zeta_3 + \frac{275}{6}\zeta_5, \\
+      &- \left( \frac{7847}{216} - \frac{262}{9} \zeta_3 + \frac{25}{9} \zeta_5 \right) N_f + \left( \frac{151}{162} - \frac{19}{27}\zeta_3\right)N_f^2, \\
+      c_{4,1} &= \frac{78631453}{20736} - \frac{1704247}{432}\zeta_3 +
+      \frac{4185}{8}\zeta_3^2 + \frac{34165}{96}\zeta_5 - \frac{1995}{16}\zeta_7, \\
+      c_{5,1} &= 283
+    \end{split}
+  \end{equation}
+\end{frame}
+\begin{frame}
+  \frametitle{QCD Sum Rules}
+
+  \vspace{0.2cm}
+  
+  \centering
+  \includegraphics[width=0.8\textwidth]{./images/rTauCauchysTheorem.eps}
+  \small
+  \begin{equation*}
+    \text{with} \quad s \equiv -q^2
+  \end{equation*}
+  \pause
+  \makebox[\linewidth]{\rule{\textwidth}{0.5pt}}
+  \normalsize
+  \begin{equation}
+    \int_0^{s_0} \omega(s) \rho(s) = \frac{-1}{2 \pi i} \oint_{\abs{s}=s_0} \omega(s) \Pi_{OPE}(s) \dif s
+  \end{equation}
 \end{frame}
 \begin{frame}
   \begin{equation}
-    D_V^{(1+0} = \frac{N_c}{12 \pi^2} \sum_{n=0}^\infty a_\mu^n \sum_{k=1}^{n+1} k\, c_{n,k} L^{k-1}
-    \quad \text{with} \quad L \equiv \log \frac{-s}{\mu^2}
+    R_{\tau,V/A} = \frac{N_c}{2} \left( 1 + \delta_{pt} + \delta_{npt} \right)
   \end{equation}
-  \begin{align}
-    c_{0,0} &= -\frac{5}{3}, \quad c_{0,1} = 1 \\
-    c_{2,1} &= \frac{365}{24} - 11 \zeta_3 - \left( \frac{11}{12} - \frac{2}{3}\zeta_3 \right) N_f, \\
-    c_{3,1} &= \frac{87029}{288} - \frac{1103}{4} \zeta_3 + \frac{275}{6}\zeta_5, \\
-            &- \left( \frac{7847}{216} - \frac{262}{9} \zeta_3 + \frac{25}{9} \zeta_5 \right) N_f + \left( \frac{151}{162} - \frac{19}{27}\zeta_3\right)N_f^2, \\
-    c_{4,1} &= \frac{78631453}{20736} - \frac{1704247}{432}\zeta_3 +
-              \frac{4185}{8}\zeta_3^2 + \frac{34165}{96}\zeta_5 - \frac{1995}{16}\zeta_7, \\
-    c_{5,1} &= 283
-  \end{align}
 \end{frame}
+\subsection{Perturbative Contributions}
 \begin{frame}
   \frametitle{FOPT}
   \begin{equation}
@@ -284,7 +360,7 @@
   \end{equation}
 \end{frame}
 
-\section{Duality Violations}
+\subsection{Duality Violations}
 \begin{frame}
   \frametitle{Duality Violations}
   \begin{equation}
@@ -298,7 +374,7 @@
   \end{equation}
 \end{frame}
 
-\section{Weights}
+\subsection{Weights}
 \begin{frame}
   \frametitle{Weights}
   \begin{equation}
@@ -310,7 +386,6 @@
   \end{equation}
 \end{frame}
 
-\subsection{Pinched Weights}
 \begin{frame}
   \frametitle{Pinched Weights}
   \begin{equation}
@@ -319,7 +394,6 @@
   \includegraphics[width=\textwidth]{./images/monomialWeightGraphs.eps}
 \end{frame}
 
-\subsection{Weighting OPE Contributions}
 \begin{frame}
   \frametitle{Weighting OPE Contributions}
   \begin{equation}
