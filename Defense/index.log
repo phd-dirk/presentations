@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.5.5)  2 JUL 2019 19:47
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.5.5)  3 JUL 2019 10:02
  restricted system commands enabled.
  file:line:error style messages enabled.
 **index.tex
@@ -49,7 +49,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.059 seconds
+luaotfload | main : initialization completed in 0.062 seconds
 (/usr/local/texlive/2019/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/local/texlive/2019/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
@@ -1236,11 +1236,11 @@ LaTeX Info: Redefining \sfm2 on input line 21.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 44.
+(hyperref)                removing `math shift' on input line 50.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\tau' on input line 44.
+(hyperref)                removing `\tau' on input line 50.
 
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -1253,22 +1253,22 @@ File: english.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 (./index.aux)
 \openout1 = index.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1336,7 +1336,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box69
-Package hyperref Info: Link coloring OFF on input line 44.
+Package hyperref Info: Link coloring OFF on input line 50.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1346,67 +1346,67 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count374
 )
-LaTeX Info: Redefining \ref on input line 44.
-LaTeX Info: Redefining \pageref on input line 44.
-LaTeX Info: Redefining \nameref on input line 44.
+LaTeX Info: Redefining \ref on input line 50.
+LaTeX Info: Redefining \pageref on input line 50.
+LaTeX Info: Redefining \nameref on input line 50.
 
 (./index.out) (./index.out)
 \@outlinefile=\write6
 
 \openout6 = index.out
 LaTeX Font Info:    Encoding `TU' has changed to `OT1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 44.
+(Font)              `operators' in the math version `normal' on input line 50.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmss/m/n --> OT1/cmss/m/n on input line 44.
+(Font)                  TU/lmss/m/n --> OT1/cmss/m/n on input line 50.
 LaTeX Font Info:    Encoding `TU' has changed to `OT1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 44.
+(Font)              `operators' in the math version `bold' on input line 50.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmss/b/n --> OT1/cmss/bx/n on input line 44.
+(Font)                  TU/lmss/b/n --> OT1/cmss/bx/n on input line 50.
 \symnumbers=\mathgroup12
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 44.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 50.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 44.
+(Font)              `pureletters' in the math version `normal' on input line 50.
 
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/mathkerncmss/m/sl --> TU/lmss/m/it on input line 44.
+(Font)                  OT1/mathkerncmss/m/sl --> TU/lmss/m/it on input line 50.
 
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 44.
+(Font)              `pureletters' in the math version `bold' on input line 50.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/bx/sl --> TU/lmss/m/it on input line 44
+(Font)                  OT1/mathkerncmss/bx/sl --> TU/lmss/m/it on input line 50
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/pplj/m/n on input line 44.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 44.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 44.
+(Font)                  OT1/cmss/m/n --> TU/pplj/m/n on input line 50.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 50.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  TU/lmss/m/n --> TU/lmss/m/n on input line 44.
+(Font)                  TU/lmss/m/n --> TU/lmss/m/n on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  TU/lmss/b/n --> TU/lmss/m/n on input line 44.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 44.
+(Font)                  TU/lmss/b/n --> TU/lmss/m/n on input line 50.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  TU/pplj/m/it --> TU/lmss/m/it on input line 44.
+(Font)                  TU/pplj/m/it --> TU/lmss/m/it on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  TU/pplj/b/it --> TU/lmss/m/it on input line 44.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 44.
+(Font)                  TU/pplj/b/it --> TU/lmss/m/it on input line 50.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  TU/lmtt/m/n --> TU/lmtt/m/n on input line 44.
+(Font)                  TU/lmtt/m/n --> TU/lmtt/m/n on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  TU/lmtt/b/n --> TU/lmtt/m/n on input line 44.
+(Font)                  TU/lmtt/b/n --> TU/lmtt/m/n on input line 50.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 44.
+(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 50.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 44.
+(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/pplj/bx/n on input line 44.
+(Font)                  OT1/cmss/bx/n --> TU/pplj/bx/n on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  TU/lmss/bx/n --> TU/lmss/bx/n on input line 44.
+(Font)                  TU/lmss/bx/n --> TU/lmss/bx/n on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 44.
+(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 44.
+(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 50.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  TU/lmtt/m/n --> TU/lmtt/bx/n on input line 44.
+(Font)                  TU/lmtt/m/n --> TU/lmtt/bx/n on input line 50.
 \symboldpureletters=\mathgroup13
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/translator/translator-basic-dicti
@@ -1442,133 +1442,133 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'index.bbl' found.
  (./index.bbl)
-Package biblatex Info: Reference section=0 on input line 44.
-Package biblatex Info: Reference segment=0 on input line 44.
+Package biblatex Info: Reference section=0 on input line 50.
+Package biblatex Info: Reference segment=0 on input line 50.
 
 
 Package tikz-feynman Warning: The preamble requested version 1.0.0, but the syst
-em version is 1.1.0. This may change some diagrams. on input line 44.
+em version is 1.1.0. This may change some diagrams. on input line 50.
 
 (./index.nav)
-LaTeX Font Info:    Try loading font information for U+zeur on input line 44.
+LaTeX Font Info:    Try loading font information for U+zeur on input line 50.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/eulervm/uzeur.fd
 File: uzeur.fd 2005/01/11 v4.0 (WaS)
 )
 LaTeX Font Info:    Font shape `U/zeur/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 44.
+(Font)              scaled to size 5.69998pt on input line 50.
 LaTeX Font Info:    Font shape `U/zeur/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 44.
-LaTeX Font Info:    Try loading font information for U+zeus on input line 44.
+(Font)              scaled to size 4.74998pt on input line 50.
+LaTeX Font Info:    Try loading font information for U+zeus on input line 50.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/eulervm/uzeus.fd
 File: uzeus.fd 2005/01/11 v4.0 (WaS)
 )
 LaTeX Font Info:    Font shape `U/zeus/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 44.
+(Font)              scaled to size 5.69998pt on input line 50.
 LaTeX Font Info:    Font shape `U/zeus/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 44.
-LaTeX Font Info:    Try loading font information for U+zeuex on input line 44.
+(Font)              scaled to size 4.74998pt on input line 50.
+LaTeX Font Info:    Try loading font information for U+zeuex on input line 50.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/eulervm/uzeuex.fd
 File: uzeuex.fd 2005/01/11 v4.0 (WaS)
 )
 LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 44.
+(Font)              scaled to size 5.69998pt on input line 50.
 LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 44.
+(Font)              scaled to size 4.74998pt on input line 50.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 44.
+(Font)              scaled to size 5.69998pt on input line 50.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 44.
+(Font)              scaled to size 4.74998pt on input line 50.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 44.
+(Font)              scaled to size 5.69998pt on input line 50.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 44.
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 44.
+(Font)              scaled to size 4.74998pt on input line 50.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 50.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 44.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 50.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 44.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 50.
 LaTeX Font Info:    Font shape `TU/lmss/b/n' in size <6> not available
-(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 44.
+(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 50.
 LaTeX Font Info:    Font shape `TU/lmss/b/n' in size <5> not available
-(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 44.
+(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 50.
 LaTeX Font Info:    Font shape `U/zeur/b/n' will be
-(Font)              scaled to size 5.69998pt on input line 44.
+(Font)              scaled to size 5.69998pt on input line 50.
 LaTeX Font Info:    Font shape `U/zeur/b/n' will be
-(Font)              scaled to size 4.74998pt on input line 44.
+(Font)              scaled to size 4.74998pt on input line 50.
 LaTeX Font Info:    Font shape `U/zeus/b/n' will be
-(Font)              scaled to size 5.69998pt on input line 44.
+(Font)              scaled to size 5.69998pt on input line 50.
 LaTeX Font Info:    Font shape `U/zeus/b/n' will be
-(Font)              scaled to size 4.74998pt on input line 44.
+(Font)              scaled to size 4.74998pt on input line 50.
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <6> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 44.
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 50.
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <5> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 44.
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 50.
 LaTeX Font Info:    Font shape `U/zeur/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 45.
+(Font)              scaled to size 13.67995pt on input line 51.
 LaTeX Font Info:    Font shape `U/zeur/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 45.
+(Font)              scaled to size 9.49997pt on input line 51.
 LaTeX Font Info:    Font shape `U/zeur/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 45.
+(Font)              scaled to size 7.59998pt on input line 51.
 LaTeX Font Info:    Font shape `U/zeus/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 45.
+(Font)              scaled to size 13.67995pt on input line 51.
 LaTeX Font Info:    Font shape `U/zeus/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 45.
+(Font)              scaled to size 9.49997pt on input line 51.
 LaTeX Font Info:    Font shape `U/zeus/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 45.
+(Font)              scaled to size 7.59998pt on input line 51.
 LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 45.
+(Font)              scaled to size 13.67995pt on input line 51.
 LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 45.
+(Font)              scaled to size 9.49997pt on input line 51.
 LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 45.
+(Font)              scaled to size 7.59998pt on input line 51.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 45.
+(Font)              scaled to size 13.67995pt on input line 51.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 45.
+(Font)              scaled to size 9.49997pt on input line 51.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 45.
+(Font)              scaled to size 7.59998pt on input line 51.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 45.
+(Font)              scaled to size 13.67995pt on input line 51.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 45.
+(Font)              scaled to size 9.49997pt on input line 51.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 45.
+(Font)              scaled to size 7.59998pt on input line 51.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 45.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 51.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 45.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 51.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 45.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 51.
 LaTeX Font Info:    Font shape `TU/lmss/b/n' in size <14.4> not available
-(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 45.
+(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 51.
 LaTeX Font Info:    Font shape `TU/lmss/b/n' in size <10> not available
-(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 45.
+(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 51.
 LaTeX Font Info:    Font shape `TU/lmss/b/n' in size <8> not available
-(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 45.
+(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 51.
 LaTeX Font Info:    Font shape `U/zeur/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 45.
+(Font)              scaled to size 13.67995pt on input line 51.
 LaTeX Font Info:    Font shape `U/zeur/b/n' will be
-(Font)              scaled to size 9.49997pt on input line 45.
+(Font)              scaled to size 9.49997pt on input line 51.
 LaTeX Font Info:    Font shape `U/zeur/b/n' will be
-(Font)              scaled to size 7.59998pt on input line 45.
+(Font)              scaled to size 7.59998pt on input line 51.
 LaTeX Font Info:    Font shape `U/zeus/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 45.
+(Font)              scaled to size 13.67995pt on input line 51.
 LaTeX Font Info:    Font shape `U/zeus/b/n' will be
-(Font)              scaled to size 9.49997pt on input line 45.
+(Font)              scaled to size 9.49997pt on input line 51.
 LaTeX Font Info:    Font shape `U/zeus/b/n' will be
-(Font)              scaled to size 7.59998pt on input line 45.
+(Font)              scaled to size 7.59998pt on input line 51.
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <14.4> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 45.
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 51.
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <10> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 45.
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 51.
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <8> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 45.
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 51.
 Package epstopdf Info: Source file: <./images/logo_UAB.eps>
 (epstopdf)                    date: 2019-06-07 18:06:07
 (epstopdf)                    size: 1280364 bytes
@@ -1577,13 +1577,13 @@ Package epstopdf Info: Source file: <./images/logo_UAB.eps>
 (epstopdf)                    size: 20375 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/logo_UAB-eps-conve
 rted-to.pdf ./images/logo_UAB.eps>
-(epstopdf)             \includegraphics on input line 45.
+(epstopdf)             \includegraphics on input line 51.
 Package epstopdf Info: Output file is already uptodate.
 <./images/logo_UAB-eps-converted-to.pdf, id=84, 705.63625pt x 313.17pt>
 File: ./images/logo_UAB-eps-converted-to.pdf Graphic file (type pdf)
 <use ./images/logo_UAB-eps-converted-to.pdf>
 Package luatex.def Info: ./images/logo_UAB-eps-converted-to.pdf  used on input l
-ine 45.
+ine 51.
 (luatex.def)             Requested size: 96.16121pt x 42.67912pt.
 Package epstopdf Info: Source file: <./images/logo_IFAE.eps>
 (epstopdf)                    date: 2019-06-07 18:04:51
@@ -1593,73 +1593,73 @@ Package epstopdf Info: Source file: <./images/logo_IFAE.eps>
 (epstopdf)                    size: 23384 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/logo_IFAE-eps-conv
 erted-to.pdf ./images/logo_IFAE.eps>
-(epstopdf)             \includegraphics on input line 45.
+(epstopdf)             \includegraphics on input line 51.
 Package epstopdf Info: Output file is already uptodate.
 <./images/logo_IFAE-eps-converted-to.pdf, id=85, 401.5pt x 192.72pt>
 File: ./images/logo_IFAE-eps-converted-to.pdf Graphic file (type pdf)
 <use ./images/logo_IFAE-eps-converted-to.pdf>
 Package luatex.def Info: ./images/logo_IFAE-eps-converted-to.pdf  used on input 
-line 45.
+line 51.
 (luatex.def)             Requested size: 88.91228pt x 42.67912pt.
  [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<./images/
 logo_UAB-eps-converted-to.pdf><./images/logo_IFAE-eps-converted-to.pdf>]
 LaTeX Font Info:    Font shape `U/zeur/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 80.
+(Font)              scaled to size 10.40245pt on input line 86.
 LaTeX Font Info:    Font shape `U/zeus/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 80.
+(Font)              scaled to size 10.40245pt on input line 86.
 LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 80.
+(Font)              scaled to size 10.40245pt on input line 86.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 80.
+(Font)              scaled to size 10.40245pt on input line 86.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 80.
+(Font)              scaled to size 10.40245pt on input line 86.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 80.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 86.
 LaTeX Font Info:    Font shape `TU/lmss/b/n' in size <10.95> not available
-(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 80.
+(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 86.
 LaTeX Font Info:    Font shape `U/zeur/b/n' will be
-(Font)              scaled to size 10.40245pt on input line 80.
+(Font)              scaled to size 10.40245pt on input line 86.
 LaTeX Font Info:    Font shape `U/zeus/b/n' will be
-(Font)              scaled to size 10.40245pt on input line 80.
+(Font)              scaled to size 10.40245pt on input line 86.
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <10.95> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 80.
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 86.
 
 
-./index.tex:80: LaTeX Error: \mathcal allowed only in math mode.
+./index.tex:86: LaTeX Error: \mathcal allowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.80 \end{frame}
+l.86 \end{frame}
               
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./index.tex:80: Missing $ inserted.
+./index.tex:86: Missing $ inserted.
 <inserted text> 
 $
-l.80 \end{frame}
+l.86 \end{frame}
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./index.tex:80: You can't use `\eqno' in math mode.
+./index.tex:86: You can't use `\eqno' in math mode.
 \endmathdisplay@a ...\df@tag \@empty \else \veqno 
                                                   \alt@tag \df@tag \fi \ifx ...
-l.80 \end{frame}
+l.86 \end{frame}
               
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn''t ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-./index.tex:80: Missing $ inserted.
+./index.tex:86: Missing $ inserted.
 <inserted text> 
 $
-l.80 \end{frame}
+l.86 \end{frame}
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1668,25 +1668,25 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 LaTeX Font Info:    Font shape `U/zeur/m/n' will be
-(Font)              scaled to size 7.21997pt on input line 80.
+(Font)              scaled to size 7.21997pt on input line 86.
 LaTeX Font Info:    Font shape `U/zeus/m/n' will be
-(Font)              scaled to size 7.21997pt on input line 80.
+(Font)              scaled to size 7.21997pt on input line 86.
 LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
-(Font)              scaled to size 7.21997pt on input line 80.
+(Font)              scaled to size 7.21997pt on input line 86.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.21997pt on input line 80.
+(Font)              scaled to size 7.21997pt on input line 86.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.21997pt on input line 80.
+(Font)              scaled to size 7.21997pt on input line 86.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7.6> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 80.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 86.
 LaTeX Font Info:    Font shape `TU/lmss/b/n' in size <7.6> not available
-(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 80.
+(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 86.
 LaTeX Font Info:    Font shape `U/zeur/b/n' will be
-(Font)              scaled to size 7.21997pt on input line 80.
+(Font)              scaled to size 7.21997pt on input line 86.
 LaTeX Font Info:    Font shape `U/zeus/b/n' will be
-(Font)              scaled to size 7.21997pt on input line 80.
+(Font)              scaled to size 7.21997pt on input line 86.
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <7.6> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 80.
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 86.
 Package epstopdf Info: Source file: <./images/runningOfAs.eps>
 (epstopdf)                    date: 2019-07-01 16:12:15
 (epstopdf)                    size: 29527409 bytes
@@ -1695,13 +1695,13 @@ Package epstopdf Info: Source file: <./images/runningOfAs.eps>
 (epstopdf)                    size: 1010409 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/runningOfAs-eps-co
 nverted-to.pdf ./images/runningOfAs.eps>
-(epstopdf)             \includegraphics on input line 80.
+(epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
 <./images/runningOfAs-eps-converted-to.pdf, id=110, 749.80125pt x 758.835pt>
 File: ./images/runningOfAs-eps-converted-to.pdf Graphic file (type pdf)
 <use ./images/runningOfAs-eps-converted-to.pdf>
 Package luatex.def Info: ./images/runningOfAs-eps-converted-to.pdf  used on inpu
-t line 80.
+t line 86.
 (luatex.def)             Requested size: 171.14767pt x 173.20839pt.
 [2
 
@@ -1717,42 +1717,42 @@ o.pdf>
 (epstopdf)                    size: 136524 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/quarkHadronDuality
 -eps-converted-to.pdf ./images/quarkHadronDuality.eps>
-(epstopdf)             \includegraphics on input line 102.
+(epstopdf)             \includegraphics on input line 108.
 Package epstopdf Info: Output file is already uptodate.
 <./images/quarkHadronDuality-eps-converted-to.pdf, id=142, 788.9475pt x 815.045p
 t>
 File: ./images/quarkHadronDuality-eps-converted-to.pdf Graphic file (type pdf)
 <use ./images/quarkHadronDuality-eps-converted-to.pdf>
 Package luatex.def Info: ./images/quarkHadronDuality-eps-converted-to.pdf  used 
-on input line 102.
+on input line 108.
 (luatex.def)             Requested size: 171.14767pt x 176.8107pt.
  [4
 
 <./images/quarkHadronDuality-eps-converted-to.pdf>] (./index.toc) [5
 
 ]
-./index.tex:132: Missing $ inserted.
+./index.tex:138: Missing $ inserted.
 <inserted text> 
 $
-l.132 \end{frame}
+l.138 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./index.tex:132: You can't use `\eqno' in math mode.
+./index.tex:138: You can't use `\eqno' in math mode.
 \endmathdisplay@a ...\df@tag \@empty \else \veqno 
                                                   \alt@tag \df@tag \fi \ifx ...
-l.132 \end{frame}
+l.138 \end{frame}
                
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn''t ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-./index.tex:132: Missing $ inserted.
+./index.tex:138: Missing $ inserted.
 <inserted text> 
 $
-l.132 \end{frame}
+l.138 \end{frame}
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1772,14 +1772,14 @@ o.pdf>
 (epstopdf)                    size: 36514 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/rTauCauchysTheorem
 -eps-converted-to.pdf ./images/rTauCauchysTheorem.eps>
-(epstopdf)             \includegraphics on input line 141.
+(epstopdf)             \includegraphics on input line 147.
 Package epstopdf Info: Output file is already uptodate.
-<./images/rTauCauchysTheorem-eps-converted-to.pdf, id=206, 914.41624pt x 451.687
+<./images/rTauCauchysTheorem-eps-converted-to.pdf, id=202, 914.41624pt x 451.687
 5pt>
 File: ./images/rTauCauchysTheorem-eps-converted-to.pdf Graphic file (type pdf)
 <use ./images/rTauCauchysTheorem-eps-converted-to.pdf>
 Package luatex.def Info: ./images/rTauCauchysTheorem-eps-converted-to.pdf  used 
-on input line 141.
+on input line 147.
 (luatex.def)             Requested size: 342.29536pt x 169.07913pt.
  [7
 
@@ -1799,10 +1799,10 @@ on input line 141.
 ] [14
 
 ]
-./index.tex:238: Undefined control sequence.
+./index.tex:244: Undefined control sequence.
 <argument> (p-u)^{1+\tilde 
                 \gamma }
-l.238 \end{frame}
+l.244 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1810,10 +1810,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./index.tex:238: Undefined control sequence.
+./index.tex:244: Undefined control sequence.
 <argument> ...}{(p-u)^{1+\tilde \gamma }} \left [ 1 + \tilde 
                                                   b_1(p-u) + \tilde b_2(p-u)...
-l.238 \end{frame}
+l.244 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1821,10 +1821,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./index.tex:238: Undefined control sequence.
+./index.tex:244: Undefined control sequence.
 <argument> ...\gamma }} \left [ 1 + \tilde b_1(p-u) + \tilde 
                                                   b_2(p-u)^2 + \dots \right ...
-l.238 \end{frame}
+l.244 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1832,10 +1832,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./index.tex:238: Undefined control sequence.
+./index.tex:244: Undefined control sequence.
 <argument> (p+u)^{1+\bar 
               \gamma }
-l.238 \end{frame}
+l.244 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1843,10 +1843,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./index.tex:238: Undefined control sequence.
+./index.tex:244: Undefined control sequence.
 <argument> ...p^{UV}}{(p+u)^{1+\bar \gamma }}\left [1 + \bar 
                                                   b_1(p+u) + \bar b_2(p+u)^2...
-l.238 \end{frame}
+l.244 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1854,10 +1854,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./index.tex:238: Undefined control sequence.
+./index.tex:244: Undefined control sequence.
 <argument> ...+\bar \gamma }}\left [1 + \bar b_1(p+u) + \bar 
                                                   b_2(p+u)^2 \right ], 
-l.238 \end{frame}
+l.244 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1865,10 +1865,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./index.tex:238: Undefined control sequence.
+./index.tex:244: Undefined control sequence.
 <argument> (p-u)^{1+\tilde 
                 \gamma }
-l.238 \end{frame}
+l.244 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1876,10 +1876,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./index.tex:238: Undefined control sequence.
+./index.tex:244: Undefined control sequence.
 <argument> ...}{(p-u)^{1+\tilde \gamma }} \left [ 1 + \tilde 
                                                   b_1(p-u) + \tilde b_2(p-u)...
-l.238 \end{frame}
+l.244 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1887,10 +1887,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./index.tex:238: Undefined control sequence.
+./index.tex:244: Undefined control sequence.
 <argument> ...\gamma }} \left [ 1 + \tilde b_1(p-u) + \tilde 
                                                   b_2(p-u)^2 + \dots \right ...
-l.238 \end{frame}
+l.244 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1898,10 +1898,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./index.tex:238: Undefined control sequence.
+./index.tex:244: Undefined control sequence.
 <argument> (p+u)^{1+\bar 
               \gamma }
-l.238 \end{frame}
+l.244 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1909,10 +1909,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./index.tex:238: Undefined control sequence.
+./index.tex:244: Undefined control sequence.
 <argument> ...p^{UV}}{(p+u)^{1+\bar \gamma }}\left [1 + \bar 
                                                   b_1(p+u) + \bar b_2(p+u)^2...
-l.238 \end{frame}
+l.244 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1920,10 +1920,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./index.tex:238: Undefined control sequence.
+./index.tex:244: Undefined control sequence.
 <argument> ...+\bar \gamma }}\left [1 + \bar b_1(p+u) + \bar 
                                                   b_2(p+u)^2 \right ], 
-l.238 \end{frame}
+l.244 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1936,10 +1936,10 @@ and I'll forget about whatever was undefined.
 ] [16
 
 ]
-./index.tex:269: Undefined control sequence.
+./index.tex:275: Undefined control sequence.
 <argument> ...^{(1+0)}(s/\mu ^2) + \sum _k m_k \langle \anti 
                                                   {q}_k q_k \rangle r_n^{(1+...
-l.269 \end{frame}
+l.275 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1947,10 +1947,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./index.tex:269: Undefined control sequence.
+./index.tex:275: Undefined control sequence.
 <argument> ...n^{(1+0)}(s/\mu ^2) \\ &\,+ 2\langle m_i \anti 
                                                   {q}_i q_i + m_j \anti {q}_...
-l.269 \end{frame}
+l.275 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1958,10 +1958,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./index.tex:269: Undefined control sequence.
+./index.tex:275: Undefined control sequence.
 <argument> ... &\,+ 2\langle m_i \anti {q}_i q_i + m_j \anti 
                                                   {q}_j q_j \rangle q_n^{(1+...
-l.269 \end{frame}
+l.275 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1969,10 +1969,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./index.tex:269: Undefined control sequence.
+./index.tex:275: Undefined control sequence.
 <argument> ... (s/\mu ^2) \pm \frac {8}{3} \langle m_j \anti 
                                                   {q}_i q_i + m_i \anti {q}_...
-l.269 \end{frame}
+l.275 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1980,10 +1980,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./index.tex:269: Undefined control sequence.
+./index.tex:275: Undefined control sequence.
 <argument> ...{8}{3} \langle m_j \anti {q}_i q_i + m_i \anti 
                                                   {q}_j q_j \rangle t_n^{(1+...
-l.269 \end{frame}
+l.275 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1991,10 +1991,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./index.tex:269: Undefined control sequence.
+./index.tex:275: Undefined control sequence.
 <argument> ...^{(1+0)}(s/\mu ^2) + \sum _k m_k \langle \anti 
                                                   {q}_k q_k \rangle r_n^{(1+...
-l.269 \end{frame}
+l.275 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2002,10 +2002,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./index.tex:269: Undefined control sequence.
+./index.tex:275: Undefined control sequence.
 <argument> ...n^{(1+0)}(s/\mu ^2) \\ &\,+ 2\langle m_i \anti 
                                                   {q}_i q_i + m_j \anti {q}_...
-l.269 \end{frame}
+l.275 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2013,10 +2013,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./index.tex:269: Undefined control sequence.
+./index.tex:275: Undefined control sequence.
 <argument> ... &\,+ 2\langle m_i \anti {q}_i q_i + m_j \anti 
                                                   {q}_j q_j \rangle q_n^{(1+...
-l.269 \end{frame}
+l.275 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2024,10 +2024,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./index.tex:269: Undefined control sequence.
+./index.tex:275: Undefined control sequence.
 <argument> ... (s/\mu ^2) \pm \frac {8}{3} \langle m_j \anti 
                                                   {q}_i q_i + m_i \anti {q}_...
-l.269 \end{frame}
+l.275 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2035,10 +2035,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./index.tex:269: Undefined control sequence.
+./index.tex:275: Undefined control sequence.
 <argument> ...{8}{3} \langle m_j \anti {q}_i q_i + m_i \anti 
                                                   {q}_j q_j \rangle t_n^{(1+...
-l.269 \end{frame}
+l.275 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2047,7 +2047,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (56.18007pt too wide) detected at line 269
+Overfull \hbox (56.18007pt too wide) detected at line 275
 []
  []
 
@@ -2069,18 +2069,18 @@ Package epstopdf Info: Source file: <./images/monomialWeightGraphs.eps>
 (epstopdf)                    size: 14169 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/monomialWeightGrap
 hs-eps-converted-to.pdf ./images/monomialWeightGraphs.eps>
-(epstopdf)             \includegraphics on input line 314.
+(epstopdf)             \includegraphics on input line 320.
 Package epstopdf Info: Output file is already uptodate.
-<./images/monomialWeightGraphs-eps-converted-to.pdf, id=319, 867.24pt x 505.89pt
+<./images/monomialWeightGraphs-eps-converted-to.pdf, id=315, 867.24pt x 505.89pt
 >
 File: ./images/monomialWeightGraphs-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/monomialWeightGraphs-eps-converted-to.pdf>
 Package luatex.def Info: ./images/monomialWeightGraphs-eps-converted-to.pdf  use
-d on input line 314.
+d on input line 320.
 (luatex.def)             Requested size: 342.29536pt x 199.67383pt.
 
-Overfull \vbox (16.29166pt too high) detected at line 314
+Overfull \vbox (16.29166pt too high) detected at line 320
  []
 
 [21
@@ -2088,24 +2088,24 @@ Overfull \vbox (16.29166pt too high) detected at line 314
 <./images/monomialWeightGraphs-eps-converted-to.pdf>]
 
 LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 342.
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 348.
 
 [22
 
 ]
-./index.tex:357: Missing number, treated as zero.
+./index.tex:363: Missing number, treated as zero.
 <to be read again> 
 }
-l.357 \end{frame}
+l.363 \end{frame}
                
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./index.tex:357: Illegal unit of measure (pt inserted).
+./index.tex:363: Illegal unit of measure (pt inserted).
 <to be read again> 
 }
-l.357 \end{frame}
+l.363 \end{frame}
                
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -2123,13 +2123,13 @@ df>
 (epstopdf)                    size: 18091 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/specFuncAleph_V-ep
 s-converted-to.pdf ./images/specFuncAleph_V.eps>
-(epstopdf)             \includegraphics on input line 357.
+(epstopdf)             \includegraphics on input line 363.
 Package epstopdf Info: Output file is already uptodate.
-<./images/specFuncAleph_V-eps-converted-to.pdf, id=368, 1011.78pt x 722.7pt>
+<./images/specFuncAleph_V-eps-converted-to.pdf, id=364, 1011.78pt x 722.7pt>
 File: ./images/specFuncAleph_V-eps-converted-to.pdf Graphic file (type pdf)
 <use ./images/specFuncAleph_V-eps-converted-to.pdf>
 Package luatex.def Info: ./images/specFuncAleph_V-eps-converted-to.pdf  used on 
-input line 357.
+input line 363.
 (luatex.def)             Requested size: 171.14767pt x 122.23982pt.
 Package epstopdf Info: Source file: <./images/specFuncAleph_A.eps>
 (epstopdf)                    date: 2019-06-17 14:42:41
@@ -2140,13 +2140,13 @@ df>
 (epstopdf)                    size: 18610 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/specFuncAleph_A-ep
 s-converted-to.pdf ./images/specFuncAleph_A.eps>
-(epstopdf)             \includegraphics on input line 357.
+(epstopdf)             \includegraphics on input line 363.
 Package epstopdf Info: Output file is already uptodate.
-<./images/specFuncAleph_A-eps-converted-to.pdf, id=369, 1011.78pt x 722.7pt>
+<./images/specFuncAleph_A-eps-converted-to.pdf, id=365, 1011.78pt x 722.7pt>
 File: ./images/specFuncAleph_A-eps-converted-to.pdf Graphic file (type pdf)
 <use ./images/specFuncAleph_A-eps-converted-to.pdf>
 Package luatex.def Info: ./images/specFuncAleph_A-eps-converted-to.pdf  used on 
-input line 357.
+input line 363.
 (luatex.def)             Requested size: 171.14767pt x 122.23982pt.
 [23
 
@@ -2161,13 +2161,13 @@ Package epstopdf Info: Source file: <./images/specFuncAleph_VpA.eps>
 (epstopdf)                    size: 17331 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/specFuncAleph_VpA-
 eps-converted-to.pdf ./images/specFuncAleph_VpA.eps>
-(epstopdf)             \includegraphics on input line 360.
+(epstopdf)             \includegraphics on input line 366.
 Package epstopdf Info: Output file is already uptodate.
-<./images/specFuncAleph_VpA-eps-converted-to.pdf, id=440, 1011.78pt x 722.7pt>
+<./images/specFuncAleph_VpA-eps-converted-to.pdf, id=436, 1011.78pt x 722.7pt>
 File: ./images/specFuncAleph_VpA-eps-converted-to.pdf Graphic file (type pdf)
 <use ./images/specFuncAleph_VpA-eps-converted-to.pdf>
 Package luatex.def Info: ./images/specFuncAleph_VpA-eps-converted-to.pdf  used o
-n input line 360.
+n input line 366.
 (luatex.def)             Requested size: 342.29536pt x 244.50172pt.
  [24
 
@@ -2179,31 +2179,31 @@ n input line 360.
 ]
 
 LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 404.
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 410.
 
 
-Overfull \hbox (1.35947pt too wide) in paragraph at lines 404--404
+Overfull \hbox (1.35947pt too wide) in paragraph at lines 410--410
 [][] 
  []
 
 
-Overfull \vbox (0.65002pt too high) detected at line 404
+Overfull \vbox (0.65002pt too high) detected at line 410
  []
 
 
-Overfull \hbox (1.35947pt too wide) in paragraph at lines 404--404
+Overfull \hbox (1.35947pt too wide) in paragraph at lines 410--410
 [][] 
  []
 
 
-Overfull \hbox (2.03796pt too wide) in paragraph at lines 404--404
+Overfull \hbox (2.03796pt too wide) in paragraph at lines 410--410
 [][] 
  []
 
-./index.tex:404: Undefined control sequence.
+./index.tex:410: Undefined control sequence.
 <recently read> \bototmline 
             
-l.404 \end{frame}
+l.410 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2216,280 +2216,280 @@ and I'll forget about whatever was undefined.
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 406.
+(hyperref)                removing `math shift' on input line 412.
 
-./index.tex:439: Package array Error:  Illegal pream-token (Y): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.439 \end{frame}
-               
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./index.tex:439: Package array Error:  Illegal pream-token (Y): `c' used.
+./index.tex:445: Package array Error:  Illegal pream-token (Y): `c' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.439 \end{frame}
+l.445 \end{frame}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./index.tex:439: Package array Error:  Illegal pream-token (Y): `c' used.
+./index.tex:445: Package array Error:  Illegal pream-token (Y): `c' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.439 \end{frame}
+l.445 \end{frame}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./index.tex:439: Package array Error:  Illegal pream-token (Y): `c' used.
+./index.tex:445: Package array Error:  Illegal pream-token (Y): `c' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.439 \end{frame}
+l.445 \end{frame}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-
-./index.tex:439: Package array Error:  Illegal pream-token (Y): `c' used.
+./index.tex:445: Package array Error:  Illegal pream-token (Y): `c' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.439 \end{frame}
+l.445 \end{frame}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./index.tex:439: Package array Error:  Illegal pream-token (Y): `c' used.
+./index.tex:445: Package array Error:  Illegal pream-token (Y): `c' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.439 \end{frame}
+l.445 \end{frame}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./index.tex:439: Package array Error:  Illegal pream-token (Y): `c' used.
+./index.tex:445: Package array Error:  Illegal pream-token (Y): `c' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.439 \end{frame}
+l.445 \end{frame}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./index.tex:439: Package array Error:  Illegal pream-token (Y): `c' used.
+./index.tex:445: Package array Error:  Illegal pream-token (Y): `c' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.439 \end{frame}
+l.445 \end{frame}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) in alignment at lines 439--439
+./index.tex:445: Package array Error:  Illegal pream-token (Y): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.445 \end{frame}
+               
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in alignment at lines 445--445
 [][][][][][][]
  []
 
 [28
 
 ]
-./index.tex:458: Package array Error:  Illegal pream-token (Y): `c' used.
+./index.tex:464: Package array Error:  Illegal pream-token (Y): `c' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.458 \end{frame}
+l.464 \end{frame}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./index.tex:458: Package array Error:  Illegal pream-token (Y): `c' used.
+./index.tex:464: Package array Error:  Illegal pream-token (Y): `c' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.458 \end{frame}
+l.464 \end{frame}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./index.tex:458: Package array Error:  Illegal pream-token (Y): `c' used.
+./index.tex:464: Package array Error:  Illegal pream-token (Y): `c' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.458 \end{frame}
+l.464 \end{frame}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./index.tex:458: Package array Error:  Illegal pream-token (Y): `c' used.
+./index.tex:464: Package array Error:  Illegal pream-token (Y): `c' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.458 \end{frame}
+l.464 \end{frame}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./index.tex:458: Package array Error:  Illegal pream-token (Y): `c' used.
+./index.tex:464: Package array Error:  Illegal pream-token (Y): `c' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.458 \end{frame}
+l.464 \end{frame}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./index.tex:458: Package array Error:  Illegal pream-token (Y): `c' used.
+./index.tex:464: Package array Error:  Illegal pream-token (Y): `c' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.458 \end{frame}
+l.464 \end{frame}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./index.tex:458: Package array Error:  Illegal pream-token (Y): `c' used.
+./index.tex:464: Package array Error:  Illegal pream-token (Y): `c' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.458 \end{frame}
+l.464 \end{frame}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./index.tex:458: Package array Error:  Illegal pream-token (Y): `c' used.
+./index.tex:464: Package array Error:  Illegal pream-token (Y): `c' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.458 \end{frame}
+l.464 \end{frame}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./index.tex:458: Package array Error:  Illegal pream-token (Y): `c' used.
+./index.tex:464: Package array Error:  Illegal pream-token (Y): `c' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.458 \end{frame}
+l.464 \end{frame}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./index.tex:458: Package array Error:  Illegal pream-token (Y): `c' used.
+./index.tex:464: Package array Error:  Illegal pream-token (Y): `c' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.458 \end{frame}
+l.464 \end{frame}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./index.tex:458: Package array Error:  Illegal pream-token (Y): `c' used.
+./index.tex:464: Package array Error:  Illegal pream-token (Y): `c' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.458 \end{frame}
+l.464 \end{frame}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./index.tex:458: Package array Error:  Illegal pream-token (Y): `c' used.
+./index.tex:464: Package array Error:  Illegal pream-token (Y): `c' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.458 \end{frame}
+l.464 \end{frame}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./index.tex:458: Package array Error:  Illegal pream-token (Y): `c' used.
+./index.tex:464: Package array Error:  Illegal pream-token (Y): `c' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.458 \end{frame}
+l.464 \end{frame}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./index.tex:458: Package array Error:  Illegal pream-token (Y): `c' used.
+./index.tex:464: Package array Error:  Illegal pream-token (Y): `c' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.458 \end{frame}
+l.464 \end{frame}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./index.tex:458: Package array Error:  Illegal pream-token (Y): `c' used.
+./index.tex:464: Package array Error:  Illegal pream-token (Y): `c' used.
 
 See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.458 \end{frame}
+l.464 \end{frame}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (8.42772pt too wide) in alignment at lines 458--458
+Overfull \hbox (8.42772pt too wide) in alignment at lines 464--464
 [][][][][][][]
  []
 
@@ -2497,30 +2497,30 @@ Overfull \hbox (8.42772pt too wide) in alignment at lines 458--458
 
 ]
 
-./index.tex:468: LaTeX Error: There's no line here to end.
+./index.tex:474: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.468 \end{frame}
+l.474 \end{frame}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./index.tex:468: Missing $ inserted.
+./index.tex:474: Missing $ inserted.
 <inserted text> 
 $
-l.468 \end{frame}
+l.474 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./index.tex:468: Missing } inserted.
+./index.tex:474: Missing } inserted.
 <inserted text> 
 }
-l.468 \end{frame}
+l.474 \end{frame}
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2528,10 +2528,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./index.tex:468: Missing } inserted.
+./index.tex:474: Missing } inserted.
 <inserted text> 
 }
-l.468 \end{frame}
+l.474 \end{frame}
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2539,42 +2539,42 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./index.tex:468: Missing \cr inserted.
+./index.tex:474: Missing \cr inserted.
 <inserted text> 
 \cr 
-l.468 \end{frame}
+l.474 \end{frame}
                
 I'm guessing that you meant to end an alignment here.
 
-./index.tex:468: Missing { inserted.
+./index.tex:474: Missing { inserted.
 <inserted text> 
 {
-l.468 \end{frame}
+l.474 \end{frame}
                
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
-./index.tex:468: Missing $ inserted.
+./index.tex:474: Missing $ inserted.
 <inserted text> 
 $
-l.468 \end{frame}
+l.474 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./index.tex:468: Missing $ inserted.
+./index.tex:474: Missing $ inserted.
 <inserted text> 
 $
-l.468 \end{frame}
+l.474 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./index.tex:468: Extra }, or forgotten $.
+./index.tex:474: Extra }, or forgotten $.
 <template> }
  $}\ifdim \wdz@ >\totwidth@ \global \totwidth@ \wdz@ \fi \endtemplate 
-l.468 \end{frame}
+l.474 \end{frame}
                
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2582,18 +2582,18 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./index.tex:468: Missing $ inserted.
+./index.tex:474: Missing $ inserted.
 <inserted text> 
 $
-l.468 \end{frame}
+l.474 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./index.tex:468: Missing \endgroup inserted.
+./index.tex:474: Missing \endgroup inserted.
 <inserted text> 
 \endgroup 
-l.468 \end{frame}
+l.474 \end{frame}
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2601,10 +2601,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./index.tex:468: Missing } inserted.
+./index.tex:474: Missing } inserted.
 <inserted text> 
 }
-l.468 \end{frame}
+l.474 \end{frame}
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2612,10 +2612,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./index.tex:468: Missing } inserted.
+./index.tex:474: Missing } inserted.
 <inserted text> 
 }
-l.468 \end{frame}
+l.474 \end{frame}
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2624,31 +2624,31 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-./index.tex:468: LaTeX Error: \begin{equation} on input line 468 ended by \end{
+./index.tex:474: LaTeX Error: \begin{equation} on input line 474 ended by \end{
 split}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.468 \end{frame}
+l.474 \end{frame}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./index.tex:468: Missing $ inserted.
+./index.tex:474: Missing $ inserted.
 <inserted text> 
 $
-l.468 \end{frame}
+l.474 \end{frame}
                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./index.tex:468: Misplaced alignment tab character &.
+./index.tex:474: Misplaced alignment tab character &.
 \math@cr@@@ ->\ifst@rred \nonumber \fi &
                                         \relax \make@display@tag \ifst@rred ...
-l.468 \end{frame}
+l.474 \end{frame}
                
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2657,10 +2657,10 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./index.tex:468: Misplaced \cr.
+./index.tex:474: Misplaced \cr.
 \math@cr@@@ ...fi \global \advance \row@ \@ne \cr 
                                                   
-l.468 \end{frame}
+l.474 \end{frame}
                
 I can't figure out why you would want to use a tab mark
 or \cr or \span just now. If something like a right brace
@@ -2668,10 +2668,10 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./index.tex:468: Extra }, or forgotten $.
+./index.tex:474: Extra }, or forgotten $.
 \gmeasure@ ...savetaglength@ \crcr #1\math@cr@@@ }
                                                   }\restorecounters@ \if@fle...
-l.468 \end{frame}
+l.474 \end{frame}
                
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2679,10 +2679,10 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./index.tex:468: Extra }, or forgotten $.
+./index.tex:474: Extra }, or forgotten $.
 \gmeasure@ ...avetaglength@ \crcr #1\math@cr@@@ }}
                                                   \restorecounters@ \if@fleq...
-l.468 \end{frame}
+l.474 \end{frame}
                
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2690,10 +2690,10 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./index.tex:468: Missing $ inserted.
+./index.tex:474: Missing $ inserted.
 <inserted text> 
 $
-l.468 \end{frame}
+l.474 \end{frame}
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2701,10 +2701,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./index.tex:468: Missing } inserted.
+./index.tex:474: Missing } inserted.
 <inserted text> 
 }
-l.468 \end{frame}
+l.474 \end{frame}
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2713,14 +2713,14 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (19.46912pt too wide) in paragraph at lines 468--468
+Overfull \hbox (19.46912pt too wide) in paragraph at lines 474--474
 []$[][]$  
  []
 
-./index.tex:468: Missing $ inserted.
+./index.tex:474: Missing $ inserted.
 <inserted text> 
 $
-l.468 \end{frame}
+l.474 \end{frame}
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2728,39 +2728,39 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./index.tex:468: Display math should end with $$.
+./index.tex:474: Display math should end with $$.
 <to be read again> 
 \endgroup 
-l.468 \end{frame}
+l.474 \end{frame}
                
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
 
-./index.tex:468: Package amsmath Error: \begin{split} won't work here.
+./index.tex:474: Package amsmath Error: \begin{split} won't work here.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.468 \end{frame}
+l.474 \end{frame}
                
 \Did you forget a preceding \begin{equation}?
 If not, perhaps the `aligned' environment is what you want. 
 
-./index.tex:468: Missing number, treated as zero.
+./index.tex:474: Missing number, treated as zero.
 <to be read again> 
 \relax 
-l.468 \end{frame}
+l.474 \end{frame}
                
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./index.tex:468: Illegal unit of measure (pt inserted).
+./index.tex:474: Illegal unit of measure (pt inserted).
 <to be read again> 
 \relax 
-l.468 \end{frame}
+l.474 \end{frame}
                
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -2770,14 +2770,14 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 
-Overfull \hbox (342.29536pt too wide) detected at line 468
+Overfull \hbox (342.29536pt too wide) detected at line 474
 []
  []
 
-./index.tex:468: Extra }, or forgotten \endgroup.
+./index.tex:474: Extra }, or forgotten \endgroup.
 \endmathdisplay@a ...@ \totwidth@ \egroup \egroup 
                                                   
-l.468 \end{frame}
+l.474 \end{frame}
                
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2786,23 +2786,23 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-./index.tex:468: LaTeX Error: \begin{beamer@framepauses} on input line 468 ende
+./index.tex:474: LaTeX Error: \begin{beamer@framepauses} on input line 474 ende
 d by \end{equation}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.468 \end{frame}
+l.474 \end{frame}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./index.tex:468: Missing $ inserted.
+./index.tex:474: Missing $ inserted.
 <inserted text> 
 $
-l.468 \end{frame}
+l.474 \end{frame}
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2810,32 +2810,32 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./index.tex:468: Display math should end with $$.
+./index.tex:474: Display math should end with $$.
 <to be read again> 
 \endgroup 
-l.468 \end{frame}
+l.474 \end{frame}
                
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
 
-./index.tex:468: LaTeX Error: \begin{beamer@frameslide} on input line 468 ended
+./index.tex:474: LaTeX Error: \begin{beamer@frameslide} on input line 474 ended
  by \end{beamer@framepauses}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.468 \end{frame}
+l.474 \end{frame}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./index.tex:468: Missing } inserted.
+./index.tex:474: Missing } inserted.
 <inserted text> 
 }
-l.468 \end{frame}
+l.474 \end{frame}
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2843,18 +2843,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./index.tex:468: Too many }'s.
+./index.tex:474: Too many }'s.
 \endbeamer@frameslide ...amer@framepauses}\egroup 
                                                   \ifx \beamer@frametitle \@...
-l.468 \end{frame}
+l.474 \end{frame}
                
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
-./index.tex:468: Undefined control sequence.
+./index.tex:474: Undefined control sequence.
 \endbeamer@frameslide ...box \else \beamer@zoomer 
                                                   \fi \beamer@undolabels \be...
-l.468 \end{frame}
+l.474 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2863,23 +2863,23 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./index.tex:468: LaTeX Error: \begin{document} ended by \end{beamer@frameslide}
+./index.tex:474: LaTeX Error: \begin{document} ended by \end{beamer@frameslide}
 .
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.468 \end{frame}
+l.474 \end{frame}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./index.tex:468: Extra \endgroup.
+./index.tex:474: Extra \endgroup.
 <recently read> \endgroup 
           
-l.468 \end{frame}
+l.474 \end{frame}
                
 Things are pretty mixed up, but I think the worst is over.
 
@@ -2894,7 +2894,7 @@ Things are pretty mixed up, but I think the worst is over.
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 550.
+(hyperref)                removing `math shift' on input line 556.
 
 [34
 
@@ -2907,19 +2907,19 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ] [38
 
 ]
-./index.tex:719: Missing number, treated as zero.
+./index.tex:725: Missing number, treated as zero.
 <to be read again> 
 }
-l.719 \end{frame}
+l.725 \end{frame}
                
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./index.tex:719: Illegal unit of measure (pt inserted).
+./index.tex:725: Illegal unit of measure (pt inserted).
 <to be read again> 
 }
-l.719 \end{frame}
+l.725 \end{frame}
                
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -2931,19 +2931,19 @@ two letters. (See Chapter 27 of The TeXbook.)
 [39
 
 ]
-./index.tex:719: Missing number, treated as zero.
+./index.tex:725: Missing number, treated as zero.
 <to be read again> 
 }
-l.719 \end{frame}
+l.725 \end{frame}
                
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./index.tex:719: Illegal unit of measure (pt inserted).
+./index.tex:725: Illegal unit of measure (pt inserted).
 <to be read again> 
 }
-l.719 \end{frame}
+l.725 \end{frame}
                
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -2968,11 +2968,11 @@ two letters. (See Chapter 27 of The TeXbook.)
 \tf@snm=\write9
 
 \openout9 = index.snm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 733.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 733.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 739.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 739.
  (./index.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 733.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 733.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 739.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 739.
 Package rerunfilecheck Info: File `index.out' has not changed.
 (rerunfilecheck)             Checksum: 09361825A391606F2E7DCF0303657691;993.
 Package logreq Info: Writing requests to 'index.run.xml'.
@@ -2981,15 +2981,15 @@ Package logreq Info: Writing requests to 'index.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 33751 strings out of 494300
+ 33710 strings out of 494300
  100000,1373583 words of node,token memory allocated
  6764 words of node memory still in use:
    35 hlist, 10 vlist, 6 rule, 18 disc, 4 local_par, 14 math, 152 glue, 34 kern,
  52 penalty, 427 glyph, 235 attribute, 65 glue_spec, 235 attribute_list, 9 write
 , 4 pdf_start_link, 4 pdf_end_link, 3 pdf_dest, 6 pdf_action, 36 pdf_colorstack 
 nodes
-   avail lists: 1:8,2:2234,3:974,4:211,5:464,6:50,7:3160,8:83,9:892,10:14,11:76
- 36121 multiletter control sequences out of 65536+600000
+   avail lists: 1:8,2:2234,3:974,4:246,5:464,6:50,7:3160,8:83,9:892,10:14,11:76
+ 36080 multiletter control sequences out of 65536+600000
  266 fonts using 18547135 bytes
  60i,19n,100p,1129b,2071s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.ot
@@ -3019,10 +3019,10 @@ f-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/local/texlive/2019/texm
 f-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/local/texlive/2019/tex
 mf-dist/fonts/type1/public/amsfonts/euler/eusm7.pfb></usr/local/texlive/2019/tex
 mf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on index.pdf (42 pages, 1463528 bytes).
+Output written on index.pdf (42 pages, 1462958 bytes).
 
-PDF statistics: 739 PDF objects out of 1000 (max. 8388607)
- 506 compressed objects within 6 object streams
+PDF statistics: 735 PDF objects out of 1000 (max. 8388607)
+ 504 compressed objects within 6 object streams
  104 named destinations out of 1000 (max. 131072)
- 194 words of extra memory for PDF output out of 10000 (max. 100000000)
+ 174 words of extra memory for PDF output out of 10000 (max. 100000000)
 

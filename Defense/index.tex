@@ -22,9 +22,15 @@
 \DeclareMathOperator{\cov}{cov}
 
 \definecolor{primary}{rgb}{0.78, 0.89, 1}
-\setbeamercolor{palette primary}{fg=white,bg=black}
-\setbeamercolor{palette secondary}{fg=white,bg=black!75}
+\setbeamercolor{palette primary}{fg=white,bg=black!35}
+\setbeamercolor{palette secondary}{fg=black,bg=black!25}
 \setbeamercolor{palette tertiary}{fg=black,bg=black!10}
+
+\setbeamertemplate{section in toc}{ {\color{black}\inserttocsectionnumber.~\inserttocsection} }
+\setbeamertemplate{subsection in toc}{ \hspace{1.2em}{\color{black}\rule[0.3ex]{3pt}{3pt}}~\inserttocsubsection\par }
+\setbeamertemplate{itemize items}[square]
+
+\setbeamertemplate{blocks}[default]
 
 \title[\(The Strong Coupling\)]{The QCD Strong Coupling from Hadronic \(\tau\) decays}
 \subtitle{A PhD Defense}
