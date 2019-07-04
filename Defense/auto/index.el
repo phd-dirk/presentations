@@ -32,7 +32,8 @@
     "adjustbox"
     "xcolor"
     "caption"
-    "siunitx")
+    "siunitx"
+    "appendixnumberbeamer")
    (LaTeX-add-labels
     "eq:borelModel")
    (LaTeX-add-bibliographies

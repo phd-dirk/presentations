@@ -416,6 +416,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/siunitx/siunitx.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/translator/translator.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/appendixnumberbeamer/appendixnumberbeamer.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/appendixnumberbeamer/appendixnumberbeamer.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT ./index.aux
@@ -831,6 +833,8 @@ INPUT ./images/quarkHadronDuality-eps-converted-to.pdf
 INPUT ./images/quarkHadronDuality-eps-converted-to.pdf
 INPUT ./index.toc
 INPUT ./index.toc
+INPUT ./index.toc
+INPUT ./index.toc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/eulervm/zeurm10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/eulervm/zeurm10.vf
@@ -877,6 +881,8 @@ INPUT ./images/monomialWeightGraphs.eps
 INPUT ./images/monomialWeightGraphs-eps-converted-to.pdf
 INPUT ./images/monomialWeightGraphs-eps-converted-to.pdf
 INPUT /Users/knowledge/Library/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc
+INPUT ./index.toc
+INPUT ./index.toc
 INPUT ./images/specFuncAleph_V.eps
 INPUT ./images/specFuncAleph_V-eps-converted-to.pdf
 INPUT ./images/specFuncAleph_V-eps-converted-to.pdf
@@ -886,6 +892,10 @@ INPUT ./images/specFuncAleph_A-eps-converted-to.pdf
 INPUT ./images/specFuncAleph_VpA.eps
 INPUT ./images/specFuncAleph_VpA-eps-converted-to.pdf
 INPUT ./images/specFuncAleph_VpA-eps-converted-to.pdf
+INPUT ./index.toc
+INPUT ./index.toc
+INPUT ./index.toc
+INPUT ./index.toc
 INPUT /Users/knowledge/Library/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl/lmsans17-regular.luc
 OUTPUT index.nav
 OUTPUT index.toc
@@ -893,19 +903,3 @@ OUTPUT index.snm
 INPUT ./index.aux
 INPUT ./index.run.xml
 OUTPUT index.run.xml
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/euex10.pfb
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eusm7.pfb
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb

@@ -21,12 +21,12 @@
 \usepackage{xcolor}
 \usepackage{caption}
 \usepackage{siunitx}
+\usepackage{appendixnumberbeamer}
 
 
 \DeclareMathOperator{\Ima}{Im}
 \DeclareMathOperator{\sfm2}{sfm2}
 \DeclareMathOperator{\cov}{cov}
-
 
 \definecolor{primary}{rgb}{0.78, 0.89, 1}
 \setbeamercolor{palette primary}{fg=white,bg=black!80}
@@ -41,6 +41,33 @@
 
 \setbeamertemplate{blocks}[default]
 \setbeamerfont{caption}{size=\tiny}
+
+\setbeamerfont{myTOC}{series=\bfseries,size=\Large}
+\AtBeginSection[]{
+  \ifnum \value{framenumber}>1
+    \frame{\frametitle{Outline}\usebeamerfont{myTOC}\tableofcontents[current]}
+  \else
+  \fi
+}
+
+\makeatletter
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\insertsection
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+      \usebeamerfont{title in head/foot}\insertsubsection
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+      \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+      \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+    \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\makeatother
 
 
 \title[The Strong Coupling]{The QCD Strong Coupling from Hadronic \(\tau\) decays}
@@ -803,8 +830,15 @@
 \begin{frame}
   \centering
   \LARGE
-  Thank you
+  Questions
 \end{frame}
+
+\appendix
+\begin{frame}
+  Appendix
+\end{frame}
+
+
 
 
 \begin{frame}
