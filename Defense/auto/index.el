@@ -4,7 +4,7 @@
    (TeX-add-to-alist 'LaTeX-provided-class-options
                      '(("beamer" "fleqn")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("inputenc" "utf8") ("mathpazo" "sc" "osf") ("eulervm" "euler-digits" "small") ("biblatex" "style=authortitle-comp" "backend=biber") ("tikz-feynman" "compat=1.0.0")))
+                     '(("inputenc" "utf8") ("mathpazo" "sc" "osf") ("eulervm" "euler-digits" "small") ("biblatex" "style=authortitle-comp" "backend=biber") ("tikz-feynman" "compat=1.1.0")))
    (add-to-list 'LaTeX-verbatim-environments-local "semiverbatim")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
@@ -17,6 +17,7 @@
     "latex2e"
     "beamer"
     "beamer10"
+    "pgfpages"
     "inputenc"
     "mathpazo"
     "eulervm"
@@ -33,7 +34,9 @@
     "xcolor"
     "caption"
     "siunitx"
-    "appendixnumberbeamer")
+    "appendixnumberbeamer"
+    "nccmath"
+    "tikz")
    (LaTeX-add-labels
     "eq:borelModel")
    (LaTeX-add-bibliographies

@@ -1,7 +1,11 @@
 \documentclass[fleqn]{beamer}
+\usepackage{pgfpages}
 
+\setbeamertemplate{note page}[plain]
+\setbeameroption{show notes on second screen=bottom}
 \usetheme{Madrid}
 \beamertemplatenavigationsymbolsempty
+
 \usepackage[utf8]{inputenc}
 % font - Palatino
 \usepackage[sc,osf]{mathpazo}   % With old-style figures and real smallcaps.
@@ -10,7 +14,7 @@
 \usepackage{xpatch}
 \xapptobibmacro{cite}{\setunit{\nametitledelim}\printfield{year}}{}{}
 \addbibresource{./references.bib}
-\usepackage[compat=1.0.0]{tikz-feynman}
+\usepackage[compat=1.1.0]{tikz-feynman}
 \usepackage{bm}
 \usepackage{commath}
 \usepackage{booktabs} % \toprule, \midrule
@@ -22,6 +26,11 @@
 \usepackage{caption}
 \usepackage{siunitx}
 \usepackage{appendixnumberbeamer}
+\usepackage{booktabs} % \toprule etc.
+\usepackage{nccmath} % center equation
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary{arrows}
 
 
 \DeclareMathOperator{\Ima}{Im}
@@ -42,10 +51,10 @@
 \setbeamertemplate{blocks}[default]
 \setbeamerfont{caption}{size=\tiny}
 
-\setbeamerfont{myTOC}{series=\bfseries,size=\Large}
+\setbeamerfont{myTOC}{size=\normalsize}
 \AtBeginSection[]{
   \ifnum \value{framenumber}>1
-    \frame{\frametitle{Outline}\usebeamerfont{myTOC}\tableofcontents[current]}
+    \frame{\frametitle{Outline}\usebeamerfont{myTOC}\tableofcontents[current,subsubsectionstyle=hide]}
   \else
   \fi
 }
@@ -70,7 +79,7 @@
 \makeatother
 
 
-\title[The Strong Coupling]{The QCD Strong Coupling from Hadronic \(\tau\) decays}
+\title[The Strong Coupling]{The QCD Strong Coupling from Hadronic Tau Decays}
 \subtitle{A PhD Defense}
 \author{Dirk Hornung}
 \institute[UAB]{
@@ -99,6 +108,7 @@
   \end{equation}
   \small
   with \(D_\mu = \partial_\mu - i g \frac{\lambda^a}{2} B_\mu^a\)
+  \note{say hello now}
 
   \pause
   \normalsize
@@ -113,7 +123,7 @@
 \end{frame}
 \begin{frame}
   \frametitle{The Running of the Strong Coupling}
-  \begin{columns}{\textwidth}
+  \begin{columns}
     \begin{column}{0.4\textwidth}
       \begin{equation}
         \begin{split}
@@ -158,7 +168,7 @@
     \end{column}
   \end{columns}
 
-  \vspace{cm}
+  \vspace{1cm}
   
   \pause
   \centering
@@ -166,10 +176,9 @@
     \toprule
     Name & Symbol & Quark content & Rest mass \\
     \midrule
-    Pion & \(\pi^-\) & \(\bar u d\) & \SI{139.57061 \pm 0.00024}{\mega\eV}  \\
-    Pion & \(\pi^0\) & \((u \bar u - d \bar d)/\sqrt{2}\) & \SI{134.9770\pm0.0005}{\mega\eV}
+    Pion & \(\pi^-\) & \(\overline{u} d\) & \SI{139.57061 \pm 0.00024}{\mega\eV}  \\
+    Pion & \(\pi^0\) & \((u \overline{u} - d \overline{d})/\sqrt{2}\) & \SI{134.9770\pm0.0005}{\mega\eV}
   \end{tabular}
-   
 \end{frame}
 \begin{frame}
   \frametitle{Duality}
@@ -179,121 +188,230 @@
 
 \begin{frame}
   \frametitle{Table of Contents}
-  \tableofcontents
+  \tableofcontents[subsubsectionstyle=hide]
 \end{frame} 
 
 \section{Theoretical Framework}
+\subsection{Two-Point Function}
 \begin{frame}
-  \frametitle{Theoretical Framework}
-  \begin{block}{Inclusive \(\tau\) decay ratio}
-    \vspace*{-\baselineskip}\setlength\belowdisplayshortskip{0pt}
-    \begin{equation}
-      \begin{split}
-        R_\tau &= 12 \pi \,\abs{V_{ud}}^2 S_{EW} \int_0^{m_\tau} \frac{\dif s}{m_\tau^2} \left( 1 - \frac{s}{m_\tau^2} \right) \\
-        &\times \left[ \left( 1 + 2 \frac{s}{m_\tau^2} \right) \Ima \Pi_{V/A}^{(1)}(s) + \Ima \Pi_{V/A}^{(0)}(s) \right]
-      \end{split}
-    \end{equation}
+  \frametitle{Two-Point Function}
+  \begin{block}{Two-Point Function:}
+    \begin{ceqn}
+      \begin{equation}
+        \begin{split}
+          \Pi_{V/A}^{\mu\nu}(q^2) &\equiv i \int \dif^4 x e^{iqx} \langle 0\vert T \left\{ J_{V/A}^\mu(x) J_{V/A}^\nu(0)\right\} \vert 0 \rangle \\
+          &= (q^\mu q^\nu - q^2 g^{\mu\nu})\Pi_{V/A}^{(1)}(q^2) + q^\mu q^\nu \Pi_{V/A}^{(0)}(q^2) \\
+          &= (q^\mu q^\nu - q^2 g^{\mu\nu}) \Pi^{(1+0)}_{V/A}(q^2) + q^2 g_{\mu\nu} \Pi^{(0)}(q^2) 
+        \end{split}
+      \end{equation}
+    \end{ceqn}
   \end{block}
-  
-  \pause
 
   \vspace{0.5cm}
 
-  Two-Point Function:
-  \begin{equation}
-    \begin{split}
-    \Pi_{V/A}^{\mu\nu}(q^2) &\equiv i \int \dif^4 x e^{iqx} \langle 0\vert T \left\{ J_{V/A}^\mu(x) J_{V/A}^\nu(0)\right\} \vert 0 \rangle \\
-    &= (q^\mu q^\nu - q^2 g^{\mu\nu})\Pi_{V/A}^{(1)}(q^2) + q^\mu q^\nu \Pi_{V/A}^{(0)}(q^2)
-    \end{split}
-  \end{equation}
-  \small
-  where \(J_V^\mu = \overline{u} \gamma^\mu d \qquad \text{and} \qquad J_A^\mu = \overline{u} \gamma^\mu \gamma_5 d\)
+  \small\centering
+  \(J_V^\mu = \overline{u} \gamma^\mu d \qquad \text{and} \qquad J_A^\mu = \overline{u} \gamma^\mu \gamma_5 d\)
 \end{frame}
+\note[itemize] {
+  \item Two-point function 
+  \item \(J_{V/A}^{\mu}\) is the non-strange \(V\) or \(A\) current
+  \item superscripts \((0)\) and \((1)\) label spin
+  \item Lorentz decomposed
+  \item \(\Pi^{(1+0)}(q^2) q^2 \Pi^{(0)}(q^2)\) free of kinematic singularities
+}
+
+\subsection{QCD Sum Rules}
+\begin{frame}
+  \frametitle{Cauchy's Theorem}
+  
+  \centering
+  \includegraphics[width=0.8\textwidth]{./images/rTauCauchysTheorem.eps}
+
+  \vspace*{0.5cm}
+
+\end{frame}
+\note[itemize]{
+  \item Experimental data only accessible on positive real axis
+  \item Imaginary part of two-point function related to experimental accessible
+    spectral function
+  \item integrate from \(0\) to \(m_\tau^2\) to reproduce \(R_\tau(m_\tau^2)\)
+  \item Theoretically the positive real axis is not accessible
+  \item Two-point function has poles on positive real axis
+  \item \(\Rightarrow \quad\) Cauchy's theorem
+  \item Identify 
+}
+
+\begin{frame}
+  \frametitle{Finite Energy Sum Rule (FESR)}
+  Spectral Function
+  \begin{ceqn}
+    \begin{equation}
+      \rho^{(1+0)}(s) = \frac{1}{\pi} \Ima \Pi^{(1+0)}(s)
+    \end{equation}
+  \end{ceqn}
+
+  \vfill
+
+  % \begin{block}{\vspace*{-3ex}}
+  \begin{block}{Spectral Moment}
+    \begin{ceqn}
+      \begin{equation}
+        I_{V/A}^{\omega}(s_0) \equiv \frac{1}{s_0} \int_{0}^{s_0} \dif s \, \omega\left(\frac{s}{s_0}\right) \rho(s) = \frac{-1}{2 \pi i s_0} \oint_{\abs{s}=s_0} \dif s \, \omega\left(\frac{s}{s_0} \right) \Pi(s)
+      \end{equation}
+    \end{ceqn}
+  \end{block}
+\end{frame}
+\note[itemize]{
+  \item Spectral function equal to the imaginary part of the correlator
+  \item Spectral function is given by the experiment
+  \item Experiment only valid to certain energy \(s_0\)
+  \item \(\Rightarrow\) \textit{Finite Energy} Sum Rule
+  \item Define spectral moment
+  \item Introduce weights
+  \item Weights \(\omega\) have to be analytic
+}
+
 \begin{frame}
   \frametitle{Adler Function}
   Adler Function:
   \begin{equation}
-    D(s) \equiv =s \frac{\dif}{\dif s} \Pi(s)
+    D(s) \equiv s \frac{\dif}{\dif s} \Pi(s)
   \end{equation}
   \begin{equation}
-    D^{(1+0)}(s) \equiv -s \frac{\dif}{\dif s} \Pi^{(1+0)}(s), \qquad D^{(0)}(s) \equiv \frac{s}{m_\tau^2} \frac{\dif}{\dif s} \left( s \Pi^{(0)}(s) \right)
+    \begin{split}
+      R_{\tau, V/A}^{\omega}(s_0) &\equiv \frac{12 \pi^2}{s_0} \int_{0}^{s_0} \dif s \, \omega\left( \frac{s}{s_0} \right) \rho(s) \\
+      &= \frac{6 \pi i}{s_0} \oint_{\abs{s}=s_0} \dif s \, \omega\left(\frac{s}{s_0} \right) \Pi(s) \\
+      &= -3 \pi i \oint_{\abs{x}=1} \frac{\dif x}{x} \omega_D(x) D(x s_0),
+    \end{split}
   \end{equation}
-
-  \pause
-  
-  Inclusive Tau Decay Ratio:
-  \begin{equation}
-    R_\tau = - \pi i \oint_{\abs{s}=m_\tau^2} \frac{\dif x}{x}(1-x)^3 \left[ 3(1+x)D^{(1+0)}(m_\tau^2x) + 4 D^{(0)}(m_\tau^2 x) \right]
-  \end{equation}
-  \small
-  \begin{equation*}
-    \text{with} \quad x \equiv \frac{s}{m_\tau^2}
-  \end{equation*} 
+  where \(x \equiv \frac{s}{s_0}\)and \(\omega_D \equiv 2 \int_x^1
+  \dif \omega{x}\)
+  % \begin{equation}
+  %   D^{(1+0)}(s) \equiv -s \frac{\dif}{\dif s} \Pi^{(1+0)}(s), \qquad D^{(0)}(s) \equiv \frac{s}{m_\tau^2} \frac{\dif}{\dif s} \left( s \Pi^{(0)}(s) \right)
+  % \end{equation}
 \end{frame}
+\note[itemize]{
+  \item Adler Function for convenience
+  \item In case of vector correlator the derivative (Adler Function) is a
+    physical quantity
+  \item Physical quantities are renormalisation scale invariant
+  \item For the \((1+0)\) and \((0)\) we use a different definition
+}
+
+\subsection{Operator Product Expansion}
 \begin{frame}
-  \frametitle{Adler Function}
+  \frametitle{Operator Product Expansion}
+  \begin{equation}
+    \Pi_{OPE}(q^2) = -\frac{1}{3 q^2}\sum_n \langle\Omega\vert \mathcal{O}_n(0) \vert\Omega\rangle \int \dif^4\, e^{iqx} C_n(x)
+  \end{equation}
+  \begin{equation}
+    \begin{split}
+    \Pi_{OPE, V/A}(s) &= \sum_{D=0,2,4,\dots} \frac{C^{(D)} \langle\Omega\vert \mathcal{O}^{(D)}(x) \vert\Omega\rangle}{(s)^{D/2}} \\
+    &= \underbrace{\vphantom{\sum_{k=1}^\infty} C_0}_{PT} + \underbrace{\sum_{k=1}^\infty \frac{C_{2k}(s)}{s^k}}_{NPT}
+  \end{split}
+\end{equation}
+\end{frame}
+
+
+\subsection{Perturbative Contributions}
+\begin{frame}
+  \frametitle{Perturbative Contributions}
   \begin{equation}
     \Pi_V^{(1+0)}(s) = - \frac{N_c}{12 \pi^2} \sum_{n=0}^\infty a_\mu^n \sum_{k=0}^{n+1} c_{n,k} L^k
     \quad \text{with} \quad L \equiv \log \frac{-s}{\mu^2}
   \end{equation}
-  \normalsize
-  \pause
+
   \begin{equation}
     D_V^{(1+0)} = \frac{N_c}{12 \pi^2} \sum_{n=0}^\infty a_\mu^n \sum_{k=1}^{n+1} k\, c_{n,k} L^{k-1}
   \end{equation}
-  \pause
+
 \end{frame}
+
 \begin{frame}
   \frametitle{Adler Function Coefficients}
-  RGE:
-  \begin{equation}
-    \mu \frac{\dif}{\dif \mu} R(q, a_s, m) = \left[ \mu \frac{\partial}{\partial \mu} + \mu \frac{\dif a_s}{\dif \mu} \frac{\partial}{\partial a_s} + \mu \frac{\dif m}{\dif \mu} \frac{\partial}{\partial m} \right] R(q, a_s, m) = 0
-  \end{equation}
-  \begin{equation}
-    \left(2 \frac{\partial}{\partial L} + \beta \frac{\partial}{\partial a_s} \right) D_V^{(1+0)} = 0
-  \end{equation}
-  \tiny
-  \begin{equation}
-    \begin{split}
-      c_{0,0} &= -\frac{5}{3}, \quad c_{0,1} = 1 \\
-      c_{2,1} &= \frac{365}{24} - 11 \zeta_3 - \left( \frac{11}{12} - \frac{2}{3}\zeta_3 \right) N_f, \\
-      c_{3,1} &= \frac{87029}{288} - \frac{1103}{4} \zeta_3 + \frac{275}{6}\zeta_5, \\
-      &- \left( \frac{7847}{216} - \frac{262}{9} \zeta_3 + \frac{25}{9} \zeta_5 \right) N_f + \left( \frac{151}{162} - \frac{19}{27}\zeta_3\right)N_f^2, \\
-      c_{4,1} &= \frac{78631453}{20736} - \frac{1704247}{432}\zeta_3 +
-      \frac{4185}{8}\zeta_3^2 + \frac{34165}{96}\zeta_5 - \frac{1995}{16}\zeta_7, \\
-      c_{5,1} &= 283
-    \end{split}
-  \end{equation}
-\end{frame}
-\begin{frame}
-  \frametitle{QCD Sum Rules}
-
-  \vspace{0.2cm}
-  
   \centering
-  \includegraphics[width=0.8\textwidth]{./images/rTauCauchysTheorem.eps}
-  \small
-  \begin{equation*}
-    \text{with} \quad s \equiv -q^2
-  \end{equation*}
-  \pause
-  \makebox[\linewidth]{\rule{\textwidth}{0.5pt}}
-  \normalsize
-  \begin{equation}
-    \int_0^{s_0} \omega(s) \rho(s) = \frac{-1}{2 \pi i} \oint_{\abs{s}=s_0} \omega(s) \Pi_{OPE}(s) \dif s
-  \end{equation}
+  \begin{block}{Renormalisation Group Equation}
+    \begin{ceqn}
+      \begin{equation}
+        \mu \frac{\dif}{\dif \mu} R(q, a_s, m) = \left[ \mu \frac{\partial}{\partial \mu} + \mu \frac{\dif a_s}{\dif \mu} \frac{\partial}{\partial a_s} + \mu \frac{\dif m}{\dif \mu} \frac{\partial}{\partial m} \right] R(q, a_s, m) = 0
+      \end{equation}
+    \end{ceqn}
+  \end{block}
+  \begin{ceqn}
+    \begin{equation}
+      \left(2 \frac{\partial}{\partial L} + \beta \frac{\partial}{\partial a_s} \right) D_V^{(1+0)} = 0
+    \end{equation}
+  \end{ceqn}
+  \begin{columns}
+    \begin{column}{.5\textwidth}
+      \begin{scriptsize}
+        \begin{equation}
+          \begin{split}
+            c_{0,0} &= -\frac{5}{3}, \quad c_{0,1} = 1, \\
+            c_{1,1} &= 1 \\
+            c_{2,1} &= \frac{365}{24} - 11 \zeta_3 - ( \frac{11}{12} - \frac{2}{3}\zeta_3 ) N_f \\
+            \cdots
+          \end{split}
+        \end{equation}
+      \end{scriptsize}
+    \end{column}
+    \begin{column}{.5\textwidth}
+      \begin{scriptsize}
+        \begin{equation}
+          \begin{split}
+            c_{2,2} &= -\frac{1}{4} \beta_1 c_{1,1}, \\
+            c_{3,2} &= \frac{1}{4}(-\beta_2 c_{1,1} - 2 \beta_1 c_{2,1}), \\
+            c_{3,3} &= \frac{1}{12}\beta_1 c_{1,1} \\
+            \cdots
+          \end{split}
+        \end{equation}
+      \end{scriptsize}
+    \end{column}
+  \end{columns}
 \end{frame}
+\note[itemize]{
+  \item Beta function definition missing
+}
+
 \begin{frame}
-  \begin{equation}
-    R_{\tau,V/A} = \frac{N_c}{2} \left( 1 + \delta_{pt} + \delta_{npt} \right)
-  \end{equation}
-\end{frame}
-\subsection{Perturbative Contributions}
+  \frametitle{Perturbative Contribution}
+  \begin{small}
+    \begin{equation}
+      \delta_{pt} = \sum_{n=1}^\infty a_\mu^n \sum_{k=1}^n k\, c_{n,k} \frac{1}{2 \pi i} \oint_{\abs{x}=1} \frac{\dif x}{x} (1-x)^3 (1+x) \log \left( \frac{-m_\tau^2 x}{\mu^2} \right)^{k-1}
+    \end{equation}
+    \centering
+    \begin{tikzpicture}[>=triangle 45,font=\sffamily]
+      \node (X) at (0,0) {};
+      \node (Y) [below left=1.5cm and 3cm of X]  {};% 2cm below, 1cm to the left (optional)
+      \node (Z) [below right=1.5cm and 3cm of X] {};
+      \draw [semithick,->] (X) -- (Y);
+      \draw [semithick,->] (X) -- (Z);
+    \end{tikzpicture}
+    \begin{columns}
+      \begin{column}{.5\textwidth}
+        \centering
+        Fixed-Order Perturbation Theory (FOPT)
+        \begin{ceqn}
+          \begin{equation*}
+            \mu \equiv m_\tau^2
+          \end{equation*}
+        \end{ceqn}
+      \end{column}
+      \begin{column}{.5\textwidth}
+        \centering
+        Contour-Improved Perturbation Theory (CIPT)
+        \begin{ceqn}
+          \begin{equation}
+            \mu \equiv -m_\tau^2 x
+          \end{equation}
+        \end{ceqn}
+      \end{column}
+    \end{columns}
+  \end{small}
+\end{frame} 
+
 \begin{frame}
-  \frametitle{FOPT}
-  \begin{equation}
-    \delta_{pt} = \sum_{n=1}^\infty a_\mu^n \sum_{k=1}^n k\, c_{n,k} \frac{1}{2 \pi i} \oint_{\abs{x}=1} \frac{\dif x}{x} (1-x)^3 (1+x) \log \left( \frac{-m_\tau^2 x}{\mu^2} \right)^{k-1}
-  \end{equation}
+  \frametitle{Fixed-Order Perturbation Theory}
   \begin{equation}
     \delta_{FOPT}^{(0)} = \sum_{n=1}^\infty a(m_\tau^2)^n \sum_{k=1}^n k\, c_{n,k} J_{k-1}
   \end{equation}
@@ -309,15 +427,19 @@
   \begin{equation}
     J_n^a(m_\tau^2) \equiv \frac{1}{2 \pi i} \oint_{\abs{x}=1} \frac{\dif x}{x} (1-x)^3 (1+x) a^n (-m_\tau^2 x)
   \end{equation}
-\end{frame} 
+\end{frame}
+
 \begin{frame}
   \frametitle{FOPT vs CIPT}
-  \begin{align}
-    & \quad\qquad \alpha_s^2 \qquad \alpha_s^2 \qquad \alpha_s^3 \qquad \alpha_s^4 \quad\qquad \alpha_s^5 \nonumber\\
-    \delta_{FOPT}^{(0)} &= 0.1082 + 0.0609 + 0.0334 + 0.0174 (+ 0.0088) = 0.2200 (0.2288) \\
-    \delta_{CIPT}^{(0)} &= 0.1479 + 0.0297 + 0.0122 + 0.0086 (+ 0.0038) = 0.1984 (0.2021).
-  \end{align}
+  \begin{footnotesize}
+    \begin{align}
+      & \quad\qquad \alpha_s^2 \qquad \alpha_s^2 \qquad \alpha_s^3 \qquad \alpha_s^4 \quad\qquad \alpha_s^5 \nonumber\\
+      \delta_{FOPT}^{(0)} &= 0.1082 + 0.0609 + 0.0334 + 0.0174 (+ 0.0088) = 0.2200 (0.2288) \\
+      \delta_{CIPT}^{(0)} &= 0.1479 + 0.0297 + 0.0122 + 0.0086 (+ 0.0038) = 0.1984 (0.2021)
+    \end{align}
+  \end{footnotesize}
 \end{frame}
+
 \begin{frame}
   \frametitle{Borel Summation}
   Borel integral
@@ -340,9 +462,9 @@
   \end{equation}
   \begin{align}
     B[\widehat D_p^{IR}](u)
-    &\equiv \frac{d_p^{IR}}{(p-u)^{1+\tilde \gamma}}
-      \left[  1 + \tilde b_1(p-u) + \tilde b_2(p-u)^2 + \dots \right] \\
-    B[\widehat D_p^{UV}](u) &\equiv \frac{d_p^{UV}}{(p+u)^{1+\bar\gamma}}\left[1 + \bar b_1(p+u) + \bar b_2(p+u)^2 \right],
+    &\equiv \frac{d_p^{IR}}{(p-u)^{1+\widetilde \gamma}}
+      \left[  1 + \widetilde b_1(p-u) + \widetilde b_2(p-u)^2 + \dots \right] \\
+    B[\widehat D_p^{UV}](u) &\equiv \frac{d_p^{UV}}{(p+u)^{1+\overline\gamma}}\left[1 + \overline b_1(p+u) + \overline b_2(p+u)^2 \right],
   \end{align}
   \cite{Beneke2008}
 \end{frame}
@@ -369,8 +491,8 @@
   where the \(\Omega^{(1+0)}(s/\mu^2)\) is given by
   \begin{equation}
     \begin{split}
-      \Omega_n^{(1+0)} (s/\mu^2) &\,=\, \frac{1}{6}\langle aGG \rangle p_n^{(1+0)}(s/\mu^2) + \sum_k m_k \langle \anti{q}_k q_k \rangle r_n^{(1+0)}(s/\mu^2) \\
-      &\,+ 2\langle m_i \anti{q}_i q_i + m_j \anti{q}_j q_j \rangle q_n^{(1+0)} (s/\mu^2) \pm \frac{8}{3} \langle m_j \anti{q}_i q_i + m_i \anti{q}_j q_j \rangle t_n^{(1+0)} \\
+      \Omega_n^{(1+0)} (s/\mu^2) &\,=\, \frac{1}{6}\langle aGG \rangle p_n^{(1+0)}(s/\mu^2) + \sum_k m_k \langle \overline{q}_k q_k \rangle r_n^{(1+0)}(s/\mu^2) \\
+      &\,+ 2\langle m_i \overline{q}_i q_i + m_j \overline{q}_j q_j \rangle q_n^{(1+0)} (s/\mu^2) \pm \frac{8}{3} \langle m_j \overline{q}_i q_i + m_i \overline{q}_j q_j \rangle t_n^{(1+0)} \\
       &\,- \frac{3}{\pi^2} (m_i^4 + m_j^4) h_n^{(1+0)} (s/\mu^2) \mp \frac{5}{\pi^2} m_i m_j (m_i^2 + m_j^2) k_n^{(1+0)}(s/\mu^2)\\
       &\,+ \frac{3}{\pi^2} m_i^2 m_j^2 g_n^{(1+0)}(s/\mu^2) + \sum_k m_k^4
       j_n^{(1+0)}(s/\mu^2) + 2 \sum_{k \neq l} m_k^2 m_l^2 u_n^{(1+0)}(s/\mu^2).
@@ -387,6 +509,7 @@
     \end{split} 
   \end{equation}
 \end{frame}
+
 
 \subsection{Duality Violations}
 \begin{frame}
@@ -452,9 +575,34 @@
 
 
 \section{Experiment}
+
+
+\subsection{Inclusive Tau Decay Ratio}
+\begin{frame}
+  \frametitle{Inclusive Tau Decay Ratio}
+  \begin{block}{Inclusive Tau Decay Ratio}
+    \begin{ceqn}
+      \begin{equation}
+        R_{V/A,ud}(s_0) = 12 \pi \,\abs{V_{ud}}^2 S_{EW} \frac{1}{s_0} \int_0^{s_0} \dif s [ \omega^{(1+0)}(s) \rho_{V/A}^{(1+0)}(s) - \omega_L(s)\rho_{V/A}^{(0)}(s)]
+      \end{equation}
+    \end{ceqn}
+  \end{block}
+
+  \vfill
+
+  \small
+  \begin{equation}
+    R_\tau = - \pi i \oint_{\abs{s}=m_\tau^2} \frac{\dif x}{x}(1-x)^3 \left[ 3(1+x)D^{(1+0)}(m_\tau^2x) + 4 D^{(0)}(m_\tau^2 x) \right]
+  \end{equation}
+  \hfill (\(x \equiv \frac{s}{m_\tau^2}\))
+\end{frame}
+\note[itemize]{
+\item Spectral function can be determined via the inclusive tau decay ratio
+\item We express the spectral function in therms of the Adler function 
+}
 \begin{frame}
   \frametitle{ALEPH data}
-  \begin{columns}{\textwidth}
+  \begin{columns}
     \begin{column}{0.5\textwidth}
       \includegraphics[width=\textwidth]{./images/specFuncAleph_V.eps}
     \end{column}
@@ -488,6 +636,19 @@
 \end{frame}
 
 \section{Fits}
+\subsection{Strategy}
+\begin{frame}
+  \frametitle{Parameters and Momenta}
+  \begin{tabular}{ccc}
+    \toprule
+    \# (k, l) &\multicolumn{2}{c}{2 Moments} \\
+    \midrule
+    1 (1, 1)  & \(s_1\) & \(\omega_1\) \\
+    2 (2, 1)  & \(s_2\) & \(\omega_1\) \\
+    \bottomrule
+  \end{tabular}
+\end{frame}
+
 \begin{frame}
   \resizebox{\textwidth}{!}{
     \begin{tabular}{ccccc}
@@ -506,15 +667,16 @@
       & \(\omega_{2,0}\) & \((1 - x)^2\) & \(1 - 2x + x^2\) & \(D4, D6\) \\
       & \(\omega_{3,0}\) & \((1 - x)^3\) & \(1 - 3x + 3x^2 - x^3\) & \(D4, D6, D8\) \\
       & \(\omega_{4,0}\) & \((1 - x)^4\) & \(1 - 4x + 6x^2 - 4x^3 + x^4\) & \(D4, D6, D8, D10\) \\
-      \bototmline
+      \bottomrule
     \end{tabular}
   }
 \end{frame}
 
-\subsection{Pinched Weights without a Monomial term \(x\)}
+\subsection{Results}
+\subsubsection{Pinched Weights without a Monomial term \(x\)}
 \begin{frame}
   \frametitle{Kinematic Weight: \(\omega_\tau(x) \equiv (1-x)^2(1+2x)\)}
-  \begin{tabularx}{\textwidth}{cccYYYY}
+  \begin{tabular}{ccccccc}
     \toprule
     & \(s_{min}\) & \#\(s_0\)s & \(\alpha_s(m_\tau^2)\) & \(\rho^{(6)}\) & \(\rho^{(8)}\) & \(\chi^2/dof\)  \\
     \midrule
@@ -543,11 +705,11 @@
     & 2.400 & 5 & 0.3339(70) & -0.91(39) & -1.29(83) & 0.10 \\
     & 2.600 & 4 & 0.3398(15) & -1.3(1.0) & -2.3(2.5) & 0.01  \\
     \bottomrule
-  \end{tabularx}
+  \end{tabular}
 \end{frame}
 \begin{frame}
   \frametitle{Cubic Weight: \(\omega_{cube}(x) \equiv (1-x)^3(1+3x)\)}
-  \begin{tabularx}{\textwidth}{ccYYYYY}
+  \begin{tabular}{ccccccc}
     \toprule
     \(s_{min}\) & \#\(s_0\)s & \(\alpha_s(m_\tau^2)\) & \(\rho^{(6)}\) & \(\rho^{(8)}\) & \(\rho^{(10)}\) & \(\chi^2/dof\)  \\
     \midrule
@@ -562,20 +724,19 @@
     2.300 & 6 & 0.336(11) & -0.78(47) & -1.17(98) & -2.38(22) & 0.29 \\
     2.400 & 5 & 0.3330(96) & -0.63(47) & -0.82(10) & -1.51(26) & 0.48 \\
     \bottomrule
-  \end{tabularx}
+  \end{tabular}
 \end{frame}
 \begin{frame}
-  \frametitle{Quartic Weight: \( \omega(x) \equiv (1-x)^4 (1+4x)\)}
+  \frametitle{Quartic Weight:  \( \omega_{quartic}(x) \equiv (1-x)^4(1+4x)\)}
   \begin{equation}
     \begin{split}
-      \centering
       \alpha_s(m_\tau^2) = 0.3290(11), \quad \rho^{(6)}=-0.3030(46), \quad \rho^{(8)}=-0.1874(28), \\
       \rho^{(10)} = 0.3678(45) \quad \text{and} \quad \rho_{(12)}=-0.4071(77).
     \end{split}
   \end{equation}
 \end{frame}
 
-\subsection{Single Pinched Monomial Weights}
+\subsubsection{Single Pinched Monomial Weights}
 \begin{frame}
   \frametitle{\(\omega_{M2}(x) \equiv 1-x^2\)}
   \centering
@@ -655,7 +816,7 @@
   \end{tabular}
 \end{frame}
 
-\subsection{Pinched Weights with a Monomial Term \(x\)}
+\subsubsection{Pinched Weights with a Monomial Term \(x\)}
 \begin{frame}
   \frametitle{\(\omega_{1,0} \equiv (1-x)\)}
   \centering
@@ -776,7 +937,7 @@
   \end{adjustbox}
 \end{frame}
 
-\subsection{Comparison}
+\subsubsection{Comparison}
 \begin{frame}
   \frametitle{Comparison}
   \centering \resizebox{\textwidth}{!}{
@@ -805,10 +966,10 @@
 \end{frame}
 
 
-\section{Results}
+\section{Conclusions}
 \begin{frame}
-  \frametitle{Results}
-  \begin{columns}{\textwidth}
+  \frametitle{Conclusions}
+  \begin{columns}
     \begin{column}{.5\textwidth}
       \begin{itemize}
       \item \(\alpha_s(m_\tau^2) = 0.3261 \pm 0.0050\)

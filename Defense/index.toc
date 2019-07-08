@@ -1,14 +1,20 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
 \beamer@sectionintoc {2}{Theoretical Framework}{10}{0}{2}
-\beamer@subsectionintoc {2}{1}{Perturbative Contributions}{22}{0}{2}
-\beamer@subsectionintoc {2}{2}{Non-Perturbative Contributions}{27}{0}{2}
-\beamer@subsectionintoc {2}{3}{Duality Violations}{30}{0}{2}
-\beamer@subsectionintoc {2}{4}{Weights}{31}{0}{2}
-\beamer@sectionintoc {3}{Experiment}{34}{0}{3}
-\beamer@sectionintoc {4}{Fits}{39}{0}{4}
-\beamer@subsectionintoc {4}{1}{Pinched Weights without a Monomial term \(x\)}{41}{0}{4}
-\beamer@subsectionintoc {4}{2}{Single Pinched Monomial Weights}{44}{0}{4}
-\beamer@subsectionintoc {4}{3}{Pinched Weights with a Monomial Term \(x\)}{47}{0}{4}
-\beamer@subsectionintoc {4}{4}{Comparison}{51}{0}{4}
-\beamer@sectionintoc {5}{Results}{52}{0}{5}
+\beamer@subsectionintoc {2}{1}{Two-Point Function}{11}{0}{2}
+\beamer@subsectionintoc {2}{2}{QCD Sum Rules}{12}{0}{2}
+\beamer@subsectionintoc {2}{3}{Operator Product Expansion}{15}{0}{2}
+\beamer@subsectionintoc {2}{4}{Perturbative Contributions}{16}{0}{2}
+\beamer@subsectionintoc {2}{5}{Non-Perturbative Contributions}{24}{0}{2}
+\beamer@subsectionintoc {2}{6}{Duality Violations}{27}{0}{2}
+\beamer@subsectionintoc {2}{7}{Weights}{28}{0}{2}
+\beamer@sectionintoc {3}{Experiment}{31}{0}{3}
+\beamer@subsectionintoc {3}{1}{Inclusive Tau Decay Ratio}{32}{0}{3}
+\beamer@sectionintoc {4}{Fits}{37}{0}{4}
+\beamer@subsectionintoc {4}{1}{Strategy}{38}{0}{4}
+\beamer@subsectionintoc {4}{2}{Results}{40}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{1}{Pinched Weights without a Monomial term \(x\)}{40}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{2}{Single Pinched Monomial Weights}{43}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{3}{Pinched Weights with a Monomial Term \(x\)}{46}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{4}{Comparison}{50}{0}{4}
+\beamer@sectionintoc {5}{Conclusions}{51}{0}{5}
