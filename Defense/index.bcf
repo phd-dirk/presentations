@@ -1999,6 +1999,13 @@
     <bcf:citekey order="2">Deur2016</bcf:citekey>
     <bcf:citekey order="3">PDG2018</bcf:citekey>
     <bcf:citekey order="4">Beneke2008</bcf:citekey>
+    <bcf:citekey order="5">PDG2018</bcf:citekey>
+    <bcf:citekey order="6">Marciano1988</bcf:citekey>
+    <bcf:citekey order="7">Davier2008</bcf:citekey>
+    <bcf:citekey order="8">PDG2018</bcf:citekey>
+    <bcf:citekey order="9">Shifman1978a</bcf:citekey>
+    <bcf:citekey order="10">Jamin2002</bcf:citekey>
+    <bcf:citekey order="11">Jamin2002</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

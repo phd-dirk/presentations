@@ -46,7 +46,7 @@
 
 \setbeamertemplate{section in toc}{ {\color{black}\inserttocsectionnumber.~\inserttocsection} }
 \setbeamertemplate{subsection in toc}{ \hspace{1.2em}{\color{black}\rule[0.3ex]{3pt}{3pt}}~\inserttocsubsection\par }
-\setbeamertemplate{itemize items}[square]
+\setbeamertemplate{itemize items}{\color{black!40}\(\blacksquare\)}
 
 \setbeamertemplate{blocks}[default]
 \setbeamerfont{caption}{size=\tiny}
@@ -286,9 +286,6 @@
   \end{equation}
   where \(x \equiv \frac{s}{s_0}\)and \(\omega_D \equiv 2 \int_x^1
   \dif \omega{x}\)
-  % \begin{equation}
-  %   D^{(1+0)}(s) \equiv -s \frac{\dif}{\dif s} \Pi^{(1+0)}(s), \qquad D^{(0)}(s) \equiv \frac{s}{m_\tau^2} \frac{\dif}{\dif s} \left( s \Pi^{(0)}(s) \right)
-  % \end{equation}
 \end{frame}
 \note[itemize]{
   \item Adler Function for convenience
@@ -471,137 +468,172 @@
 
 \subsection{Non-Perturbative Contributions}
 \begin{frame}
-  \frametitle{NPT Contributions}
-  OPE
-  \begin{equation}
-    \lim_{x\to y} A(x) B(y) = \sum_n C_n(x-y) \mathcal{O}_n(x)
-  \end{equation}
-  \begin{equation}
-    \Pi_{OPE}(q^2) = - \frac{1}{3 q^2} \sum_n \langle \Omega \vert \mathcal{O}_n(0) \vert \Omega \rangle \int \dif^4 \, x e^{iqx} C_n(x)
-  \end{equation}
-  \begin{equation}
-    \Pi_{V/A}^{OPE}(s) = \sum_{D=0,2,4,\dots} \frac{C^{(D)}\langle \Omega \vert \mathcal{O}^{(D)} (x) \vert \Omega \rangle}{(-q^2)^{D/2}}
-  \end{equation}
+  \frametitle{Non-Perturbative Contributions}
+  \begin{ceqn}
+    \begin{equation}
+      \Pi_{NPT, V/A}^{OPE}(s) = \sum_{D=2,4,\dots} \frac{C^{(D)}\langle \Omega \vert \mathcal{O}^{(D)} (x) \vert \Omega \rangle}{(-q^2)^{D/2}}
+    \end{equation}
+  \end{ceqn}
+  \vfill
+  \begin{ceqn}
+    \begin{equation}
+      \begin{array}{ll}
+        \text{Dimension 0:} & \mathbb{1} \\
+        % \text{Dimension 2:} & m_i^2 \\
+        \text{Dimension 4:} & :m_i \anti{q} q: \\
+                            & :G_a^{\mu\nu}(x) G_{\mu\nu}^a(x): \\
+                            % & m_i^4 \\
+        \text{Dimension 6:} & :\anti{q} \Gamma q \anti{q} \Gamma q: \\
+                            & :\anti{q} \Gamma \frac{\lambda^a}{2} q_\beta(x) \anti{q} \Gamma \frac{\lambda^a}{2} q: \\
+                            & :m_i \anti{q} \frac{\lambda^a}{2} \sigma_{\mu\nu} q G^{\mu\nu}_a: \\
+                            & :f_{abc} G_a^{\mu\nu} G_b^{\nu\delta} G_c^{\delta\mu}: \\
+        \cdots              & \cdots
+      \end{array}
+    \end{equation}
+  \end{ceqn}
 \end{frame}
 \begin{frame}
   \frametitle{Dimension Four Corrections}
   \begin{equation}
     \left. D_{ij}^{(1+0)}(s) \right\rvert_{D=4} = \frac{1}{s^2} \sum_n \Omega^{(1+0)}(s/\mu^2)a^n,
   \end{equation}
-  where the \(\Omega^{(1+0)}(s/\mu^2)\) is given by
-  \begin{equation}
-    \begin{split}
-      \Omega_n^{(1+0)} (s/\mu^2) &\,=\, \frac{1}{6}\langle aGG \rangle p_n^{(1+0)}(s/\mu^2) + \sum_k m_k \langle \overline{q}_k q_k \rangle r_n^{(1+0)}(s/\mu^2) \\
-      &\,+ 2\langle m_i \overline{q}_i q_i + m_j \overline{q}_j q_j \rangle q_n^{(1+0)} (s/\mu^2) \pm \frac{8}{3} \langle m_j \overline{q}_i q_i + m_i \overline{q}_j q_j \rangle t_n^{(1+0)} \\
-      &\,- \frac{3}{\pi^2} (m_i^4 + m_j^4) h_n^{(1+0)} (s/\mu^2) \mp \frac{5}{\pi^2} m_i m_j (m_i^2 + m_j^2) k_n^{(1+0)}(s/\mu^2)\\
-      &\,+ \frac{3}{\pi^2} m_i^2 m_j^2 g_n^{(1+0)}(s/\mu^2) + \sum_k m_k^4
-      j_n^{(1+0)}(s/\mu^2) + 2 \sum_{k \neq l} m_k^2 m_l^2 u_n^{(1+0)}(s/\mu^2).
-    \end{split}
-  \end{equation}
+  \vfill
+  \begin{small}
+    \begin{equation}
+      \begin{split}
+        &\Omega_n^{(1+0)} (s/\mu^2) \,=\, \frac{1}{6}\langle aGG \rangle p_n^{(1+0)}(s/\mu^2) + \sum_k m_k \langle \overline{q}_k q_k \rangle r_n^{(1+0)}(s/\mu^2) \\
+        &\quad+ 2\langle m_i \overline{q}_i q_i + m_j \overline{q}_j q_j \rangle q_n^{(1+0)} (s/\mu^2) \pm \frac{8}{3} \langle m_j \overline{q}_i q_i + m_i \overline{q}_j q_j \rangle t_n^{(1+0)} \\
+        &\quad- \frac{3}{\pi^2} (m_i^4 + m_j^4) h_n^{(1+0)} (s/\mu^2) \mp \frac{5}{\pi^2} m_i m_j (m_i^2 + m_j^2) k_n^{(1+0)}(s/\mu^2)\\
+        &\quad+ \frac{3}{\pi^2} m_i^2 m_j^2 g_n^{(1+0)}(s/\mu^2) + \sum_k m_k^4
+        j_n^{(1+0)}(s/\mu^2) + 2 \sum_{k \neq l} m_k^2 m_l^2 u_n^{(1+0)}(s/\mu^2).
+      \end{split}
+    \end{equation}
+  \end{small}
 \end{frame}
 \begin{frame}
   \frametitle{Dimension Six  and Eight Corrections}
-  \begin{equation}
-    \begin{split}
-      \left. D_{ij,V/A}^{(1+0)} \right\rvert_{D=8} = 4 \frac{\rho_{V/A}^{(8)}}{s^4} \\
-      \left. D_{ij,V/A}^{(1+0)} \right\rvert_{D=10} = 5 \frac{\rho_{V/A}^{(10)}}{s^5} \\
-      \left. D_{ij,V/A}^{(1+0)} \right\rvert_{D=12} = 6 \frac{\rho_{V/A}^{(12)}}{s^6}
-    \end{split} 
-  \end{equation}
+  \begin{ceqn}
+    \begin{equation}
+      \begin{split}
+        \left. D_{ij,V/A}^{(1+0)} \right\rvert_{D=8} = 4 \frac{\rho_{V/A}^{(8)}}{s^4} \\
+        \left. D_{ij,V/A}^{(1+0)} \right\rvert_{D=10} = 5 \frac{\rho_{V/A}^{(10)}}{s^5} \\
+        \left. D_{ij,V/A}^{(1+0)} \right\rvert_{D=12} = 6 \frac{\rho_{V/A}^{(12)}}{s^6}
+      \end{split} 
+    \end{equation}
+  \end{ceqn}
 \end{frame}
 
 
 \subsection{Duality Violations}
 \begin{frame}
   \frametitle{Duality Violations}
+  Duality Violations (DV):
   \begin{equation}
-    R_{\tau,V/A}^\omega = \frac{N_c}{2} S_{EW} \abs{V_{ud}}^2 (1 + \delta_{pt}^\omega + \delta_{npt}^\omega + \delta_{DV}^\omega)
+    \Delta(s) \equiv \Pi(s) - \Pi_{OPE}(s)
   \end{equation}
+  % \begin{equation}
+  %   R_{\tau,V/A}^\omega = \frac{N_c}{2} S_{EW} \abs{V_{ud}}^2 (1 + \delta_{pt}^\omega + \delta_{npt}^\omega + \delta_{DV}^\omega)
+  % \end{equation}
+  \vfill
+  DV Model:
   \begin{equation}
     \rho_{V/A}^{DV}(s) = e^{-(\delta_{V/A} + \gamma_{V/A}s)} \sin(\alpha_{V/A} + \beta_{V/A}s)
   \end{equation}
+  DV Contribution:
   \begin{equation}
-    D_\omega(m_\tau^2) = -12 \pi^2 \int_{m_\tau^2}^\infty \frac{\dif s}{m_\tau^2} \omega(s) \rho_{V/A}^{DV}
+    D_\omega(s_0) = -12 \pi^2 S_{EW} \abs{V_{ud}}^2 \int_{s_0}^\infty \frac{\dif s}{s_0} \omega(s) \rho_{V/A}^{DV}
   \end{equation}
 \end{frame}
+\note[itemize]{
+  \item The difference \(\Delta(s)\) defines the duality violating contribution
+    to \(\Pi\)
+  \item DV can be parametrised via a model
+  \item The model has four parameters for the vector and four parameters for the
+    axial channel
+  \item Too many parameters: e.g. \(\alpha_s, \rho_6, \rho_8\) three parameters
+    vs eight!
+  \item why is the DV integration from \(s_0 \to \infty\) and not \(0 \to s_0\)
+}
 
-\subsection{Weights}
-\begin{frame}
-  \frametitle{Weights}
-  \begin{equation}
-    \omega(x) \equiv \sum_i a_i x^i
-  \end{equation}
-  kinematic weights
-  \begin{equation}
-    \omega_\tau \equiv (1 - \frac{s}{m_\tau^2})^2(1 + 2 \frac{s}{m_\tau^2})
-  \end{equation}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Pinched Weights}
-  \begin{equation}
-    \omega(s) = \left( 1 - \frac{s}{m_\tau^2} \right)^k
-  \end{equation}
-  \includegraphics[width=\textwidth]{./images/monomialWeightGraphs.eps}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Weighting OPE Contributions}
-  \begin{equation}
-    \oint_{C} x^k \dif x = i \int_0^{2\pi}\left(e^{i \theta}\right)^{k+1} \dif \theta
-    = \begin{cases} \mbox{\(2 \pi i\)} & \mbox{if } k=-1, \\ \mbox{0} & \mbox{otherwise} \end{cases}.
-  \end{equation}
-  \begin{equation}
-    \left. R(x)\right\vert_{D=0,2,4,\dots} = \oint_{\abs{x}=1} \dif x \, x^{k-D/2} C^{(D)}
-  \end{equation}
-  active dimension
-  \begin{equation}
-    D = 2 (k+1)
-  \end{equation}
-  \begin{table}
-    \centering
-    \begin{tabular}{l|ccccccc}
-      \toprule
-      \textbf{monomial:} & \(x^0\) & \(x^1\) & \(x^2\) & \(x^3\) & \(x^5\) & \(x^6\) & \(x^7\)\\
-      \textbf{dimension:} & \(D^{(2)}\) & \(D^{(4)}\) & \(D^{(6)}\) & \(D^{(8)}\) & \(D^{(10)}\) & \(D^{(12)}\) & \(D^{(14)}\)\\
-      \bottomrule 
-    \end{tabular}
-    \caption{List of monomial and their corresponding ``active'' dimensions in the
-      \textsc{ope}. Note that the perturbative contributions of the \textsc{ope}
-      are always present.}
-  \end{table}
-\end{frame}
 
 
 
 \section{Experiment}
 
-
 \subsection{Inclusive Tau Decay Ratio}
 \begin{frame}
   \frametitle{Inclusive Tau Decay Ratio}
   \begin{block}{Inclusive Tau Decay Ratio}
+    \begin{footnotesize}
+      \begin{ceqn}
+        \begin{equation}
+          R_{\tau} = 12 \pi \,\abs{V_{ud}}^2 S_{EW} \int_0^{s_0} \frac{\dif s}{m_\tau^2} \left( 1 + 2 \frac{s}{m_\tau^2} \right)
+          \left[ \left( 1+2\frac{s}{m_\tau^2} \right) \Ima \Pi^{(1)}(s) + \Pi^{(0)}(s)\right]
+        \end{equation}
+      \end{ceqn}
+    \end{footnotesize}
+  \end{block}
+  \begin{small}
     \begin{ceqn}
       \begin{equation}
-        R_{V/A,ud}(s_0) = 12 \pi \,\abs{V_{ud}}^2 S_{EW} \frac{1}{s_0} \int_0^{s_0} \dif s [ \omega^{(1+0)}(s) \rho_{V/A}^{(1+0)}(s) - \omega_L(s)\rho_{V/A}^{(0)}(s)]
+        \Pi^{(1+0)}(s) = \Pi^{(1)}(s) + \Pi^{(0)}(s)
       \end{equation}
     \end{ceqn}
-  \end{block}
-
-  \vfill
-
-  \small
-  \begin{equation}
-    R_\tau = - \pi i \oint_{\abs{s}=m_\tau^2} \frac{\dif x}{x}(1-x)^3 \left[ 3(1+x)D^{(1+0)}(m_\tau^2x) + 4 D^{(0)}(m_\tau^2 x) \right]
-  \end{equation}
-  \hfill (\(x \equiv \frac{s}{m_\tau^2}\))
+    \begin{ceqn}
+      \begin{equation}
+        R_\tau = 6 \pi i \oint_{\abs{s}=m_\tau} \frac{\dif s}{m_\tau^2} \left( 1-\frac{s}{m_\tau^2} \right)^2
+        \left[ \left( 1 + 2 \frac{s}{m_\tau^2} \right) \Pi^{(1+0)}(s) - \left( \frac{2s}{m_\tau^2}\Pi^{(0)} \right)\right]
+      \end{equation}
+    \end{ceqn}
+    \begin{ceqn}
+      \begin{equation}
+        D^{(1+0)}(s) \equiv -s \frac{\dif}{\dif s} \Pi^{(1+0)}(s), \qquad D^{(0)}(s) \equiv \frac{s}{m_\tau^2} \frac{\dif}{\dif s} \left( s \Pi^{(0)}(s) \right)
+      \end{equation}
+    \end{ceqn}
+    \begin{ceqn}
+      \begin{equation}
+        R_\tau = - \pi i \oint_{\abs{s}=m_\tau^2} \frac{\dif x}{x}(1-x)^3 \left[ 3(1+x)D^{(1+0)}(m_\tau^2x) + 4 D^{(0)}(m_\tau^2 x) \right]
+      \end{equation}
+    \end{ceqn}
+  \end{small}
 \end{frame}
 \note[itemize]{
-\item Spectral function can be determined via the inclusive tau decay ratio
-\item We express the spectral function in therms of the Adler function 
+  \item \(\Pi^{(1+0)}\) free of kinematic singularities
+  \item \(\Pi^{(0)}\) will be neglected?
+}
+\subsection{ALEPH Data}
+
+\begin{frame}
+  Experimental Spectral Moment:
+  \begin{ceqn}
+    \begin{equation}
+      \rho^{(1)}_{V/A} = \frac{m_\tau^2}{12 \pi^2 \abs{V_{ud}}^2 S_{EW}} \frac{B_{V/A}}{\mathcal{B}_e} \frac{\dif N_{V/A}}{N_{V/A}\dif s}
+      \frac{1}{\omega_\tau}
+    \end{equation}
+  \end{ceqn}
+  Integral Moment:
+  \begin{ceqn}
+    \begin{equation}
+      R_{\tau,V/A}^\omega \equiv 12 \pi^2 \int_0^{s_0} \frac{\dif{s}}{s_0} \omega\left( \frac{s}{s_0}\right) \rho_{V/A}(s) 
+    \end{equation}
+  \end{ceqn}
+  \vfill
+  Experimental Moment:
+  \begin{ceqn}
+    \begin{equation}
+      I_{exp,V/A}^\omega (s_0) = \frac{m_\tau^2}{\mathcal{B}_e s_0}
+      \sum_{i=1}^{N(s_0)} \frac{\omega(s_i/s_0)}{\omega_\tau (s_i/s_0)} \sfm2_{V/A}(s_i)
+    \end{equation}
+  \end{ceqn}
+\end{frame}
+\note[itemize]{
+  \item \(\rho^{(0)}_V\) does not exist
+  \item \(\rho^{(0)}_A\) is the pion pole, which is not included in the data?
+  \item \(\sfm2_{V/A} \equiv B_{V/A} \frac{\dif N_{V/A}}{N_{V/A} \dif s}\)
+  \item \(\abs{V_{ud}}^2 and S_{EW}?\)
 }
 \begin{frame}
-  \frametitle{ALEPH data}
+  \frametitle{ALEPH Data}
   \begin{columns}
     \begin{column}{0.5\textwidth}
       \includegraphics[width=\textwidth]{./images/specFuncAleph_V.eps}
@@ -614,40 +646,163 @@
 \begin{frame}
   \includegraphics[width=\textwidth]{./images/specFuncAleph_VpA.eps}
 \end{frame}
-\begin{frame}
-  \begin{equation}
-    R_{\tau,V/A} = \frac{\mathcal{B}_{V/A}}{\mathcal{B}_e} = \int_0^{m_\tau^2} \dif s \frac{\sfm2_{V/A}(s)}{100 \mathcal{B}_e}
-  \end{equation}
-  \begin{equation}
-    I_{exp,V/A}^\omega (s_0) = \frac{s_\tau}{100 \mathcal{B}_e s_0}
-    \sum_{i=1}^{N(s_0)} \frac{\omega \left( \frac{s_i}{s_0} \right)}{\omega_\tau \left( \sfm2_{V/A}(s_i) \right)}
-  \end{equation}
-\end{frame}
-\begin{frame}
-  \begin{equation}
-    \chi^2 = ( I_i^{exp} - I_i^{th}(\vec \alpha)) C_{ij}^{-1} (I_j^{exp} - I_j^{th}(\vec \alpha))
-  \end{equation}
-  \begin{equation}
-    C_{ij} = \cov(I_i^{exp}, I_j^{exp})
-  \end{equation}
-  \begin{equation}
-    \chi^2 \approx 1
-  \end{equation}
-\end{frame}
+
 
 \section{Fits}
 \subsection{Strategy}
 \begin{frame}
-  \frametitle{Parameters and Momenta}
-  \begin{tabular}{ccc}
+  \frametitle{Chi-Squared}
+  Chi-Squared function:
+  \begin{equation}
+    \chi^2 = ( I_i^{exp} - I_i^{th}(\vec \alpha)) C_{ij}^{-1} (I_j^{exp} - I_j^{th}(\vec \alpha))
+  \end{equation}
+  Covariance Matrix:
+  \begin{equation}
+    C_{ij} = \cov(I_i^{exp}, I_j^{exp})
+  \end{equation}
+  \vfill
+  Chi-Squared per Degrees of Freedom:
+  \begin{equation}
+    \frac{\chi^2}{dof} \approx 1
+  \end{equation}
+\end{frame}
+
+\subsubsection{Weights}
+\begin{frame}
+  \frametitle{Weights}
+  Weight function:
+  \begin{ceqn}
+    \begin{equation}
+      \omega(x) \equiv \sum_i a_i x^i
+    \end{equation}
+  \end{ceqn}
+  \vfill
+  \makebox[\linewidth]{\rule{\textwidth}{1pt}}
+  \vfill
+  E.g.
+  \begin{columns}
+    \begin{column}{.3\textwidth}
+      \begin{itemize}
+        \item double pinched
+        \item no monomial
+        \item D6 and D8
+      \end{itemize}
+    \end{column}
+    \begin{column}{.5\textwidth}
+      \begin{equation}
+        \begin{split}
+          \omega_\tau &\equiv (1 - x)^2(1 + 2x) \\
+          &= 1 - 3x^2 + 2x^3
+        \end{split}
+      \end{equation}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Pinched Weights}
+  \begin{ceqn}
+    \begin{equation}
+      \omega(s) = \left( 1 - \frac{s}{m_\tau^2} \right)^k
+    \end{equation}
+  \end{ceqn}
+  \vfill
+  \begin{columns}
+    \begin{column}{.7\textwidth}
+      \includegraphics[width=\textwidth]{./images/monomialWeightGraphs.eps}
+    \end{column}
+    \begin{column}{.3\textwidth}
+      \includegraphics[width=\textwidth]{./images/complexCountour.eps}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Weighting OPE Contributions}
+  \begin{equation}
+    \oint_{C} x^k \dif x = i \int_0^{2\pi}\left(e^{i \theta}\right)^{k+1} \dif \theta
+    = \begin{cases} \mbox{\(2 \pi i\)} & \mbox{if } k=-1, \\ \mbox{0} & \mbox{otherwise} \end{cases}.
+  \end{equation}
+  \begin{equation}
+    \left. R(x)\right\vert_{D=0,2,4,\dots} = \oint_{\abs{x}=1} \dif x \, x^{k-D/2} C^{(D)}
+  \end{equation}
+  \vfill
+  Active Dimensions:
+  \begin{ceqn}
+    \begin{equation}
+      D = 2 (k+1)
+    \end{equation}
+  \end{ceqn}
+  \vspace{0.2cm}
+  \begin{tabular}{l|ccccccc}
     \toprule
-    \# (k, l) &\multicolumn{2}{c}{2 Moments} \\
-    \midrule
-    1 (1, 1)  & \(s_1\) & \(\omega_1\) \\
-    2 (2, 1)  & \(s_2\) & \(\omega_1\) \\
-    \bottomrule
+    \textbf{monomial:} & \(x^0\) & \(x^1\) & \(x^2\) & \(x^3\) & \(x^5\) & \(x^6\) & \(x^7\)\\
+    \textbf{dimension:} & \(D^{(2)}\) & \(D^{(4)}\) & \(D^{(6)}\) & \(D^{(8)}\) & \(D^{(10)}\) & \(D^{(12)}\) & \(D^{(14)}\)\\
+    \bottomrule 
   \end{tabular}
 \end{frame}
+
+\begin{frame}
+  \frametitle{Parameters and Momenta}
+  \begin{columns}
+    \begin{column}{.6\textwidth}
+      \begin{itemize}
+        \item 3 Moments
+        \item max three parameters
+        \item e.g. \(\alpha_s, D6, D8\) (fully determined)
+      \end{itemize}
+    \end{column}
+    \begin{column}{.4\textwidth}
+      \begin{tabular}{ccc}
+        \toprule
+        \# &\multicolumn{2}{c}{3 Moments} \\
+        \midrule
+        1 & \(s_1\) & \(\omega\) \\
+        2 & \(s_2\) & \(\omega\) \\
+        3 & \(s_3\) & \(\omega\) \\
+        \bottomrule
+      \end{tabular}
+    \end{column}
+  \end{columns}
+  \vfill
+  \begin{columns}
+    \begin{column}{.4\textwidth}
+      \centering
+      \begin{tabular}{ccc}
+        \toprule
+        \# &\multicolumn{2}{c}{9 Moments} \\
+        \midrule
+        1      & \(s_1\) & \(\omega\) \\
+        2      & \(s_2\) & \(\omega\) \\
+        \vdots & \vdots  & \vdots     \\
+        9      & \(s_9\) & \(\omega\) \\
+        \bottomrule
+      \end{tabular}
+    \end{column}
+    \begin{column}{.6\textwidth}
+      \begin{itemize}
+      \item 9 Moments
+      \item max nine parameters
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Strategy}
+  \begin{itemize}
+    \item Extract \(\alpha_s\)
+    \item Probe Duality Violations
+    \item FOPT vs CIPT
+  \end{itemize}
+\end{frame}
+\note[itemize]{
+  \item Check isolated weights of stability for different \(s_0\) moments
+  \item Check stability for different weights and pinchings. If we obtain
+    similar weights DV should not be present.
+  \item Perform additional fits with the BS. If parameters are similar to FOPT,
+    then FOPT should be the preferred framework.
+}
 
 \begin{frame}
   \resizebox{\textwidth}{!}{
@@ -996,7 +1151,37 @@
 
 \appendix
 \begin{frame}
-  Appendix
+  \frametitle{Constants}
+  \begin{tabular}{lll}
+    \toprule
+    Quantity & Value & Reference \\
+    \midrule
+    \(V_{ud}\) & \(0.9742 \pm 0.00021\) & \cite{PDG2018} \\
+    \(S_{EW}\) & \(1.0198 \pm 0.0006\) & \cite{Marciano1988} \\
+    \(B_e\) & \(17.818 \pm 0.023\) & \cite{Davier2008} \\
+    \(m_\tau\) & \SI{1.77686 \pm 0.12}{\mega\eV} & \cite{PDG2018} \\
+    \(\langle  a GG \rangle_I\) & \SI{0.012}{\giga\eV^2} & \cite{Shifman1978a} \\
+    \(\langle \anti{q}_{u/d}q_{u/d} \rangle(m_\tau) \) & \SI{-272 \pm 15}{\mega\eV} & \cite{Jamin2002} \\
+    \( \anti{s}s / \langle \anti{q}q \rangle \) & 0.8 \pm 0.3 & \cite{Jamin2002} \\
+    \bottomrule
+  \end{tabular}
+\end{frame}
+\begin{frame}
+  \frametitle{DV-model}
+  \begin{equation}
+    -\frac{1}{2 \pi i} \oint_{\abs{s}=s_0} \frac{\dif s}{s_0} \omega(s/s_0)
+    \Delta_{V/A}(s) = - \int_{s_0}^\infty \frac{\dif s}{s_0} \omega(s/ s_0) \frac{1}{\pi} \Ima \Delta_{V/A}(s)
+  \end{equation}
+\end{frame}
+\begin{frame}
+  \frametitle{Pion Pole}
+  \begin{ceqn}
+    \begin{equation}
+      R_{\tau,A}^\omega(s_0, \pi) = 24 \pi^2 \abs{V_{ud}}^2 S_{EW} \frac{f_\pi^2}{s_0}
+      \omega \left( \frac{s_\pi}{s_0} \right)
+      \left[ 1 - \frac{2 s_\pi}{s_\tau+ 2 s_\pi} \right]
+    \end{equation}
+  \end{ceqn}
 \end{frame}
 
 

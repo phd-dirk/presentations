@@ -59,6 +59,64 @@
       \verb 0806.3156
       \endverb
     \endentry
+    \entry{Davier2008}{article}{}
+      \name{author}{5}{}{%
+        {{uniquename=0,uniquepart=base,hash=63c734d130f62d55da3bca1c36545500}{%
+           family={Davier},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=042093029eb62875f88ded33366bf391}{%
+           family={Descotes-Genon},
+           familyi={D\bibinithyphendelim G\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=88abe14b8bb6b33da6bac067ffc46f44}{%
+           family={Hocker},
+           familyi={H\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=41494add1045dcef508a67452c499cef}{%
+           family={Malaescu},
+           familyi={M\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5ee5d3d5470ac29a2e7c8df70ed54725}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9015dd097bb701e08eaf2643dc12802a}
+      \strng{fullhash}{4ca614f4f281965904d4387cad295a76}
+      \strng{bibnamehash}{9015dd097bb701e08eaf2643dc12802a}
+      \strng{authorbibnamehash}{9015dd097bb701e08eaf2643dc12802a}
+      \strng{authornamehash}{9015dd097bb701e08eaf2643dc12802a}
+      \strng{authorfullhash}{4ca614f4f281965904d4387cad295a76}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Eur. Phys. J.}
+      \field{title}{{The Determination of alpha(s) from Tau Decays Revisited}}
+      \field{volume}{C56}
+      \field{year}{2008}
+      \field{pages}{305\bibrangedash 322}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1140/epjc/s10052-008-0666-7
+      \endverb
+      \verb{eprint}
+      \verb 0803.0979
+      \endverb
+    \endentry
     \entry{Deur2016}{article}{}
       \name{author}{3}{}{%
         {{uniquename=0,uniquepart=base,hash=aa4564cb4e8ed1c36273eecc95af6c47}{%
@@ -106,6 +164,116 @@
       \endverb
       \verb{eprint}
       \verb 1604.08082
+      \endverb
+    \endentry
+    \entry{Jamin2002}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=72230fc82f996168d6a1dec89ad8a246}{%
+           family={Jamin},
+           familyi={J\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{72230fc82f996168d6a1dec89ad8a246}
+      \strng{fullhash}{72230fc82f996168d6a1dec89ad8a246}
+      \strng{bibnamehash}{72230fc82f996168d6a1dec89ad8a246}
+      \strng{authorbibnamehash}{72230fc82f996168d6a1dec89ad8a246}
+      \strng{authornamehash}{72230fc82f996168d6a1dec89ad8a246}
+      \strng{authorfullhash}{72230fc82f996168d6a1dec89ad8a246}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Lett.}
+      \field{title}{{Flavor symmetry breaking of the quark condensate and chiral corrections to the Gell-Mann-Oakes-Renner relation}}
+      \field{volume}{B538}
+      \field{year}{2002}
+      \field{pages}{71\bibrangedash 76}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/S0370-2693(02)01951-2
+      \endverb
+      \verb{eprint}
+      \verb hep-ph/0201174
+      \endverb
+    \endentry
+    \entry{Marciano1988}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=73ef1d2661d467543d87c263a711604b}{%
+           family={Marciano},
+           familyi={M\bibinitperiod},
+           given={W.\bibnamedelimi J.},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=82d974331325a4c909add2f20a0ceac0}{%
+           family={Sirlin},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b0ccd28dd735239eaf85a383be0ef515}
+      \strng{fullhash}{b0ccd28dd735239eaf85a383be0ef515}
+      \strng{bibnamehash}{b0ccd28dd735239eaf85a383be0ef515}
+      \strng{authorbibnamehash}{b0ccd28dd735239eaf85a383be0ef515}
+      \strng{authornamehash}{b0ccd28dd735239eaf85a383be0ef515}
+      \strng{authorfullhash}{b0ccd28dd735239eaf85a383be0ef515}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{title}{{Electroweak Radiative Corrections to tau Decay}}
+      \field{volume}{61}
+      \field{year}{1988}
+      \field{pages}{1815\bibrangedash 1818}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.61.1815
+      \endverb
+    \endentry
+    \entry{Shifman1978a}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=e869e09432fb1c78af5d18e2ffe2ec59}{%
+           family={Shifman},
+           familyi={S\bibinitperiod},
+           given={Mikhail\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=40d23fd9986a450260e10891e8b7647d}{%
+           family={Vainshtein},
+           familyi={V\bibinitperiod},
+           given={A.\bibnamedelimi I.},
+           giveni={A\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f9f240c2acb7c368b3248d4e0ba1d4bc}{%
+           family={Zakharov},
+           familyi={Z\bibinitperiod},
+           given={Valentin\bibnamedelima I.},
+           giveni={V\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4a67751db624d5d78137adf28857fdb0}
+      \strng{fullhash}{4a67751db624d5d78137adf28857fdb0}
+      \strng{bibnamehash}{4a67751db624d5d78137adf28857fdb0}
+      \strng{authorbibnamehash}{4a67751db624d5d78137adf28857fdb0}
+      \strng{authornamehash}{4a67751db624d5d78137adf28857fdb0}
+      \strng{authorfullhash}{4a67751db624d5d78137adf28857fdb0}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nucl. Phys.}
+      \field{title}{{QCD and Resonance Physics: Applications}}
+      \field{volume}{B147}
+      \field{year}{1979}
+      \field{pages}{448\bibrangedash 518}
+      \range{pages}{71}
+      \verb{doi}
+      \verb 10.1016/0550-3213(79)90023-3
       \endverb
     \endentry
     \entry{PDG2018}{article}{}

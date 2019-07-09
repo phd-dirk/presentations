@@ -7,14 +7,15 @@
 \beamer@subsectionintoc {2}{4}{Perturbative Contributions}{16}{0}{2}
 \beamer@subsectionintoc {2}{5}{Non-Perturbative Contributions}{24}{0}{2}
 \beamer@subsectionintoc {2}{6}{Duality Violations}{27}{0}{2}
-\beamer@subsectionintoc {2}{7}{Weights}{28}{0}{2}
-\beamer@sectionintoc {3}{Experiment}{31}{0}{3}
-\beamer@subsectionintoc {3}{1}{Inclusive Tau Decay Ratio}{32}{0}{3}
-\beamer@sectionintoc {4}{Fits}{37}{0}{4}
-\beamer@subsectionintoc {4}{1}{Strategy}{38}{0}{4}
-\beamer@subsectionintoc {4}{2}{Results}{40}{0}{4}
-\beamer@subsubsectionintoc {4}{2}{1}{Pinched Weights without a Monomial term \(x\)}{40}{0}{4}
-\beamer@subsubsectionintoc {4}{2}{2}{Single Pinched Monomial Weights}{43}{0}{4}
-\beamer@subsubsectionintoc {4}{2}{3}{Pinched Weights with a Monomial Term \(x\)}{46}{0}{4}
-\beamer@subsubsectionintoc {4}{2}{4}{Comparison}{50}{0}{4}
-\beamer@sectionintoc {5}{Conclusions}{51}{0}{5}
+\beamer@sectionintoc {3}{Experiment}{28}{0}{3}
+\beamer@subsectionintoc {3}{1}{Inclusive Tau Decay Ratio}{29}{0}{3}
+\beamer@subsectionintoc {3}{2}{ALEPH Data}{30}{0}{3}
+\beamer@sectionintoc {4}{Fits}{33}{0}{4}
+\beamer@subsectionintoc {4}{1}{Strategy}{34}{0}{4}
+\beamer@subsubsectionintoc {4}{1}{1}{Weights}{35}{0}{4}
+\beamer@subsectionintoc {4}{2}{Results}{41}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{1}{Pinched Weights without a Monomial term \(x\)}{41}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{2}{Single Pinched Monomial Weights}{44}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{3}{Pinched Weights with a Monomial Term \(x\)}{47}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{4}{Comparison}{51}{0}{4}
+\beamer@sectionintoc {5}{Conclusions}{52}{0}{5}
