@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.5.5)  9 JUL 2019 17:46
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.5.5)  10 JUL 2019 18:38
  restricted system commands enabled.
  file:line:error style messages enabled.
 **index.tex
@@ -49,7 +49,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.062 seconds
+luaotfload | main : initialization completed in 0.067 seconds
 (/usr/local/texlive/2019/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/local/texlive/2019/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
@@ -1534,22 +1534,22 @@ File: english.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 (./index.aux)
 \openout1 = index.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1617,7 +1617,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box97
-Package hyperref Info: Link coloring OFF on input line 97.
+Package hyperref Info: Link coloring OFF on input line 101.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1627,67 +1627,67 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count490
 )
-LaTeX Info: Redefining \ref on input line 97.
-LaTeX Info: Redefining \pageref on input line 97.
-LaTeX Info: Redefining \nameref on input line 97.
+LaTeX Info: Redefining \ref on input line 101.
+LaTeX Info: Redefining \pageref on input line 101.
+LaTeX Info: Redefining \nameref on input line 101.
 
 (./index.out) (./index.out)
 \@outlinefile=\write6
 
 \openout6 = index.out
 LaTeX Font Info:    Encoding `TU' has changed to `OT1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 97.
+(Font)              `operators' in the math version `normal' on input line 101.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmss/m/n --> OT1/cmss/m/n on input line 97.
+(Font)                  TU/lmss/m/n --> OT1/cmss/m/n on input line 101.
 LaTeX Font Info:    Encoding `TU' has changed to `OT1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 97.
+(Font)              `operators' in the math version `bold' on input line 101.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmss/b/n --> OT1/cmss/bx/n on input line 97.
+(Font)                  TU/lmss/b/n --> OT1/cmss/bx/n on input line 101.
 \symnumbers=\mathgroup12
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 97.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 101.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 97.
-
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/mathkerncmss/m/sl --> TU/lmss/m/it on input line 97.
-
-LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 97.
-LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/bx/sl --> TU/lmss/m/it on input line 97
+(Font)              `pureletters' in the math version `normal' on input line 101
 .
-LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/pplj/m/n on input line 97.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 97.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 97.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  TU/lmss/m/n --> TU/lmss/m/n on input line 97.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  TU/lmss/b/n --> TU/lmss/m/n on input line 97.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 97.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  TU/pplj/m/it --> TU/lmss/m/it on input line 97.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  TU/pplj/b/it --> TU/lmss/m/it on input line 97.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 97.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  TU/lmtt/m/n --> TU/lmtt/m/n on input line 97.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  TU/lmtt/b/n --> TU/lmtt/m/n on input line 97.
-LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 97.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
+(Font)                  OT1/mathkerncmss/m/sl --> TU/lmss/m/it on input line 101
+.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `pureletters' in the math version `bold' on input line 101.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 97.
-LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/pplj/bx/n on input line 97.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  TU/lmss/bx/n --> TU/lmss/bx/n on input line 97.
+(Font)                  OT1/mathkerncmss/bx/sl --> TU/lmss/m/it on input line 10
+1.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/pplj/m/n on input line 101.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 101.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 101.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  TU/lmss/m/n --> TU/lmss/m/n on input line 101.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 97.
+(Font)                  TU/lmss/b/n --> TU/lmss/m/n on input line 101.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 101.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  TU/pplj/m/it --> TU/lmss/m/it on input line 101.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 97.
+(Font)                  TU/pplj/b/it --> TU/lmss/m/it on input line 101.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 101.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  TU/lmtt/m/n --> TU/lmtt/m/n on input line 101.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  TU/lmtt/m/n --> TU/lmtt/bx/n on input line 97.
+(Font)                  TU/lmtt/b/n --> TU/lmtt/m/n on input line 101.
+LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
+(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 101.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 101.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/pplj/bx/n on input line 101.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  TU/lmss/bx/n --> TU/lmss/bx/n on input line 101.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 101.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 101.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  TU/lmtt/m/n --> TU/lmtt/bx/n on input line 101.
 \symboldpureletters=\mathgroup13
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/translator/translator-basic-dicti
@@ -1723,185 +1723,191 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'index.bbl' found.
  (./index.bbl)
-Package biblatex Info: Reference section=0 on input line 97.
-Package biblatex Info: Reference segment=0 on input line 97.
+Package biblatex Info: Reference section=0 on input line 101.
+Package biblatex Info: Reference segment=0 on input line 101.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 ) (./index.nav)
-LaTeX Font Info:    Try loading font information for U+zeur on input line 97.
+LaTeX Font Info:    Try loading font information for U+zeur on input line 101.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/eulervm/uzeur.fd
 File: uzeur.fd 2005/01/11 v4.0 (WaS)
 )
 LaTeX Font Info:    Font shape `U/zeur/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 97.
+(Font)              scaled to size 10.40245pt on input line 101.
 LaTeX Font Info:    Font shape `U/zeur/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 97.
+(Font)              scaled to size 7.59998pt on input line 101.
 LaTeX Font Info:    Font shape `U/zeur/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 97.
-LaTeX Font Info:    Try loading font information for U+zeus on input line 97.
+(Font)              scaled to size 5.69998pt on input line 101.
+LaTeX Font Info:    Try loading font information for U+zeus on input line 101.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/eulervm/uzeus.fd
 File: uzeus.fd 2005/01/11 v4.0 (WaS)
 )
 LaTeX Font Info:    Font shape `U/zeus/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 97.
+(Font)              scaled to size 10.40245pt on input line 101.
 LaTeX Font Info:    Font shape `U/zeus/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 97.
+(Font)              scaled to size 7.59998pt on input line 101.
 LaTeX Font Info:    Font shape `U/zeus/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 97.
-LaTeX Font Info:    Try loading font information for U+zeuex on input line 97.
+(Font)              scaled to size 5.69998pt on input line 101.
+LaTeX Font Info:    Try loading font information for U+zeuex on input line 101.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/eulervm/uzeuex.fd
 File: uzeuex.fd 2005/01/11 v4.0 (WaS)
 )
 LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 97.
+(Font)              scaled to size 10.40245pt on input line 101.
 LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 97.
+(Font)              scaled to size 7.59998pt on input line 101.
 LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 97.
+(Font)              scaled to size 5.69998pt on input line 101.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 97.
+(Font)              scaled to size 10.40245pt on input line 101.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 97.
+(Font)              scaled to size 7.59998pt on input line 101.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 97.
+(Font)              scaled to size 5.69998pt on input line 101.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 97.
+(Font)              scaled to size 10.40245pt on input line 101.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 97.
+(Font)              scaled to size 7.59998pt on input line 101.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 97.
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 97.
+(Font)              scaled to size 5.69998pt on input line 101.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 101.
+
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 97.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 101.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 97.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 101.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 97.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 101.
 LaTeX Font Info:    Font shape `TU/lmss/b/n' in size <10.95> not available
-(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 97.
+(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 101.
 LaTeX Font Info:    Font shape `TU/lmss/b/n' in size <8> not available
-(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 97.
+(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 101.
 LaTeX Font Info:    Font shape `TU/lmss/b/n' in size <6> not available
-(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 97.
+(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 101.
 LaTeX Font Info:    Font shape `U/zeur/b/n' will be
-(Font)              scaled to size 10.40245pt on input line 97.
+(Font)              scaled to size 10.40245pt on input line 101.
 LaTeX Font Info:    Font shape `U/zeur/b/n' will be
-(Font)              scaled to size 7.59998pt on input line 97.
+(Font)              scaled to size 7.59998pt on input line 101.
 LaTeX Font Info:    Font shape `U/zeur/b/n' will be
-(Font)              scaled to size 5.69998pt on input line 97.
+(Font)              scaled to size 5.69998pt on input line 101.
 LaTeX Font Info:    Font shape `U/zeus/b/n' will be
-(Font)              scaled to size 10.40245pt on input line 97.
+(Font)              scaled to size 10.40245pt on input line 101.
 LaTeX Font Info:    Font shape `U/zeus/b/n' will be
-(Font)              scaled to size 7.59998pt on input line 97.
+(Font)              scaled to size 7.59998pt on input line 101.
 LaTeX Font Info:    Font shape `U/zeus/b/n' will be
-(Font)              scaled to size 5.69998pt on input line 97.
+(Font)              scaled to size 5.69998pt on input line 101.
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <10.95> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 97.
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 101.
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <8> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 97.
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 101.
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <6> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 97.
-Package epstopdf Info: Source file: <./images/logo_UAB.eps>
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 101.
+
+
+LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 102.
+
+Package epstopdf Info: Source file: <./images/logo_uab.eps>
 (epstopdf)                    date: 2019-06-07 18:06:07
 (epstopdf)                    size: 1280364 bytes
-(epstopdf)             Output file: <./images/logo_UAB-eps-converted-to.pdf>
+(epstopdf)             Output file: <./images/logo_uab-eps-converted-to.pdf>
 (epstopdf)                    date: 2019-07-01 14:01:44
 (epstopdf)                    size: 20375 bytes
-(epstopdf)             Command: <repstopdf --outfile=./images/logo_UAB-eps-conve
-rted-to.pdf ./images/logo_UAB.eps>
-(epstopdf)             \includegraphics on input line 98.
+(epstopdf)             Command: <repstopdf --outfile=./images/logo_uab-eps-conve
+rted-to.pdf ./images/logo_uab.eps>
+(epstopdf)             \includegraphics on input line 102.
 Package epstopdf Info: Output file is already uptodate.
-<./images/logo_UAB-eps-converted-to.pdf, id=87, 705.63625pt x 313.17pt>
-File: ./images/logo_UAB-eps-converted-to.pdf Graphic file (type pdf)
-<use ./images/logo_UAB-eps-converted-to.pdf>
-Package luatex.def Info: ./images/logo_UAB-eps-converted-to.pdf  used on input l
-ine 98.
+<./images/logo_uab-eps-converted-to.pdf, id=83, 705.63625pt x 313.17pt>
+File: ./images/logo_uab-eps-converted-to.pdf Graphic file (type pdf)
+<use ./images/logo_uab-eps-converted-to.pdf>
+Package luatex.def Info: ./images/logo_uab-eps-converted-to.pdf  used on input l
+ine 102.
 (luatex.def)             Requested size: 96.16121pt x 42.67912pt.
-Package epstopdf Info: Source file: <./images/logo_IFAE.eps>
+Package epstopdf Info: Source file: <./images/logo_ifae.eps>
 (epstopdf)                    date: 2019-06-07 18:04:51
 (epstopdf)                    size: 519277 bytes
-(epstopdf)             Output file: <./images/logo_IFAE-eps-converted-to.pdf>
+(epstopdf)             Output file: <./images/logo_ifae-eps-converted-to.pdf>
 (epstopdf)                    date: 2019-07-01 14:10:11
 (epstopdf)                    size: 23384 bytes
-(epstopdf)             Command: <repstopdf --outfile=./images/logo_IFAE-eps-conv
-erted-to.pdf ./images/logo_IFAE.eps>
-(epstopdf)             \includegraphics on input line 98.
+(epstopdf)             Command: <repstopdf --outfile=./images/logo_ifae-eps-conv
+erted-to.pdf ./images/logo_ifae.eps>
+(epstopdf)             \includegraphics on input line 102.
 Package epstopdf Info: Output file is already uptodate.
-<./images/logo_IFAE-eps-converted-to.pdf, id=88, 401.5pt x 192.72pt>
-File: ./images/logo_IFAE-eps-converted-to.pdf Graphic file (type pdf)
-<use ./images/logo_IFAE-eps-converted-to.pdf>
-Package luatex.def Info: ./images/logo_IFAE-eps-converted-to.pdf  used on input 
-line 98.
+<./images/logo_ifae-eps-converted-to.pdf, id=84, 401.5pt x 192.72pt>
+File: ./images/logo_ifae-eps-converted-to.pdf Graphic file (type pdf)
+<use ./images/logo_ifae-eps-converted-to.pdf>
+Package luatex.def Info: ./images/logo_ifae-eps-converted-to.pdf  used on input 
+line 102.
 (luatex.def)             Requested size: 88.91228pt x 42.67912pt.
 LaTeX Font Info:    Font shape `U/zeur/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 123.
+(Font)              scaled to size 9.49997pt on input line 129.
 LaTeX Font Info:    Font shape `U/zeur/m/n' will be
-(Font)              scaled to size 7.21997pt on input line 123.
+(Font)              scaled to size 7.21997pt on input line 129.
 LaTeX Font Info:    Font shape `U/zeus/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 123.
+(Font)              scaled to size 9.49997pt on input line 129.
 LaTeX Font Info:    Font shape `U/zeus/m/n' will be
-(Font)              scaled to size 7.21997pt on input line 123.
+(Font)              scaled to size 7.21997pt on input line 129.
 LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 123.
+(Font)              scaled to size 9.49997pt on input line 129.
 LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
-(Font)              scaled to size 7.21997pt on input line 123.
+(Font)              scaled to size 7.21997pt on input line 129.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 123.
+(Font)              scaled to size 9.49997pt on input line 129.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.21997pt on input line 123.
+(Font)              scaled to size 7.21997pt on input line 129.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 123.
+(Font)              scaled to size 9.49997pt on input line 129.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.21997pt on input line 123.
+(Font)              scaled to size 7.21997pt on input line 129.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 123.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 129.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7.6> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 123.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 129.
 LaTeX Font Info:    Font shape `TU/lmss/b/n' in size <10> not available
-(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 123.
+(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 129.
 LaTeX Font Info:    Font shape `TU/lmss/b/n' in size <7.6> not available
-(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 123.
+(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 129.
 LaTeX Font Info:    Font shape `U/zeur/b/n' will be
-(Font)              scaled to size 9.49997pt on input line 123.
+(Font)              scaled to size 9.49997pt on input line 129.
 LaTeX Font Info:    Font shape `U/zeur/b/n' will be
-(Font)              scaled to size 7.21997pt on input line 123.
+(Font)              scaled to size 7.21997pt on input line 129.
 LaTeX Font Info:    Font shape `U/zeus/b/n' will be
-(Font)              scaled to size 9.49997pt on input line 123.
+(Font)              scaled to size 9.49997pt on input line 129.
 LaTeX Font Info:    Font shape `U/zeus/b/n' will be
-(Font)              scaled to size 7.21997pt on input line 123.
+(Font)              scaled to size 7.21997pt on input line 129.
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <10> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 123.
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 129.
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <7.6> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 123.
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 129.
 LaTeX Font Info:    Font shape `U/zeur/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 123.
+(Font)              scaled to size 13.67995pt on input line 129.
 LaTeX Font Info:    Font shape `U/zeus/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 123.
+(Font)              scaled to size 13.67995pt on input line 129.
 LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 123.
+(Font)              scaled to size 13.67995pt on input line 129.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 123.
+(Font)              scaled to size 13.67995pt on input line 129.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 123.
+(Font)              scaled to size 13.67995pt on input line 129.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 123.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 129.
 LaTeX Font Info:    Font shape `TU/lmss/b/n' in size <14.4> not available
-(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 123.
+(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 129.
 LaTeX Font Info:    Font shape `U/zeur/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 123.
+(Font)              scaled to size 13.67995pt on input line 129.
 LaTeX Font Info:    Font shape `U/zeus/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 123.
+(Font)              scaled to size 13.67995pt on input line 129.
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <14.4> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 123.
- [2
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 129.
+[2
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -1909,80 +1915,72 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 
-<./images/logo_UAB-eps-converted-to.pdf><./images/logo_IFAE-eps-converted-to.pdf
->] [3
+<./images/logo_uab-eps-converted-to.pdf><./images/logo_ifae-eps-converted-to.pdf
+>]
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-2'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
-
-]
-
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 151
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 169
 .
 
 LaTeX Font Info:    Font shape `U/zeur/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 151.
+(Font)              scaled to size 8.54997pt on input line 169.
 LaTeX Font Info:    Font shape `U/zeur/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 151.
+(Font)              scaled to size 6.64998pt on input line 169.
 LaTeX Font Info:    Font shape `U/zeur/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 151.
+(Font)              scaled to size 4.74998pt on input line 169.
 LaTeX Font Info:    Font shape `U/zeus/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 151.
+(Font)              scaled to size 8.54997pt on input line 169.
 LaTeX Font Info:    Font shape `U/zeus/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 151.
+(Font)              scaled to size 6.64998pt on input line 169.
 LaTeX Font Info:    Font shape `U/zeus/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 151.
+(Font)              scaled to size 4.74998pt on input line 169.
 LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 151.
+(Font)              scaled to size 8.54997pt on input line 169.
 LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 151.
+(Font)              scaled to size 6.64998pt on input line 169.
 LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 151.
+(Font)              scaled to size 4.74998pt on input line 169.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 151.
+(Font)              scaled to size 8.54997pt on input line 169.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 151.
+(Font)              scaled to size 6.64998pt on input line 169.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 151.
+(Font)              scaled to size 4.74998pt on input line 169.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 151.
+(Font)              scaled to size 8.54997pt on input line 169.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 151.
+(Font)              scaled to size 6.64998pt on input line 169.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 151.
+(Font)              scaled to size 4.74998pt on input line 169.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <9> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 151.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 169.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 151.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 169.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 151.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 169.
 LaTeX Font Info:    Font shape `TU/lmss/b/n' in size <9> not available
-(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 151.
+(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 169.
 LaTeX Font Info:    Font shape `TU/lmss/b/n' in size <7> not available
-(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 151.
+(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 169.
 LaTeX Font Info:    Font shape `TU/lmss/b/n' in size <5> not available
-(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 151.
+(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 169.
 LaTeX Font Info:    Font shape `U/zeur/b/n' will be
-(Font)              scaled to size 8.54997pt on input line 151.
+(Font)              scaled to size 8.54997pt on input line 169.
 LaTeX Font Info:    Font shape `U/zeur/b/n' will be
-(Font)              scaled to size 6.64998pt on input line 151.
+(Font)              scaled to size 6.64998pt on input line 169.
 LaTeX Font Info:    Font shape `U/zeur/b/n' will be
-(Font)              scaled to size 4.74998pt on input line 151.
+(Font)              scaled to size 4.74998pt on input line 169.
 LaTeX Font Info:    Font shape `U/zeus/b/n' will be
-(Font)              scaled to size 8.54997pt on input line 151.
+(Font)              scaled to size 8.54997pt on input line 169.
 LaTeX Font Info:    Font shape `U/zeus/b/n' will be
-(Font)              scaled to size 6.64998pt on input line 151.
+(Font)              scaled to size 6.64998pt on input line 169.
 LaTeX Font Info:    Font shape `U/zeus/b/n' will be
-(Font)              scaled to size 4.74998pt on input line 151.
+(Font)              scaled to size 4.74998pt on input line 169.
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <9> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 151.
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 169.
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <7> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 151.
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 169.
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <5> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 151.
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 169.
 Package epstopdf Info: Source file: <./images/runningOfAs.eps>
 (epstopdf)                    date: 2019-07-01 16:12:15
 (epstopdf)                    size: 29527409 bytes
@@ -1991,60 +1989,21 @@ Package epstopdf Info: Source file: <./images/runningOfAs.eps>
 (epstopdf)                    size: 1010409 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/runningOfAs-eps-co
 nverted-to.pdf ./images/runningOfAs.eps>
-(epstopdf)             \includegraphics on input line 151.
+(epstopdf)             \includegraphics on input line 169.
 Package epstopdf Info: Output file is already uptodate.
-<./images/runningOfAs-eps-converted-to.pdf, id=130, 749.80125pt x 758.835pt>
+<./images/runningOfAs-eps-converted-to.pdf, id=106, 749.80125pt x 758.835pt>
 File: ./images/runningOfAs-eps-converted-to.pdf Graphic file (type pdf)
 <use ./images/runningOfAs-eps-converted-to.pdf>
 Package luatex.def Info: ./images/runningOfAs-eps-converted-to.pdf  used on inpu
-t line 151.
+t line 169.
 (luatex.def)             Requested size: 171.14767pt x 173.20839pt.
-[4
+[3
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-3'
+2'
 
-warning  (pdf backend): ignoring duplicate destination with the name 'page.3'
-
-]
-Overfull \hbox (7.96866pt too wide) in paragraph at lines 182--182
-[][]  
- []
-
-[5
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-4'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
-
-<./images/runningOfAs-eps-converted-to.pdf>]
-Overfull \hbox (7.96866pt too wide) in paragraph at lines 182--182
-[][]  
- []
-
-[6
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-5'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
-
-]
-Overfull \hbox (7.96866pt too wide) in paragraph at lines 182--182
-[][]  
- []
-
-[7
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-6'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.6'
+warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
 
 ]
 Package epstopdf Info: Source file: <./images/quarkHadronDuality.eps>
@@ -2056,16 +2015,57 @@ o.pdf>
 (epstopdf)                    size: 136524 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/quarkHadronDuality
 -eps-converted-to.pdf ./images/quarkHadronDuality.eps>
-(epstopdf)             \includegraphics on input line 187.
+(epstopdf)             \includegraphics on input line 189.
 Package epstopdf Info: Output file is already uptodate.
-<./images/quarkHadronDuality-eps-converted-to.pdf, id=173, 788.9475pt x 815.045p
+<./images/quarkHadronDuality-eps-converted-to.pdf, id=131, 788.9475pt x 815.045p
 t>
 File: ./images/quarkHadronDuality-eps-converted-to.pdf Graphic file (type pdf)
 <use ./images/quarkHadronDuality-eps-converted-to.pdf>
 Package luatex.def Info: ./images/quarkHadronDuality-eps-converted-to.pdf  used 
-on input line 187.
+on input line 189.
 (luatex.def)             Requested size: 171.14767pt x 176.8107pt.
- [8
+ [4
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+3'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.3'
+
+<./images/runningOfAs-eps-converted-to.pdf>]
+Overfull \hbox (7.96866pt too wide) in paragraph at lines 227--227
+[][]  
+ []
+
+[5
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+4'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
+
+<./images/quarkHadronDuality-eps-converted-to.pdf>] (./index.toc) [6
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+5'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
+
+] (./index.toc)
+Overfull \vbox (9.97908pt too high) detected at line 249
+ []
+
+[7
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+6'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.6'
+
+] [8
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2073,7 +2073,28 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.7'
 
-] (./index.toc) [9
+]
+LaTeX Font Info:    Font shape `U/zeur/m/n' will be
+(Font)              scaled to size 11.39996pt on input line 302.
+LaTeX Font Info:    Font shape `U/zeus/m/n' will be
+(Font)              scaled to size 11.39996pt on input line 302.
+LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
+(Font)              scaled to size 11.39996pt on input line 302.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 11.39996pt on input line 302.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 11.39996pt on input line 302.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <12> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 302.
+LaTeX Font Info:    Font shape `TU/lmss/b/n' in size <12> not available
+(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 302.
+LaTeX Font Info:    Font shape `U/zeur/b/n' will be
+(Font)              scaled to size 11.39996pt on input line 302.
+LaTeX Font Info:    Font shape `U/zeus/b/n' will be
+(Font)              scaled to size 11.39996pt on input line 302.
+LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <12> not available
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 302.
+ [9
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2081,7 +2102,31 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.8'
 
-<./images/quarkHadronDuality-eps-converted-to.pdf>] (./index.toc) [10
+]
+Package epstopdf Info: Source file: <./images/rTauCauchysTheorem.eps>
+(epstopdf)                    date: 2019-07-10 18:37:30
+(epstopdf)                    size: 1621314 bytes
+(epstopdf)             Output file: <./images/rTauCauchysTheorem-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2019-07-10 18:37:00
+(epstopdf)                    size: 27894 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/rTauCauchysTheorem
+-eps-converted-to.pdf ./images/rTauCauchysTheorem.eps>
+(epstopdf)             \includegraphics on input line 330.
+system(repstopdf --outfile=./images/rTauCauchysTheorem-eps-converted-to.pdf ./im
+ages/rTauCauchysTheorem.eps) executed.
+Package epstopdf Info: Result file: <./images/rTauCauchysTheorem-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2019-07-10 18:38:12
+(epstopdf)                    size: 35843 bytes.
+<./images/rTauCauchysTheorem-eps-converted-to.pdf, id=240, 914.41624pt x 458.713
+75pt>
+File: ./images/rTauCauchysTheorem-eps-converted-to.pdf Graphic file (type pdf)
+<use ./images/rTauCauchysTheorem-eps-converted-to.pdf>
+Package luatex.def Info: ./images/rTauCauchysTheorem-eps-converted-to.pdf  used 
+on input line 330.
+(luatex.def)             Requested size: 273.83733pt x 137.37021pt.
+ [10
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2089,7 +2134,18 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.9'
 
-] [11
+
+warning  (pdf backend): pop empty color page stack 0
+]
+./index.tex:365: Missing $ inserted.
+<inserted text> 
+$
+l.365 \end{frame}
+               
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[11
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2097,26 +2153,9 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.10'
 
-]
-Package epstopdf Info: Source file: <./images/rTauCauchysTheorem.eps>
-(epstopdf)                    date: 2019-05-25 15:48:49
-(epstopdf)                    size: 1607694 bytes
-(epstopdf)             Output file: <./images/rTauCauchysTheorem-eps-converted-t
-o.pdf>
-(epstopdf)                    date: 2019-07-01 18:46:56
-(epstopdf)                    size: 36514 bytes
-(epstopdf)             Command: <repstopdf --outfile=./images/rTauCauchysTheorem
--eps-converted-to.pdf ./images/rTauCauchysTheorem.eps>
-(epstopdf)             \includegraphics on input line 232.
-Package epstopdf Info: Output file is already uptodate.
-<./images/rTauCauchysTheorem-eps-converted-to.pdf, id=252, 914.41624pt x 451.687
-5pt>
-File: ./images/rTauCauchysTheorem-eps-converted-to.pdf Graphic file (type pdf)
-<use ./images/rTauCauchysTheorem-eps-converted-to.pdf>
-Package luatex.def Info: ./images/rTauCauchysTheorem-eps-converted-to.pdf  used 
-on input line 232.
-(luatex.def)             Requested size: 273.83733pt x 135.26607pt.
- [12
+
+warning  (pdf backend): pop empty color page stack 0
+<./images/rTauCauchysTheorem-eps-converted-to.pdf>] [12
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2124,6 +2163,8 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.11'
 
+
+warning  (pdf backend): pop empty color page stack 0
 ] [13
 
 
@@ -2132,7 +2173,9 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.12'
 
-<./images/rTauCauchysTheorem-eps-converted-to.pdf>] [14
+
+warning  (pdf backend): pop empty color page stack 0
+] [14
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2156,6 +2199,8 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.15'
 
+
+warning  (pdf backend): pop empty color page stack 0
 ] [17
 
 
@@ -2196,7 +2241,79 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.20'
 
-] [22
+]
+LaTeX Font Info:    Try loading font information for U+fplmbb on input line 601.
+
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ufplmbb.fd
+File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
+)
+./index.tex:601: Undefined control sequence.
+\beamer@doifinframe ...Dimension 4:} & :m_i \anti 
+                                                  {q} q: \\ & :G_a^{\mu \nu ...
+l.601 \end{frame}
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./index.tex:601: Undefined control sequence.
+\beamer@doifinframe ...xt {Dimension 6:} & :\anti 
+                                                  {q} \Gamma q \anti {q} \Ga...
+l.601 \end{frame}
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./index.tex:601: Undefined control sequence.
+\beamer@doifinframe ... :\anti {q} \Gamma q \anti 
+                                                  {q} \Gamma q: \\ & :\anti ...
+l.601 \end{frame}
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./index.tex:601: Undefined control sequence.
+\beamer@doifinframe ... {q} \Gamma q: \\ & :\anti 
+                                                  {q} \Gamma \frac {\lambda ...
+l.601 \end{frame}
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./index.tex:601: Undefined control sequence.
+\beamer@doifinframe ...a ^a}{2} q_\beta (x) \anti 
+                                                  {q} \Gamma \frac {\lambda ...
+l.601 \end{frame}
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./index.tex:601: Undefined control sequence.
+\beamer@doifinframe ... ^a}{2} q: \\ & :m_i \anti 
+                                                  {q} \frac {\lambda ^a}{2} ...
+l.601 \end{frame}
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[22
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2204,7 +2321,12 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.21'
 
-] [23
+]
+Overfull \hbox (0.39578pt too wide) detected at line 619
+ $[][]$  
+ []
+
+[23
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2212,79 +2334,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.22'
 
-]
-LaTeX Font Info:    Try loading font information for U+fplmbb on input line 494.
-
- (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ufplmbb.fd
-File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
-)
-./index.tex:494: Undefined control sequence.
-\beamer@doifinframe ...Dimension 4:} & :m_i \anti 
-                                                  {q} q: \\ & :G_a^{\mu \nu ...
-l.494 \end{frame}
-               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./index.tex:494: Undefined control sequence.
-\beamer@doifinframe ...xt {Dimension 6:} & :\anti 
-                                                  {q} \Gamma q \anti {q} \Ga...
-l.494 \end{frame}
-               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./index.tex:494: Undefined control sequence.
-\beamer@doifinframe ... :\anti {q} \Gamma q \anti 
-                                                  {q} \Gamma q: \\ & :\anti ...
-l.494 \end{frame}
-               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./index.tex:494: Undefined control sequence.
-\beamer@doifinframe ... {q} \Gamma q: \\ & :\anti 
-                                                  {q} \Gamma \frac {\lambda ...
-l.494 \end{frame}
-               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./index.tex:494: Undefined control sequence.
-\beamer@doifinframe ...a ^a}{2} q_\beta (x) \anti 
-                                                  {q} \Gamma \frac {\lambda ...
-l.494 \end{frame}
-               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./index.tex:494: Undefined control sequence.
-\beamer@doifinframe ... ^a}{2} q: \\ & :m_i \anti 
-                                                  {q} \frac {\lambda ^a}{2} ...
-l.494 \end{frame}
-               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[24
+] [24
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2292,12 +2342,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.23'
 
-]
-Overfull \hbox (0.39578pt too wide) detected at line 512
- $[][]$  
- []
-
-[25
+] [25
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2313,40 +2358,6 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.25'
 
-] [27
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-26'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.26'
-
-] (./index.toc) [28
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-27'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.27'
-
-
-warning  (pdf backend): pop empty color page stack 0
-] [29
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-28'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.28'
-
-] [30
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-29'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.29'
-
 
 warning  (pdf backend): pop empty color page stack 0
 ]
@@ -2359,13 +2370,13 @@ df>
 (epstopdf)                    size: 18091 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/specFuncAleph_V-ep
 s-converted-to.pdf ./images/specFuncAleph_V.eps>
-(epstopdf)             \includegraphics on input line 645.
+(epstopdf)             \includegraphics on input line 711.
 Package epstopdf Info: Output file is already uptodate.
-<./images/specFuncAleph_V-eps-converted-to.pdf, id=432, 1011.78pt x 722.7pt>
+<./images/specFuncAleph_V-eps-converted-to.pdf, id=394, 1011.78pt x 722.7pt>
 File: ./images/specFuncAleph_V-eps-converted-to.pdf Graphic file (type pdf)
 <use ./images/specFuncAleph_V-eps-converted-to.pdf>
 Package luatex.def Info: ./images/specFuncAleph_V-eps-converted-to.pdf  used on 
-input line 645.
+input line 711.
 (luatex.def)             Requested size: 171.14767pt x 122.23982pt.
 Package epstopdf Info: Source file: <./images/specFuncAleph_A.eps>
 (epstopdf)                    date: 2019-06-17 14:42:41
@@ -2376,21 +2387,21 @@ df>
 (epstopdf)                    size: 18610 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/specFuncAleph_A-ep
 s-converted-to.pdf ./images/specFuncAleph_A.eps>
-(epstopdf)             \includegraphics on input line 645.
+(epstopdf)             \includegraphics on input line 711.
 Package epstopdf Info: Output file is already uptodate.
-<./images/specFuncAleph_A-eps-converted-to.pdf, id=433, 1011.78pt x 722.7pt>
+<./images/specFuncAleph_A-eps-converted-to.pdf, id=395, 1011.78pt x 722.7pt>
 File: ./images/specFuncAleph_A-eps-converted-to.pdf Graphic file (type pdf)
 <use ./images/specFuncAleph_A-eps-converted-to.pdf>
 Package luatex.def Info: ./images/specFuncAleph_A-eps-converted-to.pdf  used on 
-input line 645.
+input line 711.
 (luatex.def)             Requested size: 171.14767pt x 122.23982pt.
- [31
+ [27
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-30'
+26'
 
-warning  (pdf backend): ignoring duplicate destination with the name 'page.30'
+warning  (pdf backend): ignoring duplicate destination with the name 'page.26'
 
 
 warning  (pdf backend): pop empty color page stack 0
@@ -2404,14 +2415,89 @@ Package epstopdf Info: Source file: <./images/specFuncAleph_VpA.eps>
 (epstopdf)                    size: 17331 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/specFuncAleph_VpA-
 eps-converted-to.pdf ./images/specFuncAleph_VpA.eps>
-(epstopdf)             \includegraphics on input line 648.
+(epstopdf)             \includegraphics on input line 714.
 Package epstopdf Info: Output file is already uptodate.
-<./images/specFuncAleph_VpA-eps-converted-to.pdf, id=441, 1011.78pt x 722.7pt>
+<./images/specFuncAleph_VpA-eps-converted-to.pdf, id=403, 1011.78pt x 722.7pt>
 File: ./images/specFuncAleph_VpA-eps-converted-to.pdf Graphic file (type pdf)
 <use ./images/specFuncAleph_VpA-eps-converted-to.pdf>
 Package luatex.def Info: ./images/specFuncAleph_VpA-eps-converted-to.pdf  used o
-n input line 648.
+n input line 714.
 (luatex.def)             Requested size: 342.29536pt x 244.50172pt.
+ [28
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+27'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.27'
+
+<./images/specFuncAleph_V-eps-converted-to.pdf><./images/specFuncAleph_A-eps-con
+verted-to.pdf>] (./index.toc)
+Overfull \vbox (9.97908pt too high) detected at line 717
+ []
+
+[29
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+28'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.28'
+
+<./images/specFuncAleph_VpA-eps-converted-to.pdf>] [30
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+29'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.29'
+
+] [31
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+30'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.30'
+
+]
+Package epstopdf Info: Source file: <./images/monomialWeightGraphs.eps>
+(epstopdf)                    date: 2019-05-29 09:47:03
+(epstopdf)                    size: 28415 bytes
+(epstopdf)             Output file: <./images/monomialWeightGraphs-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2019-07-02 14:30:34
+(epstopdf)                    size: 14169 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/monomialWeightGrap
+hs-eps-converted-to.pdf ./images/monomialWeightGraphs.eps>
+(epstopdf)             \includegraphics on input line 784.
+Package epstopdf Info: Output file is already uptodate.
+<./images/monomialWeightGraphs-eps-converted-to.pdf, id=549, 867.24pt x 505.89pt
+>
+File: ./images/monomialWeightGraphs-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./images/monomialWeightGraphs-eps-converted-to.pdf>
+Package luatex.def Info: ./images/monomialWeightGraphs-eps-converted-to.pdf  use
+d on input line 784.
+(luatex.def)             Requested size: 239.6057pt x 139.76472pt.
+Package epstopdf Info: Source file: <./images/complexCountour.eps>
+(epstopdf)                    date: 2019-07-09 16:43:04
+(epstopdf)                    size: 1632170 bytes
+(epstopdf)             Output file: <./images/complexCountour-eps-converted-to.p
+df>
+(epstopdf)                    date: 2019-07-09 16:43:43
+(epstopdf)                    size: 15099 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/complexCountour-ep
+s-converted-to.pdf ./images/complexCountour.eps>
+(epstopdf)             \includegraphics on input line 784.
+Package epstopdf Info: Output file is already uptodate.
+<./images/complexCountour-eps-converted-to.pdf, id=550, 725.71124pt x 686.565pt>
+
+File: ./images/complexCountour-eps-converted-to.pdf Graphic file (type pdf)
+<use ./images/complexCountour-eps-converted-to.pdf>
+Package luatex.def Info: ./images/complexCountour-eps-converted-to.pdf  used on 
+input line 784.
+(luatex.def)             Requested size: 102.68965pt x 97.1451pt.
  [32
 
 
@@ -2420,8 +2506,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.31'
 
-<./images/specFuncAleph_V-eps-converted-to.pdf><./images/specFuncAleph_A-eps-con
-verted-to.pdf>] (./index.toc) [33
+] [33
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2429,7 +2514,8 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.32'
 
-<./images/specFuncAleph_VpA-eps-converted-to.pdf>] [34
+<./images/monomialWeightGraphs-eps-converted-to.pdf><./images/complexCountour-ep
+s-converted-to.pdf>] [34
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2446,44 +2532,25 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 warning  (pdf backend): ignoring duplicate destination with the name 'page.34'
 
 ]
-Package epstopdf Info: Source file: <./images/monomialWeightGraphs.eps>
-(epstopdf)                    date: 2019-05-29 09:47:03
-(epstopdf)                    size: 28415 bytes
-(epstopdf)             Output file: <./images/monomialWeightGraphs-eps-converted
--to.pdf>
-(epstopdf)                    date: 2019-07-02 14:30:34
-(epstopdf)                    size: 14169 bytes
-(epstopdf)             Command: <repstopdf --outfile=./images/monomialWeightGrap
-hs-eps-converted-to.pdf ./images/monomialWeightGraphs.eps>
-(epstopdf)             \includegraphics on input line 718.
-Package epstopdf Info: Output file is already uptodate.
-<./images/monomialWeightGraphs-eps-converted-to.pdf, id=583, 867.24pt x 505.89pt
->
-File: ./images/monomialWeightGraphs-eps-converted-to.pdf Graphic file (type pdf)
+Overfull \hbox (1.35947pt too wide) in paragraph at lines 894--894
+[][] 
+ []
 
-<use ./images/monomialWeightGraphs-eps-converted-to.pdf>
-Package luatex.def Info: ./images/monomialWeightGraphs-eps-converted-to.pdf  use
-d on input line 718.
-(luatex.def)             Requested size: 239.6057pt x 139.76472pt.
-Package epstopdf Info: Source file: <./images/complexCountour.eps>
-(epstopdf)                    date: 2019-07-09 16:43:04
-(epstopdf)                    size: 1632170 bytes
-(epstopdf)             Output file: <./images/complexCountour-eps-converted-to.p
-df>
-(epstopdf)                    date: 2019-07-09 16:43:43
-(epstopdf)                    size: 15099 bytes
-(epstopdf)             Command: <repstopdf --outfile=./images/complexCountour-ep
-s-converted-to.pdf ./images/complexCountour.eps>
-(epstopdf)             \includegraphics on input line 718.
-Package epstopdf Info: Output file is already uptodate.
-<./images/complexCountour-eps-converted-to.pdf, id=584, 725.71124pt x 686.565pt>
 
-File: ./images/complexCountour-eps-converted-to.pdf Graphic file (type pdf)
-<use ./images/complexCountour-eps-converted-to.pdf>
-Package luatex.def Info: ./images/complexCountour-eps-converted-to.pdf  used on 
-input line 718.
-(luatex.def)             Requested size: 102.68965pt x 97.1451pt.
- [36
+Overfull \vbox (0.65002pt too high) detected at line 894
+ []
+
+
+Overfull \hbox (1.35947pt too wide) in paragraph at lines 894--894
+[][] 
+ []
+
+
+Overfull \hbox (2.03796pt too wide) in paragraph at lines 894--894
+[][] 
+ []
+
+[36
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2491,6 +2558,8 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.35'
 
+
+warning  (pdf backend): pop empty color page stack 0
 ] [37
 
 
@@ -2499,8 +2568,12 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.36'
 
-<./images/monomialWeightGraphs-eps-converted-to.pdf><./images/complexCountour-ep
-s-converted-to.pdf>] [38
+]
+Overfull \hbox (8.42772pt too wide) in paragraph at lines 949--949
+[][]  
+ []
+
+[38
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2516,31 +2589,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.38'
 
-]
-
-LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 828.
-
-
-Overfull \hbox (1.35947pt too wide) in paragraph at lines 828--828
-[][] 
- []
-
-
-Overfull \vbox (0.65002pt too high) detected at line 828
- []
-
-
-Overfull \hbox (1.35947pt too wide) in paragraph at lines 828--828
-[][] 
- []
-
-
-Overfull \hbox (2.03796pt too wide) in paragraph at lines 828--828
-[][] 
- []
-
-[40
+] [40
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2548,8 +2597,6 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.39'
 
-
-warning  (pdf backend): pop empty color page stack 0
 ] [41
 
 
@@ -2558,12 +2605,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.40'
 
-]
-Overfull \hbox (8.42772pt too wide) in paragraph at lines 883--883
-[][]  
- []
-
-[42
+] [42
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2611,7 +2653,11 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.46'
 
-] [48
+] (./index.toc)
+Overfull \vbox (9.97908pt too high) detected at line 1190
+ []
+
+[48
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2643,7 +2689,50 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.50'
 
-] (./index.toc) [52
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\translate ' on input line 1218.
+
+./index.tex:1234: Undefined control sequence.
+\beamer@doifinframe ...n1978a} \\ \(\langle \anti 
+                                                  {q}_{u/d}q_{u/d} \rangle (...
+l.1234 \end{frame}
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./index.tex:1234: Undefined control sequence.
+\beamer@doifinframe ...te {Jamin2002} \\ \( \anti 
+                                                  {s}s / \langle \anti {q}q ...
+l.1234 \end{frame}
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./index.tex:1234: Undefined control sequence.
+\beamer@doifinframe ...\anti {s}s / \langle \anti 
+                                                  {q}q \rangle \) & 0.8 \pm ...
+l.1234 \end{frame}
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (453.36905pt too wide) in paragraph at lines 1234--1234
+[][]  
+ []
+
+[52
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2667,92 +2756,17 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.53'
 
-] [55
+]
+Overfull \vbox (56.04903pt too high) detected at line 1258
+ []
+
+[55
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 54'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.54'
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\translate ' on input line 1152.
-
-./index.tex:1168: Undefined control sequence.
-\beamer@doifinframe ...n1978a} \\ \(\langle \anti 
-                                                  {q}_{u/d}q_{u/d} \rangle (...
-l.1168 \end{frame}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./index.tex:1168: Undefined control sequence.
-\beamer@doifinframe ...te {Jamin2002} \\ \( \anti 
-                                                  {s}s / \langle \anti {q}q ...
-l.1168 \end{frame}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./index.tex:1168: Undefined control sequence.
-\beamer@doifinframe ...\anti {s}s / \langle \anti 
-                                                  {q}q \rangle \) & 0.8 \pm ...
-l.1168 \end{frame}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (453.36905pt too wide) in paragraph at lines 1168--1168
-[][]  
- []
-
-[56
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-55'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.55'
-
-] [57
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-56'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.56'
-
-] [58
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-57'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.57'
-
-]
-Overfull \vbox (56.04903pt too high) detected at line 1192
- []
-
-[59
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-58'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.58'
 
 ]
 \tf@nav=\write7
@@ -2764,67 +2778,54 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.58'
 \tf@snm=\write9
 
 \openout9 = index.snm
- [60
+ [56
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-59'
+55'
 
-warning  (pdf backend): ignoring duplicate destination with the name 'page.59'
+warning  (pdf backend): ignoring duplicate destination with the name 'page.55'
 
 </usr/local/texlive/2019/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1194.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1194.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1260.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1260.
 
 (./index.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1194.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1194.
-
-
-Package rerunfilecheck Warning: File `index.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `index.out':
-(rerunfilecheck)             Before: D34FDAFC6BB3F4C15A8996F975E391C2;1016
-(rerunfilecheck)             After:  98055078D2A6A2DDD9C3BAC33069D41F;1016.
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1260.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1260.
+Package rerunfilecheck Info: File `index.out' has not changed.
+(rerunfilecheck)             Checksum: 3E7CD44A92CE5AA95537373187E9CAA9;966.
 Package logreq Info: Writing requests to 'index.run.xml'.
 
 \openout1 = index.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 47387 strings out of 494300
+ 47426 strings out of 494300
  100000,1648299 words of node,token memory allocated
- 16648 words of node memory still in use:
+ 16620 words of node memory still in use:
    64 hlist, 14 vlist, 9 rule, 61 disc, 7 local_par, 26 math, 378 glue, 70 kern,
- 130 penalty, 1237 glyph, 456 attribute, 76 glue_spec, 456 attribute_list, 16 wr
+ 130 penalty, 1237 glyph, 449 attribute, 76 glue_spec, 449 attribute_list, 16 wr
 ite, 11 pdf_start_link, 11 pdf_end_link, 10 pdf_dest, 13 pdf_action, 82 pdf_colo
 rstack nodes
-   avail lists: 1:10,2:3048,3:1505,4:592,5:537,6:111,7:3536,8:81,9:1144,10:14,11
-:137,12:1
- 49426 multiletter control sequences out of 65536+600000
- 361 fonts using 29487031 bytes
- 60i,23n,100p,1129b,1913s stack positions out of 5000i,500n,10000p,200000b,100000s
-
-warning  (pdf backend): unreferenced destination with name 'Outline0.4.2.40'
+   avail lists: 1:10,2:1796,3:863,4:616,5:537,6:120,7:3536,8:62,9:1143,10:15,11:
+135,12:1
+ 49441 multiletter control sequences out of 65536+600000
+ 396 fonts using 31949735 bytes
+ 60i,23n,100p,1129b,1859s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.ot
 f></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans17-regular.
-otf></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans12-obliqu
-e.otf></Users/knowledge/Library/Fonts/lmromancaps10-regular.otf></usr/local/texl
-ive/2019/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>{/usr/local/texli
-ve/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-di
-st/fonts/opentype/public/lm/lmsans9-regular.otf></usr/local/texlive/2019/texmf-d
-ist/fonts/opentype/public/lm/lmsans9-oblique.otf></usr/local/texlive/2019/texmf-
-dist/fonts/opentype/public/lm/lmsans10-boldoblique.otf></usr/local/texlive/2019/
-texmf-dist/fonts/opentype/public/lm/lmsans8-oblique.otf></usr/local/texlive/2019
-/texmf-dist/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/local/texlive/20
-19/texmf-dist/fonts/opentype/public/lm/lmsans8-regular.otf></usr/local/texlive/2
-019/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/local/texlive
+otf></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.o
+tf>{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans12-oblique.otf></usr/local
+/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans9-regular.otf></usr/loca
+l/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans9-oblique.otf></usr/loc
+al/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans10-boldoblique.otf></u
+sr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans8-oblique.otf></
+usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans10-oblique.otf>
+</usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans8-regular.otf
+></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.o
+tf></Users/knowledge/Library/Fonts/lmromancaps10-regular.otf></usr/local/texlive
 /2019/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texli
 ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive
 /2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2
@@ -2838,16 +2839,17 @@ st/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2019/texmf-d
 ist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2019/texmf-d
 ist/fonts/type1/public/amsfonts/euler/eurb10.pfb></usr/local/texlive/2019/texmf-
 dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/texlive/2019/texmf
+-dist/fonts/type1/public/amsfonts/euler/eurm5.pfb></usr/local/texlive/2019/texmf
 -dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/local/texlive/2019/texmf
 -dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/local/texlive/2019/texm
 f-dist/fonts/type1/public/amsfonts/euler/eusm7.pfb></usr/local/texlive/2019/texm
 f-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2019/texmf-dis
 t/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-
 dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on index.pdf (59 pages, 1555258 bytes).
+Output written on index.pdf (55 pages, 1551663 bytes).
 
-PDF statistics: 1015 PDF objects out of 1200 (max. 8388607)
- 754 compressed objects within 8 object streams
- 150 named destinations out of 1000 (max. 131072)
- 182 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 982 PDF objects out of 1000 (max. 8388607)
+ 724 compressed objects within 8 object streams
+ 140 named destinations out of 1000 (max. 131072)
+ 174 words of extra memory for PDF output out of 10000 (max. 100000000)
 

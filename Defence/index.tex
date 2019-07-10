@@ -46,6 +46,7 @@
 
 \setbeamertemplate{section in toc}{ {\color{black}\inserttocsectionnumber.~\inserttocsection} }
 \setbeamertemplate{subsection in toc}{ \hspace{1.2em}{\color{black}\rule[0.3ex]{3pt}{3pt}}~\inserttocsubsection\par }
+\setbeamertemplate{subsubsection in toc}{ \hspace{2.4em}{\color{black}\rule[0.2ex]{2pt}{2pt}}~\inserttocsubsubsection\par }
 \setbeamertemplate{itemize items}{\color{black!40}\(\blacksquare\)}
 
 \setbeamertemplate{blocks}[default]
@@ -54,11 +55,13 @@
 \setbeamerfont{myTOC}{size=\normalsize}
 \AtBeginSection[]{
   \ifnum \value{framenumber}>1
-    \frame{\frametitle{Outline}\usebeamerfont{myTOC}\tableofcontents[current,subsubsectionstyle=hide]}
+    \frame{\frametitle{Table of Contents}\usebeamerfont{myTOC}\tableofcontents[current]}
+
   \else
   \fi
 }
 
+% Custom Footer
 \makeatletter
 \setbeamertemplate{footline}
 {
@@ -80,19 +83,20 @@
 
 
 \title[The Strong Coupling]{The QCD Strong Coupling from Hadronic Tau Decays}
-\subtitle{A PhD Defense}
-\author{Dirk Hornung}
-\institute[UAB]{
-  Universitat Autònoma de Barcelona \\
-  \tiny
-  Departamiento de Física
+% \subtitle{A PhD Defense}
+\author{\Large Dirk Hornung}
+\institute{
+  \normalsize
+  \textsc{Supervisor} \\
+  Matthias Jamin
 }
 \titlegraphic{
-  \includegraphics[height=1.5cm]{./images/logo_UAB.eps}
-  \hspace{1cm}
-  \includegraphics[height=1.5cm]{./images/logo_IFAE.eps}
+  \includegraphics[height=1.5cm]{./images/logo_uab.eps}
+  \hspace{5cm}
+  \includegraphics[height=1.5cm]{./images/logo_ifae.eps}
 }
 \date{17th July 2019}
+
 
 \begin{document}
 \frame{\titlepage}
@@ -100,17 +104,19 @@
 \section{Introduction}
 \begin{frame}
   \frametitle{The Strong Coupling \(\alpha_s\)}
+   
   \begin{equation} 
     \begin{split}
       \mathcal{L}_{QCD}(x) &= -\frac{1}{4} G_{\mu\nu}^a(x) G^{\mu\nu,a}(x) \\
       &+ \left[ \sum_A \frac{i}{2} \overline{q}^A(x) \gamma^\mu \overleftrightarrow{D}_\mu q^A(x) - m \overline{q}^A(x)q^A(x) \right],
     \end{split}
   \end{equation}
-  \small
-  with \(D_\mu = \partial_\mu - i g \frac{\lambda^a}{2} B_\mu^a\)
-  \note{say hello now}
 
-  \pause
+  \small
+  \begin{equation*}
+    \text{where } D_\mu = \partial_\mu - i g \frac{\lambda^a}{2} B_\mu^a
+  \end{equation*}
+  
   \normalsize
   \begin{equation}
     \mathcal{L}_{QCD}^{QG-Int}(x) = \sqrt{\pi \bm{\alpha_s}} \, \overline{q}(x) \lambda \gamma_\mu q (x) G(x)
@@ -121,6 +127,18 @@
     };
   \end{equation}
 \end{frame}
+\note[itemize]{
+  \item Focused on QCD, the theory of the strong interactions between quarks and gluons
+  \item Quarks are the fundamental particles that make up Hadrons (proton,
+    neutron, pion, ...)
+  \item QCD is a non-abelian quantum field theory with symmetry group SU(3)
+  \item Charge property is the colour, the force carriers are the gluons
+  \item QCD Lagrangian, which contains the interaction terms
+  \item The interaction term can be displayed as a Feynman diagram
+  \item The strength of the interaction is given by the strong coupling constant \(\alpha_s\)
+  \item Our research focuses on measuring the strong coupling constant
+}
+
 \begin{frame}
   \frametitle{The Running of the Strong Coupling}
   \begin{columns}
@@ -128,7 +146,7 @@
       \begin{equation}
         \begin{split}
           \alpha_s(m_\tau^2) &\approx 0.33 \\
-          \alpha_s(m_Z^2) &\approx  1.12
+          \alpha_s(m_Z^2) &\approx  0.12
         \end{split}
       \end{equation}
         \begin{equation}
@@ -149,6 +167,35 @@
   \end{columns}
   \footnotetext{\cite{PDG2018}}
 \end{frame}
+\note[itemize]{
+  \item Strong coupling constant is far from constant, but depends on the energy
+  \item This is called as the ``running of the strong coupling''
+  \item E.g. at the for us interesting \(m_\tau^2\) scale \(\alpha_s(m_\tau^2)
+    \approx 0.33\)
+  \item In general the different values for \(\alpha_s\) are compared at the
+    \(m_Z^2\) scale (\(\alpha_s(m_Z^2) \approx 1.12\))
+  \item On the right we can study the running of the strong coupling
+  \item \(\alpha_s\) decreases with increasing energy
+  \item leads to asymptotic freedom: at high energies quarks and gluons interact
+    weakly and can be treated perturbatively
+  \item leads also to confinement: at low energies quarks are bound. An isolated
+    quark has never been measured. They appear in hadrons, two or three quarks
+}
+
+\begin{frame}
+  \frametitle{Duality}
+  \centering
+  \includegraphics[width=0.5\textwidth]{./images/quarkHadronDuality.eps}
+\end{frame}
+\note[itemize]{
+  \item As we observe Hadrons, but our theory is based on quarks and gluons we
+    assume Quark-Hadron Duality
+  \item Which is known to exist, but in contrary to the image is not well understood
+  \item In some cases there appear duality violations
+  \item We want to show that Duality Violations do not have to be taken into
+    account under certain circumstances 
+}
+
 \begin{frame}
   \frametitle{Hadronic \(\tau\) decays}
   \begin{columns}
@@ -159,9 +206,8 @@
         c -- [fermion] f3 [particle=\(d\)],
       };
     \end{column}
-
-    \pause
     \begin{column}{0.6\textwidth}
+      Tau decay ratio
       \begin{equation}
         R_\tau = \frac{\Gamma[\tau^- \to \nu_\tau + \text{hadrons}]}{\Gamma[\tau^- \to \nu_\tau e^- \overline{\nu}_{e}]}
       \end{equation}
@@ -170,7 +216,6 @@
 
   \vspace{1cm}
   
-  \pause
   \centering
   \begin{tabular}{lccc}
     \toprule
@@ -180,47 +225,93 @@
     Pion & \(\pi^0\) & \((u \overline{u} - d \overline{d})/\sqrt{2}\) & \SI{134.9770\pm0.0005}{\mega\eV}
   \end{tabular}
 \end{frame}
-\begin{frame}
-  \frametitle{Duality}
-  \centering
-  \includegraphics[width=0.5\textwidth]{./images/quarkHadronDuality.eps}
-\end{frame}
+\note[itemize]{
+  \item We measure the strong coupling constant from tau decays
+  \item We are interested in the hadronic tau decay 
+  \item Here the tau lepton decays into \(W\) boson and a tau-neutrino
+  \item the \(W^-\) boson then decays into an anti-up and a down quark
+  \item Rarely it can decay into strange quarks, but we will neglect those cases
+  \item The leftover quarks are not to be seen, as they appear as composite
+    Hadrons, like the pions, given down below
+  \item An important quantity is the hadronic tau decay ratio, which is the
+    decay width of taus decaying into hadrons divided by the decay width of taus
+    decaying into electrons
+  \item We will use this quantity to perform our fits, as it is theoretically as
+    experimentally accessible
+  \
+}
 
 \begin{frame}
   \frametitle{Table of Contents}
   \tableofcontents[subsubsectionstyle=hide]
 \end{frame} 
 
-\section{Theoretical Framework}
+\section{QCD Sum Rules}
 \subsection{Two-Point Function}
 \begin{frame}
   \frametitle{Two-Point Function}
   \begin{block}{Two-Point Function:}
-    \begin{ceqn}
-      \begin{equation}
-        \begin{split}
-          \Pi_{V/A}^{\mu\nu}(q^2) &\equiv i \int \dif^4 x e^{iqx} \langle 0\vert T \left\{ J_{V/A}^\mu(x) J_{V/A}^\nu(0)\right\} \vert 0 \rangle \\
-          &= (q^\mu q^\nu - q^2 g^{\mu\nu})\Pi_{V/A}^{(1)}(q^2) + q^\mu q^\nu \Pi_{V/A}^{(0)}(q^2) \\
-          &= (q^\mu q^\nu - q^2 g^{\mu\nu}) \Pi^{(1+0)}_{V/A}(q^2) + q^2 g_{\mu\nu} \Pi^{(0)}(q^2) 
-        \end{split}
-      \end{equation}
-    \end{ceqn}
+    \begin{equation}
+      \begin{split}
+        \Pi_{V/A}^{\mu\nu}(q^2) &\equiv i \int \dif^4 x e^{iqx} \langle 0\vert T \left\{ J_{V/A}^\mu(x) J_{V/A}^\nu(0)\right\} \vert 0 \rangle \\
+        &= (q^\mu q^\nu - q^2 g^{\mu\nu})\Pi_{V/A}^{(1)}(q^2) + q^\mu q^\nu \Pi_{V/A}^{(0)}(q^2) \\
+        &= (q^\mu q^\nu - q^2 g^{\mu\nu}) \Pi^{(1+0)}_{V/A}(q^2) + q^2 g_{\mu\nu} \Pi^{(0)}(q^2) 
+      \end{split}
+    \end{equation}
   \end{block}
-
-  \vspace{0.5cm}
-
-  \small\centering
-  \(J_V^\mu = \overline{u} \gamma^\mu d \qquad \text{and} \qquad J_A^\mu = \overline{u} \gamma^\mu \gamma_5 d\)
+  \small
+  where the current is given by
+  \begin{equation*}
+    J_V^\mu = \overline{u} \gamma^\mu d\) \quad \text{and} \quad \(J_A^\mu = \overline{u} \gamma^\mu \gamma_5 d
+  \end{equation*}
+  and we redefined the correlator as follows
+  \begin{equation*}
+    \Pi^{(1+0)}(q^2) = \Pi^{(1)}(q^2) + \Pi^{(0)}(q^2).
+  \end{equation*}
 \end{frame}
 \note[itemize] {
-  \item Two-point function 
-  \item \(J_{V/A}^{\mu}\) is the non-strange \(V\) or \(A\) current
-  \item superscripts \((0)\) and \((1)\) label spin
-  \item Lorentz decomposed
-  \item \(\Pi^{(1+0)}(q^2) q^2 \Pi^{(0)}(q^2)\) free of kinematic singularities
+  \item The two-point function is defined as the vacuum expectation value of the
+    time-ordered product of two currents
+  \item We have given the expression in momentum space
+  \item In our case the currents are non-strange \(V\) or \(A\) currents,
+    distinguished by a \(\gamma^\mu\) or \(\gamma^\mu\gamma_5\) correspondingly
+  \item We can lorentz decompose the two-point function, to obtain a scalar
+    function \(\Pi\)
+  \item The superscripts \((0)\) and \((1)\) label the transversal or
+    longitudinal spin
+  \item It is common to rewrite the newly introduced scalar function of the
+    correlator to \(\Pi^{(1+0)}\) and \(\Pi^{(0)}\)
+  \item \(\Pi^{(1+0)}(q^2)\) and \(q^2\Pi^{(0)}\) are free of kinematic singularities
 }
 
-\subsection{QCD Sum Rules}
+\subsection{Inclusive Hadronic Tau Decay Ratio}
+\begin{frame}
+  \frametitle{Inclusive Hadronic Tau Decay Ratio}
+  Tau decay ratio
+  \begin{equation}
+    R_\tau = \frac{\Gamma[\tau^- \to \nu_\tau + \text{hadrons}]}{\Gamma[\tau^- \to \nu_\tau e^- \overline{\nu}_{e}]}
+  \end{equation}
+  \begin{block}{Inclusive Hadronic Tau Decay Ratio \(s \equiv -q^2\)}
+    \begin{scriptsize}
+      \begin{equation}
+        R_{\tau} = 12 \pi \,\abs{V_{ud}}^2 S_{EW} \int_0^{m_\tau^2} \frac{\dif s}{m_\tau^2} \left( 1 + 2 \frac{s}{m_\tau^2} \right)
+        \left[ \left( 1+2\frac{s}{m_\tau^2} \right) \Ima \Pi^{(1)}(s) + \Ima \Pi^{(0)}(s)\right]
+      \end{equation}
+    \end{scriptsize}
+  \end{block}
+\end{frame}
+\note[itemize]{
+  \item A central value is the inclusive hadronic tau decay ratio (i.e. all
+    decays containing hadrons)
+  \item The ratio can be calculated by using the optical theorem 
+  \item \(V_{ud}\) is the Cabbibo matrix element, \(S_{EW}\) the electroweak correction
+  \item We have to integrate the two-point function from \(0 \to m_\tau^2\)
+  \item The two-point function has poles on the positive real axis
+  \item \(\Pi^{(0)}\) will be neglected? There is no \(J=0\) vector
+    contribution. The \(J=0\) axial-vector contribution is the pion pole. Which
+    is missing in the experimental data.
+}
+
 \begin{frame}
   \frametitle{Cauchy's Theorem}
   
@@ -228,18 +319,58 @@
   \includegraphics[width=0.8\textwidth]{./images/rTauCauchysTheorem.eps}
 
   \vspace*{0.5cm}
+  Can be rewritten into
+  \begin{footnotesize}
+    \begin{equation}
+      R_\tau = 6 \pi i \oint_{\abs{s}=m_\tau} \frac{\dif s}{m_\tau^2} \left( 1-\frac{s}{m_\tau^2} \right)^2
+      \left[ \left( 1 + 2 \frac{s}{m_\tau^2} \right) \Pi^{(1+0)}(s) - \left( \frac{2s}{m_\tau^2}\Pi^{(0)} \right)\right]
+    \end{equation}
+  \end{footnotesize}
 
 \end{frame}
 \note[itemize]{
-  \item Experimental data only accessible on positive real axis
-  \item Imaginary part of two-point function related to experimental accessible
-    spectral function
-  \item integrate from \(0\) to \(m_\tau^2\) to reproduce \(R_\tau(m_\tau^2)\)
-  \item Theoretically the positive real axis is not accessible
-  \item Two-point function has poles on positive real axis
-  \item \(\Rightarrow \quad\) Cauchy's theorem
-  \item Identify 
+\item Experimental data only accessible on positive real axis
+\item Imaginary part of two-point function related to experimental accessible
+  spectral function
+\item integrate from \(0\) to \(m_\tau^2\) to reproduce \(R_\tau(m_\tau^2)\)
+\item Theoretically the positive real axis is not accessible
+\item Two-point function has poles on positive real axis
+\item \(\Rightarrow \quad\) Cauchy's theorem
+\item Identify 
 }
+
+\begin{frame}
+  \frametitle{Adler Function}
+  Adler Function:
+  \begin{equation}
+    D(s) \equiv s \frac{\dif}{\dif s} \Pi(s)
+  \end{equation}
+  \begin{small}
+    \begin{equation}
+      D^{(1+0)}(s) \equiv -s \frac{\dif}{\dif s} \Pi^{(1+0)}(s), \qquad D^{(0)}(s) \equiv \frac{s}{m_\tau^2} \frac{\dif}{\dif s} \left( s \Pi^{(0)}(s) \right)
+    \end{equation}
+    \begin{equation}
+      R_\tau = - \pi i \oint_{\abs{s}=m_\tau^2} \frac{\dif x}{x}(1-x)^3 \left[ 3(1+x)D^{(1+0)}(m_\tau^2x) + 4 D^{(0)}(m_\tau^2 x) \right]
+    \end{equation}
+  \end{small}
+  % \begin{equation}
+  %   \begin{split}
+  %     R_{\tau, V/A}^{\omega}(s_0) &\equiv \frac{12 \pi^2}{s_0} \int_{0}^{s_0} \dif s \, \omega\left( \frac{s}{s_0} \right) \rho(s) \\
+  %     &= \frac{6 \pi i}{s_0} \oint_{\abs{s}=s_0} \dif s \, \omega\left(\frac{s}{s_0} \right) \Pi(s) \\
+  %     &= -3 \pi i \oint_{\abs{x}=1} \frac{\dif x}{x} \omega_D(x) D(x s_0),
+  %   \end{split}
+  % \end{equation}
+  % where \(x \equiv \frac{s}{s_0}\)and \(\omega_D \equiv 2 \int_x^1
+  \dif \omega{x}\)
+\end{frame}
+\note[itemize]{
+\item Adler Function for convenience
+\item In case of vector correlator the derivative (Adler Function) is a
+  physical quantity
+\item Physical quantities are renormalisation scale invariant
+\item For the \((1+0)\) and \((0)\) we use a different definition
+}
+
 
 \begin{frame}
   \frametitle{Finite Energy Sum Rule (FESR)}
@@ -269,30 +400,6 @@
   \item Define spectral moment
   \item Introduce weights
   \item Weights \(\omega\) have to be analytic
-}
-
-\begin{frame}
-  \frametitle{Adler Function}
-  Adler Function:
-  \begin{equation}
-    D(s) \equiv s \frac{\dif}{\dif s} \Pi(s)
-  \end{equation}
-  \begin{equation}
-    \begin{split}
-      R_{\tau, V/A}^{\omega}(s_0) &\equiv \frac{12 \pi^2}{s_0} \int_{0}^{s_0} \dif s \, \omega\left( \frac{s}{s_0} \right) \rho(s) \\
-      &= \frac{6 \pi i}{s_0} \oint_{\abs{s}=s_0} \dif s \, \omega\left(\frac{s}{s_0} \right) \Pi(s) \\
-      &= -3 \pi i \oint_{\abs{x}=1} \frac{\dif x}{x} \omega_D(x) D(x s_0),
-    \end{split}
-  \end{equation}
-  where \(x \equiv \frac{s}{s_0}\)and \(\omega_D \equiv 2 \int_x^1
-  \dif \omega{x}\)
-\end{frame}
-\note[itemize]{
-  \item Adler Function for convenience
-  \item In case of vector correlator the derivative (Adler Function) is a
-    physical quantity
-  \item Physical quantities are renormalisation scale invariant
-  \item For the \((1+0)\) and \((0)\) we use a different definition
 }
 
 \subsection{Operator Product Expansion}
@@ -558,49 +665,8 @@
 
 
 
-\section{Experiment}
+\subsection{Experiment}
 
-\subsection{Inclusive Tau Decay Ratio}
-\begin{frame}
-  \frametitle{Inclusive Tau Decay Ratio}
-  \begin{block}{Inclusive Tau Decay Ratio}
-    \begin{footnotesize}
-      \begin{ceqn}
-        \begin{equation}
-          R_{\tau} = 12 \pi \,\abs{V_{ud}}^2 S_{EW} \int_0^{s_0} \frac{\dif s}{m_\tau^2} \left( 1 + 2 \frac{s}{m_\tau^2} \right)
-          \left[ \left( 1+2\frac{s}{m_\tau^2} \right) \Ima \Pi^{(1)}(s) + \Pi^{(0)}(s)\right]
-        \end{equation}
-      \end{ceqn}
-    \end{footnotesize}
-  \end{block}
-  \begin{small}
-    \begin{ceqn}
-      \begin{equation}
-        \Pi^{(1+0)}(s) = \Pi^{(1)}(s) + \Pi^{(0)}(s)
-      \end{equation}
-    \end{ceqn}
-    \begin{ceqn}
-      \begin{equation}
-        R_\tau = 6 \pi i \oint_{\abs{s}=m_\tau} \frac{\dif s}{m_\tau^2} \left( 1-\frac{s}{m_\tau^2} \right)^2
-        \left[ \left( 1 + 2 \frac{s}{m_\tau^2} \right) \Pi^{(1+0)}(s) - \left( \frac{2s}{m_\tau^2}\Pi^{(0)} \right)\right]
-      \end{equation}
-    \end{ceqn}
-    \begin{ceqn}
-      \begin{equation}
-        D^{(1+0)}(s) \equiv -s \frac{\dif}{\dif s} \Pi^{(1+0)}(s), \qquad D^{(0)}(s) \equiv \frac{s}{m_\tau^2} \frac{\dif}{\dif s} \left( s \Pi^{(0)}(s) \right)
-      \end{equation}
-    \end{ceqn}
-    \begin{ceqn}
-      \begin{equation}
-        R_\tau = - \pi i \oint_{\abs{s}=m_\tau^2} \frac{\dif x}{x}(1-x)^3 \left[ 3(1+x)D^{(1+0)}(m_\tau^2x) + 4 D^{(0)}(m_\tau^2 x) \right]
-      \end{equation}
-    \end{ceqn}
-  \end{small}
-\end{frame}
-\note[itemize]{
-  \item \(\Pi^{(1+0)}\) free of kinematic singularities
-  \item \(\Pi^{(0)}\) will be neglected?
-}
 \subsection{ALEPH Data}
 
 \begin{frame}
@@ -1192,3 +1258,5 @@
 \end{frame}
 
 \end{document}
+
+% LocalWords:  eps
