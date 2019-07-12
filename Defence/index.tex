@@ -1,8 +1,9 @@
-\documentclass[fleqn]{beamer}
+\documentclass{beamer}
 \usepackage{pgfpages}
 
 \setbeamertemplate{note page}[plain]
 \setbeameroption{show notes on second screen=bottom}
+% \setbeameroption{show notes on second screen=right}
 \usetheme{Madrid}
 \beamertemplatenavigationsymbolsempty
 
@@ -103,43 +104,6 @@
 
 \section{Introduction}
 \begin{frame}
-  \frametitle{The Strong Coupling \(\alpha_s\)}
-   
-  \begin{equation} 
-    \begin{split}
-      \mathcal{L}_{QCD}(x) &= -\frac{1}{4} G_{\mu\nu}^a(x) G^{\mu\nu,a}(x) \\
-      &+ \left[ \sum_A \frac{i}{2} \overline{q}^A(x) \gamma^\mu \overleftrightarrow{D}_\mu q^A(x) - m \overline{q}^A(x)q^A(x) \right],
-    \end{split}
-  \end{equation}
-
-  \small
-  \begin{equation*}
-    \text{where } D_\mu = \partial_\mu - i g \frac{\lambda^a}{2} B_\mu^a
-  \end{equation*}
-  
-  \normalsize
-  \begin{equation}
-    \mathcal{L}_{QCD}^{QG-Int}(x) = \sqrt{\pi \bm{\alpha_s}} \, \overline{q}(x) \lambda \gamma_\mu q (x) G(x)
-    \quad \Rightarrow \quad
-    \feynmandiagram [inline=(d.base), horizontal=d to b] {
-      a [particle=\(\overline{q}\)] -- [fermion] b -- [fermion] c [particle=\(q\)],
-      b -- [boson, edge label=\(g\)] d,
-    };
-  \end{equation}
-\end{frame}
-\note[itemize]{
-  \item Focused on QCD, the theory of the strong interactions between quarks and gluons
-  \item Quarks are the fundamental particles that make up Hadrons (proton,
-    neutron, pion, ...)
-  \item QCD is a non-abelian quantum field theory with symmetry group SU(3)
-  \item Charge property is the colour, the force carriers are the gluons
-  \item QCD Lagrangian, which contains the interaction terms
-  \item The interaction term can be displayed as a Feynman diagram
-  \item The strength of the interaction is given by the strong coupling constant \(\alpha_s\)
-  \item Our research focuses on measuring the strong coupling constant
-}
-
-\begin{frame}
   \frametitle{The Running of the Strong Coupling}
   \begin{columns}
     \begin{column}{0.4\textwidth}
@@ -183,47 +147,34 @@
 }
 
 \begin{frame}
-  \frametitle{Duality}
-  \centering
-  \includegraphics[width=0.5\textwidth]{./images/quarkHadronDuality.eps}
-\end{frame}
-\note[itemize]{
-  \item As we observe Hadrons, but our theory is based on quarks and gluons we
-    assume Quark-Hadron Duality
-  \item Which is known to exist, but in contrary to the image is not well understood
-  \item In some cases there appear duality violations
-  \item We want to show that Duality Violations do not have to be taken into
-    account under certain circumstances 
-}
-
-\begin{frame}
-  \frametitle{Hadronic \(\tau\) decays}
-  \begin{columns}
-    \begin{column}{0.4\textwidth}
-      \feynmandiagram [layered layout, horizontal=a to b] {
-        a [particle=\(\tau^{-}\)] -- [fermion] b -- [fermion] f1 [particle=\(\nu_{\tau}\)], b -- [boson, edge label'=\(W^{-}\)] c,
-        c -- [anti fermion] f2 [particle=\(\overline{u}\)],
-        c -- [fermion] f3 [particle=\(d\)],
-      };
-    \end{column}
-    \begin{column}{0.6\textwidth}
-      Tau decay ratio
-      \begin{equation}
-        R_\tau = \frac{\Gamma[\tau^- \to \nu_\tau + \text{hadrons}]}{\Gamma[\tau^- \to \nu_\tau e^- \overline{\nu}_{e}]}
-      \end{equation}
-    \end{column}
-  \end{columns}
-
-  \vspace{1cm}
-  
-  \centering
-  \begin{tabular}{lccc}
-    \toprule
-    Name & Symbol & Quark content & Rest mass \\
-    \midrule
-    Pion & \(\pi^-\) & \(\overline{u} d\) & \SI{139.57061 \pm 0.00024}{\mega\eV}  \\
-    Pion & \(\pi^0\) & \((u \overline{u} - d \overline{d})/\sqrt{2}\) & \SI{134.9770\pm0.0005}{\mega\eV}
-  \end{tabular}
+  \frametitle{Tau decays}
+  \begin{itemize}
+    \item Feynman diagram of the tau decay
+      \begin{center}
+        \feynmandiagram [layered layout, horizontal=a to b] {
+          a [particle=\(\tau^{-}\)] -- [fermion] b -- [fermion] f1 [particle=\(\nu_{\tau}\)], b -- [boson, edge label'=\(W^{-}\)] c,
+          c -- [anti fermion] f2 [particle={\footnotesize\(e^-, \mu^-,
+            \overline{u}, \overline{u} \)}],
+          c -- [fermion] f3 [particle={\footnotesize\(\overline{\nu}_e,
+            \overline{\nu}_\mu, d, s\)}],
+        };
+      \end{center}
+    \item Mesons produced by tau decays
+      \begin{center}
+        \begin{footnotesize}
+          \begin{tabular}{ccc}
+            \toprule
+            Symbol & Quark content & Rest mass \\
+            \midrule
+            \(\pi^-\) & \(\overline{u} d\) & \SI{139.57061 \pm 0.00024}{\mega\eV}  \\
+            \(\pi^0\) & \((u \overline{u} - d \overline{d})/\sqrt{2}\) & \SI{134.9770\pm0.0005}{\mega\eV} \\
+            \(K^-\) & \(\overline{u} s\) & \SI{493.677\pm0.016}{\mega\eV} \\
+            \(K^0\) & \(d \overline{s}\) & \SI{497.611\pm0.013}{\mega\eV} \\
+            \(\eta\) & \((u \overline{u} + d \overline{d} - 2 s \overline{s})/\sqrt{6}\) & \SI{547.862\pm0.017}{\mega\eV} \\
+          \end{tabular}
+        \end{center}
+      \end{footnotesize}
+    \end{itemize}
 \end{frame}
 \note[itemize]{
   \item We measure the strong coupling constant from tau decays
@@ -236,7 +187,7 @@
   \item An important quantity is the hadronic tau decay ratio, which is the
     decay width of taus decaying into hadrons divided by the decay width of taus
     decaying into electrons
-  \item We will use this quantity to perform our fits, as it is theoretically as
+ \item We will use this quantity to perform our fits, as it is theoretically as
     experimentally accessible
   \
 }
@@ -866,6 +817,7 @@
 }
 
 \begin{frame}
+  \frametitle{ALEPH Data}
   \includegraphics[width=\textwidth]{./images/specFuncAleph_VpA.eps}
 \end{frame}
 \note[itemize]{
