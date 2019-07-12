@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.5.5)  10 JUL 2019 18:38
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.5.5)  12 JUL 2019 12:35
  restricted system commands enabled.
  file:line:error style messages enabled.
 **index.tex
@@ -49,7 +49,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.067 seconds
+luaotfload | main : initialization completed in 0.060 seconds
 (/usr/local/texlive/2019/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/local/texlive/2019/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
@@ -2053,11 +2053,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
 
-] (./index.toc)
-Overfull \vbox (9.97908pt too high) detected at line 249
- []
-
-[7
+] (./index.toc) [7
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2108,23 +2104,18 @@ Package epstopdf Info: Source file: <./images/rTauCauchysTheorem.eps>
 (epstopdf)                    size: 1621314 bytes
 (epstopdf)             Output file: <./images/rTauCauchysTheorem-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2019-07-10 18:37:00
-(epstopdf)                    size: 27894 bytes
+(epstopdf)                    date: 2019-07-10 18:38:12
+(epstopdf)                    size: 35843 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/rTauCauchysTheorem
 -eps-converted-to.pdf ./images/rTauCauchysTheorem.eps>
-(epstopdf)             \includegraphics on input line 330.
-system(repstopdf --outfile=./images/rTauCauchysTheorem-eps-converted-to.pdf ./im
-ages/rTauCauchysTheorem.eps) executed.
-Package epstopdf Info: Result file: <./images/rTauCauchysTheorem-eps-converted-t
-o.pdf>
-(epstopdf)                    date: 2019-07-10 18:38:12
-(epstopdf)                    size: 35843 bytes.
-<./images/rTauCauchysTheorem-eps-converted-to.pdf, id=240, 914.41624pt x 458.713
+(epstopdf)             \includegraphics on input line 332.
+Package epstopdf Info: Output file is already uptodate.
+<./images/rTauCauchysTheorem-eps-converted-to.pdf, id=235, 914.41624pt x 458.713
 75pt>
 File: ./images/rTauCauchysTheorem-eps-converted-to.pdf Graphic file (type pdf)
 <use ./images/rTauCauchysTheorem-eps-converted-to.pdf>
 Package luatex.def Info: ./images/rTauCauchysTheorem-eps-converted-to.pdf  used 
-on input line 330.
+on input line 332.
 (luatex.def)             Requested size: 273.83733pt x 137.37021pt.
  [10
 
@@ -2136,16 +2127,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.9'
 
 
 warning  (pdf backend): pop empty color page stack 0
-]
-./index.tex:365: Missing $ inserted.
-<inserted text> 
-$
-l.365 \end{frame}
-               
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-[11
+] [11
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2175,7 +2157,19 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.12'
 
 
 warning  (pdf backend): pop empty color page stack 0
-] [14
+]
+./index.tex:534: Undefined control sequence.
+\beamer@doifinframe ...uation} \beta (a_s) \euqiv 
+                                                  -\mu \frac {\dif a_s}{\dif...
+l.534 \end{frame}
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[14
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2183,6 +2177,8 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.13'
 
+
+warning  (pdf backend): pop empty color page stack 0
 ] [15
 
 
@@ -2191,7 +2187,16 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.14'
 
-] [16
+
+warning  (pdf backend): pop empty color page stack 0
+]
+<./images/FOPT_CIPT_contributions.png, id=295, 1837.86626pt x 946.53625pt>
+File: ./images/FOPT_CIPT_contributions.png Graphic file (type png)
+<use ./images/FOPT_CIPT_contributions.png>
+Package luatex.def Info: ./images/FOPT_CIPT_contributions.png  used on input lin
+e 640.
+(luatex.def)             Requested size: 239.6057pt x 123.40067pt.
+ [16
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2209,7 +2214,21 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.16'
 
-] [18
+
+warning  (pdf backend): pop empty color page stack 0
+<./images/FOPT_CIPT_contributions.png>]
+./index.tex:676: Undefined control sequence.
+\insertnote ...r function expansion as \(1 + \hat 
+                                                  D(s)\) \beamer@noteenvend 
+l.676 }
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[18
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2217,7 +2236,14 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.17'
 
-] [19
+
+warning  (pdf backend): pop empty color page stack 0
+]
+LaTeX Font Info:    Try loading font information for U+fplmbb on input line 729.
+
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ufplmbb.fd
+File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
+) [19
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2225,7 +2251,14 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.18'
 
-] [20
+
+warning  (pdf backend): pop empty color page stack 0
+]
+Overfull \hbox (0.39578pt too wide) detected at line 761
+ $[][]$  
+ []
+
+[20
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2233,6 +2266,8 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.19'
 
+
+warning  (pdf backend): pop empty color page stack 0
 ] [21
 
 
@@ -2241,122 +2276,15 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.20'
 
-]
-LaTeX Font Info:    Try loading font information for U+fplmbb on input line 601.
 
- (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ufplmbb.fd
-File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
-)
-./index.tex:601: Undefined control sequence.
-\beamer@doifinframe ...Dimension 4:} & :m_i \anti 
-                                                  {q} q: \\ & :G_a^{\mu \nu ...
-l.601 \end{frame}
-               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./index.tex:601: Undefined control sequence.
-\beamer@doifinframe ...xt {Dimension 6:} & :\anti 
-                                                  {q} \Gamma q \anti {q} \Ga...
-l.601 \end{frame}
-               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./index.tex:601: Undefined control sequence.
-\beamer@doifinframe ... :\anti {q} \Gamma q \anti 
-                                                  {q} \Gamma q: \\ & :\anti ...
-l.601 \end{frame}
-               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./index.tex:601: Undefined control sequence.
-\beamer@doifinframe ... {q} \Gamma q: \\ & :\anti 
-                                                  {q} \Gamma \frac {\lambda ...
-l.601 \end{frame}
-               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./index.tex:601: Undefined control sequence.
-\beamer@doifinframe ...a ^a}{2} q_\beta (x) \anti 
-                                                  {q} \Gamma \frac {\lambda ...
-l.601 \end{frame}
-               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./index.tex:601: Undefined control sequence.
-\beamer@doifinframe ... ^a}{2} q: \\ & :m_i \anti 
-                                                  {q} \frac {\lambda ^a}{2} ...
-l.601 \end{frame}
-               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[22
+warning  (pdf backend): pop empty color page stack 0
+] [22
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 21'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.21'
-
-]
-Overfull \hbox (0.39578pt too wide) detected at line 619
- $[][]$  
- []
-
-[23
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-22'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.22'
-
-] [24
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-23'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.23'
-
-] [25
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-24'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.24'
-
-] [26
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-25'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.25'
 
 
 warning  (pdf backend): pop empty color page stack 0
@@ -2370,13 +2298,13 @@ df>
 (epstopdf)                    size: 18091 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/specFuncAleph_V-ep
 s-converted-to.pdf ./images/specFuncAleph_V.eps>
-(epstopdf)             \includegraphics on input line 711.
+(epstopdf)             \includegraphics on input line 853.
 Package epstopdf Info: Output file is already uptodate.
-<./images/specFuncAleph_V-eps-converted-to.pdf, id=394, 1011.78pt x 722.7pt>
+<./images/specFuncAleph_V-eps-converted-to.pdf, id=368, 1011.78pt x 722.7pt>
 File: ./images/specFuncAleph_V-eps-converted-to.pdf Graphic file (type pdf)
 <use ./images/specFuncAleph_V-eps-converted-to.pdf>
 Package luatex.def Info: ./images/specFuncAleph_V-eps-converted-to.pdf  used on 
-input line 711.
+input line 853.
 (luatex.def)             Requested size: 171.14767pt x 122.23982pt.
 Package epstopdf Info: Source file: <./images/specFuncAleph_A.eps>
 (epstopdf)                    date: 2019-06-17 14:42:41
@@ -2387,21 +2315,21 @@ df>
 (epstopdf)                    size: 18610 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/specFuncAleph_A-ep
 s-converted-to.pdf ./images/specFuncAleph_A.eps>
-(epstopdf)             \includegraphics on input line 711.
+(epstopdf)             \includegraphics on input line 853.
 Package epstopdf Info: Output file is already uptodate.
-<./images/specFuncAleph_A-eps-converted-to.pdf, id=395, 1011.78pt x 722.7pt>
+<./images/specFuncAleph_A-eps-converted-to.pdf, id=369, 1011.78pt x 722.7pt>
 File: ./images/specFuncAleph_A-eps-converted-to.pdf Graphic file (type pdf)
 <use ./images/specFuncAleph_A-eps-converted-to.pdf>
 Package luatex.def Info: ./images/specFuncAleph_A-eps-converted-to.pdf  used on 
-input line 711.
+input line 853.
 (luatex.def)             Requested size: 171.14767pt x 122.23982pt.
- [27
+ [23
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-26'
+22'
 
-warning  (pdf backend): ignoring duplicate destination with the name 'page.26'
+warning  (pdf backend): ignoring duplicate destination with the name 'page.22'
 
 
 warning  (pdf backend): pop empty color page stack 0
@@ -2415,15 +2343,94 @@ Package epstopdf Info: Source file: <./images/specFuncAleph_VpA.eps>
 (epstopdf)                    size: 17331 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/specFuncAleph_VpA-
 eps-converted-to.pdf ./images/specFuncAleph_VpA.eps>
-(epstopdf)             \includegraphics on input line 714.
+(epstopdf)             \includegraphics on input line 870.
 Package epstopdf Info: Output file is already uptodate.
-<./images/specFuncAleph_VpA-eps-converted-to.pdf, id=403, 1011.78pt x 722.7pt>
+<./images/specFuncAleph_VpA-eps-converted-to.pdf, id=379, 1011.78pt x 722.7pt>
 File: ./images/specFuncAleph_VpA-eps-converted-to.pdf Graphic file (type pdf)
 <use ./images/specFuncAleph_VpA-eps-converted-to.pdf>
 Package luatex.def Info: ./images/specFuncAleph_VpA-eps-converted-to.pdf  used o
-n input line 714.
+n input line 870.
 (luatex.def)             Requested size: 342.29536pt x 244.50172pt.
- [28
+ [24
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+23'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.23'
+
+
+warning  (pdf backend): pop empty color page stack 0
+<./images/specFuncAleph_V-eps-converted-to.pdf><./images/specFuncAleph_A-eps-con
+verted-to.pdf>] [25
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+24'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.24'
+
+
+warning  (pdf backend): pop empty color page stack 0
+<./images/specFuncAleph_VpA-eps-converted-to.pdf>] [26
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+25'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.25'
+
+
+warning  (pdf backend): pop empty color page stack 0
+]
+Package epstopdf Info: Source file: <./images/monomialWeightGraphs.eps>
+(epstopdf)                    date: 2019-05-29 09:47:03
+(epstopdf)                    size: 28415 bytes
+(epstopdf)             Output file: <./images/monomialWeightGraphs-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2019-07-02 14:30:34
+(epstopdf)                    size: 14169 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/monomialWeightGrap
+hs-eps-converted-to.pdf ./images/monomialWeightGraphs.eps>
+(epstopdf)             \includegraphics on input line 960.
+Package epstopdf Info: Output file is already uptodate.
+<./images/monomialWeightGraphs-eps-converted-to.pdf, id=498, 867.24pt x 505.89pt
+>
+File: ./images/monomialWeightGraphs-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./images/monomialWeightGraphs-eps-converted-to.pdf>
+Package luatex.def Info: ./images/monomialWeightGraphs-eps-converted-to.pdf  use
+d on input line 960.
+(luatex.def)             Requested size: 239.6057pt x 139.76472pt.
+Package epstopdf Info: Source file: <./images/complexCountour.eps>
+(epstopdf)                    date: 2019-07-09 16:43:04
+(epstopdf)                    size: 1632170 bytes
+(epstopdf)             Output file: <./images/complexCountour-eps-converted-to.p
+df>
+(epstopdf)                    date: 2019-07-09 16:43:43
+(epstopdf)                    size: 15099 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/complexCountour-ep
+s-converted-to.pdf ./images/complexCountour.eps>
+(epstopdf)             \includegraphics on input line 960.
+Package epstopdf Info: Output file is already uptodate.
+<./images/complexCountour-eps-converted-to.pdf, id=499, 725.71124pt x 686.565pt>
+
+File: ./images/complexCountour-eps-converted-to.pdf Graphic file (type pdf)
+<use ./images/complexCountour-eps-converted-to.pdf>
+Package luatex.def Info: ./images/complexCountour-eps-converted-to.pdf  used on 
+input line 960.
+(luatex.def)             Requested size: 102.68965pt x 97.1451pt.
+ [27
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
+26'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.26'
+
+
+warning  (pdf backend): pop empty color page stack 0
+] [28
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2431,12 +2438,10 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.27'
 
-<./images/specFuncAleph_V-eps-converted-to.pdf><./images/specFuncAleph_A-eps-con
-verted-to.pdf>] (./index.toc)
-Overfull \vbox (9.97908pt too high) detected at line 717
- []
 
-[29
+warning  (pdf backend): pop empty color page stack 0
+<./images/monomialWeightGraphs-eps-converted-to.pdf><./images/complexCountour-ep
+s-converted-to.pdf>] (./index.toc) [29
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2444,7 +2449,9 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.28'
 
-<./images/specFuncAleph_VpA-eps-converted-to.pdf>] [30
+
+warning  (pdf backend): pop empty color page stack 0
+] [30
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2460,45 +2467,9 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.30'
 
-]
-Package epstopdf Info: Source file: <./images/monomialWeightGraphs.eps>
-(epstopdf)                    date: 2019-05-29 09:47:03
-(epstopdf)                    size: 28415 bytes
-(epstopdf)             Output file: <./images/monomialWeightGraphs-eps-converted
--to.pdf>
-(epstopdf)                    date: 2019-07-02 14:30:34
-(epstopdf)                    size: 14169 bytes
-(epstopdf)             Command: <repstopdf --outfile=./images/monomialWeightGrap
-hs-eps-converted-to.pdf ./images/monomialWeightGraphs.eps>
-(epstopdf)             \includegraphics on input line 784.
-Package epstopdf Info: Output file is already uptodate.
-<./images/monomialWeightGraphs-eps-converted-to.pdf, id=549, 867.24pt x 505.89pt
->
-File: ./images/monomialWeightGraphs-eps-converted-to.pdf Graphic file (type pdf)
 
-<use ./images/monomialWeightGraphs-eps-converted-to.pdf>
-Package luatex.def Info: ./images/monomialWeightGraphs-eps-converted-to.pdf  use
-d on input line 784.
-(luatex.def)             Requested size: 239.6057pt x 139.76472pt.
-Package epstopdf Info: Source file: <./images/complexCountour.eps>
-(epstopdf)                    date: 2019-07-09 16:43:04
-(epstopdf)                    size: 1632170 bytes
-(epstopdf)             Output file: <./images/complexCountour-eps-converted-to.p
-df>
-(epstopdf)                    date: 2019-07-09 16:43:43
-(epstopdf)                    size: 15099 bytes
-(epstopdf)             Command: <repstopdf --outfile=./images/complexCountour-ep
-s-converted-to.pdf ./images/complexCountour.eps>
-(epstopdf)             \includegraphics on input line 784.
-Package epstopdf Info: Output file is already uptodate.
-<./images/complexCountour-eps-converted-to.pdf, id=550, 725.71124pt x 686.565pt>
-
-File: ./images/complexCountour-eps-converted-to.pdf Graphic file (type pdf)
-<use ./images/complexCountour-eps-converted-to.pdf>
-Package luatex.def Info: ./images/complexCountour-eps-converted-to.pdf  used on 
-input line 784.
-(luatex.def)             Requested size: 102.68965pt x 97.1451pt.
- [32
+warning  (pdf backend): pop empty color page stack 0
+] [32
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2506,7 +2477,28 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.31'
 
-] [33
+
+warning  (pdf backend): pop empty color page stack 0
+]
+Overfull \hbox (1.35947pt too wide) in paragraph at lines 1136--1136
+[][] 
+ []
+
+
+Overfull \vbox (0.65002pt too high) detected at line 1136
+ []
+
+
+Overfull \hbox (1.35947pt too wide) in paragraph at lines 1136--1136
+[][] 
+ []
+
+
+Overfull \hbox (2.03796pt too wide) in paragraph at lines 1136--1136
+[][] 
+ []
+
+[33
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2514,8 +2506,9 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.32'
 
-<./images/monomialWeightGraphs-eps-converted-to.pdf><./images/complexCountour-ep
-s-converted-to.pdf>] [34
+
+warning  (pdf backend): pop empty color page stack 0
+] [34
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2523,7 +2516,18 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.33'
 
-] [35
+
+warning  (pdf backend): pop empty color page stack 0
+]
+Overfull \vbox (44.91338pt too high) detected at line 1222
+ []
+
+
+Overfull \hbox (8.42772pt too wide) in paragraph at lines 1242--1242
+[][]  
+ []
+
+[35
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2531,26 +2535,9 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.34'
 
-]
-Overfull \hbox (1.35947pt too wide) in paragraph at lines 894--894
-[][] 
- []
 
-
-Overfull \vbox (0.65002pt too high) detected at line 894
- []
-
-
-Overfull \hbox (1.35947pt too wide) in paragraph at lines 894--894
-[][] 
- []
-
-
-Overfull \hbox (2.03796pt too wide) in paragraph at lines 894--894
-[][] 
- []
-
-[36
+warning  (pdf backend): pop empty color page stack 0
+] [36
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2568,12 +2555,9 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.36'
 
-]
-Overfull \hbox (8.42772pt too wide) in paragraph at lines 949--949
-[][]  
- []
 
-[38
+warning  (pdf backend): pop empty color page stack 0
+] (./index.toc) [38
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2581,6 +2565,8 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.37'
 
+
+warning  (pdf backend): pop empty color page stack 0
 ] [39
 
 
@@ -2597,7 +2583,45 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.39'
 
-] [41
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\translate ' on input line 1345.
+
+./index.tex:1362: Undefined control sequence.
+\beamer@doifinframe ...\eV ^2} \\ \(\langle \anti 
+                                                  {q}_{u/d}q_{u/d} \rangle (...
+l.1362 \end{frame}
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./index.tex:1362: Undefined control sequence.
+\beamer@doifinframe ...5}{\mega \eV } \\ \( \anti 
+                                                  {s}s / \langle \anti {q}q ...
+l.1362 \end{frame}
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./index.tex:1362: Undefined control sequence.
+\beamer@doifinframe ...\anti {s}s / \langle \anti 
+                                                  {q}q \rangle \) & 0.8 \pm ...
+l.1362 \end{frame}
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[41
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2653,11 +2677,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.46'
 
-] (./index.toc)
-Overfull \vbox (9.97908pt too high) detected at line 1190
- []
-
-[48
+] [48
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
@@ -2681,92 +2701,17 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.49'
 
-] [51
+]
+Overfull \vbox (151.24907pt too high) detected at line 1586
+ []
+
+[51
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 50'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.50'
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\translate ' on input line 1218.
-
-./index.tex:1234: Undefined control sequence.
-\beamer@doifinframe ...n1978a} \\ \(\langle \anti 
-                                                  {q}_{u/d}q_{u/d} \rangle (...
-l.1234 \end{frame}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./index.tex:1234: Undefined control sequence.
-\beamer@doifinframe ...te {Jamin2002} \\ \( \anti 
-                                                  {s}s / \langle \anti {q}q ...
-l.1234 \end{frame}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./index.tex:1234: Undefined control sequence.
-\beamer@doifinframe ...\anti {s}s / \langle \anti 
-                                                  {q}q \rangle \) & 0.8 \pm ...
-l.1234 \end{frame}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (453.36905pt too wide) in paragraph at lines 1234--1234
-[][]  
- []
-
-[52
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-51'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.51'
-
-] [53
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-52'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.52'
-
-] [54
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-53'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.53'
-
-]
-Overfull \vbox (56.04903pt too high) detected at line 1258
- []
-
-[55
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-54'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'page.54'
 
 ]
 \tf@nav=\write7
@@ -2778,40 +2723,53 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.54'
 \tf@snm=\write9
 
 \openout9 = index.snm
- [56
+ [52
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
-55'
+51'
 
-warning  (pdf backend): ignoring duplicate destination with the name 'page.55'
+warning  (pdf backend): ignoring duplicate destination with the name 'page.51'
 
 </usr/local/texlive/2019/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1260.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1260.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1588.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1588.
 
 (./index.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1260.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1260.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1588.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1588.
 Package rerunfilecheck Info: File `index.out' has not changed.
-(rerunfilecheck)             Checksum: 3E7CD44A92CE5AA95537373187E9CAA9;966.
+(rerunfilecheck)             Checksum: 297AFCABCE56866129DD542B825548D6;952.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.4656pt have occurred.
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                index
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'index.run.xml'.
 
 \openout1 = index.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 47426 strings out of 494300
+ 47714 strings out of 494300
  100000,1648299 words of node,token memory allocated
- 16620 words of node memory still in use:
-   64 hlist, 14 vlist, 9 rule, 61 disc, 7 local_par, 26 math, 378 glue, 70 kern,
- 130 penalty, 1237 glyph, 449 attribute, 76 glue_spec, 449 attribute_list, 16 wr
-ite, 11 pdf_start_link, 11 pdf_end_link, 10 pdf_dest, 13 pdf_action, 82 pdf_colo
-rstack nodes
-   avail lists: 1:10,2:1796,3:863,4:616,5:537,6:120,7:3536,8:62,9:1143,10:15,11:
-135,12:1
- 49441 multiletter control sequences out of 65536+600000
- 396 fonts using 31949735 bytes
+ 20895 words of node memory still in use:
+   78 hlist, 14 vlist, 11 rule, 76 disc, 9 local_par, 38 math, 481 glue, 85 kern
+, 162 penalty, 1581 glyph, 546 attribute, 76 glue_spec, 546 attribute_list, 18 w
+rite, 15 pdf_start_link, 15 pdf_end_link, 12 pdf_dest, 19 pdf_action, 102 pdf_co
+lorstack nodes
+   avail lists: 1:10,2:1605,3:826,4:558,5:521,6:103,7:4458,8:59,9:1426,10:17,11:
+182,12:1
+ 49554 multiletter control sequences out of 65536+600000
+ 537 fonts using 41802063 bytes
  60i,23n,100p,1129b,1859s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.ot
 f></usr/local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans17-regular.
@@ -2844,12 +2802,12 @@ dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/texlive/2019/texmf
 -dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/local/texlive/2019/texm
 f-dist/fonts/type1/public/amsfonts/euler/eusm7.pfb></usr/local/texlive/2019/texm
 f-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2019/texmf-dis
-t/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2019/texmf-
-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on index.pdf (55 pages, 1551663 bytes).
+t/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/2019/texmf-d
+ist/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on index.pdf (51 pages, 1723317 bytes).
 
-PDF statistics: 982 PDF objects out of 1000 (max. 8388607)
- 724 compressed objects within 8 object streams
- 140 named destinations out of 1000 (max. 131072)
+PDF statistics: 927 PDF objects out of 1000 (max. 8388607)
+ 672 compressed objects within 7 object streams
+ 133 named destinations out of 1000 (max. 131072)
  174 words of extra memory for PDF output out of 10000 (max. 100000000)
 

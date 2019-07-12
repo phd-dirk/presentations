@@ -37,10 +37,6 @@
     "appendixnumberbeamer"
     "nccmath"
     "tikz")
-   (TeX-add-symbols
-    "Ima"
-    "sfm2"
-    "cov")
    (LaTeX-add-labels
     "eq:borelModel")
    (LaTeX-add-bibliographies

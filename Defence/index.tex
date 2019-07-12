@@ -47,7 +47,7 @@
 \setbeamertemplate{section in toc}{ {\color{black}\inserttocsectionnumber.~\inserttocsection} }
 \setbeamertemplate{subsection in toc}{ \hspace{1.2em}{\color{black}\rule[0.3ex]{3pt}{3pt}}~\inserttocsubsection\par }
 \setbeamertemplate{subsubsection in toc}{ \hspace{2.4em}{\color{black}\rule[0.2ex]{2pt}{2pt}}~\inserttocsubsubsection\par }
-\setbeamertemplate{itemize items}{\color{black!40}\(\blacksquare\)}
+\setbeamertemplate{itemize items}{\scriptsize\color{black!70}\(\blacksquare\)}
 
 \setbeamertemplate{blocks}[default]
 \setbeamerfont{caption}{size=\tiny}
@@ -306,7 +306,8 @@
   \item The ratio can be calculated by using the optical theorem 
   \item \(V_{ud}\) is the Cabbibo matrix element, \(S_{EW}\) the electroweak correction
   \item We have to integrate the two-point function from \(0 \to m_\tau^2\)
-  \item The two-point function has poles on the positive real axis
+  \item The two-point function has poles on the positive real axis, on the
+    remaining \(s\) plane the two-point function is analytic
   \item \(\Pi^{(0)}\) will be neglected? There is no \(J=0\) vector
     contribution. The \(J=0\) axial-vector contribution is the pion pole. Which
     is missing in the experimental data.
@@ -314,12 +315,13 @@
 
 \begin{frame}
   \frametitle{Cauchy's Theorem}
-  
-  \centering
-  \includegraphics[width=0.8\textwidth]{./images/rTauCauchysTheorem.eps}
+  \begin{center}
+    \includegraphics[width=0.8\textwidth]{./images/rTauCauchysTheorem.eps}
+  \end{center}
 
   \vspace*{0.5cm}
-  Can be rewritten into
+
+  Inclusive Hadronic Tau Decay Ratio
   \begin{footnotesize}
     \begin{equation}
       R_\tau = 6 \pi i \oint_{\abs{s}=m_\tau} \frac{\dif s}{m_\tau^2} \left( 1-\frac{s}{m_\tau^2} \right)^2
@@ -329,14 +331,15 @@
 
 \end{frame}
 \note[itemize]{
-\item Experimental data only accessible on positive real axis
+\item We can avoid the positive real axis by making use of Cauchy's theorem 
+\item A closed contour integral over an analytic function is zero
+\item Thus we get a line integral, which will represent the experimental value,
+  equal to a circle contour, with radius of \(m_\tau^2\), which represents the
+  theoretical value
+\item Applied to the inclusive hadronic tau decay ratio we get equation nine,
+  where we also substituted \(\Pi^{(1+0)}\) 
 \item Imaginary part of two-point function related to experimental accessible
   spectral function
-\item integrate from \(0\) to \(m_\tau^2\) to reproduce \(R_\tau(m_\tau^2)\)
-\item Theoretically the positive real axis is not accessible
-\item Two-point function has poles on positive real axis
-\item \(\Rightarrow \quad\) Cauchy's theorem
-\item Identify 
 }
 
 \begin{frame}
@@ -349,6 +352,9 @@
     \begin{equation}
       D^{(1+0)}(s) \equiv -s \frac{\dif}{\dif s} \Pi^{(1+0)}(s), \qquad D^{(0)}(s) \equiv \frac{s}{m_\tau^2} \frac{\dif}{\dif s} \left( s \Pi^{(0)}(s) \right)
     \end{equation}
+
+    \vfill
+
     \begin{equation}
       R_\tau = - \pi i \oint_{\abs{s}=m_\tau^2} \frac{\dif x}{x}(1-x)^3 \left[ 3(1+x)D^{(1+0)}(m_\tau^2x) + 4 D^{(0)}(m_\tau^2 x) \right]
     \end{equation}
@@ -361,94 +367,149 @@
   %   \end{split}
   % \end{equation}
   % where \(x \equiv \frac{s}{s_0}\)and \(\omega_D \equiv 2 \int_x^1
-  \dif \omega{x}\)
+  % \dif \omega{x}\)
 \end{frame}
 \note[itemize]{
-\item Adler Function for convenience
-\item In case of vector correlator the derivative (Adler Function) is a
-  physical quantity
-\item Physical quantities are renormalisation scale invariant
-\item For the \((1+0)\) and \((0)\) we use a different definition
+  \item It is common to rewrite the two-point function in terms of the Adler function.
+  \item In case of vector correlator the derivative (Adler Function) is a
+    physical quantity.
+  \item Physical quantities are renormalisation scale invariant.
+  \item The Adler function has different defintions for the \(\Pi^{(1+0)}\) and
+    \(\Pi^{(0)}\).
+  \item Our final expression for the inclusive hadronic tau decay ratio then is
+    given in equation 12.
 }
 
 
-\begin{frame}
-  \frametitle{Finite Energy Sum Rule (FESR)}
-  Spectral Function
-  \begin{ceqn}
-    \begin{equation}
-      \rho^{(1+0)}(s) = \frac{1}{\pi} \Ima \Pi^{(1+0)}(s)
-    \end{equation}
-  \end{ceqn}
+% \begin{frame}
+%   \frametitle{Finite Energy Sum Rule (FESR)}
+%   Spectral Function
+%   \begin{ceqn}
+%     \begin{equation}
+%       \rho^{(1+0)}(s) = \frac{1}{\pi} \Ima \Pi^{(1+0)}(s)
+%     \end{equation}
+%   \end{ceqn}
 
-  \vfill
+%   \vfill
 
-  % \begin{block}{\vspace*{-3ex}}
-  \begin{block}{Spectral Moment}
-    \begin{ceqn}
-      \begin{equation}
-        I_{V/A}^{\omega}(s_0) \equiv \frac{1}{s_0} \int_{0}^{s_0} \dif s \, \omega\left(\frac{s}{s_0}\right) \rho(s) = \frac{-1}{2 \pi i s_0} \oint_{\abs{s}=s_0} \dif s \, \omega\left(\frac{s}{s_0} \right) \Pi(s)
-      \end{equation}
-    \end{ceqn}
-  \end{block}
-\end{frame}
-\note[itemize]{
-  \item Spectral function equal to the imaginary part of the correlator
-  \item Spectral function is given by the experiment
-  \item Experiment only valid to certain energy \(s_0\)
-  \item \(\Rightarrow\) \textit{Finite Energy} Sum Rule
-  \item Define spectral moment
-  \item Introduce weights
-  \item Weights \(\omega\) have to be analytic
-}
+%   % \begin{block}{\vspace*{-3ex}}
+%   \begin{block}{Spectral Moment}
+%     \begin{ceqn}
+%       \begin{equation}
+%         I_{V/A}^{\omega}(s_0) \equiv \frac{1}{s_0} \int_{0}^{s_0} \dif s \, \omega\left(\frac{s}{s_0}\right) \rho(s) = \frac{-1}{2 \pi i s_0} \oint_{\abs{s}=s_0} \dif s \, \omega\left(\frac{s}{s_0} \right) \Pi(s)
+%       \end{equation}
+%     \end{ceqn}
+%   \end{block}
+% \end{frame}
+% \note[itemize]{
+%   \item Spectral function equal to the imaginary part of the correlator
+%   \item Spectral function is given by the experiment
+%   \item Experiment only valid to certain energy \(s_0\)
+%   \item \(\Rightarrow\) \textit{Finite Energy} Sum Rule
+%   \item Define spectral moment
+%   \item Introduce weights
+%   \item Weights \(\omega\) have to be analytic
+% }
 
 \subsection{Operator Product Expansion}
 \begin{frame}
   \frametitle{Operator Product Expansion}
   \begin{equation}
-    \Pi_{OPE}(q^2) = -\frac{1}{3 q^2}\sum_n \langle\Omega\vert \mathcal{O}_n(0) \vert\Omega\rangle \int \dif^4\, e^{iqx} C_n(x)
+    \lim_{x^\mu \to 0} A(x)B(0) = \sum_n C_n(x)\mathcal{O}_n(0)
   \end{equation}
+  % \begin{equation}
+  %   \Pi_{OPE}(q^2) = -\frac{1}{3 q^2}\sum_n \langle\Omega\vert \mathcal{O}_n(0) \vert\Omega\rangle \int \dif^4\, e^{iqx} C_n(x)
+  % \end{equation}
+
+  \vfill
+
   \begin{equation}
     \begin{split}
-    \Pi_{OPE, V/A}(s) &= \sum_{D=0,2,4,\dots} \frac{C^{(D)} \langle\Omega\vert \mathcal{O}^{(D)}(x) \vert\Omega\rangle}{(s)^{D/2}} \\
+    \Pi_{OPE}(s) &= \sum_{n=0,2,4,\dots} \frac{C_n \langle\Omega\vert \mathcal{O}_n (x) \vert\Omega\rangle}{(s)^{n/2}} \\
     &= \underbrace{\vphantom{\sum_{k=1}^\infty} C_0}_{PT} + \underbrace{\sum_{k=1}^\infty \frac{C_{2k}(s)}{s^k}}_{NPT}
   \end{split}
 \end{equation}
 \end{frame}
+\note[itemize]{
+  \item The QCD vacuum cannot be solely described perturbatively and we have to
+    take non-perturbative effects into account
+  \item To do so we will describe the two-point function in terms of the
+    operator product expansion
+  \item Here \(A(x)\) and \(B(0)\) are local operators and \(C_n(x)\) is a
+    c-number function and \(\mathcal{O}_n(0)\) are higher dimensional operators 
+  \item The OPE separates short distances (high energies/ PT) from long distances (NPT)
+  \item Short distances are given by the Wilson coefficients \(C_n(x-y)\),
+    whereas the long distances are given by higher order operators \(\langle
+    \Omega \vert \mathcal{O}_n(x) \rangle\).
+  \item The two-point function can then be written has a series of Wilson
+    coefficients multiplied by operators of dimension \(0, 2, \dots\).
+  \item The Wilson coefficients can be calculated from Feynman diagrams, but the
+    higher dimensional contributions have to be taken from NPT tools like
+    lattice qcd or from our fits. We will determine values for the dimension six
+    and eight operators
+  \item The dimension zero contribution is the perturbative contribution,
+    whereas the higher dimensional contributions are non-perturbative. We will
+    deal with the PT contributions first before coming back to the NPT ones.
+}
 
 
 \subsection{Perturbative Contributions}
 \begin{frame}
   \frametitle{Perturbative Contributions}
   \begin{equation}
-    \Pi_V^{(1+0)}(s) = - \frac{N_c}{12 \pi^2} \sum_{n=0}^\infty a_\mu^n \sum_{k=0}^{n+1} c_{n,k} L^k
+    \Pi_V^{(1+0)}(s) = - \frac{N_c}{12 \pi^2} \sum_{n=0}^\infty a(\mu^2)^n \sum_{k=0}^{n+1} c_{n,k} L^k
     \quad \text{with} \quad L \equiv \log \frac{-s}{\mu^2}
   \end{equation}
 
-  \begin{equation}
-    D_V^{(1+0)} = \frac{N_c}{12 \pi^2} \sum_{n=0}^\infty a_\mu^n \sum_{k=1}^{n+1} k\, c_{n,k} L^{k-1}
-  \end{equation}
+  \vfill
 
+  \begin{equation}
+    D_V^{(1+0)}(s) = \frac{N_c}{12 \pi^2} \sum_{n=0}^\infty a(\mu^2)^n \sum_{k=1}^{n+1} k\, c_{n,k} L^{k-1}
+  \end{equation}
 \end{frame}
+\note[itemize]{
+  \item The two-point function can be expanded as a sum over different powers of
+    the strong coupling
+  \item We are working in the chiral limit. Consequently the two-point function
+    of the \(V\) and \(A\) are identical. Thus from now on we will consider only
+    the vector two-point function \(\Pi_V\)
+  \item We can apply the derivative with respect to s to obtain the expansion of
+    the Adler function
+  \item The coefficients \(c_{n,k}\) are referred to as Adler function
+    coefficients and can be calculated from Feynman diagrams
+  \item We will see now that we do not have to calculate every single
+    coefficient, but that the coefficients are internally related due to the RGE
+}
 
 \begin{frame}
   \frametitle{Adler Function Coefficients}
-  \centering
-  \begin{block}{Renormalisation Group Equation}
-    \begin{ceqn}
-      \begin{equation}
-        \mu \frac{\dif}{\dif \mu} R(q, a_s, m) = \left[ \mu \frac{\partial}{\partial \mu} + \mu \frac{\dif a_s}{\dif \mu} \frac{\partial}{\partial a_s} + \mu \frac{\dif m}{\dif \mu} \frac{\partial}{\partial m} \right] R(q, a_s, m) = 0
-      \end{equation}
-    \end{ceqn}
-  \end{block}
-  \begin{ceqn}
+  \begin{block}{Renormalisation Group Equation (\(a_s \equiv \alpha(s)/\pi\))}
     \begin{equation}
-      \left(2 \frac{\partial}{\partial L} + \beta \frac{\partial}{\partial a_s} \right) D_V^{(1+0)} = 0
+      \mu \frac{\dif}{\dif \mu} R(q, a_s, m) = \left[ \mu \frac{\partial}{\partial \mu} + \mu \frac{\dif a_s}{\dif \mu} \frac{\partial}{\partial a_s} + \mu \frac{\dif m}{\dif \mu} \frac{\partial}{\partial m} \right] R(q, a_s, m) = 0
     \end{equation}
-  \end{ceqn}
-  \begin{columns}
-    \begin{column}{.5\textwidth}
-      \begin{scriptsize}
+  \end{block}
+
+  \begin{scriptsize}
+    \begin{columns}
+      \begin{column}{.5\textwidth}
+        Beta function
+        \begin{equation}
+          \beta(a_s) \euqiv -\mu \frac{\dif a_s}{\dif \mu} = \beta_1 a_s^2 + \beta_2 a_s^3 + \dots
+        \end{equation}
+      \end{column}
+      \begin{column}{.5\textwidth}
+        Adler RGE:
+        \begin{equation}
+          \left(2 \frac{\partial}{\partial L} + \beta \frac{\partial}{\partial a_s} \right) D_V^{(1+0)}(s) = 0
+        \end{equation}
+      \end{column}
+    \end{columns}
+
+    \vspace{0.3cm}
+    \makebox[\linewidth]{\rule{\textwidth}{0.5pt}}
+
+    \begin{columns}
+      \begin{column}{.5\textwidth}
         \begin{equation}
           \begin{split}
             c_{0,0} &= -\frac{5}{3}, \quad c_{0,1} = 1, \\
@@ -457,10 +518,8 @@
             \cdots
           \end{split}
         \end{equation}
-      \end{scriptsize}
-    \end{column}
-    \begin{column}{.5\textwidth}
-      \begin{scriptsize}
+      \end{column}
+      \begin{column}{.5\textwidth}
         \begin{equation}
           \begin{split}
             c_{2,2} &= -\frac{1}{4} \beta_1 c_{1,1}, \\
@@ -469,25 +528,43 @@
             \cdots
           \end{split}
         \end{equation}
-      \end{scriptsize}
-    \end{column}
-  \end{columns}
+      \end{column}
+    \end{columns}
+  \end{scriptsize}
 \end{frame}
 \note[itemize]{
-  \item Beta function definition missing
+  \item Let \(R(q, a_s, m)\) be a physical quantity, which is renormalisation
+    scale invariant, then the derivative with respect to the renormalisation
+    scale is zero
+  \item From the RGE we can also define the \(\beta\) function, which is
+    responsible for the running of the coupling
+  \item For the expanded Adler function \(D_V^{(1+0)}(s)\) the RGE yields
+    equation 19
+  \item If we plug in the expansion of the Adler function in equation 19 we can
+    relate the Adler coefficients
+  \item Thus we only have to calculate Adler coefficients on the left side like
+    \(c_{0,0}, c_{1,1}, \dots\) and Adler coefficients of higher indices are
+    related to those
+  \item The full series of the expanded Adler function is renormalisation scale
+    invariant, but the Adler coefficients are only known up to fifth order.
+    Consequently we have to cut off the series, which leaves us with a choice of
+    fixing the invariant scale.
 }
 
 \begin{frame}
-  \frametitle{Perturbative Contribution}
+  \frametitle{FOPT vs CIPT}
   \begin{small}
-    \begin{equation}
-      \delta_{pt} = \sum_{n=1}^\infty a_\mu^n \sum_{k=1}^n k\, c_{n,k} \frac{1}{2 \pi i} \oint_{\abs{x}=1} \frac{\dif x}{x} (1-x)^3 (1+x) \log \left( \frac{-m_\tau^2 x}{\mu^2} \right)^{k-1}
-    \end{equation}
+    Perturbative Contribution (\(\omega_J(x) \equiv \frac{1}{2\pi i} (1-x)^3(1+x)\)):
+    \begin{ceqn}
+      \begin{equation}
+        \delta_{pt} \equiv \oint_{\abs{x}=1} \frac{\dif x}{x} \sum_{n=1}^\infty a_\mu^n \sum_{k=1}^n k\, c_{n,k}  \omega_J(x) \log \left( \frac{-m_\tau^2 x}{\mu^2} \right)^{k-1}
+      \end{equation}
+    \end{ceqn}
     \centering
     \begin{tikzpicture}[>=triangle 45,font=\sffamily]
       \node (X) at (0,0) {};
-      \node (Y) [below left=1.5cm and 3cm of X]  {};% 2cm below, 1cm to the left (optional)
-      \node (Z) [below right=1.5cm and 3cm of X] {};
+      \node (Y) [below left=0.5cm and 3cm of X]  {};% 2cm below, 1cm to the left (optional)
+      \node (Z) [below right=0.5cm and 3cm of X] {};
       \draw [semithick,->] (X) -- (Y);
       \draw [semithick,->] (X) -- (Z);
     \end{tikzpicture}
@@ -499,58 +576,89 @@
           \begin{equation*}
             \mu \equiv m_\tau^2
           \end{equation*}
+          \begin{scriptsize}
+            \begin{equation}
+              \delta_{FOPT}^{(0)} = \sum_{n=1}^\infty a(m_\tau^2)^n \sum_{k=1}^n k\, c_{n,k} J_{k-1}
+            \end{equation}
+            \begin{equation}
+              J_l \equiv \oint_{\abs{x}=1} \frac{\dif x}{x} \omega_J(x) \log^l(-x)
+            \end{equation}
+          \end{scriptsize}
         \end{ceqn}
       \end{column}
       \begin{column}{.5\textwidth}
         \centering
         Contour-Improved Perturbation Theory (CIPT)
         \begin{ceqn}
-          \begin{equation}
-            \mu \equiv -m_\tau^2 x
-          \end{equation}
+          \begin{scriptsize}
+            \begin{equation}
+              \mu \equiv -m_\tau^2 x
+            \end{equation}
+            \begin{equation}
+              \delta_{CIPT}^{(0)} = \sum_{n=1}^\infty c_{n,1}\, J_n^a(m_\tau^2)
+            \end{equation}
+            \begin{equation}
+              J_n^a(m_\tau^2) \equiv \oint_{\abs{x}=1} \frac{\dif x}{x} \omega_J(x) a^n (-m_\tau^2 x)
+            \end{equation}
+          \end{scriptsize}
         \end{ceqn}
       \end{column}
     \end{columns}
   \end{small}
 \end{frame} 
-
-\begin{frame}
-  \frametitle{Fixed-Order Perturbation Theory}
-  \begin{equation}
-    \delta_{FOPT}^{(0)} = \sum_{n=1}^\infty a(m_\tau^2)^n \sum_{k=1}^n k\, c_{n,k} J_{k-1}
-  \end{equation}
-  \begin{equation}
-    J_l \equiv \frac{1}{2\pi i} \oint_{\abs{x}=1} \frac{\dif x}{x} (1-x)^3 (1+x) \log^l(-x)
-  \end{equation}
-\end{frame}
-\begin{frame}
-  \frametitle{CIPT}
-  \begin{equation}
-    \delta_{CIPT}^{(0)} = \sum_{n=1}^\infty c_{n,1}\, J_n^a(m_\tau^2)
-  \end{equation}
-  \begin{equation}
-    J_n^a(m_\tau^2) \equiv \frac{1}{2 \pi i} \oint_{\abs{x}=1} \frac{\dif x}{x} (1-x)^3 (1+x) a^n (-m_\tau^2 x)
-  \end{equation}
-\end{frame}
+\note[itemize]{
+  \item The general perturbative contribution \(\delta_{pt}\) is defined in
+    equation 22, where we plugged in the expanded Adler function in to the tau
+    decay ratio and factorised \(12 \pi^2\)
+  \item Having the freedom to fix \(\mu\) leads to two different treatments of
+    the PT contributions
+  \item FOPT where we fix \(\mu \equiv m_\tau^2\)
+  \item This leads to a constant \(a_\mu\), so we do not have to run the strong
+    coupling. We are left with the integration of the logarithms \(\log(-x)\)
+  \item On the other hand CIPT fixed \(\mu \equiv -m_\tau^2 x\), which sums up
+    the logarithms, but leaves us with a running coupling
+  \item Both approaches lead to different results
+}
 
 \begin{frame}
   \frametitle{FOPT vs CIPT}
   \begin{footnotesize}
+    Perturbative FOPT and CIPT contributions (\(\alpha(m_\tau^2)=0.34\)):
     \begin{align}
       & \quad\qquad \alpha_s^2 \qquad \alpha_s^2 \qquad \alpha_s^3 \qquad \alpha_s^4 \quad\qquad \alpha_s^5 \nonumber\\
       \delta_{FOPT}^{(0)} &= 0.1082 + 0.0609 + 0.0334 + 0.0174 (+ 0.0088) = 0.2200 (0.2288) \\
       \delta_{CIPT}^{(0)} &= 0.1479 + 0.0297 + 0.0122 + 0.0086 (+ 0.0038) = 0.1984 (0.2021)
     \end{align}
+
+    \vfill
+
+    \begin{center}
+      \includegraphics[width=0.7\textwidth]{./images/FOPT_CIPT_contributions.png}
+    \end{center}
+    \cite{Beneke2008}
   \end{footnotesize}
 \end{frame}
+\note[itemize]{
+  \item E.g. here we display the FOPT and CIPT contribution up to fifth order.
+  \item From the table we can conclude that CIPT converges faster, but has a
+    smaller contribution as FOPT, which leads to larger values of \(\alpha_s\)
+  \item The graph below has been taken from a paper of Beneke and Jamin who
+    invested the topic
+  \item here we see as the black dots the FOPT contribution, as the gray dots
+    the CIPT contribution and as a straight line the Borel sum to which we will
+    come in a minute  to which we will come in a minute  to which is used to sum
+    asymptotic series like in this case 
+  \item Note that FOPT converges in line with the Borel sum, but CIPT does not
+  \item We will make the same observation while performing our fits
+}
 
 \begin{frame}
   \frametitle{Borel Summation}
-  Borel integral
+  Borel integral:
   \begin{equation}
     A \equiv \int_0^\infty \dif t e^{-t} \sum_{n=0}^\infty \frac{a_k}{n!} t^n,
   \end{equation}
-  Borel transform
+  Borel transform:
   \begin{equation}
     B[A](t) = \sum_{n=0}^\infty \frac{a_k}{n!} t^n.
   \end{equation}
@@ -558,12 +666,24 @@
     \frac{12 \pi^2}{N_c} D_V^{1+0}(s) \equiv 1 + \widehat D(s) \equiv 1 + \sum_{n=0}^{\infty} r_n \alpha_s(\sqrt{(s)})^{n+1}.
   \end{equation}
 \end{frame}
+\note[itemize]{
+  \item The Borel summation is a summation method for divergent asymptotic
+    series and should give us the best possible sum
+  \item It consists of the Borel integral and the Borel transform, which we
+    apply to the expansion of the Adler function
+  \item We will follow the notation of \cite{Beneke2008}, which redefined the
+    Adler function expansion as \(1 + \hat D(s)\)
+}
+
 \begin{frame}
   \frametitle{Borel Model}
   \begin{equation}
     \label{eq:borelModel}
     B[\widehat D](u) = B[\widehat D_1^{UV}](u) + B[\widehat D_2^{IR}](u) + B[\widehat D_3^{IR}](u) + d_0^{PO} + d_1^{PO}u,
   \end{equation}
+
+  \vfill
+  
   \begin{align}
     B[\widehat D_p^{IR}](u)
     &\equiv \frac{d_p^{IR}}{(p-u)^{1+\widetilde \gamma}}
@@ -572,39 +692,58 @@
   \end{align}
   \cite{Beneke2008}
 \end{frame}
+\note[itemize]{
+  \item Beneke and Jamin created a created the Borel model 
+  \item The model depends on five parameters
+  \item The Borel model should reproduce the exactly known result up to order
+    fourth order of the Adler function
+  \item Consequently the five parameters are obtained by matching the result
+  \item This model is then used to sum the Adler function expansion
+}
 
 \subsection{Non-Perturbative Contributions}
 \begin{frame}
   \frametitle{Non-Perturbative Contributions}
-  \begin{ceqn}
-    \begin{equation}
-      \Pi_{NPT, V/A}^{OPE}(s) = \sum_{D=2,4,\dots} \frac{C^{(D)}\langle \Omega \vert \mathcal{O}^{(D)} (x) \vert \Omega \rangle}{(-q^2)^{D/2}}
-    \end{equation}
-  \end{ceqn}
+  Borel model:
+  \begin{equation}
+    \Pi_{NPT, V/A}^{OPE}(s) = \sum_{n=2,4,\dots} \frac{C_n \langle \Omega \vert \mathcal{O}_n (x) \vert \Omega \rangle}{(s)^{n/2}}
+  \end{equation}
+
   \vfill
-  \begin{ceqn}
-    \begin{equation}
-      \begin{array}{ll}
-        \text{Dimension 0:} & \mathbb{1} \\
-        % \text{Dimension 2:} & m_i^2 \\
-        \text{Dimension 4:} & :m_i \anti{q} q: \\
-                            & :G_a^{\mu\nu}(x) G_{\mu\nu}^a(x): \\
-                            % & m_i^4 \\
-        \text{Dimension 6:} & :\anti{q} \Gamma q \anti{q} \Gamma q: \\
-                            & :\anti{q} \Gamma \frac{\lambda^a}{2} q_\beta(x) \anti{q} \Gamma \frac{\lambda^a}{2} q: \\
-                            & :m_i \anti{q} \frac{\lambda^a}{2} \sigma_{\mu\nu} q G^{\mu\nu}_a: \\
-                            & :f_{abc} G_a^{\mu\nu} G_b^{\nu\delta} G_c^{\delta\mu}: \\
-        \cdots              & \cdots
-      \end{array}
-    \end{equation}
-  \end{ceqn}
+
+  
+  \begin{equation}
+    \begin{array}{ll}
+      \text{Dimension 0:} & \mathbb{1} \\
+      % \text{Dimension 2:} & m_i^2 \\
+      \text{Dimension 4:} & :m_i \overline{q} q: \\
+                          & :G_a^{\mu\nu}(x) G_{\mu\nu}^a(x): \\
+                          % & m_i^4 \\
+      \text{Dimension 6:} & :\overline{q} \Gamma q \overline{q} \Gamma q: \\
+                          & :\overline{q} \Gamma \frac{\lambda^a}{2} q_\beta(x) \overline{q} \Gamma \frac{\lambda^a}{2} q: \\
+                          & :m_i \overline{q} \frac{\lambda^a}{2} \sigma_{\mu\nu} q G^{\mu\nu}_a: \\
+                          & :f_{abc} G_a^{\mu\nu} G_b^{\nu\delta} G_c^{\delta\mu}: \\
+      \cdots              & \cdots
+    \end{array}
+  \end{equation}
 \end{frame}
+\note[itemize]{
+  \item Next to the PT contribution we have to implement the NPT contributions
+    from the OPE
+  \item We can see that the OPE series is suppressed by powers of \(s\) thus we
+    can approximate the series by a cutoff
+  \item The lowest dimensional operators are given in equation 37
+  \item In our analysis we will neglect
+    the dimension two contributions as we
+    work in the chiral limit and their contributions are proportional to the quark masses
+}
+
 \begin{frame}
   \frametitle{Dimension Four Corrections}
+  Dimension Four Contributions:
   \begin{equation}
     \left. D_{ij}^{(1+0)}(s) \right\rvert_{D=4} = \frac{1}{s^2} \sum_n \Omega^{(1+0)}(s/\mu^2)a^n,
   \end{equation}
-  \vfill
   \begin{small}
     \begin{equation}
       \begin{split}
@@ -616,42 +755,70 @@
       \end{split}
     \end{equation}
   \end{small}
+  \begin{tiny}
+    \cite{Pich1999}
+  \end{tiny}
 \end{frame}
+\note[itemize]{
+  \item Here is the dimension four OPE contribution, which has been formalised
+    in an article by Pich
+  \item A lot of coefficient, but what you should take from this slide is the
+    Gluon condensate, which we will fit 
+}
+
 \begin{frame}
   \frametitle{Dimension Six  and Eight Corrections}
-  \begin{ceqn}
-    \begin{equation}
-      \begin{split}
-        \left. D_{ij,V/A}^{(1+0)} \right\rvert_{D=8} = 4 \frac{\rho_{V/A}^{(8)}}{s^4} \\
-        \left. D_{ij,V/A}^{(1+0)} \right\rvert_{D=10} = 5 \frac{\rho_{V/A}^{(10)}}{s^5} \\
-        \left. D_{ij,V/A}^{(1+0)} \right\rvert_{D=12} = 6 \frac{\rho_{V/A}^{(12)}}{s^6}
-      \end{split} 
-    \end{equation}
-  \end{ceqn}
-\end{frame}
-
-
-\subsection{Duality Violations}
-\begin{frame}
-  \frametitle{Duality Violations}
-  Duality Violations (DV):
+  Higher Dimensional Contributions:
   \begin{equation}
-    \Delta(s) \equiv \Pi(s) - \Pi_{OPE}(s)
-  \end{equation}
-  % \begin{equation}
-  %   R_{\tau,V/A}^\omega = \frac{N_c}{2} S_{EW} \abs{V_{ud}}^2 (1 + \delta_{pt}^\omega + \delta_{npt}^\omega + \delta_{DV}^\omega)
-  % \end{equation}
-  \vfill
-  DV Model:
-  \begin{equation}
-    \rho_{V/A}^{DV}(s) = e^{-(\delta_{V/A} + \gamma_{V/A}s)} \sin(\alpha_{V/A} + \beta_{V/A}s)
-  \end{equation}
-  DV Contribution:
-  \begin{equation}
-    D_\omega(s_0) = -12 \pi^2 S_{EW} \abs{V_{ud}}^2 \int_{s_0}^\infty \frac{\dif s}{s_0} \omega(s) \rho_{V/A}^{DV}
+    \begin{split}
+      D_{ij,V/A}^{(1+0)} \biggr\rvert_{D=8} = 4 \frac{\rho_{V/A}^{(8)}}{s^4} \\
+      D_{ij,V/A}^{(1+0)} \biggr\rvert_{D=10} = 5 \frac{\rho_{V/A}^{(10)}}{s^5} \\
+      D_{ij,V/A}^{(1+0)} \biggr\rvert_{D=12} = 6 \frac{\rho_{V/A}^{(12)}}{s^6}
+    \end{split} 
   \end{equation}
 \end{frame}
 \note[itemize]{
+  \item Higher order OPE contributions are problematic to parametrise 
+  \item Starting from dimension six we will apply the simplest approach possible
+    to parametrise the higher dimensional OPE contributions.
+  \item We will define a constant \(\rho\) for every dimension, which represents
+    the contribution
+  \item needs backup slide! why simplest approach
+}
+
+
+\subsection{Duality}
+\begin{frame}
+  \frametitle{Duality}
+  \begin{itemize}
+  \item Duality:
+    \begin{equation}
+      \Pi(s) \to \Pi_{OPE}(s)
+    \end{equation}
+    
+  \item Duality Violations (DV):
+    \begin{equation}
+      \Delta(s) \equiv \Pi(s) - \Pi_{OPE}(s)
+    \end{equation}
+    % \begin{equation}
+    %   R_{\tau,V/A}^\omega = \frac{N_c}{2} S_{EW} \abs{V_{ud}}^2 (1 + \delta_{pt}^\omega + \delta_{npt}^\omega + \delta_{DV}^\omega)
+    % \end{equation}
+    \vfill
+  \item DV Model:
+    \begin{equation}
+      \rho_{V/A}^{DV}(s) = e^{-(\delta_{V/A} + \gamma_{V/A}s)} \sin(\alpha_{V/A} + \beta_{V/A}s)
+    \end{equation}
+    \begin{scriptsize}
+      \cite{Boito2011a}
+    \end{scriptsize}
+  \item DV Contribution:
+    \begin{equation}
+      D_\omega(s_0) = -12 \pi^2 S_{EW} \abs{V_{ud}}^2 \int_{s_0}^\infty \frac{\dif s}{s_0} \omega(s) \rho_{V/A}^{DV}
+    \end{equation}
+  \end{itemize}
+\end{frame}
+\note[itemize]{
+  \item We can represent duality as \(\Pi(s) \to \Pi_{OPE}(s)\)
   \item The difference \(\Delta(s)\) defines the duality violating contribution
     to \(\Pi\)
   \item DV can be parametrised via a model
@@ -659,47 +826,22 @@
     axial channel
   \item Too many parameters: e.g. \(\alpha_s, \rho_6, \rho_8\) three parameters
     vs eight!
-  \item why is the DV integration from \(s_0 \to \infty\) and not \(0 \to s_0\)
+  \item We will further research the necessity of including DV
 }
-
-
-
 
 \subsection{Experiment}
-
-\subsection{ALEPH Data}
-
-\begin{frame}
-  Experimental Spectral Moment:
-  \begin{ceqn}
-    \begin{equation}
-      \rho^{(1)}_{V/A} = \frac{m_\tau^2}{12 \pi^2 \abs{V_{ud}}^2 S_{EW}} \frac{B_{V/A}}{\mathcal{B}_e} \frac{\dif N_{V/A}}{N_{V/A}\dif s}
-      \frac{1}{\omega_\tau}
-    \end{equation}
-  \end{ceqn}
-  Integral Moment:
-  \begin{ceqn}
-    \begin{equation}
-      R_{\tau,V/A}^\omega \equiv 12 \pi^2 \int_0^{s_0} \frac{\dif{s}}{s_0} \omega\left( \frac{s}{s_0}\right) \rho_{V/A}(s) 
-    \end{equation}
-  \end{ceqn}
-  \vfill
-  Experimental Moment:
-  \begin{ceqn}
-    \begin{equation}
-      I_{exp,V/A}^\omega (s_0) = \frac{m_\tau^2}{\mathcal{B}_e s_0}
-      \sum_{i=1}^{N(s_0)} \frac{\omega(s_i/s_0)}{\omega_\tau (s_i/s_0)} \sfm2_{V/A}(s_i)
-    \end{equation}
-  \end{ceqn}
-\end{frame}
-\note[itemize]{
-  \item \(\rho^{(0)}_V\) does not exist
-  \item \(\rho^{(0)}_A\) is the pion pole, which is not included in the data?
-  \item \(\sfm2_{V/A} \equiv B_{V/A} \frac{\dif N_{V/A}}{N_{V/A} \dif s}\)
-  \item \(\abs{V_{ud}}^2 and S_{EW}?\)
-}
 \begin{frame}
   \frametitle{ALEPH Data}
+  \begin{itemize}
+    \item Experimental Spectral Moment:
+      \begin{equation}
+        \rho^{(1)}_{V/A}(s) = \frac{m_\tau^2}{12 \pi^2 \abs{V_{ud}}^2 S_{EW}} \frac{\mathcal{B}_{V/A}}{\mathcal{B}_e} \frac{\dif N_{V/A}}{N_{V/A}\dif s}
+        \frac{1}{\omega_\tau}
+      \end{equation}
+  \end{itemize}
+
+  \vfill
+
   \begin{columns}
     \begin{column}{0.5\textwidth}
       \includegraphics[width=\textwidth]{./images/specFuncAleph_V.eps}
@@ -709,70 +851,104 @@
     \end{column}
   \end{columns}
 \end{frame}
+\note[itemize]{
+\item The data we use is given by the ALEPH group
+\item ALEPH was a particle detector on the Large Electron-Positron collider in
+  the nineties
+\item The data is given as a the normalised invariant mass squared distribution
+  \(\dif N/ N/ \dif s\) for each channel \(V\), \(A\) and \(V+A\)
+\item In the two graphs we see the contribution of the \(V\) channel (left)
+  and the \(A\) channel (right)
+\item In the vector channel we see the \(\rho(770)\) resonance
+\item In the axial channel we see the \(a_1^-\) resonance
+\item We also plotted the Perturbative contribution, which cannot reproduce
+  the experimental data, especially for lower energies
+}
+
 \begin{frame}
   \includegraphics[width=\textwidth]{./images/specFuncAleph_VpA.eps}
 \end{frame}
+\note[itemize]{
+  \item Here we see the experimental spectral function of the \(V+A\) channel
+  \item Note that for higher energies the perturbative contribution matches the
+    spectral function far better
+  \item Also note that we still see a wavy behaviour of the spectral function in
+    the data, which is connected to Duality Violations
+  \item We assume that in the \(V+A\) channel DV are sufficiently suppressed to
+    avoid modelling their contributions
+}
 
-
-\section{Fits}
-\subsection{Strategy}
 \begin{frame}
-  \frametitle{Chi-Squared}
-  Chi-Squared function:
-  \begin{equation}
-    \chi^2 = ( I_i^{exp} - I_i^{th}(\vec \alpha)) C_{ij}^{-1} (I_j^{exp} - I_j^{th}(\vec \alpha))
-  \end{equation}
-  Covariance Matrix:
-  \begin{equation}
-    C_{ij} = \cov(I_i^{exp}, I_j^{exp})
-  \end{equation}
-  \vfill
-  Chi-Squared per Degrees of Freedom:
-  \begin{equation}
-    \frac{\chi^2}{dof} \approx 1
-  \end{equation}
+  \frametitle{Integral Moments}
+  \begin{itemize}
+    \item Integral Moment:
+      \begin{footnotesize}
+        \begin{equation}
+          I_{V/A}^\omega(s_0) \equiv 12 \pi^2 \int_0^{s_0} \frac{\dif{s}}{s_0} \omega\left( \frac{s}{s_0}\right) \rho^{exp}_{V/A}(s)
+          = \frac{3 \pi}{i} \oint_{\abs{s}=s_0} \frac{\dif s}{s_0} \omega\left(\frac{s}{s_0}\right) D^{th}(s) 
+        \end{equation}
+      \end{footnotesize}
+    \item Experimental Moment:
+      \begin{equation}
+        I_{exp,V/A}^\omega (s_0) = \frac{m_\tau^2}{\mathcal{B}_e s_0}
+        \sum_{i=1}^{N(s_0)} \frac{\omega(s_i/s_0)}{\omega_\tau (s_i/s_0)} \sfm2_{V/A}(s_i)
+      \end{equation}
+  \end{itemize} 
 \end{frame}
+\note[itemize]{
+  \item We defined the so-called integral moments, which we will use to define
+    our chi-squared function
+  \item the experimental moment is then a sum given by equation 47   
+  \item \(\sfm2\) is given in the binned data of the aleph group 
+  \item \(\sfm2_{V/A} \equiv B_{V/A} \frac{\dif N_{V/A}}{N_{V/A} \dif s}\)
+  \item \(\rho^{(0)}_V\) does not exist
+  \item \(\rho^{(0)}_A\) is the pion pole, which is not included in the data?
+}
 
-\subsubsection{Weights}
+\subsection{Weights}
 \begin{frame}
   \frametitle{Weights}
-  Weight function:
-  \begin{ceqn}
-    \begin{equation}
-      \omega(x) \equiv \sum_i a_i x^i
-    \end{equation}
-  \end{ceqn}
-  \vfill
-  \makebox[\linewidth]{\rule{\textwidth}{1pt}}
-  \vfill
-  E.g.
-  \begin{columns}
-    \begin{column}{.3\textwidth}
-      \begin{itemize}
-        \item double pinched
-        \item no monomial
-        \item D6 and D8
-      \end{itemize}
-    \end{column}
-    \begin{column}{.5\textwidth}
+  \begin{itemize}
+    \item Weight function:
       \begin{equation}
-        \begin{split}
-          \omega_\tau &\equiv (1 - x)^2(1 + 2x) \\
-          &= 1 - 3x^2 + 2x^3
-        \end{split}
+        \omega(x) \equiv \sum_i a_i x^i
       \end{equation}
-    \end{column}
-  \end{columns}
+    \item E.g.
+      \begin{columns}
+        \begin{column}{.3\textwidth}
+          \begin{itemize}
+            \item double pinched
+            \item no monomial
+            \item D6 and D8
+          \end{itemize}
+        \end{column}
+        \begin{column}{.5\textwidth}
+          \begin{equation}
+            \begin{split}
+              \omega_\tau &\equiv (1 - x)^2(1 + 2x) \\
+              &= 1 - 3x^2 + 2x^3
+            \end{split}
+          \end{equation}
+        \end{column}
+      \end{columns}
+  \end{itemize}
 \end{frame}
+\note[itemize]{
+  \item The weight is an analytic function
+  \item Thus we can define it as an arbitrary polynomial
+  \item As an example we can take the natural appearing kinetic weight \(\omega_\tau\)
+  \item It is double pinched, does not contain a monomial and as we will see has
+    active D6 and D8 contributions
+}
 
 \begin{frame}
   \frametitle{Pinched Weights}
-  \begin{ceqn}
-    \begin{equation}
-      \omega(s) = \left( 1 - \frac{s}{m_\tau^2} \right)^k
-    \end{equation}
-  \end{ceqn}
-  \vfill
+  \begin{itemize}
+    \item Pinched weight:
+      \begin{equation}
+        \omega(x) = \left( 1 - x \right)^k
+      \end{equation}
+  \end{itemize}
   \begin{columns}
     \begin{column}{.7\textwidth}
       \includegraphics[width=\textwidth]{./images/monomialWeightGraphs.eps}
@@ -782,6 +958,16 @@
     \end{column}
   \end{columns}
 \end{frame}
+\note[itemize]{
+  \item The theoretical two-point function contains DV close to the positive
+    real axis
+  \item To suppress DV contributions we introduce pinched weights
+  \item The order of the pinching is given by the exponent \(k\) in equation 50
+  \item The higher the pinching the fewer the contributions close to the
+    positive real axis. This can be seen by plotting the weights. Blue is single
+    pinched and decreases linear. Higher pinched weights decrease faster.
+  \item Thus implementing a sufficient pinching should avoid DV
+}
 
 \begin{frame}
   \frametitle{Weighting OPE Contributions}
@@ -790,16 +976,16 @@
     = \begin{cases} \mbox{\(2 \pi i\)} & \mbox{if } k=-1, \\ \mbox{0} & \mbox{otherwise} \end{cases}.
   \end{equation}
   \begin{equation}
-    \left. R(x)\right\vert_{D=0,2,4,\dots} = \oint_{\abs{x}=1} \dif x \, x^{k-D/2} C^{(D)}
+     R(x)\biggr\rvert_{D=0,2,4,\dots} = \oint_{\abs{x}=1} \dif x \, x^{k-D/2} C^{(D)}
   \end{equation}
   \vfill
   Active Dimensions:
-  \begin{ceqn}
-    \begin{equation}
-      D = 2 (k+1)
-    \end{equation}
-  \end{ceqn}
+  \begin{equation}
+    D = 2 (k+1)
+  \end{equation}
+
   \vspace{0.2cm}
+
   \begin{tabular}{l|ccccccc}
     \toprule
     \textbf{monomial:} & \(x^0\) & \(x^1\) & \(x^2\) & \(x^3\) & \(x^5\) & \(x^6\) & \(x^7\)\\
@@ -807,6 +993,51 @@
     \bottomrule 
   \end{tabular}
 \end{frame}
+\note[itemize]{
+  \item The weights are also used to ``activate'' different OPE contributions
+  \item If we regard a closed contour integral over a \(x^k\), we can see that
+    the contour integral is different than zero only if the exponent is equal to \(-1\)
+  \item Similarly regarding the integral moment, we see that only certain
+    dimensions contribute, while other dimensions are strongly suppressed
+  \item Thus the active dimensions are given by \(D = 2(k+1)\)
+  \item In the table we can 
+  \item (The OPE contributions have logarithmic \(x\) dependence. In general we
+    approximated them as constants.)
+}
+
+
+\section{Fits}
+\subsection{Strategy}
+\begin{frame}
+  \frametitle{Chi-Squared}
+  \begin{itemize}
+    \item Chi-Squared function:
+      \begin{equation}
+        \chi^2 = (I_i^{exp} - I_i^{th}(\vec \alpha)) C_{ij}^{-1} (I_j^{exp} - I_j^{th}(\vec \alpha))
+      \end{equation}
+    \item Covariance Matrix:
+      \begin{equation}
+        C_{ij} = \cov(I_i^{exp}, I_j^{exp})
+      \end{equation}
+
+    \item Chi-Squared per Degrees of Freedom:
+      \begin{equation}
+        \frac{\chi^2}{dof} \approx 1
+      \end{equation}
+  \end{itemize}
+\end{frame}
+\note[itemize]{
+  \item The chi-squared function is constructed from the theoretical and
+    experimental moments
+  \item The indices \(i\) and \(j\) represent the dependency of the moments on
+    the chosen weight and \(s_0\)
+  \item The fits are highly correlated.
+  \item The correlation matrix is given with the data.
+  \item A good fit is characterised by a \(\chi^2/dof \approx 1\) 
+  \item As we have to deal with missing correlations, we will also interpret
+    fits with a \(\chi^2/dof\) smaller than 1 as good
+}
+
 
 \begin{frame}
   \frametitle{Parameters and Momenta}
@@ -815,7 +1046,7 @@
       \begin{itemize}
         \item 3 Moments
         \item max three parameters
-        \item e.g. \(\alpha_s, D6, D8\) (fully determined)
+        \item e.g. \(\alpha_s, \rho_{V/A}^{(6)}, \rho_{V/A}^{(8)}\) (fully determined)
       \end{itemize}
     \end{column}
     \begin{column}{.4\textwidth}
@@ -830,7 +1061,9 @@
       \end{tabular}
     \end{column}
   \end{columns}
+
   \vfill
+
   \begin{columns}
     \begin{column}{.4\textwidth}
       \centering
@@ -853,6 +1086,12 @@
     \end{column}
   \end{columns}
 \end{frame}
+\note[itemize]{
+  \item Our ``data points'' are the integral momenta. We will construct multiple
+    integral momenta for every fit by varying the number of \(s_0\).
+  \item In principle we could also vary the weights, but have not done this
+  \item E.g. if we want to fit three parameters as 
+}
 
 \begin{frame}
   \frametitle{Strategy}
@@ -863,7 +1102,9 @@
   \end{itemize}
 \end{frame}
 \note[itemize]{
-  \item Check isolated weights of stability for different \(s_0\) moments
+  \item To extract \(\alpha_s\) at the \(m_\tau^2\) scale, we perform fits with
+    multiple \(s_0\) moments.
+  \item We check isolated weights for stability for different \(s_0\) moments
   \item Check stability for different weights and pinchings. If we obtain
     similar weights DV should not be present.
   \item Perform additional fits with the BS. If parameters are similar to FOPT,
@@ -871,6 +1112,7 @@
 }
 
 \begin{frame}
+  \frametitle{Chosen Weights}
   \resizebox{\textwidth}{!}{
     \begin{tabular}{ccccc}
       \toprule
@@ -892,17 +1134,39 @@
     \end{tabular}
   }
 \end{frame}
+\note[itemize]{
+  \item To apply the strategy we have to choose several weights
+  \item We selected three categories:
+    \begin{itemize}
+      \item Pinched weights without a monomial term
+        \(x\), these are double, triple or quadruple pinched,  
+      \item Monomial weights, these weights are single pinched and do not
+        contain a monomial term \(x\)
+      \item ``Pichs optimal'' weights, these weights are single up to quadruple
+        pinched and contain a term monomial in \(x\)
+    \end{itemize}
+  \item We cannot apply FOPT to weights with a monomial term \(x\)
+    \(\Rightarrow\) BS
+}
 
 \subsection{Results}
 \subsubsection{Pinched Weights without a Monomial term \(x\)}
+% \begin{frame}
+%   \centering
+
+%   \vspace{0.5cm}
+
+%   \LARGE Pinched Weights
+% \end{frame} 
 \begin{frame}
   \frametitle{Kinematic Weight: \(\omega_\tau(x) \equiv (1-x)^2(1+2x)\)}
+  \centering
   \begin{tabular}{ccccccc}
     \toprule
     & \(s_{min}\) & \#\(s_0\)s & \(\alpha_s(m_\tau^2)\) & \(\rho^{(6)}\) & \(\rho^{(8)}\) & \(\chi^2/dof\)  \\
     \midrule
     \parbox[t]{2mm}{\multirow{1}{*}{\rotatebox[origin=c]{90}{\textsc{bs}}}}
-    & 2.200 & 7 & 0.3274(42) & -0.82(21) & -1.08(40) & 0.21 \\
+    & 2.200 & 7 & 0.3274(42) & -0.82(21) & -1.08(41) & 0.21 \\
     \midrule
     \parbox[t]{2mm}{\multirow{5}{*}{\rotatebox[origin=c]{90}{\textsc{fopt}}}}
     % 1.500 & 23 & 0.3255(13) & -0.441(10) & -0.2909(34) & 2.00 \\
@@ -928,6 +1192,35 @@
     \bottomrule
   \end{tabular}
 \end{frame}
+\note[itemize]{
+  \item Starting with the kinematic weight
+  \item appears naturally in the inclusive hadronic tau decay ratio
+  \item is double pinched \(\Rightarrow\) should suppress DV sufficiently
+  \item Has two active OPE dimensions, namely dimension six and eight
+  \item Leaves us with three fitting parameters: \(\alpha_s, \rho^{(6)}\) and \(\rho^{(8)}\)
+  \item \(s_{min}\) is the smallest invariant mass squared value that is
+    included in the fit
+  \item One has to imagine that the data is binned and that we construct our
+    moments starting from the highest available energy
+  \item We then perform fits with an increasing number of \(s_0\)s, including
+    more and more bins and thus include lower and lower energies
+  \item beginning from \SI{2.2}{\giga\eV^2} the fits get problematic due to the
+    appearing resonances
+  \item Lets regard the two first lines of the FOPT table, we also applied the
+    BS for the best fit
+  \item Regarding the \(\chi^2/dof\) we se a jump in its value, which we noted
+    for every weight. If we go to too low energies the fits become unreliable,
+    which is also notable from the deviating values for the parameters.
+  \item We decided to take the fits above, but closest to this threshold to be
+    the best fit
+  \item  For the fits above the threshold we note a great stability between the
+    values obtained for \(\alpha_s\)
+  \item We also note too low values for the \(\chi^2/dof\), but believe that
+    this caused by missing correlations in the ALEPH data
+  \item We also performed the same fit for seven moments applying the BS, which
+    is in great agreement
+}
+
 \begin{frame}
   \frametitle{Cubic Weight: \(\omega_{cube}(x) \equiv (1-x)^3(1+3x)\)}
   \begin{tabular}{ccccccc}
@@ -947,16 +1240,143 @@
     \bottomrule
   \end{tabular}
 \end{frame}
+\note[itemize]{
+  \item The cubic weight is triple pinched
+  \item Has three active OPE contributions, \(D6, D8\), and \(D10\)
+  \item Consequently we fitted four paremters
+  \item Shows very similar behaviour to the kinematice weight (threshold, low
+    \(\chi^2/dof\))
+  \item Has also very stable values for \(\alpha_s\)
+}
+
 \begin{frame}
   \frametitle{Quartic Weight:  \( \omega_{quartic}(x) \equiv (1-x)^4(1+4x)\)}
-  \begin{equation}
-    \begin{split}
-      \alpha_s(m_\tau^2) = 0.3290(11), \quad \rho^{(6)}=-0.3030(46), \quad \rho^{(8)}=-0.1874(28), \\
-      \rho^{(10)} = 0.3678(45) \quad \text{and} \quad \rho_{(12)}=-0.4071(77).
-    \end{split}
-  \end{equation}
+  \begin{small}
+    \begin{ceqn}
+      \begin{equation}
+        \begin{split}
+          \alpha_s(m_\tau^2) = 0.3290(11), \quad \rho^{(6)}=-0.3030(46), \quad \rho^{(8)}=-0.1874(28), \\
+          \rho^{(10)} = 0.3678(45) \quad \text{and} \quad \rho_{(12)}=-0.4071(77).
+        \end{split}
+      \end{equation}
+    \end{ceqn}
+  \end{small}
+\end{frame}
+\note[itemize]{
+  \item Too many parameters. Only one fit converged
+}
+
+\subsubsection{Comparison}
+\begin{frame}
+  \frametitle{Comparison}
+  \centering \resizebox{\textwidth}{!}{
+    \begin{tabular}{cccccccc}
+      \toprule
+      PT & weight & \(\#s_0\)'s & \(\alpha_s(m_\tau^2)\) & \(\langle aGG \rangle_I\) & \(\rho^{(6)}\) & \(\rho^{(8)}\) & \(\chi^2/dof\)  \\
+      \midrule
+      \parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{\textsc{fopt}}}}
+      & \((1-x)^2(1+2x)\)    & 7 & 0.3308(44) & \(2.1^*\) & -0.72(20) & -0.85(38) & 0.19 \\
+      & \((1-x)^3(1+2x)\)    & 8 & 0.3302(40) & \(2.1^*\) & -0.52(11) & -0.58(22) & 0.43 \\ 
+      % & \(\omega_{quartic}\) & 2.0 & 0.3290(11) & - & -0.3030(46) &
+      % -0.1874(28) & 0.3678(45) & 0.67 \\
+      & \(1 - x^2\)          & 7 & 0.3248(52) & \(2.1^*\) & -0.77(22) & \(0^*\)   & 0.38 \\
+      & \(1 - x^3\)          & 7 & 0.3214(49) & \(2.1^*\) & \(0^*\)   & -1.01(39) & 0.41 \\
+      % & \(\omega_{M4}\) & 2.2 & 0.3203(48) & - & - & - & -1.64(77) & 0.42 \\
+      \midrule 
+      \parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{\textsc{bs}}}}
+      & \((1-x)^2(1 + 2x)\) & 7 & 0.3274(42) & \(2.1^*\)    & -0.82(21)   & -1.08(41) & 0.21 \\
+      & \(1 - x\)           & 7 & 0.3246(52) & -0.2262(59)  & \(0^*\)           & \(0^*\)   & 0.38 \\
+      & \((1 - x)^2\)       & 7 & 0.3270(54) & -0.0254(61)  & -0.77(21)   & \(0^*\)   & 0.74 \\
+      & \((1 - x)^3\)       & 8 & 0.3239(40) & -0.0212(42)  & -0.63(15)   & -0.74(29) & 0.46 \\
+      % & \(\omega_X4}\) & 2.1 & 0.3248(21) & -0.02230(47) & -0.6724(63) &
+      % -0.834(14) & -1.352(28) & 0.23 \\
+      \bottomrule
+    \end{tabular}
+    }
+\end{frame}
+\note[itemize]{
+  \item Here we gathered the ``best'' fits, which are fits with the highest
+    \(\#s_0\)'s, but being above the threshold of unstable fits
+  \item We left also out the problematic fourth pinched weights, which include
+    too high dimensions of the OPE
+  \item We can clearly see that all the values obtained for \(\alpha_s\) are
+    very similar
+  \item values obtained for \(\rho^{(6)}\) and \(\rho^{(8)}\) are within error boundaries
+  \item Even though we used different pinchings, aka different amounts of
+    suppression for DV
+  \item Note that even a single pinched weights like in the second row of the BS
+    we achieve comparable results
+  \item Comparing the parameters obtained from FOPT, we also see that they are
+    very similar to parameters obtained from the BS
+}
+
+
+\section{Conclusions}
+\begin{frame}
+  \frametitle{Conclusions}
+  \begin{columns}
+    \begin{column}{.5\textwidth}
+      \begin{itemize}
+      \item \(\alpha_s(m_\tau^2) = 0.3261 \pm 0.0050\)
+      \item \(\rho^{(6)} = -0.68 \pm 0.2\)
+      \item \(\rho^{(8)} = -0.80 \pm 0.38\)
+      \end{itemize}
+    \end{column}
+    \begin{column}{.5\textwidth}
+      \begin{itemize}
+      \item DV not present if using single pinched weights in the V+A channel
+      \item FOPT more valid than CIPT
+      \item \(\alpha_s(m_Z^2) = 0.11940(60)\)
+      \end{itemize}
+    \end{column}
+  \end{columns}
 \end{frame}
 
+
+\begin{frame}
+  \centering
+
+  \vspace{0.5cm}
+
+  \LARGE
+  Questions
+\end{frame}
+
+\appendix
+\begin{frame}
+  \frametitle{Constants}
+  \centering
+  \begin{tabular}{lll}
+    \toprule
+    Quantity & Value \\
+    \midrule
+    \(V_{ud}\) & \(0.9742 \pm 0.00021\) \\
+    \(S_{EW}\) & \(1.0198 \pm 0.0006\)  \\
+    \(B_e\) & \(17.818 \pm 0.023\)      \\
+    \(m_\tau\) & \SI{1.77686 \pm 0.12}{\mega\eV} \\
+    \(\langle  a GG \rangle_I\) & \SI{0.012}{\giga\eV^2} \\
+    \(\langle \anti{q}_{u/d}q_{u/d} \rangle(m_\tau) \) & \SI{-272 \pm 15}{\mega\eV} \\
+    \( \anti{s}s / \langle \anti{q}q \rangle \) & 0.8 \pm 0.3 \\
+    \bottomrule
+  \end{tabular}
+\end{frame}
+\begin{frame}
+  \frametitle{DV-model}
+  \begin{equation}
+    -\frac{1}{2 \pi i} \oint_{\abs{s}=s_0} \frac{\dif s}{s_0} \omega(s/s_0)
+    \Delta_{V/A}(s) = - \int_{s_0}^\infty \frac{\dif s}{s_0} \omega(s/ s_0) \frac{1}{\pi} \Ima \Delta_{V/A}(s)
+  \end{equation}
+\end{frame}
+\begin{frame}
+  \frametitle{Pion Pole}
+  \begin{ceqn}
+    \begin{equation}
+      R_{\tau,A}^\omega(s_0, \pi) = 24 \pi^2 \abs{V_{ud}}^2 S_{EW} \frac{f_\pi^2}{s_0}
+      \omega \left( \frac{s_\pi}{s_0} \right)
+      \left[ 1 - \frac{2 s_\pi}{s_\tau+ 2 s_\pi} \right]
+    \end{equation}
+  \end{ceqn}
+\end{frame}
 \subsubsection{Single Pinched Monomial Weights}
 \begin{frame}
   \frametitle{\(\omega_{M2}(x) \equiv 1-x^2\)}
@@ -1036,7 +1456,6 @@
     \bottomrule
   \end{tabular}
 \end{frame}
-
 \subsubsection{Pinched Weights with a Monomial Term \(x\)}
 \begin{frame}
   \frametitle{\(\omega_{1,0} \equiv (1-x)\)}
@@ -1158,97 +1577,6 @@
   \end{adjustbox}
 \end{frame}
 
-\subsubsection{Comparison}
-\begin{frame}
-  \frametitle{Comparison}
-  \centering \resizebox{\textwidth}{!}{
-    \begin{tabular}{ccccccccc}
-      \toprule
-      & weight & \(s_{min}\) & \(\alpha_s(m_\tau^2)\) & \(\langle aGG \rangle_I\) & \(\rho^{(6)}\) & \(\rho^{(8)}\) & \(\rho^{(10)}\) & \(\chi^2/dof\)  \\
-      \midrule
-      \parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{\textsc{fopt}}}}
-      & \(\omega_{\tau}\)    & 2.2 & 0.3308(44) & -            & -0.72(20) & -0.85(38) & - & 0.19 \\
-      & \(\omega_{cube}\)    & 2.1 & 0.3302(40) & -            & -0.52(11) & -0.58(22) & -1.00(45) & 0.43 \\ 
-      % & \(\omega_{quartic}\) & 2.0 & 0.3290(11) & - & -0.3030(46) &
-      % -0.1874(28) & 0.3678(45) & 0.67 \\
-      & \(\omega_{M2}\)     & 2.2 & 0.3248(52) & -            &  -0.77(22) & - & - & 0.38 \\
-      & \(\omega_{M3}\)     & 2.2 & 0.3214(49) & -            & - & -1.01(39) & - & 0.41 \\
-      % & \(\omega_{M4}\) & 2.2 & 0.3203(48) & - & - & - & -1.64(77) & 0.42 \\
-      \midrule 
-      \parbox[t]{2mm}{\multirow{3}{*}{\rotatebox[origin=c]{90}{\textsc{bs}}}}
-      & \(\omega_{1,0}\)    & 2.2 & 0.3246(52) & -0.2262(59)  & -           & -          & -          & 0.38 \\
-      & \(\omega_{2,0}\)    & 2.2 & 0.3270(54) & -0.0254(61)  & -0.77(21)   & -          & -          & 0.74 \\
-      & \(\omega_{3,0}\)    & 2.1 & 0.3239(40) & -0.0212(42)  & -0.63(15)   & -0.74(29)  & -          & 0.46 \\
-      % & \(\omega_X4}\) & 2.1 & 0.3248(21) & -0.02230(47) & -0.6724(63) &
-      % -0.834(14) & -1.352(28) & 0.23 \\
-      \bottomrule
-    \end{tabular}
-    }
-\end{frame}
-
-
-\section{Conclusions}
-\begin{frame}
-  \frametitle{Conclusions}
-  \begin{columns}
-    \begin{column}{.5\textwidth}
-      \begin{itemize}
-      \item \(\alpha_s(m_\tau^2) = 0.3261 \pm 0.0050\)
-      \item \(\rho^{(6)} = -0.68 \pm 0.2\)
-      \item \(\rho^{(8)} = -0.80 \pm 0.38\)
-      \end{itemize}
-    \end{column} \pause
-    \begin{column}{.5\textwidth}
-      \begin{itemize}
-      \item DV not present if using single pinched weights in the V+A channel
-      \item FOPT more valid than CIPT
-      \item \(\alpha_s(m_Z^2) = 0.11940(60)\)
-      \end{itemize}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-
-\begin{frame}
-  \centering
-  \LARGE
-  Questions
-\end{frame}
-
-\appendix
-\begin{frame}
-  \frametitle{Constants}
-  \begin{tabular}{lll}
-    \toprule
-    Quantity & Value & Reference \\
-    \midrule
-    \(V_{ud}\) & \(0.9742 \pm 0.00021\) & \cite{PDG2018} \\
-    \(S_{EW}\) & \(1.0198 \pm 0.0006\) & \cite{Marciano1988} \\
-    \(B_e\) & \(17.818 \pm 0.023\) & \cite{Davier2008} \\
-    \(m_\tau\) & \SI{1.77686 \pm 0.12}{\mega\eV} & \cite{PDG2018} \\
-    \(\langle  a GG \rangle_I\) & \SI{0.012}{\giga\eV^2} & \cite{Shifman1978a} \\
-    \(\langle \anti{q}_{u/d}q_{u/d} \rangle(m_\tau) \) & \SI{-272 \pm 15}{\mega\eV} & \cite{Jamin2002} \\
-    \( \anti{s}s / \langle \anti{q}q \rangle \) & 0.8 \pm 0.3 & \cite{Jamin2002} \\
-    \bottomrule
-  \end{tabular}
-\end{frame}
-\begin{frame}
-  \frametitle{DV-model}
-  \begin{equation}
-    -\frac{1}{2 \pi i} \oint_{\abs{s}=s_0} \frac{\dif s}{s_0} \omega(s/s_0)
-    \Delta_{V/A}(s) = - \int_{s_0}^\infty \frac{\dif s}{s_0} \omega(s/ s_0) \frac{1}{\pi} \Ima \Delta_{V/A}(s)
-  \end{equation}
-\end{frame}
-\begin{frame}
-  \frametitle{Pion Pole}
-  \begin{ceqn}
-    \begin{equation}
-      R_{\tau,A}^\omega(s_0, \pi) = 24 \pi^2 \abs{V_{ud}}^2 S_{EW} \frac{f_\pi^2}{s_0}
-      \omega \left( \frac{s_\pi}{s_0} \right)
-      \left[ 1 - \frac{2 s_\pi}{s_\tau+ 2 s_\pi} \right]
-    \end{equation}
-  \end{ceqn}
-\end{frame}
 
 
 

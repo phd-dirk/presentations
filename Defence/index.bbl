@@ -59,6 +59,76 @@
       \verb 0806.3156
       \endverb
     \endentry
+    \entry{Boito2011a}{article}{}
+      \name{author}{7}{}{%
+        {{uniquename=0,uniquepart=base,hash=ae9fff79cad50d98a50e02294255dcc0}{%
+           family={Boito},
+           familyi={B\bibinitperiod},
+           given={Diogo},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f3ee5a67eb8c85c726bc6caa9dcbcddb}{%
+           family={Cata},
+           familyi={C\bibinitperiod},
+           given={Oscar},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cb70a00ac740bd87f764c03a004a7394}{%
+           family={Golterman},
+           familyi={G\bibinitperiod},
+           given={Maarten},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=72230fc82f996168d6a1dec89ad8a246}{%
+           family={Jamin},
+           familyi={J\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=90b6e504e9e207fc1db018ea213172e2}{%
+           family={Maltman},
+           familyi={M\bibinitperiod},
+           given={Kim},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4f4f870de783c315d0a6ce8470f67cd6}{%
+           family={Osborne},
+           familyi={O\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1d45f241dd1dc2023627a9c98bee6dac}{%
+           family={Peris},
+           familyi={P\bibinitperiod},
+           given={Santiago},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{91e753e5b3fa894efdfc24f4d2b9cceb}
+      \strng{fullhash}{ad0dc5cb66808ac2d1282f7ce23c84ed}
+      \strng{bibnamehash}{91e753e5b3fa894efdfc24f4d2b9cceb}
+      \strng{authorbibnamehash}{91e753e5b3fa894efdfc24f4d2b9cceb}
+      \strng{authornamehash}{91e753e5b3fa894efdfc24f4d2b9cceb}
+      \strng{authorfullhash}{ad0dc5cb66808ac2d1282f7ce23c84ed}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev.}
+      \field{title}{{A new determination of $\alpha_s$ from hadronic $\tau$\ decays}}
+      \field{volume}{D84}
+      \field{year}{2011}
+      \field{pages}{113006}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevD.84.113006
+      \endverb
+      \verb{eprint}
+      \verb 1110.1127
+      \endverb
+    \endentry
     \entry{Davier2008}{article}{}
       \name{author}{5}{}{%
         {{uniquename=0,uniquepart=base,hash=63c734d130f62d55da3bca1c36545500}{%
@@ -233,6 +303,46 @@
       \range{pages}{4}
       \verb{doi}
       \verb 10.1103/PhysRevLett.61.1815
+      \endverb
+    \endentry
+    \entry{Pich1999}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=44f1be3103b55105f860525ca34893e4}{%
+           family={Pich},
+           familyi={P\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9897f48692aeba8fd7dd0a7d1b569712}{%
+           family={Prades},
+           familyi={P\bibinitperiod},
+           given={Joaquim},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2bfc009349002b8df54404a173688a47}
+      \strng{fullhash}{2bfc009349002b8df54404a173688a47}
+      \strng{bibnamehash}{2bfc009349002b8df54404a173688a47}
+      \strng{authorbibnamehash}{2bfc009349002b8df54404a173688a47}
+      \strng{authornamehash}{2bfc009349002b8df54404a173688a47}
+      \strng{authorfullhash}{2bfc009349002b8df54404a173688a47}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{JHEP}
+      \field{title}{{Strange quark mass determination from Cabibbo suppressed tau decays}}
+      \field{volume}{10}
+      \field{year}{1999}
+      \field{pages}{004}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1126-6708/1999/10/004
+      \endverb
+      \verb{eprint}
+      \verb hep-ph/9909244
       \endverb
     \endentry
     \entry{Shifman1978a}{article}{}
