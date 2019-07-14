@@ -806,14 +806,6 @@ INPUT /Users/knowledge/Library/texlive/2019/texmf-var/luatex-cache/generic/fonts
 INPUT ./images/FOPT_CIPT_contributions.png
 INPUT ./images/FOPT_CIPT_contributions.png
 INPUT ./images/FOPT_CIPT_contributions.png
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ufplmbb.fd
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ufplmbb.fd
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
 INPUT ./images/specFuncAleph_V.eps
 INPUT ./images/specFuncAleph_V-eps-converted-to.pdf
 INPUT ./images/specFuncAleph_V-eps-converted-to.pdf
@@ -823,11 +815,6 @@ INPUT ./images/specFuncAleph_A-eps-converted-to.pdf
 INPUT ./images/specFuncAleph_VpA.eps
 INPUT ./images/specFuncAleph_VpA-eps-converted-to.pdf
 INPUT ./images/specFuncAleph_VpA-eps-converted-to.pdf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
-INPUT ./images/complexCountour.eps
-INPUT ./images/complexCountour-eps-converted-to.pdf
-INPUT ./images/complexCountour-eps-converted-to.pdf
 INPUT ./index.toc
 INPUT ./index.toc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
@@ -869,7 +856,6 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmb7t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/eulervm/zeurm5.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/eulervm/zeurm5.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm5.tfm
@@ -942,8 +928,6 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmb7t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/eulervm/zeurm5.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/eulervm/zeurm5.vf
@@ -1017,8 +1001,6 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmb7t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
 INPUT ./index.toc
 INPUT ./index.toc
 OUTPUT index.nav
@@ -1042,6 +1024,5 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eurm5
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/euler/eusm7.pfb
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb

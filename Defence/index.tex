@@ -198,8 +198,7 @@
   \tableofcontents[subsubsectionstyle=hide]
 \end{frame} 
 
-\section{QCD Sum Rules}
-\subsection{Two-Point Function}
+\section{Theoretical Framework}
 \begin{frame}
   \frametitle{Two-Point Function}
   \begin{block}{Two-Point Function:}
@@ -266,9 +265,10 @@
   \end{itemize}
 \end{frame}
 
+\subsection{Theoretical Computation}
 \begin{frame}
   \centering
-  \vspace{0.3cm}
+  \vspace{0.5cm}
   \begin{LARGE}
     The Theoretical Computation
   \end{LARGE}
@@ -277,7 +277,6 @@
   \end{equation}
 \end{frame}
 
-\subsection{Operator Product Expansion}
 \begin{frame}
   \frametitle{Operator Product Expansion}
   \begin{itemize}
@@ -309,7 +308,43 @@
   operators
 \item The dimension zero contribution is the perturbative contribution, whereas
   the higher dimensional contributions are non-perturbative. We will deal with
-  the PT contributions first before coming back to the NPT ones. }
+  the PT contributions first before coming back to the NPT ones.
+}
+
+\begin{frame}
+  \frametitle{Duality}
+  \begin{itemize}
+  \item The equality of the quark-gluon picture and the hadronic picture is
+    called duality
+  \item Differences between the physical spectral function and its OPE
+    approximation are referred to as duality violations
+  \item DV are connected to the behaviour of the correlator close to the
+    positive real axis
+    
+  \vfill
+
+  \item DV can be modelled with the following ansatz:
+    \begin{equation}
+      \rho_{V/A}^{DV}(s) = e^{-(\delta_{V/A} + \gamma_{V/A}s)} \sin(\alpha_{V/A} + \beta_{V/A}s)
+    \end{equation}
+    \begin{scriptsize}
+      \cite{Boito2011a}
+    \end{scriptsize}
+  \item The Model is theoretically well motivated, but cannot be derived from
+    first principles
+  \end{itemize}
+\end{frame}
+\note[itemize]{
+  \item We can represent duality as \(\Pi(s) \to \Pi_{OPE}(s)\)
+  \item The difference \(\Delta(s)\) defines the duality violating contribution
+    to \(\Pi\)
+  \item DV can be parametrised via a model
+  \item The model has four parameters for the vector and four parameters for the
+    axial channel
+  \item Too many parameters: e.g. \(\alpha_s, \rho_6, \rho_8\) three parameters
+    vs eight!
+  \item We will further research the necessity of including DV
+}
 
 \begin{frame}
   \frametitle{Perturbative Contribution}
@@ -445,14 +480,18 @@
 \item We will make the same observation while performing our fits }
 
 \begin{frame}
-  \frametitle{Borel Model}
+  \frametitle{Borel Summation}
   \begin{itemize}
-  \item 
+  \item Borel summation is a summation divergent asymptotic series, like the
+    Adler function
   \item Borel transform and Borel integral:
     \begin{equation}
       A \equiv \int_0^\infty \dif t e^{-t/a} B[A](t) \quad \text{with} \quad B[A](t) = \sum_{n=0}^\infty \frac{a_k}{n!} t^n.
     \end{equation}
-  \item Borel model\footcite{Beneke2008}:
+  \item Borel model\footcite{Beneke2008} fixed to the to the known coefficients \(c_{n,1}\):
+    \begin{equation}
+      \hat D(\alpha) \equiv \int_0^\infty \dif t e^{-t/\alpha} B[\hat D](t)
+    \end{equation}
     \begin{equation}
       \label{eq:borelModel}
       B[\widehat D](u) = B[\widehat D_1^{UV}](u) + B[\widehat D_2^{IR}](u) + B[\widehat D_3^{IR}](u) + d_0^{PO} + d_1^{PO}u,
@@ -467,31 +506,28 @@
 \item We will follow the notation of \cite{Beneke2008}, which redefined the
   Adler function expansion as \(1 + \hat D(s)\) }
 
-\subsection{Non-Perturbative Contributions}
 \begin{frame}
   \frametitle{Non-Perturbative Contributions}
-  Operator Product Expansion:
-  \begin{equation}
-    \Pi_{NPT, V/A}^{OPE}(s) = \sum_{n=2,4,\dots} \frac{C_n \langle \Omega \vert \mathcal{O}_n (x) \vert \Omega \rangle}{(s)^{n/2}}
-  \end{equation}
-
-  \vfill
-
-  
-  \begin{equation}
-    \begin{array}{ll}
-      \text{Dimension 0:} & \mathbb{1} \\
-      % \text{Dimension 2:} & m_i^2 \\
-      \text{Dimension 4:} & :m_i \overline{q} q: \\
-                          & :G_a^{\mu\nu}(x) G_{\mu\nu}^a(x): \\
-                          % & m_i^4 \\
-      \text{Dimension 6:} & :\overline{q} \Gamma q \overline{q} \Gamma q: \\
-                          & :\overline{q} \Gamma \frac{\lambda^a}{2} q_\beta(x) \overline{q} \Gamma \frac{\lambda^a}{2} q: \\
-                          & :m_i \overline{q} \frac{\lambda^a}{2} \sigma_{\mu\nu} q G^{\mu\nu}_a: \\
-                          & :f_{abc} G_a^{\mu\nu} G_b^{\nu\delta} G_c^{\delta\mu}: \\
-      \cdots              & \cdots
-    \end{array}
-  \end{equation}
+  \begin{itemize}
+  \item Dimension four vacuum condensate contributions: 
+    \begin{equation}
+      \mathcal{O}_{4,V/A} = \frac{1}{12}\left[ 1 - \frac{11}{18}a_s \right] \langle  a_s GG \rangle
+      + \left[ 1 + \frac{\pm 36 - 23}{27} a_s \right] \langle (m_u + m_d) \overline{q}q \rangle
+    \end{equation}
+  \item The condensates has to be determined from NPT methods, e.g. the gluon condensate
+    \begin{equation}
+      \langle a_s GG \rangle \approx \SI{0.021}{\giga\eV^4}
+    \end{equation}
+  \item Higher dimensional contributions are approximated by simplest possible approach:
+    \begin{small}
+      \begin{equation}
+        D_{V/A}^{(6)} = 3 \frac{\rho_{V/A}^{(6)}}{s^3}, \quad
+        D_{V/A}^{(8)} = 4 \frac{\rho_{V/A}^{(8)}}{s^4}, \quad
+        D_{V/A}^{(10)} = 5 \frac{\rho_{V/A}^{(10)}}{s^5}, \quad
+        D_{V/A}^{(12)} = 6 \frac{\rho_{V/A}^{(12)}}{s^6}
+      \end{equation}
+    \end{small}
+  \end{itemize} 
 \end{frame}
 \note[itemize]{
   \item Next to the PT contribution we have to implement the NPT contributions
@@ -504,100 +540,19 @@
     work in the chiral limit and their contributions are proportional to the quark masses
 }
 
-\begin{frame}
-  \frametitle{Dimension Four Corrections}
-  Dimension Four Contributions:
-  \begin{equation}
-    \left. D_{ij}^{(1+0)}(s) \right\rvert_{D=4} = \frac{1}{s^2} \sum_n \Omega^{(1+0)}(s/\mu^2)a^n,
-  \end{equation}
-  \begin{small}
-    \begin{equation}
-      \begin{split}
-        &\Omega_n^{(1+0)} (s/\mu^2) \,=\, \frac{1}{6}\langle aGG \rangle p_n^{(1+0)}(s/\mu^2) + \sum_k m_k \langle \overline{q}_k q_k \rangle r_n^{(1+0)}(s/\mu^2) \\
-        &\quad+ 2\langle m_i \overline{q}_i q_i + m_j \overline{q}_j q_j \rangle q_n^{(1+0)} (s/\mu^2) \pm \frac{8}{3} \langle m_j \overline{q}_i q_i + m_i \overline{q}_j q_j \rangle t_n^{(1+0)} \\
-        &\quad- \frac{3}{\pi^2} (m_i^4 + m_j^4) h_n^{(1+0)} (s/\mu^2) \mp \frac{5}{\pi^2} m_i m_j (m_i^2 + m_j^2) k_n^{(1+0)}(s/\mu^2)\\
-        &\quad+ \frac{3}{\pi^2} m_i^2 m_j^2 g_n^{(1+0)}(s/\mu^2) + \sum_k m_k^4
-        j_n^{(1+0)}(s/\mu^2) + 2 \sum_{k \neq l} m_k^2 m_l^2 u_n^{(1+0)}(s/\mu^2).
-      \end{split}
-    \end{equation}
-  \end{small}
-  \begin{tiny}
-    \cite{Pich1999}
-  \end{tiny}
-\end{frame}
-\note[itemize]{
-  \item Here is the dimension four OPE contribution, which has been formalised
-    in an article by Pich
-  \item A lot of coefficient, but what you should take from this slide is the
-    Gluon condensate, which we will fit 
-}
 
+\subsection{Experimental Data}
 \begin{frame}
-  \frametitle{Dimension Six  and Eight Corrections}
-  Higher Dimensional Contributions:
+  \centering
+  \vspace{0.5cm}
+  \begin{LARGE}
+    The Experimental Data
+  \end{LARGE}
   \begin{equation}
-    \begin{split}
-      D_{ij,V/A}^{(1+0)} \biggr\rvert_{D=8} = 4 \frac{\rho_{V/A}^{(8)}}{s^4} \\
-      D_{ij,V/A}^{(1+0)} \biggr\rvert_{D=10} = 5 \frac{\rho_{V/A}^{(10)}}{s^5} \\
-      D_{ij,V/A}^{(1+0)} \biggr\rvert_{D=12} = 6 \frac{\rho_{V/A}^{(12)}}{s^6}
-    \end{split} 
+    I^{exp}(s_0) \equiv \frac{12 \pi^2}{s_0} \int_0^{s_0} \dif s \omega\left(\frac{s}{s_0}\right) \rho^{exp}_{V/A}(s)
   \end{equation}
 \end{frame}
-\note[itemize]{
-  \item Higher order OPE contributions are problematic to parametrise 
-  \item Starting from dimension six we will apply the simplest approach possible
-    to parametrise the higher dimensional OPE contributions.
-  \item We will define a constant \(\rho\) for every dimension, which represents
-    the contribution
-  \item needs backup slide! why simplest approach
-}
 
-
-\subsection{Duality}
-\begin{frame}
-  \frametitle{Duality}
-  \begin{itemize}
-  \item Duality:
-    \begin{equation}
-      \Pi(s) \to \Pi_{OPE}(s)
-    \end{equation}
-    
-  \item Duality Violations (DV):
-    \begin{equation}
-      \Delta(s) \equiv \Pi(s) - \Pi_{OPE}(s)
-    \end{equation}
-    % \begin{equation}
-    %   R_{\tau,V/A}^\omega = \frac{N_c}{2} S_{EW} \abs{V_{ud}}^2 (1 + \delta_{pt}^\omega + \delta_{npt}^\omega + \delta_{DV}^\omega)
-    % \end{equation}
-    \vfill
-  \item DV Model:
-    \begin{equation}
-      \rho_{V/A}^{DV}(s) = e^{-(\delta_{V/A} + \gamma_{V/A}s)} \sin(\alpha_{V/A} + \beta_{V/A}s)
-    \end{equation}
-    \begin{scriptsize}
-      \cite{Boito2011a}
-    \end{scriptsize}
-  \item DV Contribution:
-    \begin{equation}
-      D_\omega(s_0) = -12 \pi^2 S_{EW} \abs{V_{ud}}^2 \int_{s_0}^\infty \frac{\dif s}{s_0} \omega(s) \rho_{V/A}^{DV}
-    \end{equation}
-  \end{itemize}
-\end{frame}
-\note[itemize]{
-  \item We can represent duality as \(\Pi(s) \to \Pi_{OPE}(s)\)
-  \item The difference \(\Delta(s)\) defines the duality violating contribution
-    to \(\Pi\)
-  \item DV can be parametrised via a model
-  \item The model has four parameters for the vector and four parameters for the
-    axial channel
-  \item Too many parameters: e.g. \(\alpha_s, \rho_6, \rho_8\) three parameters
-    vs eight!
-  \item We will further research the necessity of including DV
-}
-
-\subsection{Experiment}
-
-\subsection{Inclusive Hadronic Tau Decay Ratio}
 \begin{frame}
   \frametitle{Inclusive Hadronic Tau Decay Ratio}
   \begin{itemize}
@@ -627,18 +582,9 @@
     contribution. The \(J=0\) axial-vector contribution is the pion pole. Which
     is missing in the experimental data.
 }
+
 \begin{frame}
   \frametitle{ALEPH Data}
-  \begin{itemize}
-    \item Experimental Spectral Moment:
-      \begin{equation}
-        \rho^{(1)}_{V/A}(s) = \frac{m_\tau^2}{12 \pi^2 \abs{V_{ud}}^2 S_{EW}} \frac{\mathcal{B}_{V/A}}{\mathcal{B}_e} \frac{\dif N_{V/A}}{N_{V/A}\dif s}
-        \frac{1}{\omega_\tau}
-      \end{equation}
-  \end{itemize}
-
-  \vfill
-
   \begin{columns}
     \begin{column}{0.5\textwidth}
       \includegraphics[width=\textwidth]{./images/specFuncAleph_V.eps}
@@ -664,7 +610,7 @@
 
 \begin{frame}
   \frametitle{ALEPH Data}
-  \includegraphics[width=\textwidth]{./images/specFuncAleph_VpA.eps}
+  \includegraphics[width=.9\textwidth]{./images/specFuncAleph_VpA.eps}
 \end{frame}
 \note[itemize]{
   \item Here we see the experimental spectral function of the \(V+A\) channel
@@ -677,58 +623,41 @@
 }
 
 \begin{frame}
-  \frametitle{Integral Moments}
+  \frametitle{Experimental Spectral Functions}
   \begin{itemize}
-    \item Integral Moment:
-      \begin{footnotesize}
-        \begin{equation}
-          I_{V/A}^\omega(s_0) \equiv 12 \pi^2 \int_0^{s_0} \frac{\dif{s}}{s_0} \omega\left( \frac{s}{s_0}\right) \rho^{exp}_{V/A}(s)
-          = \frac{3 \pi}{i} \oint_{\abs{s}=s_0} \frac{\dif s}{s_0} \omega\left(\frac{s}{s_0}\right) D^{th}(s) 
-        \end{equation}
-      \end{footnotesize}
-    \item Experimental Moment:
-      \begin{equation}
-        I_{exp,V/A}^\omega (s_0) = \frac{m_\tau^2}{\mathcal{B}_e s_0}
-        \sum_{i=1}^{N(s_0)} \frac{\omega(s_i/s_0)}{\omega_\tau (s_i/s_0)} \sfm2_{V/A}(s_i)
-      \end{equation}
-  \end{itemize} 
+    \item Experimental Spectral Functions:
+      \begin{align}
+        \frac{1}{N} \frac{\Delta N_{V/A}^{(1)}(s_i)}{\Delta s_i}
+        &\approx \frac{1}{N} \frac{\dif N_{V/A}^{(1)}}{\dif s} = B_e \frac{\dif R_{\tau, V/A}^{(1)}}{\dif s}(s) \nonumber\\
+        &= \frac{12\pi^2}{m_\tau^2} B_e S_{EW} \abs{V_{ud}}^2
+          \left( 1 - \frac{s}{m_\tau^2} \right)^2\left( 1 + \frac{2s}{m_\tau^2} \right) \rho_{V/A}^{(1)}(s) \\
+        \frac{1}{N} \frac{\Delta N_{V/A}^{(0)}(s_i)}{\Delta s_i}
+        &\approx \frac{1}{N} \frac{\dif N_{V/A}^{(0)}}{\dif s} = B_e \frac{\dif R_{\tau, V/A}^{(0)}}{\dif s}(s) \nonumber\\
+        &= \frac{12\pi^2}{m_\tau^2} B_e S_{EW} \abs{V_{ud}}^2
+          \left( 1 - \frac{s}{m_\tau^2} \right)^2 \rho_{V/A}^{(0)}(s)
+      \end{align}
+    \item \(\Delta N_{V/A}^{(0,1)}(s_i)\) is the number of \(V/A\) events with
+      \(J=0,1\) in the bin centred at \(s_i\).
+  \end{itemize}
 \end{frame}
-\note[itemize]{
-  \item We defined the so-called integral moments, which we will use to define
-    our chi-squared function
-  \item the experimental moment is then a sum given by equation 47   
-  \item \(\sfm2\) is given in the binned data of the aleph group 
-  \item \(\sfm2_{V/A} \equiv B_{V/A} \frac{\dif N_{V/A}}{N_{V/A} \dif s}\)
-  \item \(\rho^{(0)}_V\) does not exist
-  \item \(\rho^{(0)}_A\) is the pion pole, which is not included in the data?
-}
 
 \subsection{Weights}
 \begin{frame}
   \frametitle{Weights}
   \begin{itemize}
-    \item Weight function:
+    \item Weight functions have to be analytic:
       \begin{equation}
         \omega(x) \equiv \sum_i a_i x^i
       \end{equation}
-    \item E.g.
-      \begin{columns}
-        \begin{column}{.3\textwidth}
-          \begin{itemize}
-            \item double pinched
-            \item no monomial
-            \item D6 and D8
-          \end{itemize}
-        \end{column}
-        \begin{column}{.5\textwidth}
+    \item We choose weights to two major criteria: pinching and contained monomials
+    \item E.g. the kinematic weight
           \begin{equation}
             \begin{split}
               \omega_\tau &\equiv (1 - x)^2(1 + 2x) \\
               &= 1 - 3x^2 + 2x^3
             \end{split}
           \end{equation}
-        \end{column}
-      \end{columns}
+          \(\Rightarrow\) double pinched, no monomial term \(x\), D6 and D8
   \end{itemize}
 \end{frame}
 \note[itemize]{
@@ -740,22 +669,30 @@
 }
 
 \begin{frame}
-  \frametitle{Pinched Weights}
+  \frametitle{Pinched Weights and the OPE}
   \begin{itemize}
-    \begin{columns}
-      \begin{column}{.5\textwidth}
-        \centering
-        \item Pinched weight
-          \begin{equation}
-            \omega(x) = \left( 1 - x \right)^k
-          \end{equation}
-      \end{column}
-      \begin{column}{.5\textwidth}
-        \begin{center}
-          \includegraphics[width=\textwidth]{./images/complexCountour.eps}
-        \end{center}
-      \end{column}
-    \end{columns}
+  \item Pinched weight suppress the correlator close to the not analytic
+    positive real axis, which is known for Duality Violations
+    \begin{equation}
+      \omega(x) = \left( 1 - x \right)^k
+    \end{equation}
+
+    \vfill
+
+    \item The active OPE Dimensions depend on the monomials the weight carries:
+      \begin{equation}
+        \oint_{C} x^k \dif x = i \int_0^{2\pi}\left(e^{i \theta}\right)^{k+1} \dif \theta
+        = \begin{cases} \mbox{\(2 \pi i\)} & \mbox{if } k=-1, \\ \mbox{0} & \mbox{otherwise} \end{cases}.
+      \end{equation}
+      \begin{equation}
+        R(x)\biggr\rvert_{D=0,2,4,\dots} = \oint_{\abs{x}=1} \dif x \, x^{k-D/2} C^{(D)} \quad \Rightarrow \quad D = 2 (k+1)
+      \end{equation}
+      \begin{tabular}{l|ccccccc}
+        \toprule
+        \textbf{monomial:} & \(x^0\) & \(x^1\) & \(x^2\) & \(x^3\) & \(x^5\) & \(x^6\) & \(x^7\)\\
+        \textbf{dimension:} & \(D^{(2)}\) & \(D^{(4)}\) & \(D^{(6)}\) & \(D^{(8)}\) & \(D^{(10)}\) & \(D^{(12)}\) & \(D^{(14)}\)\\
+        \bottomrule 
+      \end{tabular}
   \end{itemize}
 \end{frame}
 \note[itemize]{
@@ -768,43 +705,6 @@
     pinched and decreases linear. Higher pinched weights decrease faster.
   \item Thus implementing a sufficient pinching should avoid DV
 }
-
-\begin{frame}
-  \frametitle{Weighting OPE Contributions}
-  \begin{equation}
-    \oint_{C} x^k \dif x = i \int_0^{2\pi}\left(e^{i \theta}\right)^{k+1} \dif \theta
-    = \begin{cases} \mbox{\(2 \pi i\)} & \mbox{if } k=-1, \\ \mbox{0} & \mbox{otherwise} \end{cases}.
-  \end{equation}
-  \begin{equation}
-     R(x)\biggr\rvert_{D=0,2,4,\dots} = \oint_{\abs{x}=1} \dif x \, x^{k-D/2} C^{(D)}
-  \end{equation}
-  \vfill
-  Active Dimensions:
-  \begin{equation}
-    D = 2 (k+1)
-  \end{equation}
-
-  \vspace{0.2cm}
-
-  \begin{tabular}{l|ccccccc}
-    \toprule
-    \textbf{monomial:} & \(x^0\) & \(x^1\) & \(x^2\) & \(x^3\) & \(x^5\) & \(x^6\) & \(x^7\)\\
-    \textbf{dimension:} & \(D^{(2)}\) & \(D^{(4)}\) & \(D^{(6)}\) & \(D^{(8)}\) & \(D^{(10)}\) & \(D^{(12)}\) & \(D^{(14)}\)\\
-    \bottomrule 
-  \end{tabular}
-\end{frame}
-\note[itemize]{
-  \item The weights are also used to ``activate'' different OPE contributions
-  \item If we regard a closed contour integral over a \(x^k\), we can see that
-    the contour integral is different than zero only if the exponent is equal to \(-1\)
-  \item Similarly regarding the integral moment, we see that only certain
-    dimensions contribute, while other dimensions are strongly suppressed
-  \item Thus the active dimensions are given by \(D = 2(k+1)\)
-  \item In the table we can 
-  \item (The OPE contributions have logarithmic \(x\) dependence. In general we
-    approximated them as constants.)
-}
-
 
 \section{Fits}
 \subsection{Strategy}
@@ -950,14 +850,6 @@
 }
 
 \subsection{Results}
-\subsubsection{Pinched Weights without a Monomial term \(x\)}
-% \begin{frame}
-%   \centering
-
-%   \vspace{0.5cm}
-
-%   \LARGE Pinched Weights
-% \end{frame} 
 \begin{frame}
   \frametitle{Kinematic Weight: \(\omega_\tau(x) \equiv (1-x)^2(1+2x)\)}
   \centering
@@ -1021,52 +913,6 @@
     is in great agreement
 }
 
-\begin{frame}
-  \frametitle{Cubic Weight: \(\omega_{cube}(x) \equiv (1-x)^3(1+3x)\)}
-  \begin{tabular}{ccccccc}
-    \toprule
-    \(s_{min}\) & \#\(s_0\)s & \(\alpha_s(m_\tau^2)\) & \(\rho^{(6)}\) & \(\rho^{(8)}\) & \(\rho^{(10)}\) & \(\chi^2/dof\)  \\
-    \midrule
-    % 1.800 & 13 & 0.3305(37) & -0.493(76) & -0.48(12) & -0.66(20) & 2.99 \\
-    % 1.850 & 12 & 0.3303(37) & -0.482(68) & -0.456(100) & -0.62(17) & 3.35 \\
-    % 1.900 & 11 & 0.3249(29) & -0.280(20) & -0.088(21) & 0.088(55) & 1.58 \\
-    % 1.950 & 10 & 0.3237(26) & -0.232(25) & 0.005(42) & 0.275(93) & 1.67 \\
-    2.000 & 9 & 0.3228(26) & -0.196(27) & 0.075(28) & 0.420(56) & 1.96 \\
-    \rowcolor{primary}
-    2.100 & 8 & 0.3302(40) & -0.52(11) & -0.58(22) & -1.00(45) & 0.43 \\
-    2.200 & 7 & 0.3312(43) & -0.56(12) & -0.68(23) & -1.23(50) & 0.55 \\
-    2.300 & 6 & 0.336(11) & -0.78(47) & -1.17(98) & -2.38(22) & 0.29 \\
-    2.400 & 5 & 0.3330(96) & -0.63(47) & -0.82(10) & -1.51(26) & 0.48 \\
-    \bottomrule
-  \end{tabular}
-\end{frame}
-\note[itemize]{
-  \item The cubic weight is triple pinched
-  \item Has three active OPE contributions, \(D6, D8\), and \(D10\)
-  \item Consequently we fitted four paremters
-  \item Shows very similar behaviour to the kinematice weight (threshold, low
-    \(\chi^2/dof\))
-  \item Has also very stable values for \(\alpha_s\)
-}
-
-\begin{frame}
-  \frametitle{Quartic Weight:  \( \omega_{quartic}(x) \equiv (1-x)^4(1+4x)\)}
-  \begin{small}
-    \begin{ceqn}
-      \begin{equation}
-        \begin{split}
-          \alpha_s(m_\tau^2) = 0.3290(11), \quad \rho^{(6)}=-0.3030(46), \quad \rho^{(8)}=-0.1874(28), \\
-          \rho^{(10)} = 0.3678(45) \quad \text{and} \quad \rho_{(12)}=-0.4071(77).
-        \end{split}
-      \end{equation}
-    \end{ceqn}
-  \end{small}
-\end{frame}
-\note[itemize]{
-  \item Too many parameters. Only one fit converged
-}
-
-\subsubsection{Comparison}
 \begin{frame}
   \frametitle{Comparison}
   \centering \resizebox{\textwidth}{!}{
@@ -1170,6 +1016,50 @@
     \end{equation}
   \end{ceqn}
 \end{frame}
+\begin{frame}
+  \frametitle{Cubic Weight: \(\omega_{cube}(x) \equiv (1-x)^3(1+3x)\)}
+  \begin{tabular}{ccccccc}
+    \toprule
+    \(s_{min}\) & \#\(s_0\)s & \(\alpha_s(m_\tau^2)\) & \(\rho^{(6)}\) & \(\rho^{(8)}\) & \(\rho^{(10)}\) & \(\chi^2/dof\)  \\
+    \midrule
+    % 1.800 & 13 & 0.3305(37) & -0.493(76) & -0.48(12) & -0.66(20) & 2.99 \\
+    % 1.850 & 12 & 0.3303(37) & -0.482(68) & -0.456(100) & -0.62(17) & 3.35 \\
+    % 1.900 & 11 & 0.3249(29) & -0.280(20) & -0.088(21) & 0.088(55) & 1.58 \\
+    % 1.950 & 10 & 0.3237(26) & -0.232(25) & 0.005(42) & 0.275(93) & 1.67 \\
+    2.000 & 9 & 0.3228(26) & -0.196(27) & 0.075(28) & 0.420(56) & 1.96 \\
+    \rowcolor{primary}
+    2.100 & 8 & 0.3302(40) & -0.52(11) & -0.58(22) & -1.00(45) & 0.43 \\
+    2.200 & 7 & 0.3312(43) & -0.56(12) & -0.68(23) & -1.23(50) & 0.55 \\
+    2.300 & 6 & 0.336(11) & -0.78(47) & -1.17(98) & -2.38(22) & 0.29 \\
+    2.400 & 5 & 0.3330(96) & -0.63(47) & -0.82(10) & -1.51(26) & 0.48 \\
+    \bottomrule
+  \end{tabular}
+\end{frame}
+\note[itemize]{
+  \item The cubic weight is triple pinched
+  \item Has three active OPE contributions, \(D6, D8\), and \(D10\)
+  \item Consequently we fitted four paremters
+  \item Shows very similar behaviour to the kinematice weight (threshold, low
+    \(\chi^2/dof\))
+  \item Has also very stable values for \(\alpha_s\)
+}
+
+\begin{frame}
+  \frametitle{Quartic Weight:  \( \omega_{quartic}(x) \equiv (1-x)^4(1+4x)\)}
+  \begin{small}
+    \begin{ceqn}
+      \begin{equation}
+        \begin{split}
+          \alpha_s(m_\tau^2) = 0.3290(11), \quad \rho^{(6)}=-0.3030(46), \quad \rho^{(8)}=-0.1874(28), \\
+          \rho^{(10)} = 0.3678(45) \quad \text{and} \quad \rho_{(12)}=-0.4071(77).
+        \end{split}
+      \end{equation}
+    \end{ceqn}
+  \end{small}
+\end{frame}
+\note[itemize]{
+  \item Too many parameters. Only one fit converged
+}
 \subsubsection{Single Pinched Monomial Weights}
 \begin{frame}
   \frametitle{\(\omega_{M2}(x) \equiv 1-x^2\)}

@@ -178,46 +178,6 @@
       \verb 1604.08082
       \endverb
     \endentry
-    \entry{Pich1999}{article}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,uniquepart=base,hash=44f1be3103b55105f860525ca34893e4}{%
-           family={Pich},
-           familyi={P\bibinitperiod},
-           given={Antonio},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=9897f48692aeba8fd7dd0a7d1b569712}{%
-           family={Prades},
-           familyi={P\bibinitperiod},
-           given={Joaquim},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{2bfc009349002b8df54404a173688a47}
-      \strng{fullhash}{2bfc009349002b8df54404a173688a47}
-      \strng{bibnamehash}{2bfc009349002b8df54404a173688a47}
-      \strng{authorbibnamehash}{2bfc009349002b8df54404a173688a47}
-      \strng{authornamehash}{2bfc009349002b8df54404a173688a47}
-      \strng{authorfullhash}{2bfc009349002b8df54404a173688a47}
-      \field{sortinit}{P}
-      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{hep-ph}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{JHEP}
-      \field{title}{{Strange quark mass determination from Cabibbo suppressed tau decays}}
-      \field{volume}{10}
-      \field{year}{1999}
-      \field{pages}{004}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1088/1126-6708/1999/10/004
-      \endverb
-      \verb{eprint}
-      \verb hep-ph/9909244
-      \endverb
-    \endentry
     \entry{PDG2018}{article}{}
       \true{moreauthor}
       \true{morelabelname}
