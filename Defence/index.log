@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.5.5)  14 JUL 2019 17:03
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.5.5)  14 JUL 2019 18:15
  restricted system commands enabled.
  file:line:error style messages enabled.
 **index.tex
@@ -49,7 +49,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.059 seconds
+luaotfload | main : initialization completed in 0.060 seconds
 (/usr/local/texlive/2019/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/12/02 v3.55 A class for typesetting presentations
 (/usr/local/texlive/2019/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
@@ -1989,26 +1989,26 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
 
 ]
 
-./index.tex:224: LaTeX Error: Bad math environment delimiter.
+./index.tex:225: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.224 \end{frame}
+l.225 \end{frame}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./index.tex:224: LaTeX Error: Bad math environment delimiter.
+./index.tex:225: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.224 \end{frame}
+l.225 \end{frame}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2024,23 +2024,23 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.5'
 
 ]
 Package epstopdf Info: Source file: <./images/rTauCauchysTheorem.eps>
-(epstopdf)                    date: 2019-07-13 16:11:48
-(epstopdf)                    size: 1621122 bytes
+(epstopdf)                    date: 2019-07-14 17:49:59
+(epstopdf)                    size: 1637850 bytes
 (epstopdf)             Output file: <./images/rTauCauchysTheorem-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2019-07-13 16:11:55
-(epstopdf)                    size: 35971 bytes
+(epstopdf)                    date: 2019-07-14 17:50:08
+(epstopdf)                    size: 37394 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/rTauCauchysTheorem
 -eps-converted-to.pdf ./images/rTauCauchysTheorem.eps>
-(epstopdf)             \includegraphics on input line 244.
+(epstopdf)             \includegraphics on input line 240.
 Package epstopdf Info: Output file is already uptodate.
-<./images/rTauCauchysTheorem-eps-converted-to.pdf, id=156, 914.41624pt x 458.713
-75pt>
+<./images/rTauCauchysTheorem-eps-converted-to.pdf, id=156, 914.41624pt x 459.717
+5pt>
 File: ./images/rTauCauchysTheorem-eps-converted-to.pdf Graphic file (type pdf)
 <use ./images/rTauCauchysTheorem-eps-converted-to.pdf>
 Package luatex.def Info: ./images/rTauCauchysTheorem-eps-converted-to.pdf  used 
-on input line 244.
-(luatex.def)             Requested size: 308.06374pt x 154.53973pt.
+on input line 240.
+(luatex.def)             Requested size: 308.06374pt x 154.87788pt.
  [7
 
 
@@ -2081,8 +2081,10 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.10'
 
+
+warning  (pdf backend): pop empty color page stack 0
 ]
-Overfull \hbox (61.67621pt too wide) detected at line 376
+Overfull \hbox (61.67621pt too wide) detected at line 377
 \TU/lmss/m/sl/10.95 c[] \U/zeus/m/n/10.95 ½ \TU/lmss/m/sl/10.95 c[] \U/zeus/m/
 n/10.95 ½ \TU/lmss/m/n/10.95 1\OT1/cmss/m/n/10.95 ,  \TU/lmss/m/sl/10.95 c[] \
 U/zeus/m/n/10.95 ½ \TU/lmss/m/n/10.95 1\OT1/cmss/m/n/10.95 .\TU/lmss/m/n/10.95
@@ -2126,7 +2128,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.13'
 File: ./images/FOPT_CIPT_contributions.png Graphic file (type png)
 <use ./images/FOPT_CIPT_contributions.png>
 Package luatex.def Info: ./images/FOPT_CIPT_contributions.png  used on input lin
-e 475.
+e 473.
 (luatex.def)             Requested size: 239.6057pt x 123.40067pt.
  [15
 
@@ -2139,10 +2141,10 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.14'
 
 warning  (pdf backend): pop empty color page stack 0
 ]
-./index.tex:507: Undefined control sequence.
+./index.tex:506: Undefined control sequence.
 \beamer@doifinframe ...\): \begin {equation} \hat 
                                                   D(\alpha ) \equiv \int _0^...
-l.507 \end{frame}
+l.506 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2150,10 +2152,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./index.tex:507: Undefined control sequence.
+./index.tex:506: Undefined control sequence.
 \beamer@doifinframe ...if t e^{-t/\alpha } B[\hat 
                                                   D](t) \end {equation} \beg...
-l.507 \end{frame}
+l.506 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2172,10 +2174,10 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.15'
 
 warning  (pdf backend): pop empty color page stack 0
 <./images/FOPT_CIPT_contributions.png>]
-./index.tex:514: Undefined control sequence.
+./index.tex:513: Undefined control sequence.
 \insertnote ...r function expansion as \(1 + \hat 
                                                   D(s)\) \beamer@noteenvend 
-l.514 ...r function expansion as \(1 + \hat D(s)\) }
+l.513 ...r function expansion as \(1 + \hat D(s)\) }
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2221,13 +2223,13 @@ df>
 (epstopdf)                    size: 18091 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/specFuncAleph_V-ep
 s-converted-to.pdf ./images/specFuncAleph_V.eps>
-(epstopdf)             \includegraphics on input line 603.
+(epstopdf)             \includegraphics on input line 602.
 Package epstopdf Info: Output file is already uptodate.
 <./images/specFuncAleph_V-eps-converted-to.pdf, id=289, 1011.78pt x 722.7pt>
 File: ./images/specFuncAleph_V-eps-converted-to.pdf Graphic file (type pdf)
 <use ./images/specFuncAleph_V-eps-converted-to.pdf>
 Package luatex.def Info: ./images/specFuncAleph_V-eps-converted-to.pdf  used on 
-input line 603.
+input line 602.
 (luatex.def)             Requested size: 171.14767pt x 122.23982pt.
 Package epstopdf Info: Source file: <./images/specFuncAleph_A.eps>
 (epstopdf)                    date: 2019-06-17 14:42:41
@@ -2238,13 +2240,13 @@ df>
 (epstopdf)                    size: 18610 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/specFuncAleph_A-ep
 s-converted-to.pdf ./images/specFuncAleph_A.eps>
-(epstopdf)             \includegraphics on input line 603.
+(epstopdf)             \includegraphics on input line 602.
 Package epstopdf Info: Output file is already uptodate.
 <./images/specFuncAleph_A-eps-converted-to.pdf, id=290, 1011.78pt x 722.7pt>
 File: ./images/specFuncAleph_A-eps-converted-to.pdf Graphic file (type pdf)
 <use ./images/specFuncAleph_A-eps-converted-to.pdf>
 Package luatex.def Info: ./images/specFuncAleph_A-eps-converted-to.pdf  used on 
-input line 603.
+input line 602.
 (luatex.def)             Requested size: 171.14767pt x 122.23982pt.
  [20
 
@@ -2266,13 +2268,13 @@ Package epstopdf Info: Source file: <./images/specFuncAleph_VpA.eps>
 (epstopdf)                    size: 17331 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/specFuncAleph_VpA-
 eps-converted-to.pdf ./images/specFuncAleph_VpA.eps>
-(epstopdf)             \includegraphics on input line 621.
+(epstopdf)             \includegraphics on input line 619.
 Package epstopdf Info: Output file is already uptodate.
 <./images/specFuncAleph_VpA-eps-converted-to.pdf, id=300, 1011.78pt x 722.7pt>
 File: ./images/specFuncAleph_VpA-eps-converted-to.pdf Graphic file (type pdf)
 <use ./images/specFuncAleph_VpA-eps-converted-to.pdf>
 Package luatex.def Info: ./images/specFuncAleph_VpA-eps-converted-to.pdf  used o
-n input line 621.
+n input line 619.
 (luatex.def)             Requested size: 308.06374pt x 220.04272pt.
  [21
 
@@ -2304,10 +2306,10 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 warning  (pdf backend): ignoring duplicate destination with the name 'page.22'
 
 ]
-./index.tex:692: Undefined control sequence.
+./index.tex:689: Undefined control sequence.
 \beamer@doifinframe ...ega \) \\ \vdots & \cvdots 
                                                   & \vdots & \vdots \\ 9 & \...
-l.692 \end{frame}
+l.689 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2354,21 +2356,21 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.26'
 
 warning  (pdf backend): pop empty color page stack 0
 ]
-Overfull \hbox (1.35947pt too wide) in paragraph at lines 809--809
+Overfull \hbox (1.35947pt too wide) in paragraph at lines 806--806
 [][] 
  []
 
 
-Overfull \vbox (0.65002pt too high) detected at line 809
+Overfull \vbox (0.65002pt too high) detected at line 806
  []
 
 
-Overfull \hbox (1.35947pt too wide) in paragraph at lines 809--809
+Overfull \hbox (1.35947pt too wide) in paragraph at lines 806--806
 [][] 
  []
 
 
-Overfull \hbox (2.03796pt too wide) in paragraph at lines 809--809
+Overfull \hbox (2.03796pt too wide) in paragraph at lines 806--806
 [][] 
  []
 
@@ -2384,25 +2386,25 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.27'
 warning  (pdf backend): pop empty color page stack 0
 ]
 LaTeX Font Info:    Font shape `U/zeur/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 859.
+(Font)              scaled to size 13.67995pt on input line 856.
 LaTeX Font Info:    Font shape `U/zeus/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 859.
+(Font)              scaled to size 13.67995pt on input line 856.
 LaTeX Font Info:    Font shape `U/zeuex/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 859.
+(Font)              scaled to size 13.67995pt on input line 856.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 859.
+(Font)              scaled to size 13.67995pt on input line 856.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 859.
+(Font)              scaled to size 13.67995pt on input line 856.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 859.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 856.
 LaTeX Font Info:    Font shape `TU/lmss/b/n' in size <14.4> not available
-(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 859.
+(Font)              Font shape `TU/lmss/bx/n' tried instead on input line 856.
 LaTeX Font Info:    Font shape `U/zeur/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 859.
+(Font)              scaled to size 13.67995pt on input line 856.
 LaTeX Font Info:    Font shape `U/zeus/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 859.
+(Font)              scaled to size 13.67995pt on input line 856.
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <14.4> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 859.
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 856.
  [29
 
 
@@ -2414,7 +2416,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.28'
 
 warning  (pdf backend): pop empty color page stack 0
 ]
-Overfull \vbox (44.91338pt too high) detected at line 887
+Overfull \vbox (44.91338pt too high) detected at line 884
  []
 
 [30
@@ -2456,12 +2458,12 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.32'
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\translate ' on input line 957.
+(hyperref)                removing `\translate ' on input line 954.
 
-./index.tex:974: Undefined control sequence.
+./index.tex:971: Undefined control sequence.
 \beamer@doifinframe ...\eV ^2} \\ \(\langle \anti 
                                                   {q}_{u/d}q_{u/d} \rangle (...
-l.974 \end{frame}
+l.971 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2469,10 +2471,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./index.tex:974: Undefined control sequence.
+./index.tex:971: Undefined control sequence.
 \beamer@doifinframe ...5}{\mega \eV } \\ \( \anti 
                                                   {s}s / \langle \anti {q}q ...
-l.974 \end{frame}
+l.971 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2480,10 +2482,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./index.tex:974: Undefined control sequence.
+./index.tex:971: Undefined control sequence.
 \beamer@doifinframe ...\anti {s}s / \langle \anti 
                                                   {q}q \rangle \) & 0.8 \pm ...
-l.974 \end{frame}
+l.971 \end{frame}
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2516,7 +2518,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 warning  (pdf backend): ignoring duplicate destination with the name 'page.35'
 
 ]
-Overfull \hbox (8.42772pt too wide) in paragraph at lines 1010--1010
+Overfull \hbox (8.42772pt too wide) in paragraph at lines 1007--1007
 [][]  
  []
 
@@ -2623,12 +2625,12 @@ warning  (pdf backend): ignoring duplicate destination with the name 'Navigation
 warning  (pdf backend): ignoring duplicate destination with the name 'page.46'
 
 </usr/local/texlive/2019/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1244.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1244.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1241.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1241.
 
 (./index.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1244.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1244.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1241.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1241.
 Package rerunfilecheck Info: File `index.out' has not changed.
 (rerunfilecheck)             Checksum: 2FA2453C1587064CB1A671AA10332E78;537.
 
@@ -2649,7 +2651,7 @@ Here is how much of LuaTeX's memory you used:
  75 penalty, 665 glyph, 315 attribute, 76 glue_spec, 315 attribute_list, 13 writ
 e, 7 pdf_start_link, 7 pdf_end_link, 7 pdf_dest, 11 pdf_action, 52 pdf_colorstac
 k nodes
-   avail lists: 1:10,2:2435,3:988,4:440,5:557,6:73,7:5944,8:81,9:1259,10:17,11:3
+   avail lists: 1:10,2:2435,3:988,4:447,5:557,6:73,7:5944,8:81,9:1259,10:17,11:3
 72,12:1
  49420 multiletter control sequences out of 65536+600000
  486 fonts using 38554671 bytes
@@ -2684,7 +2686,7 @@ onts/type1/public/amsfonts/euler/eusm10.pfb></usr/local/texlive/2019/texmf-dist/
 fonts/type1/public/amsfonts/euler/eusm7.pfb></usr/local/texlive/2019/texmf-dist/
 fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/2019/texmf-dis
 t/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on index.pdf (46 pages, 1531156 bytes).
+Output written on index.pdf (46 pages, 1532652 bytes).
 
 PDF statistics: 741 PDF objects out of 1000 (max. 8388607)
  530 compressed objects within 6 object streams

@@ -213,29 +213,24 @@
     \begin{equation}
       \begin{split}
         \Pi_{V/A}^{\mu\nu}(q^2) &\equiv i \int \dif^4 x e^{iqx} \langle 0\vert T \left\{ J_{V/A}^\mu(x) J_{V/A}^\nu(0)\right\} \vert 0 \rangle \\
-        &= (q^\mu q^\nu - q^2 g^{\mu\nu})\Pi_{V/A}^{(1)}(q^2) + q^\mu q^\nu \Pi_{V/A}^{(0)}(q^2)
+        &= (q^\mu q^\nu - q^2 g^{\mu\nu})\Pi_{V/A}^{(1)}(q^2) + q^\mu q^\nu
+        \Pi_{V/A}^{(0)}(q^2)
       \end{split}
     \end{equation}
   \end{block}
-  \small
-  where the current is given by
+  \small where the current is given by
   \begin{equation*}
     J_V^\mu = \overline{u} \gamma^\mu d\) \quad \text{and} \quad \(J_A^\mu = \overline{u} \gamma^\mu \gamma_5 d
   \end{equation*}
 \end{frame}
 \note[itemize] {
-  \item The two-point function is defined as the vacuum expectation value of the
-    time-ordered product of two currents
-  \item We have given the expression in momentum space
-  \item In our case the currents are non-strange \(V\) or \(A\) currents,
-    distinguished by a \(\gamma^\mu\) or \(\gamma^\mu\gamma_5\) correspondingly
-  \item We can lorentz decompose the two-point function, to obtain a scalar
-    function \(\Pi\)
-  \item The superscripts \((0)\) and \((1)\) label the transversal or
-    longitudinal spin
-  \item It is common to rewrite the newly introduced scalar function of the
-    correlator to \(\Pi^{(1+0)}\) and \(\Pi^{(0)}\)
-  \item \(\Pi^{(1+0)}(q^2)\) and \(q^2\Pi^{(0)}\) are free of kinematic singularities
+\item Two-point function is the vacuum expectation value of the time-ordered
+  product of two currents
+\item Non-strange \(V\) or \(A\) currents, distinguished by a \(\gamma^\mu\) or
+  \(\gamma^\mu\gamma_5\)
+\item Lorentz decompose to obtain a scalar functions \(\Pi\) of different spin
+  \((0)\) and \((1)\)
+\item Two-point function has poles on the positive real axis, but elsewhere analytic
 }
 
 \begin{frame}
@@ -244,15 +239,16 @@
   \includegraphics[width=0.9\textwidth]{./images/rTauCauchysTheorem.eps}
 \end{frame}
 \note[itemize]{
-\item We can avoid the positive real axis by making use of Cauchy's theorem 
-\item A closed contour integral over an analytic function is zero
-\item Thus we get a line integral, which will represent the experimental value,
-  equal to a circle contour, with radius of \(m_\tau^2\), which represents the
-  theoretical value
-\item Applied to the inclusive hadronic tau decay ratio we get equation nine,
-  where we also substituted \(\Pi^{(1+0)}\) 
-\item Imaginary part of two-point function related to experimental accessible
-  spectral function
+\item Circumvent the positive real axis by Cauchy's theorem
+\item Closed contour integral over an analytic function is zero
+\item Construct closed contour integral
+\item Red is the outer circle, which will be calculated theoretically
+\item The blue line integral is experimentally accessible
+\item If we take the limit of \(\epsilon \to 0\) the red circle is equal the
+  blue line
+\item \(\epsilon\) is the radius of the inner circle
+\item The contributions of the correlator close to positive real axis will be
+  suppressed by weights
 }
 
 \begin{frame}
@@ -264,19 +260,25 @@
     \end{equation}
     \begin{block}{Integral Moment}
       \begin{equation}
-        I_{V/A}^{(\omega)}(s_0) \equiv \frac{12 \pi^2}{s_0} \int_0^{s_0} \dif s \omega\left(\frac{s}{s_0}\right) \rho_{V/A}(s)
-        = \frac{6 \pi i}{s_0} \oint_{\abs{s}=s_0} \dif s \omega\left(\frac{s}{s_0}\right) \Pi_{V/A}(s)
+        I_{V/A}^{(\omega)}(s_0) \equiv \frac{12 \pi^2}{s_0} \int_0^{s_0} \dif s \omega\, \left(\frac{s}{s_0}\right) \rho^{exp}_{V/A}(s)
+        = \frac{6 \pi i}{s_0} \oint_{\abs{s}=s_0} \dif s\, \omega\left(\frac{s}{s_0}\right) \Pi^{th}_{V/A}(s)
       \end{equation}
     \end{block}
-    The lhs can be experimentally measured, whereas the rhs has to be
-    theoretically calculated.
+    \item The lhs is given by experiment, the rhs is theoretically calculated.
   \end{itemize}
 \end{frame}
+\note[itemize]{
+\item Experimental data given in form of spectral function
+\item Connect the experiment with theory via integral moment
+\item Define the experimental integral moment, introducing a weight \(\omega\)
+\item Apply Cauchy's theorem to get theoretical integral moment
+\item Note: Moments depend on \(\omega\) and \(s_0\), we only take part of the data into account
+\item Will construct chi-squared from moments
+}
 
 \subsection{Theoretical Computation}
 \begin{frame}
-  \centering
-  \vspace{0.5cm}
+  \centering \vspace{0.5cm}
   \begin{LARGE}
     The Theoretical Computation
   \end{LARGE}
@@ -316,8 +318,7 @@
   operators
 \item The dimension zero contribution is the perturbative contribution, whereas
   the higher dimensional contributions are non-perturbative. We will deal with
-  the PT contributions first before coming back to the NPT ones.
-}
+  the PT contributions first before coming back to the NPT ones. }
 
 \begin{frame}
   \frametitle{Duality}
@@ -329,7 +330,7 @@
   \item DV are connected to the behaviour of the correlator close to the
     positive real axis
     
-  \vfill
+    \vfill
 
   \item DV can be modelled with the following ansatz:
     \begin{equation}
@@ -343,16 +344,15 @@
   \end{itemize}
 \end{frame}
 \note[itemize]{
-  \item We can represent duality as \(\Pi(s) \to \Pi_{OPE}(s)\)
-  \item The difference \(\Delta(s)\) defines the duality violating contribution
-    to \(\Pi\)
-  \item DV can be parametrised via a model
-  \item The model has four parameters for the vector and four parameters for the
-    axial channel
-  \item Too many parameters: e.g. \(\alpha_s, \rho_6, \rho_8\) three parameters
-    vs eight!
-  \item We will further research the necessity of including DV
-}
+\item We can represent duality as \(\Pi(s) \to \Pi_{OPE}(s)\)
+\item The difference \(\Delta(s)\) defines the duality violating contribution to
+  \(\Pi\)
+\item DV can be parametrised via a model
+\item The model has four parameters for the vector and four parameters for the
+  axial channel
+\item Too many parameters: e.g. \(\alpha_s, \rho_6, \rho_8\) three parameters vs
+  eight!
+\item We will further research the necessity of including DV }
 
 \begin{frame}
   \frametitle{Perturbative Contribution}
@@ -371,9 +371,9 @@
     other \(c_{n,k}\) can be expressed in terms of the \(c_{n,1}\) through the
     RGE.
     \begin{equation}
-    c_{0,1} = c_{1,1} = 1, \quad c_{2,1} = 1.63982, \quad c_{3,1} = 6.37101, \quad c_{4,1} = 49.07570, \quad c_{5,1} = 283^*
-  \end{equation}
-\end{itemize}
+      c_{0,1} = c_{1,1} = 1, \quad c_{2,1} = 1.63982, \quad c_{3,1} = 6.37101, \quad c_{4,1} = 49.07570, \quad c_{5,1} = 283^*
+    \end{equation}
+  \end{itemize}
 \end{frame}
 \note[itemize]{
 \item It is common to rewrite the two-point function in terms of the Adler
@@ -392,11 +392,13 @@
   \item Perturbative Integral Moment:
     \begin{equation}
       \begin{split}
-      I^{th,PT} &\equiv \frac{6 \pi i}{s_0} \oint_{\abs{s}=s_0} \dif s\, \omega\left(\frac{s}{s_0}\right) \Pi_{OPE}^{D=0}(s) \\
-      &= \frac{6 \pi i}{s_0} \oint_{\abs{s}=s_0} \frac{\dif s}{s} \omega_D\left(\frac{s}{s_0}\right) D_{OPE}^{D=0}(s) \\
-      &= \frac{3 i}{2 \pi s_0} \oint_{\abs{s}=s_0} \frac{\dif s}{s} \omega_D\left(\frac{s}{s_0}\right) \sum_{n=0}^\infty a^n(\mu^2) \sum_{k=1}^{n+1} k\, c_{n,k} \log\left( \frac{-s}{\mu^2} \right)^{k-1}
-    \end{split}
-  \end{equation}
+        I^{th,PT} &\equiv \frac{6 \pi i}{s_0} \oint_{\abs{s}=s_0} \dif s\, \omega\left(\frac{s}{s_0}\right) \Pi_{OPE}^{D=0}(s) \\
+        &= \frac{6 \pi i}{s_0} \oint_{\abs{s}=s_0} \frac{\dif s}{s} \omega_D\left(\frac{s}{s_0}\right) D_{OPE}^{D=0}(s) \\
+        &= \frac{3 i}{2 \pi s_0} \oint_{\abs{s}=s_0} \frac{\dif s}{s}
+        \omega_D\left(\frac{s}{s_0}\right) \sum_{n=0}^\infty a^n(\mu^2)
+        \sum_{k=1}^{n+1} k\, c_{n,k} \log\left( \frac{-s}{\mu^2} \right)^{k-1}
+      \end{split}
+    \end{equation}
     where
     \begin{equation}
       \omega_D \equiv \int_0^{s_0} \omega(s^\prime) \dif s
@@ -414,26 +416,21 @@
     \end{equation}
     \centering
     \begin{tikzpicture}[>=triangle 45,font=\sffamily]
-      \node (X) at (0,0) {};
-      \node (Y) [below left=1cm and 3cm of X] {};
-      \node (Z) [below right=1cm and 3cm of X] {};
-      \draw [semithick,->] (X) -- (Y);
+      \node (X) at (0,0) {}; \node (Y) [below left=1cm and 3cm of X] {}; \node
+      (Z) [below right=1cm and 3cm of X] {}; \draw [semithick,->] (X) -- (Y);
       \draw [semithick,->] (X) -- (Z);
     \end{tikzpicture}
     \vspace{-0.2cm}
     \begin{columns}[t]
       \begin{column}{.5\textwidth}
-        \centering
-        Fixed-Order Perturbation Theory (FOPT)
+        \centering Fixed-Order Perturbation Theory (FOPT)
         \begin{equation*}
           \mu^2 \equiv s_0
         \end{equation*}
-        \vspace{-0.5cm}
-        - Constant \(a(s_0)\)
+        \vspace{-0.5cm} - Constant \(a(s_0)\)
       \end{column}
       \begin{column}{.5\textwidth}
-        \centering
-        Contour-Improved Perturbation Theory (CIPT)
+        \centering Contour-Improved Perturbation Theory (CIPT)
         \begin{equation*}
           \mu^2 \equiv -x s_0
         \end{equation*}
@@ -496,7 +493,8 @@
     \begin{equation}
       A \equiv \int_0^\infty \dif t e^{-t/a} B[A](t) \quad \text{with} \quad B[A](t) = \sum_{n=0}^\infty \frac{a_k}{n!} t^n.
     \end{equation}
-  \item Borel model\footcite{Beneke2008} fixed to the to the known coefficients \(c_{n,1}\):
+  \item Borel model\footcite{Beneke2008} fixed to the to the known coefficients
+    \(c_{n,1}\):
     \begin{equation}
       \hat D(\alpha) \equiv \int_0^\infty \dif t e^{-t/\alpha} B[\hat D](t)
     \end{equation}
@@ -517,16 +515,18 @@
 \begin{frame}
   \frametitle{Non-Perturbative Contributions}
   \begin{itemize}
-  \item Dimension four vacuum condensate contributions: 
+  \item Dimension four vacuum condensate contributions:
     \begin{equation}
       \mathcal{O}_{4,V/A} = \frac{1}{12}\left[ 1 - \frac{11}{18}a_s \right] \langle  a_s GG \rangle
       + \left[ 1 + \frac{\pm 36 - 23}{27} a_s \right] \langle (m_u + m_d) \overline{q}q \rangle
     \end{equation}
-  \item The condensates has to be determined from NPT methods, e.g. the gluon condensate
+  \item The condensates has to be determined from NPT methods, e.g. the gluon
+    condensate
     \begin{equation}
       \langle a_s GG \rangle \approx \SI{0.021}{\giga\eV^4}
     \end{equation}
-  \item Higher dimensional contributions are approximated by simplest possible approach:
+  \item Higher dimensional contributions are approximated by simplest possible
+    approach:
     \begin{small}
       \begin{equation}
         D_{V/A}^{(6)} = 3 \frac{\rho_{V/A}^{(6)}}{s^3}, \quad
@@ -535,24 +535,22 @@
         D_{V/A}^{(12)} = 6 \frac{\rho_{V/A}^{(12)}}{s^6}
       \end{equation}
     \end{small}
-  \end{itemize} 
+  \end{itemize}
 \end{frame}
 \note[itemize]{
-  \item Next to the PT contribution we have to implement the NPT contributions
-    from the OPE
-  \item We can see that the OPE series is suppressed by powers of \(s\) thus we
-    can approximate the series by a cutoff
-  \item The lowest dimensional operators are given in equation 37
-  \item In our analysis we will neglect
-    the dimension two contributions as we
-    work in the chiral limit and their contributions are proportional to the quark masses
-}
+\item Next to the PT contribution we have to implement the NPT contributions
+  from the OPE
+\item We can see that the OPE series is suppressed by powers of \(s\) thus we
+  can approximate the series by a cutoff
+\item The lowest dimensional operators are given in equation 37
+\item In our analysis we will neglect the dimension two contributions as we work
+  in the chiral limit and their contributions are proportional to the quark
+  masses }
 
 
 \subsection{Experimental Data}
 \begin{frame}
-  \centering
-  \vspace{0.5cm}
+  \centering \vspace{0.5cm}
   \begin{LARGE}
     The Experimental Data
   \end{LARGE}
@@ -579,17 +577,17 @@
   \end{itemize}
 \end{frame}
 \note[itemize]{
-  \item A central value is the inclusive hadronic tau decay ratio (i.e. all
-    decays containing hadrons)
-  \item The ratio can be calculated by using the optical theorem 
-  \item \(V_{ud}\) is the Cabbibo matrix element, \(S_{EW}\) the electroweak correction
-  \item We have to integrate the two-point function from \(0 \to m_\tau^2\)
-  \item The two-point function has poles on the positive real axis, on the
-    remaining \(s\) plane the two-point function is analytic
-  \item \(\Pi^{(0)}\) will be neglected? There is no \(J=0\) vector
-    contribution. The \(J=0\) axial-vector contribution is the pion pole. Which
-    is missing in the experimental data.
-}
+\item A central value is the inclusive hadronic tau decay ratio (i.e. all decays
+  containing hadrons)
+\item The ratio can be calculated by using the optical theorem
+\item \(V_{ud}\) is the Cabbibo matrix element, \(S_{EW}\) the electroweak
+  correction
+\item We have to integrate the two-point function from \(0 \to m_\tau^2\)
+\item The two-point function has poles on the positive real axis, on the
+  remaining \(s\) plane the two-point function is analytic
+\item \(\Pi^{(0)}\) will be neglected? There is no \(J=0\) vector contribution.
+  The \(J=0\) axial-vector contribution is the pion pole. Which is missing in
+  the experimental data. }
 
 \begin{frame}
   \frametitle{ALEPH Data}
@@ -608,44 +606,42 @@
   the nineties
 \item The data is given as a the normalised invariant mass squared distribution
   \(\dif N/ N/ \dif s\) for each channel \(V\), \(A\) and \(V+A\)
-\item In the two graphs we see the contribution of the \(V\) channel (left)
-  and the \(A\) channel (right)
+\item In the two graphs we see the contribution of the \(V\) channel (left) and
+  the \(A\) channel (right)
 \item In the vector channel we see the \(\rho(770)\) resonance
 \item In the axial channel we see the \(a_1^-\) resonance
-\item We also plotted the Perturbative contribution, which cannot reproduce
-  the experimental data, especially for lower energies
-}
+\item We also plotted the Perturbative contribution, which cannot reproduce the
+  experimental data, especially for lower energies }
 
 \begin{frame}
   \frametitle{ALEPH Data}
   \includegraphics[width=.9\textwidth]{./images/specFuncAleph_VpA.eps}
 \end{frame}
 \note[itemize]{
-  \item Here we see the experimental spectral function of the \(V+A\) channel
-  \item Note that for higher energies the perturbative contribution matches the
-    spectral function far better
-  \item Also note that we still see a wavy behaviour of the spectral function in
-    the data, which is connected to Duality Violations
-  \item We assume that in the \(V+A\) channel DV are sufficiently suppressed to
-    avoid modelling their contributions
-}
+\item Here we see the experimental spectral function of the \(V+A\) channel
+\item Note that for higher energies the perturbative contribution matches the
+  spectral function far better
+\item Also note that we still see a wavy behaviour of the spectral function in
+  the data, which is connected to Duality Violations
+\item We assume that in the \(V+A\) channel DV are sufficiently suppressed to
+  avoid modelling their contributions }
 
 \begin{frame}
   \frametitle{Experimental Spectral Functions}
   \begin{itemize}
-    \item Experimental Spectral Functions:
-      \begin{align}
-        \frac{1}{N} \frac{\Delta N_{V/A}^{(1)}(s_i)}{\Delta s_i}
-        &\approx \frac{1}{N} \frac{\dif N_{V/A}^{(1)}}{\dif s} = B_e \frac{\dif R_{\tau, V/A}^{(1)}}{\dif s}(s) \nonumber\\
-        &= \frac{12\pi^2}{m_\tau^2} B_e S_{EW} \abs{V_{ud}}^2
-          \left( 1 - \frac{s}{m_\tau^2} \right)^2\left( 1 + \frac{2s}{m_\tau^2} \right) \rho_{V/A}^{(1)}(s) \\
-        \frac{1}{N} \frac{\Delta N_{V/A}^{(0)}(s_i)}{\Delta s_i}
-        &\approx \frac{1}{N} \frac{\dif N_{V/A}^{(0)}}{\dif s} = B_e \frac{\dif R_{\tau, V/A}^{(0)}}{\dif s}(s) \nonumber\\
-        &= \frac{12\pi^2}{m_\tau^2} B_e S_{EW} \abs{V_{ud}}^2
-          \left( 1 - \frac{s}{m_\tau^2} \right)^2 \rho_{V/A}^{(0)}(s)
-      \end{align}
-    \item \(\Delta N_{V/A}^{(0,1)}(s_i)\) is the number of \(V/A\) events with
-      \(J=0,1\) in the bin centred at \(s_i\).
+  \item Experimental Spectral Functions:
+    \begin{align}
+      \frac{1}{N} \frac{\Delta N_{V/A}^{(1)}(s_i)}{\Delta s_i}
+      &\approx \frac{1}{N} \frac{\dif N_{V/A}^{(1)}}{\dif s} = B_e \frac{\dif R_{\tau, V/A}^{(1)}}{\dif s}(s) \nonumber\\
+      &= \frac{12\pi^2}{m_\tau^2} B_e S_{EW} \abs{V_{ud}}^2
+        \left( 1 - \frac{s}{m_\tau^2} \right)^2\left( 1 + \frac{2s}{m_\tau^2} \right) \rho_{V/A}^{(1)}(s) \\
+      \frac{1}{N} \frac{\Delta N_{V/A}^{(0)}(s_i)}{\Delta s_i}
+      &\approx \frac{1}{N} \frac{\dif N_{V/A}^{(0)}}{\dif s} = B_e \frac{\dif R_{\tau, V/A}^{(0)}}{\dif s}(s) \nonumber\\
+      &= \frac{12\pi^2}{m_\tau^2} B_e S_{EW} \abs{V_{ud}}^2
+        \left( 1 - \frac{s}{m_\tau^2} \right)^2 \rho_{V/A}^{(0)}(s)
+    \end{align}
+  \item \(\Delta N_{V/A}^{(0,1)}(s_i)\) is the number of \(V/A\) events with
+    \(J=0,1\) in the bin centred at \(s_i\).
   \end{itemize}
 \end{frame}
 
