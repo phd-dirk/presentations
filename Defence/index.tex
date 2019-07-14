@@ -641,9 +641,62 @@
   \end{itemize}
 \end{frame}
 
-\subsection{Weights}
+
+\section{Fits}
+\subsection{Strategy}
 \begin{frame}
-  \frametitle{Weights}
+  \frametitle{Chi-Squared}
+  \begin{itemize}
+    \item The integral moments depend on the weight \(\omega\) and selected
+      energy \(s_0\)
+      \begin{equation*}
+        \begin{split}
+          I^{th}(s_0, \omega) \quad \text{and} \quad I^{exp}(s_0, \omega)
+        \end{split}
+      \end{equation*}
+    \item For a fit we choose a weight and select multiples \(s_0s\)
+    \item The chi-squared is then given by:
+      \begin{equation}
+        \chi^2 = (I_i^{exp} - I_i^{th}(\vec \alpha)) C_{ij}^{-1} (I_j^{exp} - I_j^{th}(\vec \alpha)), \quad \text{with} \quad C_{ij} = \cov(I_i^{exp}, I_j^{exp})
+      \end{equation}
+    \item A typical fit then looks like this
+      \begin{columns}
+        \begin{column}{.4\textwidth}
+          \begin{itemize}
+          \item 9 Moments
+          \item max nine parameters
+          \end{itemize}
+        \end{column}
+        \begin{column}{.6\textwidth}
+          \centering
+          \begin{tabular}{cccc}
+            \toprule
+            \# &\multicolumn{3}{c}{9 Moments} \\
+            \midrule
+            1      & \(I_1\) & \(s_1\) & \(\omega\) \\
+            2      & \(I_2\) & \(s_2\) & \(\omega\) \\
+            \vdots & \cvdots & \vdots  & \vdots     \\
+            9      & \(I_3\) & \(s_9\) & \(\omega\) \\
+            \bottomrule
+          \end{tabular}
+        \end{column}
+      \end{columns}
+  \end{itemize}
+\end{frame}
+\note[itemize]{
+  \item The chi-squared function is constructed from the theoretical and
+    experimental moments
+  \item The indices \(i\) and \(j\) represent the dependency of the moments on
+    the chosen weight and \(s_0\)
+  \item The fits are highly correlated.
+  \item The correlation matrix is given with the data.
+  \item A good fit is characterised by a \(\chi^2/dof \approx 1\) 
+  \item As we have to deal with missing correlations, we will also interpret
+    fits with a \(\chi^2/dof\) smaller than 1 as good
+}
+
+\begin{frame}
+  \frametitle{How to choose Weights}
   \begin{itemize}
     \item Weight functions have to be analytic:
       \begin{equation}
@@ -669,7 +722,7 @@
 }
 
 \begin{frame}
-  \frametitle{Pinched Weights and the OPE}
+  \frametitle{How to choose Weights}
   \begin{itemize}
   \item Pinched weight suppress the correlator close to the not analytic
     positive real axis, which is known for Duality Violations
@@ -704,93 +757,6 @@
     positive real axis. This can be seen by plotting the weights. Blue is single
     pinched and decreases linear. Higher pinched weights decrease faster.
   \item Thus implementing a sufficient pinching should avoid DV
-}
-
-\section{Fits}
-\subsection{Strategy}
-\begin{frame}
-  \frametitle{Chi-Squared}
-  \begin{itemize}
-    \item Chi-Squared function:
-      \begin{equation}
-        \chi^2 = (I_i^{exp} - I_i^{th}(\vec \alpha)) C_{ij}^{-1} (I_j^{exp} - I_j^{th}(\vec \alpha))
-      \end{equation}
-    \item Covariance Matrix:
-      \begin{equation}
-        C_{ij} = \cov(I_i^{exp}, I_j^{exp})
-      \end{equation}
-
-    \item Chi-Squared per Degrees of Freedom:
-      \begin{equation}
-        \frac{\chi^2}{dof} \approx 1
-      \end{equation}
-  \end{itemize}
-\end{frame}
-\note[itemize]{
-  \item The chi-squared function is constructed from the theoretical and
-    experimental moments
-  \item The indices \(i\) and \(j\) represent the dependency of the moments on
-    the chosen weight and \(s_0\)
-  \item The fits are highly correlated.
-  \item The correlation matrix is given with the data.
-  \item A good fit is characterised by a \(\chi^2/dof \approx 1\) 
-  \item As we have to deal with missing correlations, we will also interpret
-    fits with a \(\chi^2/dof\) smaller than 1 as good
-}
-
-
-\begin{frame}
-  \frametitle{Parameters and Momenta}
-  \begin{columns}
-    \begin{column}{.6\textwidth}
-      \begin{itemize}
-        \item 3 Moments
-        \item max three parameters
-        \item e.g. \(\alpha_s, \rho_{V/A}^{(6)}, \rho_{V/A}^{(8)}\) (fully determined)
-      \end{itemize}
-    \end{column}
-    \begin{column}{.4\textwidth}
-      \begin{tabular}{ccc}
-        \toprule
-        \# &\multicolumn{2}{c}{3 Moments} \\
-        \midrule
-        1 & \(s_1\) & \(\omega\) \\
-        2 & \(s_2\) & \(\omega\) \\
-        3 & \(s_3\) & \(\omega\) \\
-        \bottomrule
-      \end{tabular}
-    \end{column}
-  \end{columns}
-
-  \vfill
-
-  \begin{columns}
-    \begin{column}{.4\textwidth}
-      \centering
-      \begin{tabular}{ccc}
-        \toprule
-        \# &\multicolumn{2}{c}{9 Moments} \\
-        \midrule
-        1      & \(s_1\) & \(\omega\) \\
-        2      & \(s_2\) & \(\omega\) \\
-        \vdots & \vdots  & \vdots     \\
-        9      & \(s_9\) & \(\omega\) \\
-        \bottomrule
-      \end{tabular}
-    \end{column}
-    \begin{column}{.6\textwidth}
-      \begin{itemize}
-      \item 9 Moments
-      \item max nine parameters
-      \end{itemize}
-    \end{column}
-  \end{columns}
-\end{frame}
-\note[itemize]{
-  \item Our ``data points'' are the integral momenta. We will construct multiple
-    integral momenta for every fit by varying the number of \(s_0\).
-  \item In principle we could also vary the weights, but have not done this
-  \item E.g. if we want to fit three parameters as 
 }
 
 \begin{frame}

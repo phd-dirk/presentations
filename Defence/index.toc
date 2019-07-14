@@ -3,10 +3,9 @@
 \beamer@sectionintoc {2}{Theoretical Framework}{5}{0}{2}
 \beamer@subsectionintoc {2}{1}{Theoretical Computation}{9}{0}{2}
 \beamer@subsectionintoc {2}{2}{Experimental Data}{18}{0}{2}
-\beamer@subsectionintoc {2}{3}{Weights}{23}{0}{2}
-\beamer@sectionintoc {3}{Fits}{25}{0}{3}
-\beamer@subsectionintoc {3}{1}{Strategy}{26}{0}{3}
-\beamer@subsectionintoc {3}{2}{Results}{30}{0}{3}
-\beamer@sectionintoc {4}{Conclusions}{32}{0}{4}
-\beamer@subsubsectionintoc {4}{0}{1}{Single Pinched Monomial Weights}{40}{1}{4}
-\beamer@subsubsectionintoc {4}{0}{2}{Pinched Weights with a Monomial Term \(x\)}{43}{1}{4}
+\beamer@sectionintoc {3}{Fits}{23}{0}{3}
+\beamer@subsectionintoc {3}{1}{Strategy}{24}{0}{3}
+\beamer@subsectionintoc {3}{2}{Results}{29}{0}{3}
+\beamer@sectionintoc {4}{Conclusions}{31}{0}{4}
+\beamer@subsubsectionintoc {4}{0}{1}{Single Pinched Monomial Weights}{39}{1}{4}
+\beamer@subsubsectionintoc {4}{0}{2}{Pinched Weights with a Monomial Term \(x\)}{42}{1}{4}
