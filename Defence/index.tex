@@ -37,6 +37,7 @@
 \DeclareMathOperator{\Ima}{Im}
 \DeclareMathOperator{\sfm2}{sfm2}
 \DeclareMathOperator{\cov}{cov}
+\DeclareMathOperator{\dim}{dim}
 
 \definecolor{primary}{rgb}{0.78, 0.89, 1}
 \setbeamercolor{palette primary}{fg=white,bg=black!80}
@@ -290,41 +291,38 @@
 \begin{frame}
   \frametitle{Operator Product Expansion}
   \begin{itemize}
-  \item The two-point function is predicted by the operator product expansion
+  \item The correlator is approximated by the operator product expansion
     \begin{equation}
-      \Pi \to \Pi_{OPE}(s) = \sum_D \frac{1}{(-s)^{D/2}} \sum_{dim \mathcal{O} = D} C(-s,\mu)\langle \mathcal{O}(\mu) \rangle
+      \Pi \to \Pi^{OPE}(s) = \sum_D \frac{1}{(-s)^{D/2}} \sum_{\dim \mathcal{O} = D} C_{D}(-s,\mu)\langle \mathcal{O}(\mu) \rangle
       \equiv \sum_{k=0}^\infty \frac{C_{2k}(s)}{(-s)^k}
     \end{equation}
+  \item \(C_{D}\) are the Wilson coefficients, which can be calculated perturbatively
+  \item \(\mathcal{O}\) are higher dimensional operators, e.g. \(D=4\)
+    \begin{itemize}
+      \item Quark condensate: \(m\langle \overline{q}{q} \rangle\)
+      \item Gluon condensate: \(G_a^{\mu\nu}G^{a}_{\mu\nu}\)
+    \end{itemize}
   \item The term with \(D = 0\) corresponds to the perturbative contribution
   \end{itemize}
 \end{frame}
 \note[itemize]{
-\item The QCD vacuum cannot be solely described perturbatively and we have to
-  take non-perturbative effects into account
-\item To do so we will describe the two-point function in terms of the operator
-  product expansion
-\item Here \(A(x)\) and \(B(0)\) are local operators and \(C_n(x)\) is a
-  c-number function and \(\mathcal{O}_n(0)\) are higher dimensional operators
+\item QCD vacuum contains NPT contributions
+\item Approximate correlator with OPE
 \item The OPE separates short distances (high energies/ PT) from long distances
   (NPT)
-\item Short distances are given by the Wilson coefficients \(C_n(x-y)\), whereas
-  the long distances are given by higher order operators \(\langle \Omega \vert
-  \mathcal{O}_n(x) \rangle\).
-\item The two-point function can then be written has a series of Wilson
-  coefficients multiplied by operators of dimension \(0, 2, \dots\).
-\item The Wilson coefficients can be calculated from Feynman diagrams, but the
-  higher dimensional contributions have to be taken from NPT tools like lattice
-  qcd or from our fits. We will determine values for the dimension six and eight
-  operators
-\item The dimension zero contribution is the perturbative contribution, whereas
-  the higher dimensional contributions are non-perturbative. We will deal with
-  the PT contributions first before coming back to the NPT ones. }
+\item Short distances \(\Rightarrow\) Wilson coefficients calculated by Feynman diagrams
+\item Long distances \(\Rightarrow\) vacuum expectation value of higher dimensional operators
+\item E.g. \(D=4\) are the quark condensate and gluon condensate
+\item Have to be obtained by NPT methods like lattice QCD or from our fits
+\item Will fit up to dimension 12
+\item The term \(D=0\) corresponds to PT
+}
 
 \begin{frame}
-  \frametitle{Duality}
+  \frametitle{Quark-Hadron Duality}
   \begin{itemize}
   \item The equality of the quark-gluon picture and the hadronic picture is
-    called duality
+    called quark-hadron duality
   \item Differences between the physical spectral function and its OPE
     approximation are referred to as duality violations
   \item DV are connected to the behaviour of the correlator close to the
@@ -344,15 +342,17 @@
   \end{itemize}
 \end{frame}
 \note[itemize]{
-\item We can represent duality as \(\Pi(s) \to \Pi_{OPE}(s)\)
-\item The difference \(\Delta(s)\) defines the duality violating contribution to
-  \(\Pi\)
+\item Theoretically work in quark-gluon picture, experimentally observe hadrons
+  \(\Rightarrow\) quark-hadron duality
+\item This is an ansatz, but cannot be derived from first principles
+\item The physical spectral function differs from its OPE approximation
+  \(\Rightarrow\) Duality Violations
 \item DV can be parametrised via a model
-\item The model has four parameters for the vector and four parameters for the
-  axial channel
+\item Four parameters V + four parameters A 
 \item Too many parameters: e.g. \(\alpha_s, \rho_6, \rho_8\) three parameters vs
   eight!
-\item We will further research the necessity of including DV }
+\item We investigate contribution of DV, if sufficient suppressed
+}
 
 \begin{frame}
   \frametitle{Perturbative Contribution}
@@ -487,41 +487,40 @@
 \begin{frame}
   \frametitle{Borel Summation}
   \begin{itemize}
-  \item Borel summation is a summation divergent asymptotic series, like the
-    Adler function
-  \item Borel transform and Borel integral:
-    \begin{equation}
-      A \equiv \int_0^\infty \dif t e^{-t/a} B[A](t) \quad \text{with} \quad B[A](t) = \sum_{n=0}^\infty \frac{a_k}{n!} t^n.
-    \end{equation}
-  \item Borel model\footcite{Beneke2008} fixed to the to the known coefficients
-    \(c_{n,1}\):
-    \begin{equation}
-      \hat D(\alpha) \equiv \int_0^\infty \dif t e^{-t/\alpha} B[\hat D](t)
-    \end{equation}
+  \item Borel summation is a summation method for divergent asymptotic series,
+    e.g. Adler function
+  % \item Borel transform and Borel integral:
+  %   \begin{equation}
+  %     A \equiv \int_0^\infty \dif t e^{-t/a} B[A](t) \quad \text{with} \quad B[A](t) = \sum_{n=0}^\infty \frac{a_k}{n!} t^n.
+  %   \end{equation}
+  \item Beneke and Jamin introduced a physical model of the Adler function\footcite{Beneke2008}:
     \begin{equation}
       \label{eq:borelModel}
       B[\widehat D](u) = B[\widehat D_1^{UV}](u) + B[\widehat D_2^{IR}](u) + B[\widehat D_3^{IR}](u) + d_0^{PO} + d_1^{PO}u,
     \end{equation}
+    \begin{equation}
+      \widehat D(\alpha) \equiv \int_0^\infty \dif t e^{-t/\alpha} B[\widehat D](t)
+    \end{equation}
   \end{itemize}
 \end{frame}
 \note[itemize]{
-\item The Borel summation is a summation method for divergent asymptotic series
-  and should give us the best possible sum
-\item It consists of the Borel integral and the Borel transform, which we apply
-  to the expansion of the Adler function
-\item We will follow the notation of \cite{Beneke2008}, which redefined the
-  Adler function expansion as \(1 + \hat D(s)\) }
+\item Summation method for divergent asymptotic series
+\item Best possible sum for Adler function
+\item Method consists of the Borel transform and Borel integral
+\item Beneke and Jamin (2008) modelled the Adler function
+\item Follow method of Beneke and Jamin to use BS in fits to test validity of FOPT
+}
 
 \begin{frame}
   \frametitle{Non-Perturbative Contributions}
   \begin{itemize}
+  \item Neglect dimension two contributions
   \item Dimension four vacuum condensate contributions:
     \begin{equation}
-      \mathcal{O}_{4,V/A} = \frac{1}{12}\left[ 1 - \frac{11}{18}a_s \right] \langle  a_s GG \rangle
+      D_{4} = \frac{1}{12}\left[ 1 - \frac{11}{18}a_s \right] \langle  a_s GG \rangle
       + \left[ 1 + \frac{\pm 36 - 23}{27} a_s \right] \langle (m_u + m_d) \overline{q}q \rangle
     \end{equation}
-  \item The condensates has to be determined from NPT methods, e.g. the gluon
-    condensate
+  \item Gluon condensate can be quoted as
     \begin{equation}
       \langle a_s GG \rangle \approx \SI{0.021}{\giga\eV^4}
     \end{equation}
@@ -529,10 +528,10 @@
     approach:
     \begin{small}
       \begin{equation}
-        D_{V/A}^{(6)} = 3 \frac{\rho_{V/A}^{(6)}}{s^3}, \quad
-        D_{V/A}^{(8)} = 4 \frac{\rho_{V/A}^{(8)}}{s^4}, \quad
-        D_{V/A}^{(10)} = 5 \frac{\rho_{V/A}^{(10)}}{s^5}, \quad
-        D_{V/A}^{(12)} = 6 \frac{\rho_{V/A}^{(12)}}{s^6}
+        D_{6} = 3 \frac{\rho_{V/A}^{(6)}}{s^3}, \quad
+        D_{8} = 4 \frac{\rho_{V/A}^{(8)}}{s^4}, \quad
+        D_{10} = 5 \frac{\rho_{V/A}^{(10)}}{s^5}, \quad
+        D_{12} = 6 \frac{\rho_{V/A}^{(12)}}{s^6}
       \end{equation}
     \end{small}
   \end{itemize}
@@ -825,10 +824,10 @@
   \centering
   \begin{tabular}{ccccccc}
     \toprule
-    & \(s_{min}\) & \#\(s_0\)s & \(\alpha_s(m_\tau^2)\) & \(\rho^{(6)}\) & \(\rho^{(8)}\) & \(\chi^2/dof\)  \\
+    & \(s_{min} [GeV^2]\) & \#\(s_0\)s & \(\alpha_s(m_\tau^2)\) & \(\rho^{(6)}\) & \(\rho^{(8)}\) & \(\chi^2/dof\)  \\
     \midrule
     \parbox[t]{2mm}{\multirow{1}{*}{\rotatebox[origin=c]{90}{\textsc{bs}}}}
-    & 2.200 & 7 & 0.3274(42) & -0.82(21) & -1.08(41) & 0.21 \\
+    & \(2.2\) & 7 & 0.3274(42) & -0.82(21) & -1.08(41) & 0.21 \\
     \midrule
     \parbox[t]{2mm}{\multirow{5}{*}{\rotatebox[origin=c]{90}{\textsc{fopt}}}}
     % 1.500 & 23 & 0.3255(13) & -0.441(10) & -0.2909(34) & 2.00 \\
@@ -846,41 +845,30 @@
     % 1.900 & 11 & 0.3272(29) & -0.493(93) & -0.35(15) & 2.65 \\
     % 1.950 & 10 & 0.3232(32) & -0.31(11) & -0.01(18) & 1.13 \\
     % 2.000 & 9 & 0.3234(34) & -0.32(12) & -0.03(21) & 1.31 \\
-    & 2.100 & 8 & 0.3256(38) & -0.43(15) & -0.25(28) & 1.30 \\
-    & \cellcolor{primary}2.200 & \cellcolor{primary}7 & \cellcolor{primary}0.3308(44) & \cellcolor{primary}-0.72(20) & \cellcolor{primary}-0.85(38) & \cellcolor{primary}0.19 \\
-    & 2.300 & 6 & 0.3304(52) & -0.69(25) & -0.80(50) & 0.25 \\
-    & 2.400 & 5 & 0.3339(70) & -0.91(39) & -1.29(83) & 0.10 \\
-    & 2.600 & 4 & 0.3398(15) & -1.3(1.0) & -2.3(2.5) & 0.01  \\
+    & \(2.1\) & 8 & 0.3256(38) & -0.43(15) & -0.25(28) & 1.30 \\
+    & \cellcolor{primary}\(2.2\) & \cellcolor{primary}7 & \cellcolor{primary}0.3308(44) & \cellcolor{primary}-0.72(20) & \cellcolor{primary}-0.85(38) & \cellcolor{primary}0.19 \\
+    & \(2.3\) & 6 & 0.3304(52) & -0.69(25) & -0.80(50) & 0.25 \\
+    & \(2.4\) & 5 & 0.3339(70) & -0.91(39) & -1.29(83) & 0.10 \\
+    & \(2.6\) & 4 & 0.3398(15) & -1.3(1.0) & -2.3(2.5) & 0.01  \\
     \bottomrule
   \end{tabular}
 \end{frame}
 \note[itemize]{
-  \item Starting with the kinematic weight
-  \item appears naturally in the inclusive hadronic tau decay ratio
-  \item is double pinched \(\Rightarrow\) should suppress DV sufficiently
-  \item Has two active OPE dimensions, namely dimension six and eight
-  \item Leaves us with three fitting parameters: \(\alpha_s, \rho^{(6)}\) and \(\rho^{(8)}\)
-  \item \(s_{min}\) is the smallest invariant mass squared value that is
-    included in the fit
-  \item One has to imagine that the data is binned and that we construct our
-    moments starting from the highest available energy
-  \item We then perform fits with an increasing number of \(s_0\)s, including
-    more and more bins and thus include lower and lower energies
-  \item beginning from \SI{2.2}{\giga\eV^2} the fits get problematic due to the
-    appearing resonances
-  \item Lets regard the two first lines of the FOPT table, we also applied the
-    BS for the best fit
-  \item Regarding the \(\chi^2/dof\) we se a jump in its value, which we noted
-    for every weight. If we go to too low energies the fits become unreliable,
-    which is also notable from the deviating values for the parameters.
-  \item We decided to take the fits above, but closest to this threshold to be
-    the best fit
-  \item  For the fits above the threshold we note a great stability between the
-    values obtained for \(\alpha_s\)
-  \item We also note too low values for the \(\chi^2/dof\), but believe that
-    this caused by missing correlations in the ALEPH data
-  \item We also performed the same fit for seven moments applying the BS, which
-    is in great agreement
+  \item Kinematic weight is double pinched (suppressed DV), contains no monomial term x
+  \item OPE D=6 and D=8
+  \item Three fitting parameters: \(\alpha_s, \rho^{(6)}\) and \(\rho^{(8)}\)
+  \item \(s_{min}\) smallest invariant mass squared value
+  \item Probed weight down to \SI{1.5}{\giga\eV}
+  \item Increasing number of \(s_0\)'s the \(\chi^2/dof\) increases, until point
+    where \(\chi^2/dof\) jumps (threshold/ phase transition)
+  \item \(s_0\) becomes to low for a good theoretical description
+  \item Select fits with maximum number of \(s_0\) that is still below above
+    \(s_0\) threshold as best fit (blue background)
+  \item Same behaviour in all fits, also select best fit
+  \item Parameters are within the weight very stable \(\alpha_s \approx 0.33\)
+  \item We are aware that the \(\chi^2/dof\) are small, caused by missing correlations
+  \item Performed BS for best fit, also compatible
+  \item CIPT causes higher values for \(\alpha_s\) \(\Rightarrow\) FOPT more valid
 }
 
 \begin{frame}
@@ -888,22 +876,19 @@
   \centering \resizebox{\textwidth}{!}{
     \begin{tabular}{cccccccc}
       \toprule
-      PT & weight & \(\#s_0\)'s & \(\alpha_s(m_\tau^2)\) & \(\langle aGG \rangle_I\) & \(\rho^{(6)}\) & \(\rho^{(8)}\) & \(\chi^2/dof\)  \\
+      weight & PT & \(\#s_0\)'s & \(\alpha_s(m_\tau^2)\) & \(\langle aGG \rangle_I\) & \(\rho^{(6)}\) & \(\rho^{(8)}\) & \(\chi^2/dof\)  \\
       \midrule
-      \parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{\textsc{fopt}}}}
-      & \((1-x)^2(1+2x)\)    & 7 & 0.3308(44) & \(2.1^*\) & -0.72(20) & -0.85(38) & 0.19 \\
-      & \((1-x)^3(1+2x)\)    & 8 & 0.3302(40) & \(2.1^*\) & -0.52(11) & -0.58(22) & 0.43 \\ 
+      \((1-x)^2(1 + 2x)\)    & FO & 7 & 0.3308(44) & \(2.1^*\) & -0.72(20) & -0.85(38) & 0.19 \\
+      \((1-x)^2(1 + 2x)\)  & BS & 7 & 0.3274(42) & \(2.1^*\)    & -0.82(21)   & -1.08(41) & 0.21 \\
+      \((1-x)^3(1+2x)\)    & FO & 8 & 0.3302(40) & \(2.1^*\) & -0.52(11) & -0.58(22) & 0.43 \\ 
       % & \(\omega_{quartic}\) & 2.0 & 0.3290(11) & - & -0.3030(46) &
       % -0.1874(28) & 0.3678(45) & 0.67 \\
-      & \(1 - x^2\)          & 7 & 0.3248(52) & \(2.1^*\) & -0.77(22) & \(0^*\)   & 0.38 \\
-      & \(1 - x^3\)          & 7 & 0.3214(49) & \(2.1^*\) & \(0^*\)   & -1.01(39) & 0.41 \\
+      \(1 - x^2\)          & FO & 7 & 0.3248(52) & \(2.1^*\) & -0.77(22) & \(0^*\)   & 0.38 \\
+      \(1 - x^3\)          & FO & 7 & 0.3214(49) & \(2.1^*\) & \(0^*\)   & -1.01(39) & 0.41 \\
       % & \(\omega_{M4}\) & 2.2 & 0.3203(48) & - & - & - & -1.64(77) & 0.42 \\
-      \midrule 
-      \parbox[t]{2mm}{\multirow{4}{*}{\rotatebox[origin=c]{90}{\textsc{bs}}}}
-      & \((1-x)^2(1 + 2x)\) & 7 & 0.3274(42) & \(2.1^*\)    & -0.82(21)   & -1.08(41) & 0.21 \\
-      & \(1 - x\)           & 7 & 0.3246(52) & -0.2262(59)  & \(0^*\)           & \(0^*\)   & 0.38 \\
-      & \((1 - x)^2\)       & 7 & 0.3270(54) & -0.0254(61)  & -0.77(21)   & \(0^*\)   & 0.74 \\
-      & \((1 - x)^3\)       & 8 & 0.3239(40) & -0.0212(42)  & -0.63(15)   & -0.74(29) & 0.46 \\
+      \(1 - x\)           & BS & 7 & 0.3246(52) & -0.2262(59)  & \(0^*\)           & \(0^*\)   & 0.38 \\
+      \((1 - x)^2\)       & BS & 7 & 0.3270(54) & -0.0254(61)  & -0.77(21)   & \(0^*\)   & 0.74 \\
+      \((1 - x)^3\)       & BS & 8 & 0.3239(40) & -0.0212(42)  & -0.63(15)   & -0.74(29) & 0.46 \\
       % & \(\omega_X4}\) & 2.1 & 0.3248(21) & -0.02230(47) & -0.6724(63) &
       % -0.834(14) & -1.352(28) & 0.23 \\
       \bottomrule
@@ -911,19 +896,17 @@
     }
 \end{frame}
 \note[itemize]{
-  \item Here we gathered the ``best'' fits, which are fits with the highest
-    \(\#s_0\)'s, but being above the threshold of unstable fits
-  \item We left also out the problematic fourth pinched weights, which include
-    too high dimensions of the OPE
-  \item We can clearly see that all the values obtained for \(\alpha_s\) are
-    very similar
-  \item values obtained for \(\rho^{(6)}\) and \(\rho^{(8)}\) are within error boundaries
-  \item Even though we used different pinchings, aka different amounts of
-    suppression for DV
-  \item Note that even a single pinched weights like in the second row of the BS
-    we achieve comparable results
-  \item Comparing the parameters obtained from FOPT, we also see that they are
-    very similar to parameters obtained from the BS
+  \item Gathered the ``best'' fits (from phase transition)
+  \item Fits of different pinching
+  \item We left out the fourth pinched weights (fits did not converge)
+  \item Parameters with asterisks have been fixed
+  \item Weights higher dimensional OPE omitted
+  \item \(\alpha_s\) compatible
+  \item \(\rho^{(6)}\), \(\rho^{(8)}\)  within error boundaries
+  \item \(\Rightarrow\) DV are sufficiently suppressed
+  \item Applied BS to weights containing \(x\)
+  \item Still stable \(\Rightarrow\) FOPT valid
+  \item BS yields \(\langle a GG \rangle\) with opposite sign, has to be investigated
 }
 
 
@@ -931,13 +914,26 @@
 \begin{frame}
   \frametitle{Conclusions}
   \begin{itemize}
-  \item We measured \(\alpha_s(m_\tau^2) = 0.3261 \pm 0.0050\), which after
-    running yields a value of \(\alpha_s(m_Z^2) = 0.11940 \pm 0.00060 \) and is
-    comparable to the world average of \(\alpha_s^{(PDG)}(m_Z^2) = 0.1181 \pm
-    0.0011\)\footcite{PDG2018}.
-  \item \(\rho^{(6)} = -0.68 \pm 0.2\)
-  \item \(\rho^{(8)} = -0.80 \pm 0.38\)
-  \item DV not present if using single pinched weights in the V+A channel
+  \item Obtained values for the strong coupling:
+    \begin{equation*}
+      \begin{split}
+        \alpha_s(m_\tau) &= 0.3268(44)(25) = 0.3268(51) \\
+        % \alpha_s^{(FOPT+BS)}(m_\tau) &= 0.3263(44)(25) = 0.3263(51)
+      \end{split}
+    \end{equation*}
+    \begin{small}First error taken from kinematic weight, second error \(c_{5,1} \pm 100\%\)\end{small}
+    \begin{equation*}
+      \begin{split}
+        \alpha_s(m_Z) &= 0.11886(53)(30)(5) = 0.11886(61) \\
+        % \alpha_s^{(FOPT+BS)}(m_Z) &= 0.11880(53)(30)(5) = 0.11880(61)
+      \end{split}
+    \end{equation*}
+    \begin{small}Evolved using RunDec3, third error from using 5-loop or 4-loop evolution\end{small}
+    \begin{equation*}
+      \alpha_s^{(PDG)} = 0.1181(11)\footcite{PDG2018}
+    \end{equation*}
+  \item \(\rho^{(6)} = -0.68(20) \quad \text{and} \quad \rho^{(8)} = -0.80(38)\)
+  \item DV sufficiently suppressed (V+A channel and single pinched weights)
   \item FOPT more valid than CIPT
   \end{itemize}
 \end{frame}

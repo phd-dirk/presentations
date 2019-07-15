@@ -2001,8 +2001,7 @@
     <bcf:citekey order="4">Boito2011a</bcf:citekey>
     <bcf:citekey order="5">Beneke2008</bcf:citekey>
     <bcf:citekey order="6">Beneke2008</bcf:citekey>
-    <bcf:citekey order="7">Beneke2008</bcf:citekey>
-    <bcf:citekey order="8">PDG2018</bcf:citekey>
+    <bcf:citekey order="7">PDG2018</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
