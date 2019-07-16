@@ -877,7 +877,7 @@
   \centering
   \begin{tabular}{ccccccc}
     \toprule
-    & \(s_{min} [GeV^2]\) & \#\(s_0\)s & \(\alpha_s(m_\tau^2)\) & \(\rho^{(6)}\) & \(\rho^{(8)}\) & \(\chi^2/dof\)  \\
+    & \(s_{min} [GeV^2]\) & \#\(s_0\)s & \(\alpha_s(m_\tau^2)\) & \(10^2\rho^{(6)}\) & \(10^2\rho^{(8)}\) & \(\chi^2/dof\)  \\
     \midrule
     \parbox[t]{2mm}{\multirow{5}{*}{\rotatebox[origin=c]{90}{\textsc{fopt}}}}
     % 1.500 & 23 & 0.3255(13) & -0.441(10) & -0.2909(34) & 2.00 \\
@@ -907,21 +907,22 @@
   \end{tabular}
 \end{frame}
 \note[itemize]{
-  \item Kinematic weight is double pinched (suppressed DV), contains no monomial term x
-  \item OPE D=6 and D=8
-  \item Three fitting parameters: \(\alpha_s, \rho^{(6)}\) and \(\rho^{(8)}\)
-  \item \(s_{min}\) smallest invariant mass squared value
-  \item Probed weight down to \SI{1.5}{\giga\eV}
-  \item Increasing number of \(s_0\)'s the \(\chi^2/dof\) increases, until point
-    where \(\chi^2/dof\) jumps (threshold/ phase transition)
-  \item \(s_0\) becomes to low for a good theoretical description
-  \item Select fits with maximum number of \(s_0\) that is still below above
-    \(s_0\) threshold as best fit (blue background)
-  \item Same behaviour in all fits, also select best fit
-  \item Parameters are within the weight very stable \(\alpha_s \approx 0.33\)
-  \item We are aware that the \(\chi^2/dof\) are small, caused by missing correlations
-  \item Performed BS for best fit, also compatible
-  \item CIPT causes higher values for \(\alpha_s\) \(\Rightarrow\) FOPT more valid
+\item Kinematic weight is double pinched (suppressed DV), contains no monomial
+  term x
+\item OPE D=6 and D=8
+\item Three fitting parameters: \(\alpha_s, \rho^{(6)}\) and \(\rho^{(8)}\)
+\item \(s_{min}\) smallest invariant mass squared value
+\item Probed weight down to \SI{1.5}{\giga\eV}
+\item Increasing number of \(s_0\)'s the \(\chi^2/dof\) increases, until point
+  where \(\chi^2/dof\) jumps (threshold/ phase transition)
+\item \(s_0\) becomes to low for a good theoretical description
+\item Select fits with maximum number of \(s_0\) that is still below above
+  \(s_0\) threshold as best fit (blue background)
+\item Same behaviour in all fits, also select best fit
+\item Parameters are within the weight very stable \(\alpha_s \approx 0.33\)
+\item \(\chi^2/dof < 1\), caused by missing correlations
+\item Performed BS for best fit, also compatible
+\item CIPT causes higher values for \(\alpha_s\) \(\Rightarrow\) FOPT more valid
 }
 
 \begin{frame}
@@ -948,21 +949,37 @@
       % -0.834(14) & -1.352(28) & 0.23 \\
       \bottomrule
     \end{tabular}
-    }
+  }
 \end{frame}
 \note[itemize]{
+\item Table
+  \begin{itemize}
   \item Gathered the ``best'' fits (from phase transition)
-  \item Fits of different pinching
-  \item We left out the fourth pinched weights (fits did not converge)
-  \item Parameters with asterisks have been fixed
-  \item Weights higher dimensional OPE omitted
-  \item \(\alpha_s\) compatible
-  \item \(\rho^{(6)}\), \(\rho^{(8)}\)  within error boundaries
-  \item \(\Rightarrow\) DV are sufficiently suppressed
-  \item Applied BS to weights containing \(x\)
+  \item Have given weights
+  \item PT: FO or BS
+  \item Fitted \(\langle aGG \rangle_I\) for weights with monomial term \(x\)
+  \end{itemize}
+\item We left out the fourth pinched weights (fits did not converge)
+\item Parameters with asterisks have been fixed, higher dimensional OPE ommited
+\item Parameters
+  \begin{itemize}
+  \item \(\alpha_s\) have stable fits, should trust \(\alpha_s\)
+  \item kinematic weights takes largest value
+  \item \(\rho^{(6)}\), \(\rho^{(8)}\) within error boundaries
+  \end{itemize}
+\item DV
+  \begin{itemize}
+  \item Fits of different pinching comparable, e.g. kinematic and cubic weight
+    \(\Rightarrow\) DV are sufficiently suppressed
+  \end{itemize}
+\item FOPT VS CIPT VS BS
+  \begin{itemize}
+  \item Applied BS to weights containing \(x\), compatible
+  \item Marked with gray background FOPT for weights containing \(x\), not
+    compatible
   \item Still stable \(\Rightarrow\) FOPT valid
-  \item BS yields \(\langle a GG \rangle\) with opposite sign, has to be investigated
-}
+  \end{itemize}
+\item \(\langle aGG \rangle_I\) opposite sign for BS }
 
 
 \section{Conclusions}
@@ -988,7 +1005,7 @@
       \alpha_s^{(FLAG)} = 0.11823(81)\footcite{FLAG2019}
     \end{equation*}
   \item \(\rho^{(6)} = -0.68(20) \quad \text{and} \quad \rho^{(8)} = -0.80(38)\)
-  \item DV sufficiently suppressed (V+A channel and single pinched weights)
+  \item DV sufficiently suppressed (V+A channel and double pinched weights)
   \item FOPT more valid than CIPT
   \end{itemize}
 \end{frame}
@@ -1019,23 +1036,6 @@
     \( \anti{s}s / \langle \anti{q}q \rangle \) & 0.8 \pm 0.3 \\
     \bottomrule
   \end{tabular}
-\end{frame}
-\begin{frame}
-  \frametitle{DV-model}
-  \begin{equation}
-    -\frac{1}{2 \pi i} \oint_{\abs{s}=s_0} \frac{\dif s}{s_0} \omega(s/s_0)
-    \Delta_{V/A}(s) = - \int_{s_0}^\infty \frac{\dif s}{s_0} \omega(s/ s_0) \frac{1}{\pi} \Ima \Delta_{V/A}(s)
-  \end{equation}
-\end{frame}
-\begin{frame}
-  \frametitle{Pion Pole}
-  \begin{ceqn}
-    \begin{equation}
-      R_{\tau,A}^\omega(s_0, \pi) = 24 \pi^2 \abs{V_{ud}}^2 S_{EW} \frac{f_\pi^2}{s_0}
-      \omega \left( \frac{s_\pi}{s_0} \right)
-      \left[ 1 - \frac{2 s_\pi}{s_\tau+ 2 s_\pi} \right]
-    \end{equation}
-  \end{ceqn}
 \end{frame}
 \begin{frame}
   \frametitle{Cubic Weight: \(\omega_{cube}(x) \equiv (1-x)^3(1+3x)\)}
@@ -1279,6 +1279,23 @@
       \bottomrule
     \end{tabular}
   \end{adjustbox}
+\end{frame}
+\begin{frame}
+  \frametitle{DV-model}
+  \begin{equation}
+    -\frac{1}{2 \pi i} \oint_{\abs{s}=s_0} \frac{\dif s}{s_0} \omega(s/s_0)
+    \Delta_{V/A}(s) = - \int_{s_0}^\infty \frac{\dif s}{s_0} \omega(s/ s_0) \frac{1}{\pi} \Ima \Delta_{V/A}(s)
+  \end{equation}
+\end{frame}
+\begin{frame}
+  \frametitle{Pion Pole}
+  \begin{ceqn}
+    \begin{equation}
+      R_{\tau,A}^\omega(s_0, \pi) = 24 \pi^2 \abs{V_{ud}}^2 S_{EW} \frac{f_\pi^2}{s_0}
+      \omega \left( \frac{s_\pi}{s_0} \right)
+      \left[ 1 - \frac{2 s_\pi}{s_\tau+ 2 s_\pi} \right]
+    \end{equation}
+  \end{ceqn}
 \end{frame}
 
 

@@ -7,5 +7,5 @@
 \beamer@subsectionintoc {3}{1}{Strategy}{24}{0}{3}
 \beamer@subsectionintoc {3}{2}{Results}{29}{0}{3}
 \beamer@sectionintoc {4}{Conclusions}{31}{0}{4}
-\beamer@subsubsectionintoc {4}{0}{1}{Single Pinched Monomial Weights}{39}{1}{4}
-\beamer@subsubsectionintoc {4}{0}{2}{Pinched Weights with a Monomial Term \(x\)}{42}{1}{4}
+\beamer@subsubsectionintoc {4}{0}{1}{Single Pinched Monomial Weights}{37}{1}{4}
+\beamer@subsubsectionintoc {4}{0}{2}{Pinched Weights with a Monomial Term \(x\)}{40}{1}{4}
