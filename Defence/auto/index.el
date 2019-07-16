@@ -40,6 +40,7 @@
    (LaTeX-add-bibliographies
     "./references")
    (LaTeX-add-xcolor-definecolors
-    "primary"))
+    "primary"
+    "snd"))
  :latex)
 

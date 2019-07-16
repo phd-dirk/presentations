@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber index"] 1563298684 "index.bcf" "index.bbl" "index" 1563299092
+["biber index"] 1563298684 "index.bcf" "index.bbl" "index" 1563302760
   "./references.bib" 1563268773 50137 52b700bdabcc2dce12e605192f72b60c ""
-  "index.bcf" 1563298995 91777 f30ab39e4d369a7827e65619c6f83e67 "pdflatex"
+  "index.bcf" 1563302745 91777 f30ab39e4d369a7827e65619c6f83e67 "pdflatex"
   (generated)
   "index.blg"
   "index.bbl"
-["pdflatex"] 1563299092 "index.tex" "index.pdf" "index" 1563299092
+["pdflatex"] 1563302760 "index.tex" "index.pdf" "index" 1563302760
   "/Users/knowledge/Library/Fonts/lmromancaps10-regular.otf" 1552453144 103948 ccc2c5cb222599a7ff72d1538d4d4e7b ""
   "/Users/knowledge/Library/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc" 1561016244 77642 caebdf2d42393cb72b0b090834d69f77 ""
   "/Users/knowledge/Library/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl/lmmono12-regular.luc" 1561016075 77581 8bcfaeb62b56296b519bf2bcaad57062 ""
@@ -387,20 +387,20 @@
   "images/specFuncAleph_A.eps" 1560775361 40131 7014f3c4d728c5304973626778b9a33d ""
   "images/specFuncAleph_V.eps" 1560775404 40754 60c2cfabf10d60f4281392e58d3b4a49 ""
   "images/specFuncAleph_VpA.eps" 1560775285 39025 405a00ffe2458537980e50c471ebb0da ""
-  "index.aux" 1563298995 12203 ed75b923984dd51e7357fc8daa279e4c "pdflatex"
+  "index.aux" 1563302745 12203 ed75b923984dd51e7357fc8daa279e4c "pdflatex"
   "index.bbl" 1563298686 9581 20f9a6a2b8cd021cffd55d18fc3f1933 "biber index"
-  "index.nav" 1563298995 6603 682a7c03b85313631245851d58c99007 "pdflatex"
-  "index.out" 1563298995 537 2fa2453c1587064cb1a671aa10332e78 "pdflatex"
-  "index.run.xml" 1563298995 2402 133e0344c00f9266ae6cfb53bad479e1 "pdflatex"
-  "index.tex" 1563299078 54239 44444fcbd91b0b2a268e8fff864755a6 ""
-  "index.toc" 1563298995 695 88314581c63927ac95017fe2c949e642 "pdflatex"
+  "index.nav" 1563302745 6603 682a7c03b85313631245851d58c99007 "pdflatex"
+  "index.out" 1563302745 537 2fa2453c1587064cb1a671aa10332e78 "pdflatex"
+  "index.run.xml" 1563302745 2402 133e0344c00f9266ae6cfb53bad479e1 "pdflatex"
+  "index.tex" 1563302759 53797 9f1cd425752eb7c1812ad174de4ddfbf ""
+  "index.toc" 1563302745 695 88314581c63927ac95017fe2c949e642 "pdflatex"
   (generated)
-  "index.bcf"
-  "index.toc"
-  "index.log"
+  "index.run.xml"
   "index.snm"
+  "index.bcf"
+  "index.aux"
+  "index.toc"
   "index.nav"
   "index.pdf"
-  "index.run.xml"
   "index.out"
-  "index.aux"
+  "index.log"
