@@ -18,19 +18,50 @@
 
 
 \refsection{0}
-  \datalist[entry]{anyt/global//global/global}
+  \datalist[entry]{nty/global//global/global}
+    \entry{FLAG2019}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=32ae831cad58e8ffb06a54953b84c84f}{%
+           family={Aoki},
+           familyi={A\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b1fd5ce1ee27927aea81bd95b2325ba2}
+      \strng{fullhash}{b1fd5ce1ee27927aea81bd95b2325ba2}
+      \strng{bibnamehash}{b1fd5ce1ee27927aea81bd95b2325ba2}
+      \strng{authorbibnamehash}{b1fd5ce1ee27927aea81bd95b2325ba2}
+      \strng{authornamehash}{b1fd5ce1ee27927aea81bd95b2325ba2}
+      \strng{authorfullhash}{b1fd5ce1ee27927aea81bd95b2325ba2}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-lat}
+      \field{eprinttype}{arXiv}
+      \field{title}{{FLAG Review 2019}}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1902.08191
+      \endverb
+    \endentry
     \entry{Beneke2008}{article}{}
       \name{author}{2}{}{%
-        {{hash=28b6ca9a264d4c5606ca7425dafbd98b}{%
+        {{uniquename=0,uniquepart=base,hash=28b6ca9a264d4c5606ca7425dafbd98b}{%
            family={Beneke},
            familyi={B\bibinitperiod},
            given={Martin},
-           giveni={M\bibinitperiod}}}%
-        {{hash=72230fc82f996168d6a1dec89ad8a246}{%
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=72230fc82f996168d6a1dec89ad8a246}{%
            family={Jamin},
            familyi={J\bibinitperiod},
            given={Matthias},
-           giveni={M\bibinitperiod}}}%
+           giveni={M\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{4a978975d12d99e42f9a4201553158f4}
       \strng{fullhash}{4a978975d12d99e42f9a4201553158f4}
@@ -38,7 +69,6 @@
       \strng{authorbibnamehash}{4a978975d12d99e42f9a4201553158f4}
       \strng{authornamehash}{4a978975d12d99e42f9a4201553158f4}
       \strng{authorfullhash}{4a978975d12d99e42f9a4201553158f4}
-      \field{labelalpha}{BJ08}
       \field{sortinit}{B}
       \field{sortinithash}{276475738cc058478c1677046f857703}
       \field{labelnamesource}{author}
@@ -60,41 +90,48 @@
     \endentry
     \entry{Boito2011a}{article}{}
       \name{author}{7}{}{%
-        {{hash=ae9fff79cad50d98a50e02294255dcc0}{%
+        {{uniquename=0,uniquepart=base,hash=ae9fff79cad50d98a50e02294255dcc0}{%
            family={Boito},
            familyi={B\bibinitperiod},
            given={Diogo},
-           giveni={D\bibinitperiod}}}%
-        {{hash=f3ee5a67eb8c85c726bc6caa9dcbcddb}{%
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f3ee5a67eb8c85c726bc6caa9dcbcddb}{%
            family={Cata},
            familyi={C\bibinitperiod},
            given={Oscar},
-           giveni={O\bibinitperiod}}}%
-        {{hash=cb70a00ac740bd87f764c03a004a7394}{%
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cb70a00ac740bd87f764c03a004a7394}{%
            family={Golterman},
            familyi={G\bibinitperiod},
            given={Maarten},
-           giveni={M\bibinitperiod}}}%
-        {{hash=72230fc82f996168d6a1dec89ad8a246}{%
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=72230fc82f996168d6a1dec89ad8a246}{%
            family={Jamin},
            familyi={J\bibinitperiod},
            given={Matthias},
-           giveni={M\bibinitperiod}}}%
-        {{hash=90b6e504e9e207fc1db018ea213172e2}{%
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=90b6e504e9e207fc1db018ea213172e2}{%
            family={Maltman},
            familyi={M\bibinitperiod},
            given={Kim},
-           giveni={K\bibinitperiod}}}%
-        {{hash=4f4f870de783c315d0a6ce8470f67cd6}{%
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4f4f870de783c315d0a6ce8470f67cd6}{%
            family={Osborne},
            familyi={O\bibinitperiod},
            given={James},
-           giveni={J\bibinitperiod}}}%
-        {{hash=1d45f241dd1dc2023627a9c98bee6dac}{%
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1d45f241dd1dc2023627a9c98bee6dac}{%
            family={Peris},
            familyi={P\bibinitperiod},
            given={Santiago},
-           giveni={S\bibinitperiod}}}%
+           giveni={S\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{91e753e5b3fa894efdfc24f4d2b9cceb}
       \strng{fullhash}{ad0dc5cb66808ac2d1282f7ce23c84ed}
@@ -102,7 +139,6 @@
       \strng{authorbibnamehash}{91e753e5b3fa894efdfc24f4d2b9cceb}
       \strng{authornamehash}{91e753e5b3fa894efdfc24f4d2b9cceb}
       \strng{authorfullhash}{ad0dc5cb66808ac2d1282f7ce23c84ed}
-      \field{labelalpha}{Boi+11}
       \field{sortinit}{B}
       \field{sortinithash}{276475738cc058478c1677046f857703}
       \field{labelnamesource}{author}
@@ -124,7 +160,7 @@
     \endentry
     \entry{HFLAV2016}{article}{}
       \name{author}{1}{}{%
-        {{hash=59bc9578f49017026e355247a0338e00}{%
+        {{uniquename=0,uniquepart=base,hash=59bc9578f49017026e355247a0338e00}{%
            family={HFLAV},
            familyi={H\bibinitperiod}}}%
       }
@@ -134,7 +170,6 @@
       \strng{authorbibnamehash}{59bc9578f49017026e355247a0338e00}
       \strng{authornamehash}{59bc9578f49017026e355247a0338e00}
       \strng{authorfullhash}{59bc9578f49017026e355247a0338e00}
-      \field{labelalpha}{HFL17}
       \field{sortinit}{H}
       \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
       \field{labelnamesource}{author}
@@ -157,11 +192,12 @@
     \endentry
     \entry{Jamin2013a}{article}{}
       \name{author}{1}{}{%
-        {{hash=72230fc82f996168d6a1dec89ad8a246}{%
+        {{uniquename=0,uniquepart=base,hash=72230fc82f996168d6a1dec89ad8a246}{%
            family={Jamin},
            familyi={J\bibinitperiod},
            given={Matthias},
-           giveni={M\bibinitperiod}}}%
+           giveni={M\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{72230fc82f996168d6a1dec89ad8a246}
       \strng{fullhash}{72230fc82f996168d6a1dec89ad8a246}
@@ -169,7 +205,6 @@
       \strng{authorbibnamehash}{72230fc82f996168d6a1dec89ad8a246}
       \strng{authornamehash}{72230fc82f996168d6a1dec89ad8a246}
       \strng{authorfullhash}{72230fc82f996168d6a1dec89ad8a246}
-      \field{labelalpha}{Jam13}
       \field{sortinit}{J}
       \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
       \field{labelnamesource}{author}
@@ -191,11 +226,12 @@
       \true{moreauthor}
       \true{morelabelname}
       \name{author}{1}{}{%
-        {{hash=468dd31f33955bc12b7c31e820de613d}{%
+        {{uniquename=0,uniquepart=base,hash=468dd31f33955bc12b7c31e820de613d}{%
            family={Tanabashi},
            familyi={T\bibinitperiod},
            given={M.},
-           giveni={M\bibinitperiod}}}%
+           giveni={M\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{e75186424113a4ab28ae7972b480cbd6}
       \strng{fullhash}{e75186424113a4ab28ae7972b480cbd6}
@@ -203,7 +239,6 @@
       \strng{authorbibnamehash}{e75186424113a4ab28ae7972b480cbd6}
       \strng{authornamehash}{e75186424113a4ab28ae7972b480cbd6}
       \strng{authorfullhash}{e75186424113a4ab28ae7972b480cbd6}
-      \field{labelalpha}{Tan+18}
       \field{sortinit}{T}
       \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
       \field{labelnamesource}{author}

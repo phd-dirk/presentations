@@ -2,7 +2,7 @@
  "index"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("inputenc" "utf8") ("mathpazo" "sc" "osf") ("eulervm" "euler-digits" "small") ("biblatex" "style=authortitle-comp" "backend=biber" "style=alphabetic") ("tikz-feynman" "compat=1.1.0")))
+                     '(("inputenc" "utf8") ("mathpazo" "sc" "osf") ("eulervm" "euler-digits" "small") ("biblatex" "style=authortitle-comp" "backend=biber") ("tikz-feynman" "compat=1.1.0")))
    (add-to-list 'LaTeX-verbatim-environments-local "semiverbatim")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")

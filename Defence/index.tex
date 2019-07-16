@@ -11,7 +11,7 @@
 % font - Palatino
 \usepackage[sc,osf]{mathpazo}   % With old-style figures and real smallcaps.
 \usepackage[euler-digits,small]{eulervm}
-\usepackage[style=authortitle-comp, backend=biber,style=alphabetic ]{biblatex}
+\usepackage[style=authortitle-comp, backend=biber]{biblatex}
 \usepackage{xpatch}
 \xapptobibmacro{cite}{\setunit{\nametitledelim}\printfield{year}}{}{}
 \addbibresource{./references.bib}
@@ -138,23 +138,24 @@
   \end{itemize}
 \end{frame}
 \note[itemize]{
-  \item Depends on energy 
+  \item \(\alpha_s\) depends on energy 
   \item Referred to as ``running of the strong coupling''
   \item E.g. \(\alpha_s(m_\tau^2) \approx 0.33\)
   \item Compare at \(m_Z^2\) scale
   \item Plot which shows the running of \(\alpha_s\)
   \item \(\alpha_s\) decreases with increasing energy
   \item Asymptotic freedom: at high energies quarks and gluons interact
-    weakly and can be treated perturbatively
+    weakly
   \item Confinement: at low energies quarks are bound. An isolated
-    quark has never been measured. They appear in hadrons, two or three quarks
-  \item Marked the perturbative critical region with a grey background
+    quark has never been measured. They appear as hadrons.
   \item for \(\alpha_s > 0.5\) PT breaks down
   \item Hadronic tau decays good for measuring \(\alpha_s\)
     \begin{itemize}
       \item \(\alpha\) small enough for PT
       \item \(\alpha\) large enough to be sensitive
     \end{itemize}
+  \item Errors also decrease with energy
+  \item Tau decays extract \(\alpha_s\) at low energies as compared to other methods
 }
 
 \begin{frame}
@@ -190,7 +191,7 @@
   \end{itemize}
 \end{frame}
 \note[itemize]{
-  \item Strong coupling constant from tau decays
+  \item \(\alpha_s\) from hadronic tau decays
   \item Described by Feynman Diagram
     \begin{itemize}
     \item Tau decay into \(W\) boson and \(\nu_\tau\)
@@ -200,10 +201,10 @@
     \end{itemize}
   \item Confinement: Don't measure quarks but hadrons
   \item Hadrons: Composite particles that consist of quarks
-  \item Table shows produced mesons
-  \item Use duality ansatz: theoretically quark-gluon picture, experimentally measure hadrons
-  \item \(\tau \to \pi^-\nu_\tau\) is Cabbibo allowed, \(\tau \to K^- \nu_\tau\)
-    is Cabbibo suppressed (\(\abs{V_{us}}^2 = (0.2)^2\))
+  \item We have to apply Duality to match QCD calculations with experiment
+  \item Produced meson table: pion, kaon
+  \item \(\tau \to \pi^-\nu_\tau\) Cabbibo allowed, \(\tau \to K^- \nu_\tau\) Cabbibo suppressed (\(\abs{V_{us}}^2 = (0.2)^2\))
+  \item will focus non-strange tau decays, (only \(u, d\) quarks)
 }
 
 \begin{frame}
@@ -244,14 +245,15 @@
   \includegraphics[width=0.6\textwidth]{./images/rTauCauchysTheorem.eps}
 \end{frame}
 \note[itemize]{
-\item Circumvent the positive real axis by Cauchy's theorem
+\item Avoid to calculate correlator close to the positive real axis,
+\item Calculate correlator at large \(s\)
 \item Closed contour integral over an analytic function is zero
 \item Construct closed contour integral
 \item Red is the outer circle, which will be calculated theoretically
-\item The blue line integral is experimentally accessible
+\item Blue line integral experimentally accessible
+\item \(\epsilon\) is the radius of the inner circle
 \item If we take the limit of \(\epsilon \to 0\) the red circle is equal the
   blue line
-\item \(\epsilon\) is the radius of the inner circle
 \item The contributions of the correlator close to positive real axis will be
   suppressed by weights
 \item \(\mathcal{C}_4\) vanishes due to no physical contributions!
@@ -277,8 +279,8 @@
 \item Experimental data given in form of spectral function
 \item Connect the experiment with theory via integral moment
 \item Define the experimental integral moment, introducing a weight \(\omega\)
-\item Apply Cauchy's theorem to get theoretical integral moment
-\item Note: Moments depend on \(\omega\) and \(s_0\), we only take part of the data into account
+\item Applied Cauchy's theorem to get theoretical integral moment
+\item Note: Moments depend on \(\omega\) and \(s_0\)
 \item Will construct chi-squared from moments
 }
 
@@ -301,27 +303,32 @@
       \Pi^{th} \to \Pi^{OPE}(s) = \sum_D \frac{1}{(s)^{D/2}} \sum_{\dim \mathcal{O} = D} C_{D}(s,\mu)\langle \mathcal{O}(\mu) \rangle
       \equiv \sum_{k=0}^\infty \frac{C_{2k}(s)}{(s)^k}
     \end{equation}
-  \item \(C_{D}\) are the Wilson coefficients, which can be calculated perturbatively
+  \item \(C_{D}\) are the Wilson coefficients, which can be calculated
+    perturbatively
   \item \(\mathcal{O}\) are higher dimensional operators, e.g. \(D=4\)
     \begin{itemize}
-      \item Quark condensate: \(m\langle \overline{q}{q} \rangle\)
-      \item Gluon condensate: \(\langle G_a^{\mu\nu}G^{a}_{\mu\nu} \rangle\)
+    \item Quark condensate: \(m\langle \overline{q}{q} \rangle\)
+    \item Gluon condensate: \(\langle G_a^{\mu\nu}G^{a}_{\mu\nu} \rangle\)
     \end{itemize}
   \item The term with \(D = 0\) corresponds to the perturbative contribution
+  \item In approximating \(\Pi^{th} \to \Pi^{OPE}\) we assume Duality
   \end{itemize}
 \end{frame}
 \note[itemize]{
-\item QCD vacuum contains NPT contributions
+\item QCD vacuum cannot be solely described by PT methods
 \item Approximate correlator with OPE
 \item The OPE separates short distances (high energies/ PT) from long distances
   (NPT)
-\item Short distances \(\Rightarrow\) Wilson coefficients calculated by Feynman diagrams
-\item Long distances \(\Rightarrow\) vacuum expectation value of higher dimensional operators
+\item Short distances \(\Rightarrow\) Wilson coefficients calculated by Feynman
+  diagrams
+\item Long distances \(\Rightarrow\) vacuum expectation value of higher
+  dimensional operators
 \item E.g. \(D=4\) are the quark condensate and gluon condensate
 \item Have to be obtained by NPT methods like lattice QCD or from our fits
 \item Will fit up to dimension 12
 \item The term \(D=0\) corresponds to PT
-}
+\item In approximating the correlator with the OPE we assume quark-hadron
+  duality }
 
 \begin{frame}
   \frametitle{Quark-Hadron Duality}
@@ -330,11 +337,6 @@
     called quark-hadron duality
   \item Differences between the physical spectral function and its OPE
     approximation are referred to as duality violations
-  \item DV are connected to the behaviour of the correlator close to the
-    positive real axis
-    
-    \vfill
-
   \item DV can be modelled with the following ansatz:
     \begin{equation}
       \rho_{V/A}^{DV}(s) = e^{-(\delta_{V/A} + \gamma_{V/A}s)} \sin(\alpha_{V/A} + \beta_{V/A}s)
@@ -349,15 +351,14 @@
 \note[itemize]{
 \item Theoretically work in quark-gluon picture, experimentally observe hadrons
   \(\Rightarrow\) quark-hadron duality
-\item This is an ansatz, but cannot be derived from first principles
 \item The physical spectral function differs from its OPE approximation
   \(\Rightarrow\) Duality Violations
 \item DV can be parametrised via a model
-\item Four parameters V + four parameters A 
+\item Theoretically well motivated but cannot be derived from first principles
+\item Four parameters V + four parameters A
 \item Too many parameters: e.g. \(\alpha_s, \rho_6, \rho_8\) three parameters vs
   eight!
-\item We investigate contribution of DV, if sufficient suppressed
-}
+\item We investigate contribution of DV, if sufficient suppressed }
 
 \begin{frame}
   \frametitle{Perturbative Contribution}
@@ -370,7 +371,7 @@
     \end{equation}
     where
     \begin{equation}
-      a(\mu^2) \equiv \frac{\alpha(\mu^2)}{\pi}
+      a(\mu^2) \equiv \frac{\alpha_s(\mu^2)}{\pi}
     \end{equation}
   \item The Adler function only depends on the coefficients \(c_{n,1}\). All
     other \(c_{n,k}\) can be expressed in terms of the \(c_{n,1}\) through the
@@ -378,22 +379,20 @@
     \begin{equation}
       \begin{split}
         c_{0,1} = c_{1,1} = 1, \quad c_{2,1} = 1.63982, \quad c_{3,1} = 6.37101 \\
-        c_{4,1} = 49.07570  \quad c_{5,1} = 283 \pm 283\, \text{(estimate)}
+        c_{4,1} = 49.07570 \quad c_{5,1} = 283 \pm 283\, \text{(estimate)}
       \end{split}
     \end{equation}
   \end{itemize}
 \end{frame}
 \note[itemize]{
-\item It is common to rewrite the two-point function in terms of the Adler
-  function.
+\item Work in chiral limit: V and A contributions are equal
+\item Contour integral can be expressed by Adler function
 \item In case of vector correlator the derivative (Adler Function) is a physical
   quantity.
 \item Physical quantities are renormalisation scale invariant.
-\item The Adler function has different defintions for the \(\Pi^{(1+0)}\) and
-  \(\Pi^{(0)}\).
-\item Our final expression for the inclusive hadronic tau decay ratio then is
-  given in equation 12. 
-\item Contour integral can be expressed by Adler function
+\item Depends on Adler function coefficients, which can be calculated from
+  Feynman diagrams
+\item Only have to calculate \(c_{n,1}\) coefficients, rest are mapped via RGE
 }
 
 \begin{frame}
@@ -416,20 +415,20 @@
   \item E.g. kinematic weight
     \begin{equation}
       \omega_\tau(s) \equiv \left(1 - \frac{s}{s_0}\right)^2\left( 1 + 2 \frac{s}{s_0} \right)
-      \quad \Rightarrow \quad
-      \omega_{D, \tau}(s) = -(1-x)^3(1+x) 
+      \, \Rightarrow \,
+      \omega_{D, \tau}(s) = -\left(1-\frac{s}{s_0}\right)^3 \left(1+\frac{s}{s_0}\right) 
     \end{equation}
   \end{itemize}
 \end{frame}
 \note[itemize]{
-  \item Introduce Adler function in theoretical moment by integration by parts
-  \item Define \(\omega_D \equiv 2 \int_{x}^1 \omega\left( \frac{s^\prime}{s_0}
-      \dif s \right)\) 
-  \item E.g. naturally appearing kinematic weight
-    \begin{itemize}
-      \item Double pinched for spectral function
-      \item Cubic pinched for Adler function
-    \end{itemize}
+\item Introduce Adler function in theoretical moment by integration by parts
+\item Define \(\omega_D \equiv 2 \int_{x}^1 \omega\left( \frac{s^\prime}{s_0}
+    \dif s \right)\)
+\item E.g. naturally appearing kinematic weight
+  \begin{itemize}
+  \item Double pinched for spectral function
+  \item Cubic pinched for Adler function
+  \end{itemize}
 }
 
 
@@ -467,22 +466,26 @@
   \end{itemize}
 \end{frame}
 \note[itemize]{
-\item The general perturbative contribution \(\delta_{pt}\) is defined in
-  equation 22, where we plugged in the expanded Adler function in to the tau
-  decay ratio and factorised \(12 \pi^2\)
-\item Having the freedom to fix \(\mu\) leads to two different treatments of the
-  PT contributions
-\item FOPT where we fix \(\mu \equiv m_\tau^2\)
-\item This leads to a constant \(a_\mu\), so we do not have to run the strong
-  coupling. We are left with the integration of the logarithms \(\log(-x)\)
-\item On the other hand CIPT fixed \(\mu \equiv -m_\tau^2 x\), which sums up the
-  logarithms, but leaves us with a running coupling
-\item Both approaches lead to different results }
+\item PT contribution rewritten in terms of \(x\) 
+\item \(\mu\) dependent \(\Rightarrow\) two different frameworks
+\item FOPT fix \(\mu \equiv m_\tau^2\)
+  \begin{itemize}
+    \item constant \(a_\mu\)
+    \item \(x\) dependent logarithm
+  \end{itemize}
+\item CIPT fix \(\mu \equiv -m_\tau^2 x\)
+  \begin{itemize}
+    \item sums logarithms
+    \item \(x\) dependent \(a_\mu\)
+  \end{itemize}
+\item Both approaches lead to different results
+}
 
 \begin{frame}
   \frametitle{FOPT vs CIPT}
   \begin{itemize}
-    \item  Perturbative FOPT and CIPT contributions (\(\alpha_s(m_\tau^2)=0.3186\)):
+  \item Perturbative FOPT and CIPT contributions
+    (\(\alpha_s(m_\tau^2)=0.3186\)):
     \begin{align}
       \delta_{FOPT}^{(0)} &= 0.2022(75) \\
       \delta_{CIPT}^{(0)} &= 0.1847(58)
@@ -490,42 +493,36 @@
     
     \vfill
 
-    \item \(\delta_{FOPT}^{(0)}, \delta_{CIPT}^{(0)}\) and the Borel model as
-      function of the order n
+  \item \(\delta_{FOPT}^{(0)}, \delta_{CIPT}^{(0)}\) and the Borel model as
+    function of the order n
     \begin{center}
       \includegraphics[width=0.7\textwidth]{./images/FOPT_CIPT_contributions.png}
     \end{center}
-    \scriptsize
-    \cite{Jamin2013a}
+    \scriptsize \cite{Jamin2013a}
   \end{itemize}
 \end{frame}
 \note[itemize]{
-\item E.g. here we display the FOPT and CIPT contribution up to fifth order.
-\item From the table we can conclude that CIPT converges faster, but has a
-  smaller contribution as FOPT, which leads to larger values of \(\alpha_s\)
-\item The graph below has been taken from a paper of Beneke and Jamin who
-  invested the topic
-\item here we see as the black dots the FOPT contribution, as the gray dots the
-  CIPT contribution and as a straight line the Borel sum to which we will come
-  in a minute to which we will come in a minute to which is used to sum
-  asymptotic series like in this case
-\item Note that FOPT converges in line with the Borel sum, but CIPT does not
-\item We will make the same observation while performing our fits }
+\item FOPT and CIPT lead to different PT contributions
+\item CIPT has smaller contributions \(\Rightarrow\) larger \(\alpha_s\)
+\item Plot comparing FOPT, CIPT and BS from Beneke and Jamin
+\item Black dots FOPT, gray dots CIPT, black line BS 
+\item Beneke and Jamin introduced Borel model
+\item FOPT converges on BS line, CIPT does not \(\Rightarrow\) FOPT more valid
+\item Will follow this strategy within our fits
+}
 
 \begin{frame}
   \frametitle{Borel Summation}
   \begin{itemize}
   \item Borel summation is a summation method for divergent asymptotic series,
     e.g. Adler function
-  % \item Borel transform and Borel integral:
-  %   \begin{equation}
-  %     A \equiv \int_0^\infty \dif t e^{-t/a} B[A](t) \quad \text{with} \quad B[A](t) = \sum_{n=0}^\infty \frac{a_k}{n!} t^n.
-  %   \end{equation}
-  \item Beneke and Jamin introduced a physical model of the Adler function\footcite{Beneke2008}:
+  \item Beneke and Jamin introduced a physical model of the Adler
+    function\footcite{Beneke2008}:
     \begin{equation}
       \label{eq:borelModel}
       B[\widehat D](u) = B[\widehat D_1^{UV}](u) + B[\widehat D_2^{IR}](u) + B[\widehat D_3^{IR}](u) + d_0^{PO} + d_1^{PO}u,
     \end{equation}
+  \item Using the Borel integral we can recover the Adler function
     \begin{equation}
       \widehat D(\alpha) \equiv \int_0^\infty \dif t e^{-t/\alpha} B[\widehat D](t)
     \end{equation}
@@ -534,9 +531,10 @@
 \note[itemize]{
 \item Summation method for divergent asymptotic series
 \item Best possible sum for Adler function
-\item Method consists of the Borel transform and Borel integral
 \item Beneke and Jamin (2008) modelled the Adler function
-\item Follow method of Beneke and Jamin to use BS in fits to test validity of FOPT
+\item Have given Borel transform of the model
+\item Adler function from Borel integral
+\item Will apply model in fits to make a statement in the FOPT vs CIPT discussion
 }
 
 \begin{frame}
@@ -565,17 +563,14 @@
   \end{itemize}
 \end{frame}
 \note[itemize]{
-\item Next to the PT contribution we have to implement the NPT contributions
-  from the OPE
-\item We can see that the OPE series is suppressed by powers of \(s\) thus we
-  can approximate the series by a cutoff
-\item The lowest dimensional operators are given in equation 37
-\item In our analysis we will neglect the dimension two contributions as we work
-  in the chiral limit and their contributions are proportional to the quark
-  masses
-\item We work with the invariant gluon condensate, import because disagreement
+\item Neglect dimension two contributions, because proportional to quark masses
+\item The D=4 contributions can be expressed as: Gluon condensate and quark
+  condensate with corresponding factor. Also depend on \(m^4\)
+\item We use Invariant Gluon, we will fit the gluon condensate
+\item D=6 and higher approximated by simplest approach possible: \(\rho\)
+  constants divided by corresponding \(1/s\) term
+\item Fit up to dimension 12
 }
-
 
 \subsection{Experimental Data}
 \begin{frame}
@@ -822,8 +817,16 @@
   \begin{itemize}
     \item Extract \(\alpha_s\)
     \item Probe Duality Violations
+      \begin{itemize}
+        \item Fit different pinched weights
+        \item If similar values \(\Rightarrow\) DV sufficiently suppressed
+      \end{itemize}
     \item FOPT vs CIPT
-  \end{itemize}
+      \begin{itemize}
+        \item Fits using FOPT and BS
+        \item If similar values \(\Rightarrow\) FOPT more value
+      \end{itemize}
+    \end{itemize}
 \end{frame}
 \note[itemize]{
   \item To extract \(\alpha_s\) at the \(m_\tau^2\) scale, we perform fits with
@@ -989,7 +992,7 @@
     \end{equation*}
     \begin{small}Evolved using RunDec3, third error from using 5-loop or 4-loop evolution\end{small}
     \begin{equation*}
-      \alpha_s^{(PDG)} = 0.1181(11)\footcite{PDG2018}
+      \alpha_s^{(FLAG)} = 0.11823(81)\footcite{FLAG2019}
     \end{equation*}
   \item \(\rho^{(6)} = -0.68(20) \quad \text{and} \quad \rho^{(8)} = -0.80(38)\)
   \item DV sufficiently suppressed (V+A channel and single pinched weights)
