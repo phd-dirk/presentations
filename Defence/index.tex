@@ -11,7 +11,7 @@
 % font - Palatino
 \usepackage[sc,osf]{mathpazo}   % With old-style figures and real smallcaps.
 \usepackage[euler-digits,small]{eulervm}
-\usepackage[style=authortitle-comp, backend=biber]{biblatex}
+\usepackage[style=authortitle-comp, backend=biber,style=alphabetic ]{biblatex}
 \usepackage{xpatch}
 \xapptobibmacro{cite}{\setunit{\nametitledelim}\printfield{year}}{}{}
 \addbibresource{./references.bib}
@@ -107,9 +107,9 @@
 \begin{frame}
   \frametitle{The Running of the Strong Coupling}
   \begin{itemize}
+  \item The strong coupling depends on energy
     \begin{columns}
-      \begin{column}{0.4\textwidth}
-      \item The strong coupling depends on energy
+      \begin{column}{0.35\textwidth}
         \begin{equation}
           \begin{split}
             \alpha_s(m_\tau^2) &\approx 0.33 \\
@@ -125,11 +125,12 @@
           \end{equation}
         \end{footnotesize}
       \end{column}
-      \begin{column}{0.5\textwidth}
+      \begin{column}{0.65\textwidth}
         \begin{figure}
+          \vspace{0.5cm}
           \includegraphics[width=\textwidth]{./images/runningOfAs.eps}\\[-1ex]
           \captionsetup{format=hang}
-          \caption{\tiny Taken from \cite{Deur2016}}
+          \caption{\tiny Taken from \cite{PDG2018}}
         \end{figure}
       \end{column}
     \end{columns}
@@ -140,7 +141,7 @@
   \item Depends on energy 
   \item Referred to as ``running of the strong coupling''
   \item E.g. \(\alpha_s(m_\tau^2) \approx 0.33\)
-  \item Compare at \(m_\tau^2\) scale
+  \item Compare at \(m_Z^2\) scale
   \item Plot which shows the running of \(\alpha_s\)
   \item \(\alpha_s\) decreases with increasing energy
   \item Asymptotic freedom: at high energies quarks and gluons interact
@@ -159,31 +160,33 @@
 \begin{frame}
   \frametitle{Tau decays}
   \begin{itemize}
-    \item Feynman diagram of the tau decay
-      \begin{center}
-        \feynmandiagram [layered layout, horizontal=a to b] {
-          a [particle=\(\tau^{-}\)] -- [fermion] b -- [fermion] f1 [particle=\(\nu_{\tau}\)], b -- [boson, edge label'=\(W^{-}\)] c,
-          c -- [anti fermion] f2 [particle={\footnotesize\(e^-, \mu^-,
-            \overline{u}, \overline{u} \)}],
-          c -- [fermion] f3 [particle={\footnotesize\(\overline{\nu}_e,
-            \overline{\nu}_\mu, d, s\)}],
-        };
-      \end{center}
-    \item Mesons produced by tau decays
-      \begin{center}
-        \begin{footnotesize}
-          \begin{tabular}{ccc}
-            \toprule
-            Symbol & Quark content & Rest mass \\
-            \midrule
-            \(\pi^-\) & \(\overline{u} d\) & \SI{139.57061 \pm 0.00024}{\mega\eV}  \\
-            \(\pi^0\) & \((u \overline{u} - d \overline{d})/\sqrt{2}\) & \SI{134.9770\pm0.0005}{\mega\eV} \\
-            \(K^-\) & \(\overline{u} s\) & \SI{493.677\pm0.016}{\mega\eV} \\
-            \(K^0\) & \(d \overline{s}\) & \SI{497.611\pm0.013}{\mega\eV} \\
-            \(\eta\) & \((u \overline{u} + d \overline{d} - 2 s \overline{s})/\sqrt{6}\) & \SI{547.862\pm0.017}{\mega\eV}
-          \end{tabular}
-      \end{footnotesize}
+  \item Feynman diagram of the tau decay
+    \begin{center}
+      \feynmandiagram [scale=0.8, layered layout, horizontal=a to b] {
+        a [particle=\(\tau^{-}\)] -- [fermion] b -- [fermion] f1 [particle=\(\nu_{\tau}\)], b -- [boson, edge label'=\(W^{-}\)] c,
+        c -- [anti fermion] f2 [particle={\footnotesize\(e^-, \mu^-,
+          \overline{u}, \overline{u} \)}],
+        c -- [fermion] f3 [particle={\footnotesize\(\overline{\nu}_e,
+          \overline{\nu}_\mu, d, s\)}],
+      };
     \end{center}
+  \item Mesons produced by tau decays
+    \begin{footnotesize}
+      \begin{center}
+        \begin{tabular}{ccc}
+          \toprule
+          Symbol & Quark content & Rest mass \\
+          \midrule
+          \(\pi^-\) & \(\overline{u} d\) & \SI{139.57061 \pm 0.00024}{\mega\eV}  \\
+          \(\pi^0\) & \((u \overline{u} - d \overline{d})/\sqrt{2}\) & \SI{134.9770\pm0.0005}{\mega\eV} \\
+          \(K^-\) & \(\overline{u} s\) & \SI{493.677\pm0.016}{\mega\eV} \\
+          \(K^0\) & \(d \overline{s}\) & \SI{497.611\pm0.013}{\mega\eV}
+        \end{tabular}
+      \end{center}
+      \begin{equation}
+        \mathcal{B}(\tau \to \pi^- \nu_\tau) &= 10.81\%, \quad \mathcal{B}(\tau \to K^-) &= 0.70\%
+      \end{equation}
+    \end{footnotesize}
   \end{itemize}
 \end{frame}
 \note[itemize]{
@@ -199,7 +202,8 @@
   \item Hadrons: Composite particles that consist of quarks
   \item Table shows produced mesons
   \item Use duality ansatz: theoretically quark-gluon picture, experimentally measure hadrons
-  \item Duality is not always valid (Duality violations)
+  \item \(\tau \to \pi^-\nu_\tau\) is Cabbibo allowed, \(\tau \to K^- \nu_\tau\)
+    is Cabbibo suppressed (\(\abs{V_{us}}^2 = (0.2)^2\))
 }
 
 \begin{frame}
@@ -237,7 +241,7 @@
 \begin{frame}
   \frametitle{Cauchy's Theorem}
   \centering
-  \includegraphics[width=0.9\textwidth]{./images/rTauCauchysTheorem.eps}
+  \includegraphics[width=0.6\textwidth]{./images/rTauCauchysTheorem.eps}
 \end{frame}
 \note[itemize]{
 \item Circumvent the positive real axis by Cauchy's theorem
@@ -250,6 +254,7 @@
 \item \(\epsilon\) is the radius of the inner circle
 \item The contributions of the correlator close to positive real axis will be
   suppressed by weights
+\item \(\mathcal{C}_4\) vanishes due to no physical contributions!
 }
 
 \begin{frame}
@@ -284,7 +289,7 @@
     The Theoretical Computation
   \end{LARGE}
   \begin{equation}
-    I^{th}(s_0) \equiv - \frac{1}{2 \pi i s_0} \oint_{\abs{s}=s_0} \dif s \omega\left(\frac{s}{s_0}\right) \Pi_{V/A}(s)
+    I^{th}(s_0) \equiv - \frac{1}{2 \pi i s_0} \oint_{\abs{s}=s_0} \dif s \omega\left(\frac{s}{s_0}\right) \Pi_{V/A}^{th}(s)
   \end{equation}
 \end{frame}
 
@@ -293,14 +298,14 @@
   \begin{itemize}
   \item The correlator is approximated by the operator product expansion
     \begin{equation}
-      \Pi \to \Pi^{OPE}(s) = \sum_D \frac{1}{(-s)^{D/2}} \sum_{\dim \mathcal{O} = D} C_{D}(-s,\mu)\langle \mathcal{O}(\mu) \rangle
-      \equiv \sum_{k=0}^\infty \frac{C_{2k}(s)}{(-s)^k}
+      \Pi^{th} \to \Pi^{OPE}(s) = \sum_D \frac{1}{(s)^{D/2}} \sum_{\dim \mathcal{O} = D} C_{D}(s,\mu)\langle \mathcal{O}(\mu) \rangle
+      \equiv \sum_{k=0}^\infty \frac{C_{2k}(s)}{(s)^k}
     \end{equation}
   \item \(C_{D}\) are the Wilson coefficients, which can be calculated perturbatively
   \item \(\mathcal{O}\) are higher dimensional operators, e.g. \(D=4\)
     \begin{itemize}
       \item Quark condensate: \(m\langle \overline{q}{q} \rangle\)
-      \item Gluon condensate: \(G_a^{\mu\nu}G^{a}_{\mu\nu}\)
+      \item Gluon condensate: \(\langle G_a^{\mu\nu}G^{a}_{\mu\nu} \rangle\)
     \end{itemize}
   \item The term with \(D = 0\) corresponds to the perturbative contribution
   \end{itemize}
@@ -371,7 +376,10 @@
     other \(c_{n,k}\) can be expressed in terms of the \(c_{n,1}\) through the
     RGE.
     \begin{equation}
-      c_{0,1} = c_{1,1} = 1, \quad c_{2,1} = 1.63982, \quad c_{3,1} = 6.37101, \quad c_{4,1} = 49.07570, \quad c_{5,1} = 283^*
+      \begin{split}
+        c_{0,1} = c_{1,1} = 1, \quad c_{2,1} = 1.63982, \quad c_{3,1} = 6.37101 \\
+        c_{4,1} = 49.07570  \quad c_{5,1} = 283 \pm 283\, \text{(estimate)}
+      \end{split}
     \end{equation}
   \end{itemize}
 \end{frame}
@@ -384,7 +392,9 @@
 \item The Adler function has different defintions for the \(\Pi^{(1+0)}\) and
   \(\Pi^{(0)}\).
 \item Our final expression for the inclusive hadronic tau decay ratio then is
-  given in equation 12. }
+  given in equation 12. 
+\item Contour integral can be expressed by Adler function
+}
 
 \begin{frame}
   \frametitle{Perturbative Contribution}
@@ -393,18 +403,34 @@
     \begin{equation}
       \begin{split}
         I^{th,PT} &\equiv \frac{6 \pi i}{s_0} \oint_{\abs{s}=s_0} \dif s\, \omega\left(\frac{s}{s_0}\right) \Pi_{OPE}^{D=0}(s) \\
-        &= \frac{6 \pi i}{s_0} \oint_{\abs{s}=s_0} \frac{\dif s}{s} \omega_D\left(\frac{s}{s_0}\right) D_{OPE}^{D=0}(s) \\
-        &= \frac{3 i}{2 \pi s_0} \oint_{\abs{s}=s_0} \frac{\dif s}{s}
+        &= -\frac{3 \pi i}{s_0} \oint_{\abs{s}=s_0} \frac{\dif s}{s} \omega_D\left(\frac{s}{s_0}\right) D_{OPE}^{D=0}(s) \\
+        &= -\frac{3 i}{4 \pi s_0} \oint_{\abs{s}=s_0} \frac{\dif s}{s}
         \omega_D\left(\frac{s}{s_0}\right) \sum_{n=0}^\infty a^n(\mu^2)
         \sum_{k=1}^{n+1} k\, c_{n,k} \log\left( \frac{-s}{\mu^2} \right)^{k-1}
       \end{split}
     \end{equation}
     where
     \begin{equation}
-      \omega_D \equiv \int_0^{s_0} \omega(s^\prime) \dif s
+      \omega_D \equiv 2 \int_{s/s_0}^{1} \omega\left( \frac{s^\prime}{s_0} \right) \dif s
+    \end{equation}
+  \item E.g. kinematic weight
+    \begin{equation}
+      \omega_\tau(s) \equiv \left(1 - \frac{s}{s_0}\right)^2\left( 1 + 2 \frac{s}{s_0} \right)
+      \quad \Rightarrow \quad
+      \omega_{D, \tau}(s) = -(1-x)^3(1+x) 
     \end{equation}
   \end{itemize}
 \end{frame}
+\note[itemize]{
+  \item Introduce Adler function in theoretical moment by integration by parts
+  \item Define \(\omega_D \equiv 2 \int_{x}^1 \omega\left( \frac{s^\prime}{s_0}
+      \dif s \right)\) 
+  \item E.g. naturally appearing kinematic weight
+    \begin{itemize}
+      \item Double pinched for spectral function
+      \item Cubic pinched for Adler function
+    \end{itemize}
+}
 
 
 \begin{frame}
@@ -455,21 +481,23 @@
 
 \begin{frame}
   \frametitle{FOPT vs CIPT}
-  \begin{footnotesize}
-    Perturbative FOPT and CIPT contributions (\(\alpha(m_\tau^2)=0.34\)):
+  \begin{itemize}
+    \item  Perturbative FOPT and CIPT contributions (\(\alpha_s(m_\tau^2)=0.3186\)):
     \begin{align}
-      & \quad\qquad \alpha_s^2 \qquad \alpha_s^2 \qquad \alpha_s^3 \qquad \alpha_s^4 \quad\qquad \alpha_s^5 \nonumber\\
-      \delta_{FOPT}^{(0)} &= 0.1082 + 0.0609 + 0.0334 + 0.0174 (+ 0.0088) = 0.2200 (0.2288) \\
-      \delta_{CIPT}^{(0)} &= 0.1479 + 0.0297 + 0.0122 + 0.0086 (+ 0.0038) = 0.1984 (0.2021)
+      \delta_{FOPT}^{(0)} &= 0.2022(75) \\
+      \delta_{CIPT}^{(0)} &= 0.1847(58)
     \end{align}
-
+    
     \vfill
 
+    \item \(\delta_{FOPT}^{(0)}, \delta_{CIPT}^{(0)}\) and the Borel model as
+      function of the order n
     \begin{center}
       \includegraphics[width=0.7\textwidth]{./images/FOPT_CIPT_contributions.png}
     \end{center}
-    \cite{Beneke2008}
-  \end{footnotesize}
+    \scriptsize
+    \cite{Jamin2013a}
+  \end{itemize}
 \end{frame}
 \note[itemize]{
 \item E.g. here we display the FOPT and CIPT contribution up to fifth order.
@@ -520,9 +548,9 @@
       D_{4} = \frac{1}{12}\left[ 1 - \frac{11}{18}a_s \right] \langle  a_s GG \rangle
       + \left[ 1 + \frac{\pm 36 - 23}{27} a_s \right] \langle (m_u + m_d) \overline{q}q \rangle
     \end{equation}
-  \item Gluon condensate can be quoted as
+  \item We work with the invariant gluon condensate
     \begin{equation}
-      \langle a_s GG \rangle \approx \SI{0.021}{\giga\eV^4}
+      \langle a_s GG \rangle_I \approx 0.021
     \end{equation}
   \item Higher dimensional contributions are approximated by simplest possible
     approach:
@@ -544,7 +572,9 @@
 \item The lowest dimensional operators are given in equation 37
 \item In our analysis we will neglect the dimension two contributions as we work
   in the chiral limit and their contributions are proportional to the quark
-  masses }
+  masses
+\item We work with the invariant gluon condensate, import because disagreement
+}
 
 
 \subsection{Experimental Data}
@@ -561,16 +591,20 @@
 \begin{frame}
   \frametitle{Inclusive Hadronic Tau Decay Ratio}
   \begin{itemize}
-  \item Spectral function \(\rho^{(1+0)}(s)\) is a measurable from the inclusive
+  \item Spectral function \(\rho(s)\) is a measurable from the inclusive
     hadronic tau decay ratio
     \begin{equation}
-      R_\tau = \frac{\Gamma[\tau^- \to \nu_\tau + \text{hadrons}]}{\Gamma[\tau^- \to \nu_\tau e^- \overline{\nu}_{e}]}
+      R_\tau = \frac{\Gamma[\tau^- \to \nu_\tau + \text{hadrons}]}{\Gamma[\tau^- \to \nu_\tau e^- \overline{\nu}_{e}]} = 3.6349(82)\footcite{HFLAV2016}
+    \end{equation}
+  \item We work with the inclusive non-strange tau decay ratio
+    \begin{equation}
+      R_{\tau, V+A} = R_\tau - R_{\tau,s} = 3.4718(72)^3
     \end{equation}
   \item Inclusive Hadronic Tau Decay Ratio is given by (\(s \equiv -q^2\))
     \begin{scriptsize}
       \begin{equation}
-        R_{\tau} = 12 \pi \,\abs{V_{ud}}^2 S_{EW} \int_0^{m_\tau^2} \frac{\dif s}{m_\tau^2} \left( 1 + 2 \frac{s}{m_\tau^2} \right)
-        \left[ \left( 1+2\frac{s}{m_\tau^2} \right) \Ima \Pi^{(1)}(s) + \Ima \Pi^{(0)}(s)\right]
+        R_{\tau, V+A} = 12 \pi \,\abs{V_{ud}}^2 S_{EW} \int_0^{m_\tau^2} \frac{\dif s}{m_\tau^2} \left( 1 + 2 \frac{s}{m_\tau^2} \right)
+        \left[ \left( 1+2\frac{s}{m_\tau^2} \right) \Ima \Pi_{V+A}^{(1)}(s) + \Ima \Pi_{V+A}^{(0)}(s)\right]
       \end{equation}
     \end{scriptsize}
   \end{itemize}
@@ -586,18 +620,24 @@
   remaining \(s\) plane the two-point function is analytic
 \item \(\Pi^{(0)}\) will be neglected? There is no \(J=0\) vector contribution.
   The \(J=0\) axial-vector contribution is the pion pole. Which is missing in
-  the experimental data. }
+  the experimental data.
+}
 
 \begin{frame}
   \frametitle{ALEPH Data}
-  \begin{columns}
-    \begin{column}{0.5\textwidth}
-      \includegraphics[width=\textwidth]{./images/specFuncAleph_V.eps}
-    \end{column}
-    \begin{column}{0.5\textwidth}
-      \includegraphics[width=\textwidth]{./images/specFuncAleph_A.eps}
-    \end{column}
-  \end{columns}
+  \begin{itemize}
+    \item V (left) and A (right) channel of the Aleph data
+    \begin{columns}
+      \begin{column}{0.5\textwidth}
+        \includegraphics[width=\textwidth]{./images/specFuncAleph_V.eps}
+      \end{column}
+      \begin{column}{0.5\textwidth}
+        \includegraphics[width=\textwidth]{./images/specFuncAleph_A.eps}
+      \end{column}
+    \end{columns}
+  \item OPE cannot reproduce the data (especially for lower energies)
+  \item e.g. the V and A channel D=6 contributions cancel
+  \end{itemize}
 \end{frame}
 \note[itemize]{
 \item The data we use is given by the ALEPH group
@@ -610,13 +650,21 @@
 \item In the vector channel we see the \(\rho(770)\) resonance
 \item In the axial channel we see the \(a_1^-\) resonance
 \item We also plotted the Perturbative contribution, which cannot reproduce the
-  experimental data, especially for lower energies }
+  experimental data, especially for lower energies
+}
 
 \begin{frame}
   \frametitle{ALEPH Data}
-  \includegraphics[width=.9\textwidth]{./images/specFuncAleph_VpA.eps}
+  \begin{itemize}
+  \item ALEPH V+A channel
+    \begin{center}
+      \includegraphics[width=.8\textwidth]{./images/specFuncAleph_VpA.eps}
+    \end{center}
+  \item The OPE is suppressed in the V+A channel
+  \end{itemize}
 \end{frame}
 \note[itemize]{
+\item OPE is suppressed in the V+A channel \(\Rightarrow\) NPT contributions smalDV also suppressed
 \item Here we see the experimental spectral function of the \(V+A\) channel
 \item Note that for higher energies the perturbative contribution matches the
   spectral function far better
@@ -667,7 +715,7 @@
         \begin{column}{.4\textwidth}
           \begin{itemize}
           \item 9 Moments
-          \item max nine parameters
+          \item fit at most 8 parameters
           \end{itemize}
         \end{column}
         \begin{column}{.6\textwidth}
@@ -722,6 +770,7 @@
   \item As an example we can take the natural appearing kinetic weight \(\omega_\tau\)
   \item It is double pinched, does not contain a monomial and as we will see has
     active D6 and D8 contributions
+  \item next slide shows pinching and active OPE contributions
 }
 
 \begin{frame}
@@ -743,10 +792,10 @@
       \begin{equation}
         R(x)\biggr\rvert_{D=0,2,4,\dots} = \oint_{\abs{x}=1} \dif x \, x^{k-D/2} C^{(D)} \quad \Rightarrow \quad D = 2 (k+1)
       \end{equation}
-      \begin{tabular}{l|ccccccc}
+      \begin{tabular}{l|cccccc}
         \toprule
-        \textbf{monomial:} & \(x^0\) & \(x^1\) & \(x^2\) & \(x^3\) & \(x^5\) & \(x^6\) & \(x^7\)\\
-        \textbf{dimension:} & \(D^{(2)}\) & \(D^{(4)}\) & \(D^{(6)}\) & \(D^{(8)}\) & \(D^{(10)}\) & \(D^{(12)}\) & \(D^{(14)}\)\\
+        \textbf{monomial:} & \(x^0\) & \(x^1\) & \(x^2\) & \(x^3\) & \(x^5\) & \(x^6\)\\
+        \textbf{dimension:} & \(D^{(2)}\) & \(D^{(4)}\) & \(D^{(6)}\) & \(D^{(8)}\) & \(D^{(10)}\) & \(D^{(12)}\)\\
         \bottomrule 
       \end{tabular}
   \end{itemize}
@@ -760,6 +809,12 @@
     positive real axis. This can be seen by plotting the weights. Blue is single
     pinched and decreases linear. Higher pinched weights decrease faster.
   \item Thus implementing a sufficient pinching should avoid DV
+  \item PT contributes due to logarithms
+  \item Also other dimensions can contribute due to logarithmic energy dependecies
+  \item Took OPE contributions as constant, in reality have logarithmic
+    dependencies so actually contribute
+  \item Always include D4 due to logarithmic contributions
+  \item Logs are in Wilson coefficients
 }
 
 \begin{frame}
@@ -789,7 +844,7 @@
       \midrule
       \parbox[t]{2mm}{\multirow{3}{*}{\rotatebox[origin=c]{90}{\small Pinched}}} & \(\omega_\tau\) & \((1-x)^2(1+2x)\) & \(1 - 3x^2 + 2x^3\) & \(D6, D8\) \\
       & \(\omega_{cube}\) & \((1-x)^3(1+3x)\) & \(1 - 6x^2 + 8x^3 - 3x^4\) & \(D6, D8, D10\) \\
-      & \(\omega_{quartic}\) & \((1-x)^4(1+3x)\) & \(1 - 10x^2 + 20x^3 - 15x^4 + 4x^5\) & \(D6, D8, D10, D12\) \\
+      & \(\omega_{quartic}\) & \((1-x)^4(1+4x)\) & \(1 - 10x^2 + 20x^3 - 15x^4 + 4x^5\) & \(D6, D8, D10, D12\) \\
       \midrule
       \parbox[t]{2mm}{\multirow{3}{*}{\rotatebox[origin=c]{90}{\small Monomial}}} & \(\omega_{M2}\) & \(1 - x^2\) & \(1-x^2\) & \(D6\) \\
       & \(\omega_{M3}\) & \(1 - x^3\) & \(1 - x^3\) & \(D8\) \\
@@ -816,6 +871,8 @@
     \end{itemize}
   \item We cannot apply FOPT to weights with a monomial term \(x\)
     \(\Rightarrow\) BS
+  \item studied quadruple pinched weights but exclude from results, converge
+    bad, but their results are in line with our other weights
 }
 
 \subsection{Results}
@@ -825,9 +882,6 @@
   \begin{tabular}{ccccccc}
     \toprule
     & \(s_{min} [GeV^2]\) & \#\(s_0\)s & \(\alpha_s(m_\tau^2)\) & \(\rho^{(6)}\) & \(\rho^{(8)}\) & \(\chi^2/dof\)  \\
-    \midrule
-    \parbox[t]{2mm}{\multirow{1}{*}{\rotatebox[origin=c]{90}{\textsc{bs}}}}
-    & \(2.2\) & 7 & 0.3274(42) & -0.82(21) & -1.08(41) & 0.21 \\
     \midrule
     \parbox[t]{2mm}{\multirow{5}{*}{\rotatebox[origin=c]{90}{\textsc{fopt}}}}
     % 1.500 & 23 & 0.3255(13) & -0.441(10) & -0.2909(34) & 2.00 \\
@@ -849,7 +903,10 @@
     & \cellcolor{primary}\(2.2\) & \cellcolor{primary}7 & \cellcolor{primary}0.3308(44) & \cellcolor{primary}-0.72(20) & \cellcolor{primary}-0.85(38) & \cellcolor{primary}0.19 \\
     & \(2.3\) & 6 & 0.3304(52) & -0.69(25) & -0.80(50) & 0.25 \\
     & \(2.4\) & 5 & 0.3339(70) & -0.91(39) & -1.29(83) & 0.10 \\
-    & \(2.6\) & 4 & 0.3398(15) & -1.3(1.0) & -2.3(2.5) & 0.01  \\
+    & \(2.6\) & 4 & 0.340(15) & -1.3(1.0) & -2.3(2.5) & 0.01  \\
+    \midrule
+    \parbox[t]{2mm}{\multirow{1}{*}{\rotatebox[origin=c]{90}{\textsc{bs}}}}
+    & \(2.2\) & 7 & 0.3274(42) & -0.82(21) & -1.08(41) & 0.21 \\
     \bottomrule
   \end{tabular}
 \end{frame}
@@ -876,7 +933,7 @@
   \centering \resizebox{\textwidth}{!}{
     \begin{tabular}{cccccccc}
       \toprule
-      weight & PT & \(\#s_0\)'s & \(\alpha_s(m_\tau^2)\) & \(\langle aGG \rangle_I\) & \(\rho^{(6)}\) & \(\rho^{(8)}\) & \(\chi^2/dof\)  \\
+      weight & PT & \(\#s_0\)'s & \(\alpha_s(m_\tau^2)\) & \(10^2\langle aGG \rangle_I\) & \(10^2\rho^{(6)}\) & \(10^2\rho^{(8)}\) & \(\chi^2/dof\)  \\
       \midrule
       \((1-x)^2(1 + 2x)\)    & FO & 7 & 0.3308(44) & \(2.1^*\) & -0.72(20) & -0.85(38) & 0.19 \\
       \((1-x)^2(1 + 2x)\)  & BS & 7 & 0.3274(42) & \(2.1^*\)    & -0.82(21)   & -1.08(41) & 0.21 \\
@@ -886,9 +943,11 @@
       \(1 - x^2\)          & FO & 7 & 0.3248(52) & \(2.1^*\) & -0.77(22) & \(0^*\)   & 0.38 \\
       \(1 - x^3\)          & FO & 7 & 0.3214(49) & \(2.1^*\) & \(0^*\)   & -1.01(39) & 0.41 \\
       % & \(\omega_{M4}\) & 2.2 & 0.3203(48) & - & - & - & -1.64(77) & 0.42 \\
-      \(1 - x\)           & BS & 7 & 0.3246(52) & -0.2262(59)  & \(0^*\)           & \(0^*\)   & 0.38 \\
-      \((1 - x)^2\)       & BS & 7 & 0.3270(54) & -0.0254(61)  & -0.77(21)   & \(0^*\)   & 0.74 \\
-      \((1 - x)^3\)       & BS & 8 & 0.3239(40) & -0.0212(42)  & -0.63(15)   & -0.74(29) & 0.46 \\
+      \(1 - x\)           & BS & 7 & 0.3246(52) & -2.26(59)  & \(0^*\)     & \(0^*\)   & 0.38 \\
+      \(1 - x\)           & FO & 7 & 0.352(15)  & -6.54(29)  & \(0^*\)     & \(0^*\)   & 0.27 \\
+      \((1 - x)^2\)       & BS & 7 & 0.3270(54) & -2.54(61)  & -0.77(21)   & \(0^*\)   & 0.74 \\
+      \((1 - x)^2\)       & FO & 7 & 0.3401(58) & -1.86(53)  & 0.22(9)     & \(0^*\)   & 0.73 \\
+      \((1 - x)^3\)       & BS & 8 & 0.3239(51) & -2.12(55)  & -0.63(19)   & -0.74(36) & 0.46 \\
       % & \(\omega_X4}\) & 2.1 & 0.3248(21) & -0.02230(47) & -0.6724(63) &
       % -0.834(14) & -1.352(28) & 0.23 \\
       \bottomrule
@@ -917,14 +976,14 @@
   \item Obtained values for the strong coupling:
     \begin{equation*}
       \begin{split}
-        \alpha_s(m_\tau) &= 0.3268(44)(25) = 0.3268(51) \\
+        \alpha_s(m_\tau^2) &= 0.3268(44)(25) = 0.3268(51) \\
         % \alpha_s^{(FOPT+BS)}(m_\tau) &= 0.3263(44)(25) = 0.3263(51)
       \end{split}
     \end{equation*}
     \begin{small}First error taken from kinematic weight, second error \(c_{5,1} \pm 100\%\)\end{small}
     \begin{equation*}
       \begin{split}
-        \alpha_s(m_Z) &= 0.11886(53)(30)(5) = 0.11886(61) \\
+        \alpha_s(m_Z^2) &= 0.11886(53)(30)(5) = 0.11886(61) \\
         % \alpha_s^{(FOPT+BS)}(m_Z) &= 0.11880(53)(30)(5) = 0.11880(61)
       \end{split}
     \end{equation*}
